@@ -1,2 +1,2 @@
 # bahiga-media
-Medios temporales para programar en Buffer. Se borra al terminar.
+Medios públicos de Bahiga para programar en Buffer (@bahiga.es).
