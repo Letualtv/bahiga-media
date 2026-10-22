@@ -45,6 +45,12 @@ const dots = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 // Rich display line: segs = [[text, em]]. Glyphs rise from a clipped baseline; em words
 // focus in (blur + spread -> sharp) starting at emAt.
 function line(ctx, u, segs, x, base, size, u0, col, colEm, { emAt = null, align = 'left' } = {}) {
+  // Si la línea no cabe, se reduce el cuerpo hasta que quepa.
+  {
+    const maxW = align === 'center' ? W - 140 : W - x - 70;
+    const wOf = (sz) => segs.reduce((a, [t, em]) => a + layout(ctx, t, em ? DI(sz) : D(sz), -0.02 * sz).width, 0);
+    const w0 = wOf(size); if (w0 > maxW) size = size * maxW / w0;
+  }
   const track = -0.02 * size;
   const parts = segs.map(([t, em]) => ({ t, em, f: em ? DI(size) : D(size) }));
   const widths = parts.map((p) => layout(ctx, p.t, p.f, track).width);

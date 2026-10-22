@@ -2,9 +2,9 @@
  "hook": {
   "label": "Haz la prueba",
   "lines": [
-   "Pregunta a ChatGPT",
-   "por un negocio",
-   "como el *tuyo.*"
+   "Pregunta a",
+   "ChatGPT por",
+   "tu *negocio.*"
   ],
   "sub": "¿Sales en la respuesta?"
  },
@@ -46,9 +46,9 @@
   ]
  },
  "question": [
-  "Lo comprobamos con",
-  "tu negocio y tu",
-  "*zona.*"
+  "Lo miramos con",
+  "tu negocio y",
+  "tu *zona.*"
  ],
  "end": {
   "tagline": "Webs y GEO para comercios de Córdoba.",
