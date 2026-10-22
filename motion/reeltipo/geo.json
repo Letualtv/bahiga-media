@@ -1,0 +1,57 @@
+{
+ "hook": {
+  "label": "Haz la prueba",
+  "lines": [
+   "Pregunta a ChatGPT",
+   "por un negocio",
+   "como el *tuyo.*"
+  ],
+  "sub": "¿Sales en la respuesta?"
+ },
+ "stat": {
+  "label": "Lo que está cambiando",
+  "big": "IA",
+  "lines": [
+   "Google ya responde",
+   "con IA en España.",
+   "Cada vez más gente",
+   "*pregunta* en vez de buscar."
+  ]
+ },
+ "coral": {
+  "label": "Si no sales",
+  "big1": "No te",
+  "big2": "recomienda.",
+  "small": "Y la respuesta se la lleva otro de tu zona.",
+  "lines": [
+   "A esto se le llama",
+   "*GEO.*"
+  ]
+ },
+ "rows": {
+  "label": "Tres pasos",
+  "items": [
+   [
+    "Una web clara",
+    "Que diga qué haces y dónde."
+   ],
+   [
+    "Ficha de Google completa",
+    "Horario, fotos, servicios y reseñas."
+   ],
+   [
+    "Que hablen de ti",
+    "Reseñas, prensa local, directorios."
+   ]
+  ]
+ },
+ "question": [
+  "Lo comprobamos con",
+  "tu negocio y tu",
+  "*zona.*"
+ ],
+ "end": {
+  "tagline": "Webs y GEO para comercios de Córdoba.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

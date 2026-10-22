@@ -1,0 +1,58 @@
+{
+ "hook": {
+  "label": "Un dato real",
+  "lines": [
+   "57.000 intentos",
+   "de entrar en un",
+   "*WordPress.*"
+  ],
+  "sub": "En solo 30 días."
+ },
+ "stat": {
+  "label": "Intentos en 30 días",
+  "count": 57000,
+  "size": 300,
+  "lines": [
+   "No iba a por nadie.",
+   "Era un bot probando",
+   "contraseñas, como cada",
+   "*día.*"
+  ]
+ },
+ "coral": {
+  "label": "Pasa en miles de webs",
+  "big1": "Tu web",
+  "big2": "también.",
+  "small": "Los bots prueban todas las que encuentran.",
+  "lines": [
+   "Lo importante es que",
+   "*alguien mire.*"
+  ]
+ },
+ "rows": {
+  "label": "Qué lo paró",
+  "items": [
+   [
+    "Reglas en Cloudflare",
+    "Frenan el tráfico raro antes de llegar."
+   ],
+   [
+    "Límite de intentos",
+    "Bloquea tras varios fallos seguidos."
+   ],
+   [
+    "Alertas",
+    "Te enteras si algo va mal."
+   ]
+  ]
+ },
+ "question": [
+  "¿Alguien vigila",
+  "tu web? La revisamos",
+  "sin *compromiso.*"
+ ],
+ "end": {
+  "tagline": "Mantenimiento y seguridad web.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "hook": {
+  "label": "Fin de trimestre",
+  "lines": [
+   "¿Cuánto tardas",
+   "en preparar las",
+   "*facturas?*"
+  ],
+  "sub": "Cada trimestre, la misma tarde perdida."
+ },
+ "stat": {
+  "label": "Verifactu",
+  "big": "2028",
+  "lines": [
+   "Hacienda quiere retrasar",
+   "Verifactu a octubre.",
+   "Aún no está en el *BOE.*"
+  ]
+ },
+ "coral": {
+  "label": "Lo que viene",
+  "big1": "Papel y PDF",
+  "strike": true,
+  "big2": "→ digital",
+  "small": "La factura electrónica también, en 2028.",
+  "lines": [
+   "Hay margen, pero el",
+   "destino es el *mismo.*"
+  ]
+ },
+ "rows": {
+  "label": "Lo que montamos",
+  "items": [
+   [
+    "Lee tus facturas",
+    "Saca fecha, base e IVA de cada PDF."
+   ],
+   [
+    "Avisa si falta alguna",
+    "Antes de mandarlo a la gestoría."
+   ],
+   [
+    "Programa preparado",
+    "Somos partner de STEL Order."
+   ]
+  ]
+ },
+ "question": [
+  "Lo que era una tarde,",
+  "en diez",
+  "*minutos.*"
+ ],
+ "end": {
+  "tagline": "Automatización para pymes.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

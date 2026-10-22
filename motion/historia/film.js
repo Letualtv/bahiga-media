@@ -14,30 +14,23 @@ const RISE = { stiffness: 210, damping: 24 };
 const ARCHP = ARCH.map((d) => new Path2D(d));
 
 
-// Contenido de la historia: cambiar solo esto. Titular de 8 palabras como máximo.
-// tipo fija el color (obligatorio): aviso, novedad, consejo, oferta.
-const H_ = {
-  tipo: 'aviso',
-  label: 'Aviso urgente · PHP2Shell',
-  lines: [[['El mundo arde por', 0]], [['un fallo de PHP.', 0]], [['¿Tú estás ', 0]], [['actualizado?', 1]]],
-  // Contexto: hasta 3 líneas cortas si hacen falta para entender el aviso.
-  sub: ['Ya hay ataques reales y cualquiera puede lanzarlos.', 'Deja entrar en tu web sin contraseña.', 'Te lo revisamos gratis.'],
-  cta: 'Escríbenos por WhatsApp',
-};
-// Un color por tipo de historia.
+// Contenido: content.json (tipo, label, title con *cursiva*, sub [hasta 3 líneas], cta, img opcional).
+const H_ = await (await fetch('content.json')).json();
+// Un color por tipo de historia (obligatorio).
 const TIPOS = {
-  aviso:   { bg: C.coral,  fg: C.ink,  em: C.bone,  lab: C.ink,   btn: C.ink,   btnT: C.bone }, // seguridad, urgente
-  novedad: { bg: C.ink,    fg: C.bone, em: C.coralL, lab: C.coralL, btn: C.coral, btnT: C.ink },  // noticias, cambios de Google o Meta
-  consejo: { bg: C.bone,   fg: C.ink,  em: C.coral, lab: C.coral, btn: C.ink,   btnT: C.bone },   // trucos, cómo se hace
-  oferta:  { bg: C.coralL, fg: C.ink,  em: C.ink,   lab: C.ink,   btn: C.ink,   btnT: C.bone },   // precios, promociones
+  aviso:   { bg: C.coral,  fg: C.ink,  em: C.bone,   lab: C.ink,    btn: C.ink,   btnT: C.bone }, // seguridad, urgente, plazos
+  novedad: { bg: C.ink,    fg: C.bone, em: C.coralL, lab: C.coralL, btn: C.coral, btnT: C.ink },  // noticias, cambios, nuevo en el perfil
+  consejo: { bg: C.bone,   fg: C.ink,  em: C.coral,  lab: C.coral,  btn: C.ink,   btnT: C.bone }, // trucos, preguntas, cómo se hace
+  oferta:  { bg: C.coralL, fg: C.ink,  em: C.ink,    lab: C.ink,    btn: C.ink,   btnT: C.bone }, // precios, promociones, servicios
 };
 const TH = TIPOS[H_.tipo] || TIPOS.aviso;
+const SUBS = [].concat(H_.sub || []);
 
-// Todo entra en los primeros ~2,5 s y luego se queda quieto. Sin zoom ni cámara.
+// Todo entra en los primeros ~3 s y luego se queda quieto. Sin zoom ni cámara.
 const HITS = [
   [0.4, 'titular', 'pop', { pitch: 'E5' }],
   [3.2, 'apoyo', 'blip', { pitch: 'A6' }],
-  [4.9, 'botón', 'pop', { pitch: 'E6' }],
+  [3.4 + SUBS.length * 0.5, 'botón', 'pop', { pitch: 'E6' }],
 ];
 // ------------------------------------------------------------ helpers
 const dots = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -145,23 +138,67 @@ function drawArch(ctx, x, y, h, color, per = null) {
 
 
 
-function story(ctx, u) {
+
+// Parte el titular (con *cursiva*) en líneas que quepan en el ancho.
+let LINES = null, SIZE = 116;
+function wrapTitle(ctx) {
+  const words = []; let em = false;
+  H_.title.split(' ').forEach((w) => {
+    let st = em; if (w.startsWith('*')) { st = true; w = w.slice(1); }
+    let end = st; if (w.endsWith('*')) { end = false; w = w.slice(0, -1); }
+    words.push([w, st ? 1 : 0]); em = end;
+  });
+  const maxW = W - 150;
+  for (SIZE = 116; SIZE >= 84; SIZE -= 8) {
+    const lines = []; let cur = [], cw = 0;
+    const wid = (t, e) => layout(ctx, t, e ? DI(SIZE) : D(SIZE), -0.02 * SIZE).width;
+    words.forEach(([t, e]) => {
+      const add = wid((cur.length ? ' ' : '') + t, e);
+      if (cur.length && cw + add > maxW) { lines.push(cur); cur = []; cw = 0; }
+      cur.push([t, e]); cw += wid((cur.length > 1 ? ' ' : '') + t, e);
+    });
+    if (cur.length) lines.push(cur);
+    LINES = lines.map((ln) => { const segs = []; ln.forEach(([t, e], i) => { const tt = (i ? ' ' : '') + t; if (segs.length && segs.at(-1)[1] === e) segs.at(-1)[0] += tt; else segs.push([tt, e]); }); return segs; });
+    if (LINES.length <= 4) break;
+  }
+}
+
+function story(ctx, u, IMG) {
+  if (!LINES) wrapTitle(ctx);
   fill(ctx, TH.bg);
   // Identidad obligatoria: arco + «Bahiga.» en Fraunces, siempre visible y quieto.
   const h = 96, w = h * ARCH_VB[2] / ARCH_VB[3];
   drawArch(ctx, 76, 290, h, TH.fg);
   text(ctx, 'Bahiga.', 76 + w + 22, 372, D(78), TH.fg, 'left', -1.5);
-  label(ctx, u, H_.label, 76, 640, 0, TH.lab);
-  const size = 116, lh = 140, top = 780;
-  H_.lines.forEach((segs, i) => line(ctx, u, segs, 70, top + i * lh, size, 0.4 + i * 0.6, TH.fg, TH.em, { emAt: 0.4 + i * 0.6 + 0.3 }));
-  const yEnd = top + (H_.lines.length - 1) * lh;
-  const subs = [].concat(H_.sub || []);
-  subs.forEach((t, i) => {
+
+  const img = H_.img && IMG.img;
+  const lh = SIZE * 1.2;
+  let y = img ? 720 : 780 - Math.max(0, LINES.length - 3) * 40;
+  label(ctx, u, H_.label, 76, y - 150 + (img ? 0 : 0), 0, TH.lab);
+  LINES.forEach((segs, i) => line(ctx, u, segs, 70, y + i * lh, SIZE, 0.4 + i * 0.6, TH.fg, TH.em, { emAt: 0.4 + i * 0.6 + 0.3 }));
+  y += (LINES.length - 1) * lh + 115;
+  SUBS.forEach((t, i) => {
+    const last = i === SUBS.length - 1 && SUBS.length > 1;
     const ks = springU(u, 3.2 + i * 0.5, SPRING.gentle);
-    if (ks > 0) { ctx.save(); ctx.globalAlpha = clamp(ks); text(ctx, t, 76, yEnd + 115 + i * 62 + (1 - ks) * 16, UI(i === subs.length - 1 && subs.length > 1 ? 44 : 42, i === subs.length - 1 && subs.length > 1 ? 600 : 400), TH.fg); ctx.restore(); }
+    if (ks > 0) { ctx.save(); ctx.globalAlpha = clamp(ks); text(ctx, t, 76, y + i * 62 + (1 - ks) * 16, UI(last ? 44 : 42, last ? 600 : 400), TH.fg); ctx.restore(); }
   });
-  const yBtn = Math.max(1480, yEnd + 115 + (subs.length - 1) * 62 + 150);
-  const kb = springU(u, 3.4 + subs.length * 0.5, SPRING.bouncy);
+  y += (SUBS.length ? (SUBS.length - 1) * 62 : -60);
+  if (img) {
+    const ki = springU(u, 2.6, SPRING.gentle);
+    const iy = y + 60, ih = Math.min(400, 1440 - iy), iw = W - 152;
+    if (ki > 0 && ih > 120) {
+      ctx.save(); ctx.globalAlpha = clamp(ki);
+      rrect(ctx, 76, iy + (1 - ki) * 20, iw, ih, 28); ctx.clip();
+      const s = Math.max(iw / img.width, ih / img.height);
+      ctx.drawImage(img, 76 + (iw - img.width * s) / 2, iy + (1 - ki) * 20, img.width * s, img.height * s); // arriba alineado
+      ctx.restore();
+    }
+    y = iy + ih;
+    if (H_.url) text(ctx, H_.url.toUpperCase(), 76, y + 50, MONO(26), TH.fg, 'left', 2.2);
+    y += 40;
+  }
+  const yBtn = Math.max(1480, y + 150);
+  const kb = springU(u, 3.4 + SUBS.length * 0.5, SPRING.bouncy);
   if (kb > 0) {
     const f = UI(40, 600), s = H_.cta, tw = layout(ctx, s, f).width, bw = tw + 100, bh = 104;
     ctx.save(); ctx.translate(76 + bw / 2, yBtn); ctx.scale(clamp(kb, 0, 1.2), clamp(kb, 0, 1.2));
@@ -172,7 +209,7 @@ function story(ctx, u) {
 }
 M.film({
   fonts: [D(100), DI(100), UI(40), UI(40, 600), MONO(26)],
-  images: {},
+  images: H_.img ? { img: H_.img } : {},
   hits: HITS,
-  draw(ctx, u) { story(ctx, u); },
+  draw(ctx, u, t, IMG) { story(ctx, u, IMG || {}); },
 });

@@ -1,0 +1,59 @@
+{
+ "hook": {
+  "label": "Lo hemos hecho nosotros",
+  "lines": [
+   "La tarjeta de",
+   "sellos, ahora",
+   "en el *móvil.*"
+  ],
+  "sub": "Para bares, peluquerías y tiendas."
+ },
+ "stat": {
+  "label": "Desde",
+  "big": "19 €",
+  "size": 300,
+  "suffix": "/mes",
+  "lines": [
+   "+ IVA en pago anual.",
+   "Sin papel y sin",
+   "tarjetas que se",
+   "*pierden.*"
+  ]
+ },
+ "coral": {
+  "label": "Comercios de Córdoba",
+  "big1": "Gratis",
+  "big2": "hasta enero.",
+  "small": "Hasta el 1 de enero.",
+  "lines": [
+   "Solo para los",
+   "*cinco primeros.*"
+  ]
+ },
+ "rows": {
+  "label": "Cómo funciona",
+  "items": [
+   [
+    "Tu cliente escanea",
+    "Y guarda la tarjeta en el móvil."
+   ],
+   [
+    "Sumas sellos",
+    "Desde tu móvil, en un segundo."
+   ],
+   [
+    "Ves quién vuelve",
+    "Y quién hace tiempo que no viene."
+   ]
+  ]
+ },
+ "question": [
+  "Toda la información",
+  "en",
+  "*@somos.habitual*"
+ ],
+ "end": {
+  "tagline": "Habitual, hecho por Bahiga.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

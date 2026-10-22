@@ -1,0 +1,62 @@
+{
+ "hook": {
+  "label": "Cómo trabajamos",
+  "lines": [
+   "Tu web, en",
+   "cuatro",
+   "*pasos.*"
+  ],
+  "sub": "Hablando siempre con quien la hace."
+ },
+ "stat": {
+  "label": "Webs desde",
+  "big": "900 €",
+  "size": 300,
+  "lines": [
+   "+ IVA, con presupuesto",
+   "cerrado.",
+   "Lista en 3 a 6",
+   "*semanas.*"
+  ]
+ },
+ "coral": {
+  "label": "Caso real",
+  "big1": "Pulido",
+  "big2": "Inmobiliaria.",
+  "small": "Catálogo que actualizan ellos mismos.",
+  "lines": [
+   "Así la",
+   "*hicimos.*"
+  ]
+ },
+ "rows": {
+  "label": "Los cuatro pasos",
+  "items": [
+   [
+    "Una llamada corta",
+    "Nos cuentas qué necesitas."
+   ],
+   [
+    "Presupuesto cerrado",
+    "Sin sorpresas al final."
+   ],
+   [
+    "La hacemos contigo",
+    "Ves cómo avanza."
+   ],
+   [
+    "Te enseñamos a manejarla",
+    "Para que no dependas de nadie."
+   ]
+  ]
+ },
+ "question": [
+  "¿Hablamos",
+  "de la",
+  "*tuya?*"
+ ],
+ "end": {
+  "tagline": "Diseño web para comercios de Córdoba.",
+  "cta": "Pide presupuesto por WhatsApp"
+ }
+}
