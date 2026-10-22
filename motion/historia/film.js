@@ -15,18 +15,22 @@ const ARCHP = ARCH.map((d) => new Path2D(d));
 
 
 // Contenido de la historia: cambiar solo esto. Titular de 8 palabras como máximo.
+// tipo fija el color (obligatorio): aviso, novedad, consejo, oferta.
 const H_ = {
-  theme: 'coral',            // 'coral' | 'ink' | 'bone'
+  tipo: 'aviso',
   label: 'Aviso de seguridad',
   lines: [[['Fallo crítico en PHP.', 0]], [['¿Tu web está ', 0]], [['al día?', 1]]],
   sub: 'Te lo revisamos gratis.',
   cta: 'Escríbenos por WhatsApp',
 };
-const TH = {
-  coral: { bg: C.coral, fg: C.ink, em: C.bone, lab: C.ink, btn: C.ink, btnT: C.bone },
-  ink: { bg: C.ink, fg: C.bone, em: C.coralL, lab: C.coralL, btn: C.coral, btnT: C.ink },
-  bone: { bg: C.bone, fg: C.ink, em: C.coral, lab: C.coral, btn: C.ink, btnT: C.bone },
-}[H_.theme];
+// Un color por tipo de historia.
+const TIPOS = {
+  aviso:   { bg: C.coral,  fg: C.ink,  em: C.bone,  lab: C.ink,   btn: C.ink,   btnT: C.bone }, // seguridad, urgente
+  novedad: { bg: C.ink,    fg: C.bone, em: C.coralL, lab: C.coralL, btn: C.coral, btnT: C.ink },  // noticias, cambios de Google o Meta
+  consejo: { bg: C.bone,   fg: C.ink,  em: C.coral, lab: C.coral, btn: C.ink,   btnT: C.bone },   // trucos, cómo se hace
+  oferta:  { bg: C.coralL, fg: C.ink,  em: C.ink,   lab: C.ink,   btn: C.ink,   btnT: C.bone },   // precios, promociones
+};
+const TH = TIPOS[H_.tipo] || TIPOS.aviso;
 
 // Todo entra en los primeros ~2,5 s y luego se queda quieto. Sin zoom ni cámara.
 const HITS = [
@@ -142,8 +146,10 @@ function drawArch(ctx, x, y, h, color, per = null) {
 
 function story(ctx, u) {
   fill(ctx, TH.bg);
-  const h = 120, w = h * ARCH_VB[2] / ARCH_VB[3];
-  drawArch(ctx, 76, 300, h, TH.fg);
+  // Identidad obligatoria: arco + «Bahiga.» en Fraunces, siempre visible y quieto.
+  const h = 96, w = h * ARCH_VB[2] / ARCH_VB[3];
+  drawArch(ctx, 76, 290, h, TH.fg);
+  text(ctx, 'Bahiga.', 76 + w + 22, 372, D(78), TH.fg, 'left', -1.5);
   label(ctx, u, H_.label, 76, 640, 0, TH.lab);
   const size = 116, lh = 140, top = 820;
   H_.lines.forEach((segs, i) => line(ctx, u, segs, 70, top + i * lh, size, 0.4 + i * 0.6, TH.fg, TH.em, { emAt: 0.4 + i * 0.6 + 0.3 }));
