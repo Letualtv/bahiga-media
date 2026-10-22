@@ -18,9 +18,10 @@ const ARCHP = ARCH.map((d) => new Path2D(d));
 // tipo fija el color (obligatorio): aviso, novedad, consejo, oferta.
 const H_ = {
   tipo: 'aviso',
-  label: 'Aviso de seguridad',
-  lines: [[['Fallo crítico en PHP.', 0]], [['¿Tu web está ', 0]], [['al día?', 1]]],
-  sub: 'Te lo revisamos gratis.',
+  label: 'Aviso urgente · PHP2Shell',
+  lines: [[['El mundo arde por', 0]], [['un fallo de PHP.', 0]], [['¿Tú estás ', 0]], [['actualizado?', 1]]],
+  // Contexto: hasta 3 líneas cortas si hacen falta para entender el aviso.
+  sub: ['Ya hay ataques reales y cualquiera puede lanzarlos.', 'Deja entrar en tu web sin contraseña.', 'Te lo revisamos gratis.'],
   cta: 'Escríbenos por WhatsApp',
 };
 // Un color por tipo de historia.
@@ -36,7 +37,7 @@ const TH = TIPOS[H_.tipo] || TIPOS.aviso;
 const HITS = [
   [0.4, 'titular', 'pop', { pitch: 'E5' }],
   [3.2, 'apoyo', 'blip', { pitch: 'A6' }],
-  [4.2, 'botón', 'pop', { pitch: 'E6' }],
+  [4.9, 'botón', 'pop', { pitch: 'E6' }],
 ];
 // ------------------------------------------------------------ helpers
 const dots = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -151,19 +152,23 @@ function story(ctx, u) {
   drawArch(ctx, 76, 290, h, TH.fg);
   text(ctx, 'Bahiga.', 76 + w + 22, 372, D(78), TH.fg, 'left', -1.5);
   label(ctx, u, H_.label, 76, 640, 0, TH.lab);
-  const size = 116, lh = 140, top = 820;
+  const size = 116, lh = 140, top = 780;
   H_.lines.forEach((segs, i) => line(ctx, u, segs, 70, top + i * lh, size, 0.4 + i * 0.6, TH.fg, TH.em, { emAt: 0.4 + i * 0.6 + 0.3 }));
   const yEnd = top + (H_.lines.length - 1) * lh;
-  const ks = springU(u, 3.2, SPRING.gentle);
-  if (ks > 0 && H_.sub) { ctx.save(); ctx.globalAlpha = clamp(ks); text(ctx, H_.sub, 76, yEnd + 120 + (1 - ks) * 16, UI(46), TH.fg); ctx.restore(); }
-  const kb = springU(u, 4.2, SPRING.bouncy);
+  const subs = [].concat(H_.sub || []);
+  subs.forEach((t, i) => {
+    const ks = springU(u, 3.2 + i * 0.5, SPRING.gentle);
+    if (ks > 0) { ctx.save(); ctx.globalAlpha = clamp(ks); text(ctx, t, 76, yEnd + 115 + i * 62 + (1 - ks) * 16, UI(i === subs.length - 1 && subs.length > 1 ? 44 : 42, i === subs.length - 1 && subs.length > 1 ? 600 : 400), TH.fg); ctx.restore(); }
+  });
+  const yBtn = Math.max(1480, yEnd + 115 + (subs.length - 1) * 62 + 150);
+  const kb = springU(u, 3.4 + subs.length * 0.5, SPRING.bouncy);
   if (kb > 0) {
     const f = UI(40, 600), s = H_.cta, tw = layout(ctx, s, f).width, bw = tw + 100, bh = 104;
-    ctx.save(); ctx.translate(76 + bw / 2, 1480); ctx.scale(clamp(kb, 0, 1.2), clamp(kb, 0, 1.2));
+    ctx.save(); ctx.translate(76 + bw / 2, yBtn); ctx.scale(clamp(kb, 0, 1.2), clamp(kb, 0, 1.2));
     rrect(ctx, -bw / 2, -bh / 2, bw, bh, bh / 2); ctx.fillStyle = TH.btn; ctx.fill();
     text(ctx, s, 0, 14, f, TH.btnT, 'center'); ctx.restore();
   }
-  text(ctx, 'BAHIGA.ES', 76, 1600, MONO(28), TH.fg, 'left', 3);
+  text(ctx, 'BAHIGA.ES', 76, Math.max(1600, yBtn + 120), MONO(28), TH.fg, 'left', 3);
 }
 M.film({
   fonts: [D(100), DI(100), UI(40), UI(40, 600), MONO(26)],
