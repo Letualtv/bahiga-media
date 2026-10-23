@@ -1,0 +1,58 @@
+{
+ "hook": {
+  "label": "Aviso urgente",
+  "lines": [
+   "¿Tu WordPress",
+   "usa",
+   "*UpdraftPlus?*"
+  ],
+  "sub": "Mira esto antes de seguir."
+ },
+ "stat": {
+  "label": "Ataques en solo",
+  "big": "18 h",
+  "size": 300,
+  "lines": [
+   "Robaron las claves",
+   "de UpdraftCentral.",
+   "Con ellas instalaron",
+   "*puertas traseras.*"
+  ]
+ },
+ "coral": {
+  "label": "Qué hace el ataque",
+  "big1": "Un usuario",
+  "big2": "oculto.",
+  "small": "Sigue ahí aunque borres el plugin.",
+  "lines": [
+   "Actualizar solo",
+   "*no basta.*"
+  ]
+ },
+ "rows": {
+  "label": "Qué hacer hoy",
+  "items": [
+   [
+    "Borra la clave",
+    "Ajustes de UpdraftPlus, UpdraftCentral."
+   ],
+   [
+    "Actualiza el plugin",
+    "Versión 1.26.13 o superior."
+   ],
+   [
+    "Revisa usuarios y plugins",
+    "Borra lo que no reconozcas."
+   ]
+  ]
+ },
+ "question": [
+  "¿No sabes si",
+  "te ha tocado? Te lo",
+  "miramos *gratis.*"
+ ],
+ "end": {
+  "tagline": "Mantenimiento y seguridad web.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}
