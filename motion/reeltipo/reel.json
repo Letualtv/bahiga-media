@@ -1,0 +1,62 @@
+{
+ "hook": {
+  "label": "Aviso urgente",
+  "lines": [
+   "Tu copia de",
+   "seguridad, convertida",
+   "en *puerta trasera.*"
+  ],
+  "sub": "Pasa con UpdraftPlus."
+ },
+ "stat": {
+  "label": "Webs en riesgo, según BleepingComputer",
+  "count": 400000,
+  "size": 260,
+  "lines": [
+   "Atacaron la web de",
+   "TeamUpdraft el 17 y 18",
+   "de octubre y robaron",
+   "*claves de conexión.*"
+  ]
+ },
+ "coral": {
+  "label": "Desde el 18 de octubre",
+  "big1": "Ya hay",
+  "big2": "ataques.",
+  "small": "Instalan plugins falsos y crean administradores.",
+  "lines": [
+   "Afecta a webs conectadas",
+   "a *UpdraftCentral.*"
+  ]
+ },
+ "rows": {
+  "label": "Qué hacer hoy",
+  "items": [
+   [
+    "Actualiza UpdraftPlus",
+    "Versión 1.26.13, o 2.26.13 en Premium."
+   ],
+   [
+    "Borra las claves",
+    "Las de UpdraftCentral, en el plugin."
+   ],
+   [
+    "Revisa administradores",
+    "Y plugins que no reconozcas."
+   ],
+   [
+    "Cambia contraseñas",
+    "Web y cuenta de TeamUpdraft."
+   ]
+  ]
+ },
+ "question": [
+  "¿No sabes si",
+  "tu web está afectada?",
+  "La revisamos *contigo.*"
+ ],
+ "end": {
+  "tagline": "Mantenimiento y seguridad web.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}
