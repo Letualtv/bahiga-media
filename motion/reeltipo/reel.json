@@ -1,0 +1,33 @@
+{
+ "hook": {
+  "label": "Verifactu",
+  "lines": ["¿Verifactu en", "2027 o en", "*2028?*"],
+  "sub": "Lo que hay de verdad hoy."
+ },
+ "stat": {
+  "label": "Lo que anunció Hacienda",
+  "big": "2028",
+  "size": 300,
+  "lines": ["El 5 de octubre dijo", "que lo retrasa a", "octubre de *2028.*"]
+ },
+ "coral": {
+  "label": "Pero ojo",
+  "big1": "Aún no está",
+  "big2": "en el BOE.",
+  "small": "La ley vigente dice 1 de enero de 2027.",
+  "lines": ["Sociedades, enero.", "Autónomos, *julio.*"]
+ },
+ "rows": {
+  "label": "Qué hacer ahora",
+  "items": [
+   ["Pregunta a tu programa", "Si ya está adaptado a Verifactu."],
+   ["Empieza en pruebas", "Se puede usar antes de la fecha."],
+   ["Factura electrónica", "La mayoría, en octubre de 2028."]
+  ]
+ },
+ "question": ["¿Tu programa", "de facturas está", "*listo?*"],
+ "end": {
+  "tagline": "Automatización para pymes.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

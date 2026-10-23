@@ -1,0 +1,4 @@
+motion/node_modules/
+motion/out/
+motion/*/audio/
+motion/package-lock.json
