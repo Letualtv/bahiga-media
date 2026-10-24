@@ -1,0 +1,33 @@
+{
+ "hook": {
+  "label": "Meta · 30 de octubre",
+  "lines": ["Meta cambia", "sus reglas el", "*30 de octubre.*"],
+  "sub": "Si tu negocio está en Instagram o Facebook."
+ },
+ "stat": {
+  "label": "Fecha de entrada en vigor",
+  "big": "30",
+  "size": 300,
+  "lines": ["Seguir usando sus", "herramientas ese día", "ya es *aceptarlas.*"]
+ },
+ "coral": {
+  "label": "Lo que cambia",
+  "big1": "Su IA retoca",
+  "big2": "tus anuncios.",
+  "small": "Y lo que cambie será responsabilidad tuya.",
+  "lines": ["Además podrá rastrear", "la web de tu *negocio.*"]
+ },
+ "rows": {
+  "label": "Qué hacer antes del 30",
+  "items": [
+   ["Revisa tus anuncios", "Desmarca las mejoras de IA que no quieras."],
+   ["Guarda capturas", "De cómo dejas configurado cada anuncio."],
+   ["Mira tu robots.txt", "Decide qué puede leer Meta de tu web."]
+  ]
+ },
+ "question": ["¿Quién revisa", "tus anuncios", "de *Meta?*"],
+ "end": {
+  "tagline": "Webs y redes para pymes.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}

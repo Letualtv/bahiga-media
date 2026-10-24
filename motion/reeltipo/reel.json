@@ -1,33 +1,33 @@
 {
  "hook": {
-  "label": "Verifactu",
-  "lines": ["¿Verifactu en", "2027 o en", "*2028?*"],
-  "sub": "Lo que hay de verdad hoy."
+  "label": "Meta · 30 de octubre",
+  "lines": ["Meta cambia", "sus reglas el", "*30 de octubre.*"],
+  "sub": "Si tu negocio está en Instagram o Facebook."
  },
  "stat": {
-  "label": "Lo que anunció Hacienda",
-  "big": "2028",
+  "label": "Fecha de entrada en vigor",
+  "big": "30",
   "size": 300,
-  "lines": ["El 5 de octubre dijo", "que lo retrasa a", "octubre de *2028.*"]
+  "lines": ["Seguir usando sus", "herramientas ese día", "ya es *aceptarlas.*"]
  },
  "coral": {
-  "label": "Pero ojo",
-  "big1": "Aún no está",
-  "big2": "en el BOE.",
-  "small": "La ley vigente dice 1 de enero de 2027.",
-  "lines": ["Sociedades, enero.", "Autónomos, *julio.*"]
+  "label": "Lo que cambia",
+  "big1": "Su IA retoca",
+  "big2": "tus anuncios.",
+  "small": "Y lo que cambie será responsabilidad tuya.",
+  "lines": ["Además podrá rastrear", "la web de tu *negocio.*"]
  },
  "rows": {
-  "label": "Qué hacer ahora",
+  "label": "Qué hacer antes del 30",
   "items": [
-   ["Pregunta a tu programa", "Si ya está adaptado a Verifactu."],
-   ["Empieza en pruebas", "Se puede usar antes de la fecha."],
-   ["Factura electrónica", "La mayoría, en octubre de 2028."]
+   ["Revisa tus anuncios", "Desmarca las mejoras de IA que no quieras."],
+   ["Guarda capturas", "De cómo dejas configurado cada anuncio."],
+   ["Mira tu robots.txt", "Decide qué puede leer Meta de tu web."]
   ]
  },
- "question": ["¿Tu programa", "de facturas está", "*listo?*"],
+ "question": ["¿Quién revisa", "tus anuncios", "de *Meta?*"],
  "end": {
-  "tagline": "Automatización para pymes.",
+  "tagline": "Webs y redes para pymes.",
   "cta": "Escríbenos por WhatsApp"
  }
 }
