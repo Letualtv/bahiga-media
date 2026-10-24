@@ -1,0 +1,33 @@
+{
+ "hook": {
+  "label": "Meta · 20 de noviembre",
+  "lines": ["Meta aplaza", "sus nuevas reglas al", "*20 de noviembre.*"],
+  "sub": "Si tu negocio está en Instagram o Facebook."
+ },
+ "stat": {
+  "label": "Nueva fecha de entrada en vigor",
+  "big": "20",
+  "size": 300,
+  "lines": ["Antes era el 30 de octubre.", "Solo cambia la fecha:", "el texto *sigue igual.*"]
+ },
+ "coral": {
+  "label": "Lo que sigue en pie",
+  "big1": "Su IA retoca",
+  "big2": "tus anuncios.",
+  "small": "Y lo que cambie será responsabilidad tuya.",
+  "lines": ["Y podrá rastrear", "la web de tu *negocio.*"]
+ },
+ "rows": {
+  "label": "Usa estas tres semanas",
+  "items": [
+   ["Revisa tus anuncios", "Desmarca las mejoras de IA que no quieras."],
+   ["Guarda capturas", "De cómo dejas configurado cada anuncio."],
+   ["Mira tu robots.txt", "Decide qué puede leer Meta de tu web."]
+  ]
+ },
+ "question": ["¿Quién revisa", "tus anuncios", "de *Meta?*"],
+ "end": {
+  "tagline": "Webs y redes para pymes.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}
