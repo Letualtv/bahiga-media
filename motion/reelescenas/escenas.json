@@ -1,0 +1,46 @@
+{
+ "escenas": [
+  {
+   "img": "assets/p2.jpg",
+   "fx": 0.62,
+   "contador": 8,
+   "titulo": "8 segundos.",
+   "sub": "Eso tardaba en cargar su web."
+  },
+  {
+   "img": "assets/p1.jpg",
+   "fx": 0.5,
+   "titulo": "Y cada día,",
+   "titulo2": "pedidos perdidos.",
+   "bocadillo": "¿Por qué nadie compra|por la web?",
+   "bx": 0.5,
+   "by": 600
+  },
+  {
+   "img": "assets/p3.jpg",
+   "fx": 0.47,
+   "titulo": "Revisamos su web.",
+   "sub": "Imágenes enormes y sin actualizar."
+  },
+  {
+   "img": "assets/p4.jpg",
+   "fx": 0.5,
+   "titulo": "Ahora carga en",
+   "titulo2": "2 segundos.",
+   "bocadillo": "¡Pedido nuevo!",
+   "bx": 0.52,
+   "by": 640
+  }
+ ],
+ "valor": {
+  "titulo": "¿Y la tuya?",
+  "sub": "Mírala gratis en",
+  "url": "pagespeed.web.dev",
+  "nota": "Si la nota sale en rojo o naranja,|tu web tiene margen de mejora."
+ },
+ "cierre": {
+  "grande": "Escribe WEB",
+  "sub": "en comentarios y te la revisamos sin compromiso.",
+  "pill": "Escribe WEB en comentarios"
+ }
+}
