@@ -1,11 +1,53 @@
 {
- "generado": "2026-10-26T10:45:16.934Z",
+ "generado": "2026-10-26T14:18:23.658Z",
+ "resumen_semana": {
+  "publicaciones": 7,
+  "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/De4kRWpDyD1/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 20
+   },
+   {
+    "enlace": "https://www.instagram.com/reel/De1_anekWIx/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 29
+   },
+   {
+    "enlace": "https://www.instagram.com/reel/De1LUASH6Zt/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 32
+   },
+   {
+    "enlace": "https://www.instagram.com/reel/DezrvSWj3WG/",
+    "compartidos_mas_guardados": 2,
+    "alcance": 100
+   },
+   {
+    "enlace": "https://www.instagram.com/p/DezRbynk1cw/",
+    "compartidos_mas_guardados": 1,
+    "alcance": 60
+   },
+   {
+    "enlace": "https://www.instagram.com/p/DezQ3PoksTW/",
+    "compartidos_mas_guardados": 1,
+    "alcance": 40
+   },
+   {
+    "enlace": "https://www.instagram.com/p/DezQT3mCZFs/",
+    "compartidos_mas_guardados": 2,
+    "alcance": 224
+   }
+  ],
+  "compartidos_mas_guardados_total": 6,
+  "comentarios_con_palabra_clave": 0
+ },
  "instagram_cuenta": {
-  "username": "bahiga.estudio",
+  "id": "17841430450985904",
   "followers_count": 39,
   "follows_count": 60,
   "media_count": 7,
-  "id": "17841430450985904"
+  "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
   {
@@ -93,8 +135,8 @@
    "likes": 9,
    "comentarios": 0,
    "metricas": {
-    "reach": 59,
-    "views": 146,
+    "reach": 60,
+    "views": 147,
     "saved": 1,
     "shares": 0,
     "total_interactions": 11
@@ -109,8 +151,8 @@
    "likes": 7,
    "comentarios": 0,
    "metricas": {
-    "reach": 39,
-    "views": 102,
+    "reach": 40,
+    "views": 103,
     "saved": 1,
     "shares": 0,
     "total_interactions": 8
@@ -125,8 +167,8 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 223,
-    "views": 380,
+    "reach": 224,
+    "views": 381,
     "saved": 1,
     "shares": 1,
     "total_interactions": 7
@@ -153,7 +195,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 1717
+     "value": 1720
     }
    },
    {
@@ -183,7 +225,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 100
+     "value": 103
     }
    },
    {
