@@ -128,6 +128,40 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "1029-le-llamamos-de-google",
+   "fecha": "2026-10-29T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-le-llamamos-de-google.mp4",
+   "texto": "«Le llamamos de Google. Su ficha va a desaparecer.»\n\nEs la séptima llamada esta semana, y siempre piden lo mismo: un pago anual por mantener algo que es gratis.\n\nGoogle no llama a los comercios para cobrarles la ficha. La ficha de empresa se crea y se gestiona gratis desde business.google.com.\n\nSi te llaman, cuelga.\n\nSi quieres que tu ficha esté bien hecha (horarios, fotos, categoría y reseñas), escribe GOOGLE en comentarios y te decimos qué le falta.\n\n¿A cuántos comercios de Córdoba os han llamado ya?\n\n#comerciolocal #Córdoba #pymes #GoogleBusinessProfile",
+   "portada_ms": 1500,
+   "musica": {
+    "buscar": "quirky",
+    "volumen_video": 40
+   },
+   "estado": "pendiente"
+  },
+  {
+   "id": "1103-8-segundos",
+   "fecha": "2026-11-03T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-escenas-web.mp4",
+   "texto": "8 segundos. Eso tardaba en cargar su web.\n\nMucha gente no espera tanto: cierra y compra en otro sitio. Y nadie te avisa de que se ha ido.\n\nEn su caso eran imágenes enormes y una web sin actualizar. Ahora carga en 2 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, tiene margen de mejora.\n\nSi prefieres que la revisemos nosotros, escribe WEB en comentarios.\n\n¿Cuánto tarda la tuya?\n\n#comerciolocal #Córdoba #pymes #paginasweb",
+   "portada_ms": 1200,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "pendiente"
   }
  ]
 }
