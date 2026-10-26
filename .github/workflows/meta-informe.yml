@@ -1,0 +1,39 @@
+name: Meta · informe de métricas
+
+# Saca las métricas de Instagram y Facebook y las guarda en publicador/informe.json.
+on:
+  push:
+    paths: ['publicador/informe.mjs', '.github/workflows/meta-informe.yml']
+  schedule:
+    - cron: '17 6 * * 1'   # lunes por la mañana
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: meta-informe
+  cancel-in-progress: false
+
+jobs:
+  informe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Sacar métricas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_ID: '17841430450985904'
+          PAGE_ID: '1371169526080229'
+        run: node publicador/informe.mjs
+      - name: Guardar
+        run: |
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add publicador/informe.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Informe de métricas de Meta"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
