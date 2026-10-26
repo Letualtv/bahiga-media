@@ -7,10 +7,14 @@ on:
     paths: ['.github/workflows/meta-comprobar.yml']
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   comprobar:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Permisos y cuentas
         env:
           TOKEN: ${{ secrets.META_TOKEN }}
@@ -26,3 +30,15 @@ jobs:
           curl -s "$G/me/accounts?fields=id,name,instagram_business_account%7Bid,username%7D&access_token=$TOKEN" \
             | jq -c '.data[]? | {pagina: .name, page_id: .id, instagram: .instagram_business_account}' 
           curl -s "$G/me/accounts?fields=id&access_token=$TOKEN" | jq -c '.error? // empty'
+          # Guarda el resultado (sin el token) para poder leerlo desde fuera de Actions.
+          mkdir -p publicador
+          {
+            echo '{"permisos":'; curl -s "$G/me/permissions?access_token=$TOKEN" | jq -c '.data // .error'
+            echo ',"cuentas":'; curl -s "$G/me/accounts?fields=id,name,instagram_business_account%7Bid,username%7D&access_token=$TOKEN" | jq -c '[.data[]? | {pagina: .name, page_id: .id, instagram: .instagram_business_account}] // .error'
+            echo '}'
+          } | jq . > publicador/cuentas.json
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add publicador/cuentas.json
+          git diff --cached --quiet || git commit -m "Publicador: cuentas de Meta comprobadas"
+          git push
