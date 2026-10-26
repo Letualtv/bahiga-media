@@ -14,7 +14,7 @@
    "titulo2": "pedidos perdidos.",
    "bocadillo": "¿Por qué nadie compra|por la web?",
    "bx": 0.5,
-   "by": 600
+   "by": 560
   },
   {
    "img": "assets/p3.jpg",
@@ -29,7 +29,7 @@
    "titulo2": "2 segundos.",
    "bocadillo": "¡Pedido nuevo!",
    "bx": 0.52,
-   "by": 640
+   "by": 600
   }
  ],
  "valor": {

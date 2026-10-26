@@ -26,8 +26,8 @@ function drawArch(ctx, x, y, h, color) {
 }
 function marca(ctx, col) {
   const h = 64, w = h * ARCH_VB[2] / ARCH_VB[3];
-  drawArch(ctx, 76, 282, h, col);
-  text(ctx, 'Bahiga.', 76 + w + 16, 336, D(52), col, 'left', -1);
+  drawArch(ctx, 76, 222, h, col);
+  text(ctx, 'Bahiga.', 76 + w + 16, 276, D(52), col, 'left', -1);
 }
 function pop(ctx, k, x, y, draw) { if (k <= 0) return; ctx.save(); ctx.globalAlpha = clamp(k * 1.5); ctx.translate(x, y + (1 - k) * 30); draw(); ctx.restore(); }
 function bocadillo(ctx, k, str, cx, top) {
@@ -55,23 +55,23 @@ function escena(ctx, u, i, IMG) {
     const cx = clamp((S.fx ?? 0.5) * iw - W / 2 + (p - 0.5) * 70, 0, maxX);
     ctx.drawImage(img, -cx, 0, iw, H);
     // Velo claro arriba para que el texto se lea siempre.
-    const g = ctx.createLinearGradient(0, 230, 0, 760);
-    g.addColorStop(0, 'rgba(250,248,245,.92)'); g.addColorStop(1, 'rgba(250,248,245,0)');
-    ctx.fillStyle = g; ctx.fillRect(0, 230, W, 530);
+    const g = ctx.createLinearGradient(0, 0, 0, 700);
+    g.addColorStop(0, 'rgba(250,248,245,.9)'); g.addColorStop(0.45, 'rgba(250,248,245,.82)'); g.addColorStop(1, 'rgba(250,248,245,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, 700);
   }
   marca(ctx, C.ink);
   const kt = springU(u, u0 + 0.15, SPRING.snappy);
-  pop(ctx, kt, 0, 0, () => text(ctx, S.titulo, 76, 470, D(S.contador ? 120 : 92), C.ink, 'left', -2));
-  if (S.titulo2) pop(ctx, springU(u, u0 + 0.6, SPRING.snappy), 0, 0, () => text(ctx, S.titulo2, 76, 570, DI(96), C.coral, 'left', -2));
-  if (S.sub) pop(ctx, springU(u, u0 + 0.7, SPRING.gentle), 0, 0, () => text(ctx, S.sub, 78, S.contador ? 560 : 545, UI(44, 600), C.ink));
+  pop(ctx, kt, 0, 0, () => text(ctx, S.titulo, 76, 410, D(S.contador ? 120 : 92), C.ink, 'left', -2));
+  if (S.titulo2) pop(ctx, springU(u, u0 + 0.6, SPRING.snappy), 0, 0, () => text(ctx, S.titulo2, 76, 510, DI(96), C.coral, 'left', -2));
+  if (S.sub) pop(ctx, springU(u, u0 + 0.7, SPRING.gentle), 0, 0, () => text(ctx, S.sub, 78, S.contador ? 500 : 485, UI(44, 600), C.ink));
   if (S.contador) {
     // Contador de carga: 0:01 ... 0:08 en coral, con la ruedita.
     const n = Math.min(S.contador, 1 + Math.floor(prog(u, u0 + 0.9, u0 + LEN - 0.6) * S.contador));
     const kc = springU(u, u0 + 0.8, SPRING.bouncy);
     pop(ctx, kc, 0, 0, () => {
-      rrect(ctx, 76, 640, 370, 120, 60); ctx.fillStyle = C.ink; ctx.fill();
-      text(ctx, '0:0' + n, 290, 727, MONO(64), C.coralL, 'center', 2);
-      ctx.save(); ctx.translate(126, 700); ctx.rotate(u * 3.5); ctx.strokeStyle = C.coralL; ctx.lineWidth = 7; ctx.lineCap = 'round';
+      rrect(ctx, 76, 580, 370, 120, 60); ctx.fillStyle = C.ink; ctx.fill();
+      text(ctx, '0:0' + n, 290, 667, MONO(64), C.coralL, 'center', 2);
+      ctx.save(); ctx.translate(126, 640); ctx.rotate(u * 3.5); ctx.strokeStyle = C.coralL; ctx.lineWidth = 7; ctx.lineCap = 'round';
       ctx.beginPath(); ctx.arc(0, 0, 22, 0, Math.PI * 1.4); ctx.stroke(); ctx.restore();
     });
   }
