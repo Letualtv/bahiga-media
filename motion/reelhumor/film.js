@@ -14,7 +14,9 @@ const MONO = (s) => `500 ${Math.round(s)}px Mono`;
 const ARCHP = ARCH.map((d) => new Path2D(d));
 const K = await (await fetch('humor.json')).json();
 
-const T1 = 4, T2 = 15, T3 = 20, T4 = 24, T5 = 29; // portada | llamada | giro | valor | cierre
+// Tiempos en beats (110 bpm), pensados para que dé tiempo a leer cada frase.
+const T1 = 5, T2 = 20, T3 = 27, T4 = 34, FIN = 40; // portada | llamada | giro | valor | cierre
+const MS = 3.2; // separación entre mensajes de la llamada
 
 function drawArch(ctx, x, y, h, color) {
   const [vx, vy, , vh] = ARCH_VB, s = h / vh;
@@ -30,8 +32,9 @@ function pop(ctx, k, draw) { if (k <= 0) return; ctx.save(); ctx.globalAlpha = c
 function fondo(ctx, img, p) {
   fill(ctx, C.bone);
   if (!img) return;
-  const s = Math.max(W / img.width, H / img.height), iw = img.width * s, ih = img.height * s;
-  ctx.drawImage(img, (W - iw) / 2 + (p - 0.5) * 40, (H - ih) / 2, iw, ih);
+  // Un 5 % más grande que la pantalla para que el barrido nunca deje ver el borde.
+  const s = Math.max(W / img.width, H / img.height) * 1.05, iw = img.width * s, ih = img.height * s;
+  ctx.drawImage(img, (W - iw) / 2 + (p - 0.5) * 36, (H - ih) / 2, iw, ih);
   const g = ctx.createLinearGradient(0, 0, 0, 720);
   g.addColorStop(0, 'rgba(250,248,245,.9)'); g.addColorStop(0.5, 'rgba(250,248,245,.8)'); g.addColorStop(1, 'rgba(250,248,245,0)');
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, 720);
@@ -58,13 +61,13 @@ function llamada(ctx, u) {
     ctx.beginPath(); ctx.arc(168, 408, 50, 0, Math.PI * 2); ctx.fillStyle = C.coral; ctx.fill();
     text(ctx, '?', 168, 430, D(66), C.ink, 'center');
     text(ctx, L.quien, 244, 395, UI(50, 600), C.bone);
-    const secs = 3 + Math.floor(prog(u, T1, T2) * 44);
+    const secs = 3 + Math.floor(prog(u, T1, T2) * 50);
     text(ctx, 'Llamada en curso · 00:' + String(secs).padStart(2, '0'), 244, 452, MONO(32), C.coralL, 'left', 1);
   });
   // Mensajes de la llamada, uno a uno.
   let y = 570;
   L.mensajes.forEach(([quien, t], i) => {
-    const u0 = T1 + 0.9 + i * 2.2, k = clamp(springU(u, u0, SPRING.bouncy), 0, 1.1);
+    const u0 = T1 + 0.9 + i * MS, k = clamp(springU(u, u0, SPRING.bouncy), 0, 1.1);
     const f = UI(52, quien === 'ella' ? 700 : 500), tw = Math.min(layout(ctx, t, f).width, 860);
     const w = tw + 76, h = 128, x = quien === 'ella' ? W - 76 - w : 76;
     if (k > 0) {
@@ -77,7 +80,7 @@ function llamada(ctx, u) {
     y += h + 38;
   });
   // Sello final que remata el chiste.
-  const ks = springU(u, T2 - 2.2, { stiffness: 320, damping: 16 });
+  const ks = springU(u, T2 - 3, { stiffness: 320, damping: 16 });
   if (ks > 0) {
     ctx.save(); ctx.translate(W / 2, 1390); ctx.rotate(-0.1); ctx.scale(1 + (1 - clamp(ks)) * 0.6, 1 + (1 - clamp(ks)) * 0.6);
     ctx.globalAlpha = clamp(ks * 1.4);
@@ -119,8 +122,8 @@ function cierre(ctx, u) {
 }
 
 const HITS = [[0, 'gancho', 'impact'], [0.55, 'línea 2', 'pop', { pitch: 'E5' }], [T1, 'llamada', 'whoosh', { len: 0.25, from: 1200, to: 3000 }]];
-K.llamada.mensajes.forEach((_, i) => HITS.push([T1 + 0.9 + i * 2.2, 'mensaje', i === 3 ? 'blip' : 'pop', { pitch: ['A5', 'C6', 'E6', 'A6'][i] }]));
-HITS.push([T2 - 2.2, 'sello', 'thud'], [T2, 'giro', 'impact'], [T3, 'valor', 'impact'], [T3 + 1.8, 'url', 'blip', { pitch: 'A6' }], [T4, 'cierre', 'impact']);
+K.llamada.mensajes.forEach((_, i) => HITS.push([T1 + 0.9 + i * MS, 'mensaje', i === 3 ? 'blip' : 'pop', { pitch: ['A5', 'C6', 'E6', 'A6'][i] }]));
+HITS.push([T2 - 3, 'sello', 'thud'], [T2, 'giro', 'impact'], [T3, 'valor', 'impact'], [T3 + 1.8, 'url', 'blip', { pitch: 'A6' }], [T4, 'cierre', 'impact']);
 
 M.film({
   fonts: [D(100), DI(100), UI(40), UI(40, 600), UI(40, 700), MONO(26)],
