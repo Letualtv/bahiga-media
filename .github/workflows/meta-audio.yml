@@ -19,6 +19,7 @@ jobs:
       - env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
           IG_ID: '17841430450985904'
+          PAGE_ID: '1371169526080229'
         run: node publicador/audio.mjs
       - run: |
           git config user.name "bahiga-publicador"; git config user.email "info@bahiga.es"
