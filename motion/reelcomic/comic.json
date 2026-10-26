@@ -1,0 +1,36 @@
+{
+ "panels": [
+  {
+   "img": "assets/p1.jpg",
+   "caja": "Lunes, 9:00",
+   "titulo": "Ni un pedido por la web.",
+   "bocadillo": "¿Por qué nadie compra|por la web?",
+   "bx": 0.5
+  },
+  {
+   "img": "assets/p2.jpg",
+   "caja": "Mientras, un cliente",
+   "titulo": "La web tarda en cargar.",
+   "bocadillo": "Ocho segundos cargando…|Pido en otro sitio.",
+   "bx": 0.5
+  },
+  {
+   "img": "assets/p3.jpg",
+   "caja": "La revisamos",
+   "titulo": "Pesaba demasiado.",
+   "bocadillo": "Imágenes enormes y la web|sin actualizar. Tiene arreglo.",
+   "bx": 0.35
+  },
+  {
+   "img": "assets/p4.jpg",
+   "caja": "Una semana después",
+   "titulo": "Vuelven los pedidos.",
+   "bocadillo": "¡Pedido nuevo!",
+   "bx": 0.55
+  }
+ ],
+ "end": {
+  "oferta": "Te revisamos la web sin compromiso.",
+  "cta": "Escríbenos por WhatsApp"
+ }
+}
