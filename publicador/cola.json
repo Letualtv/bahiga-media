@@ -4,20 +4,46 @@
    "id": "ensayo-historia",
    "ensayo": true,
    "fecha": "2026-10-26T11:30:00+01:00",
-   "redes": ["instagram", "facebook"],
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
    "tipo": "historia",
    "media": "historia-verifactu-2028.mp4",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "instagram": {
+     "ensayo": "contenedor aceptado, sin publicar",
+     "contenedor": "18115846940015033",
+     "hora": "2026-10-26T10:37:08.080Z"
+    },
+    "facebook": {
+     "ensayo": "permiso de publicación comprobado, sin publicar",
+     "video_id": "2071699366845500",
+     "hora": "2026-10-26T10:37:09.786Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-reel",
    "ensayo": true,
    "fecha": "2026-10-26T11:30:00+01:00",
-   "redes": ["instagram"],
+   "redes": [
+    "instagram"
+   ],
    "tipo": "reel",
    "media": "reel-verifactu-2028.mp4",
    "texto": "Ensayo: no se publica.",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "instagram": {
+     "ensayo": "contenedor aceptado, sin publicar",
+     "contenedor": "18115847057015033",
+     "hora": "2026-10-26T10:37:42.218Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
