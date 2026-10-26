@@ -1,0 +1,58 @@
+{
+  "permisos": [
+    {
+      "permission": "read_insights",
+      "status": "granted"
+    },
+    {
+      "permission": "pages_show_list",
+      "status": "granted"
+    },
+    {
+      "permission": "business_management",
+      "status": "granted"
+    },
+    {
+      "permission": "instagram_basic",
+      "status": "granted"
+    },
+    {
+      "permission": "instagram_manage_comments",
+      "status": "granted"
+    },
+    {
+      "permission": "instagram_manage_insights",
+      "status": "granted"
+    },
+    {
+      "permission": "instagram_content_publish",
+      "status": "granted"
+    },
+    {
+      "permission": "pages_read_engagement",
+      "status": "granted"
+    },
+    {
+      "permission": "pages_manage_posts",
+      "status": "granted"
+    },
+    {
+      "permission": "pages_manage_engagement",
+      "status": "granted"
+    },
+    {
+      "permission": "public_profile",
+      "status": "granted"
+    }
+  ],
+  "cuentas": [
+    {
+      "pagina": "bahiga.es",
+      "page_id": "1371169526080229",
+      "instagram": {
+        "id": "17841430450985904",
+        "username": "bahiga.estudio"
+      }
+    }
+  ]
+}
