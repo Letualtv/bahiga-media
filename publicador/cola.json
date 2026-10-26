@@ -1,0 +1,23 @@
+{
+ "publicaciones": [
+  {
+   "id": "ensayo-historia",
+   "ensayo": true,
+   "fecha": "2026-10-26T11:40:00+01:00",
+   "redes": ["instagram", "facebook"],
+   "tipo": "historia",
+   "media": "historia-verifactu-2028.mp4",
+   "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-reel",
+   "ensayo": true,
+   "fecha": "2026-10-26T11:40:00+01:00",
+   "redes": ["instagram"],
+   "tipo": "reel",
+   "media": "reel-verifactu-2028.mp4",
+   "texto": "Ensayo: no se publica.",
+   "estado": "pendiente"
+  }
+ ]
+}

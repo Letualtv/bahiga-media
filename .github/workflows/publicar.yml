@@ -1,0 +1,44 @@
+name: Publicar en Instagram y Facebook
+
+# Publica lo que toca de publicador/cola.json. Corre cada 10 minutos y cada vez
+# que cambia la cola (así lo urgente sale al momento). Una ejecución a la vez
+# para no publicar nada dos veces.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  push:
+    branches: [main]
+    paths: ['publicador/cola.json', 'publicador/publicar.mjs']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicador
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Publicar lo pendiente
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_ID: '17841430450985904'
+          PAGE_ID: '1371169526080229'
+        run: node publicador/publicar.mjs
+      - name: Guardar el estado de la cola
+        if: always()
+        run: |
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add publicador/cola.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publicador: estado de la cola"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
