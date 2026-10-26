@@ -1,0 +1,22 @@
+name: Avisos
+
+# Recordatorios que llegan como incidencia (correo y móvil).
+on:
+  schedule:
+    - cron: '0 8 20 12 *'   # 20 de diciembre: renovar el token de LinkedIn
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  linkedin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renovar el token de LinkedIn
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Renovar el token de LinkedIn antes del 25 de diciembre" \
+            --body "El secreto LINKEDIN_TOKEN caduca a los 60 días. Genera uno nuevo en linkedin.com/developers/tools/oauth/token-generator (app «Bahiga Publicador», permisos openid, profile y w_member_social) y sustituye el secreto en Settings → Secrets and variables → Actions. Después avisa a Claude para lanzar un ensayo."
