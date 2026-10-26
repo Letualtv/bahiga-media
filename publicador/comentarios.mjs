@@ -28,13 +28,17 @@ async function graph(metodo, ruta, params = {}, tk = T) {
 }
 
 const nuevos = []; // comentarios con palabra clave encontrados en esta pasada
+const estado = { ultima_pasada: new Date().toISOString(), errores: [] };
+const ESTADO = new URL('./comentarios-estado.json', import.meta.url);
+const paso = async (nombre, fn) => { try { await fn(); } catch (e) { estado.errores.push(`${nombre}: ${e.message}`); console.error(`${nombre}: ${e.message}`); } };
 const haceDias = (n) => Date.now() - n * 86400e3;
 
 // Instagram: comentarios de las publicaciones de los últimos 14 días.
+await paso('Instagram', async () => {
 const medios = await graph('GET', `/${IG_ID}/media`, { fields: 'id,permalink,timestamp,comments_count', limit: '25' });
 for (const m of medios.data || []) {
   if (Date.parse(m.timestamp) < haceDias(14) || !m.comments_count) continue;
-  const cs = await graph('GET', `/${m.id}/comments`, { fields: 'id,text,username,timestamp,replies{username}', limit: '100' });
+  const cs = await graph('GET', `/${m.id}/comments`, { fields: 'id,text,username,timestamp,replies{username,id}', limit: '100' });
   for (const c of cs.data || []) {
     if (yaVisto.has(c.id) || PROPIOS.includes(c.username)) continue;
     yaVisto.add(c.id);
@@ -45,8 +49,10 @@ for (const m of medios.data || []) {
     nuevos.push({ red: 'Instagram', usuario: `@${c.username}`, texto: c.text, enlace: m.permalink, respondido: !yaRespondido });
   }
 }
+});
 
 // Facebook: comentarios de las publicaciones de la página.
+await paso('Facebook', async () => {
 const { access_token: ptk } = await graph('GET', `/${PAGE_ID}`, { fields: 'access_token' });
 const posts = await graph('GET', `/${PAGE_ID}/posts`, { fields: 'id,permalink_url,created_time', limit: '15' }, ptk);
 for (const p of posts.data || []) {
@@ -62,6 +68,7 @@ for (const p of posts.data || []) {
     nuevos.push({ red: 'Facebook', usuario: c.from?.name || 'alguien', texto: c.message, enlace: p.permalink_url, respondido: !yaRespondido });
   }
 }
+});
 
 // Aviso: una incidencia en GitHub por pasada (llega al correo y al móvil al momento).
 if (nuevos.length && GITHUB_TOKEN) {
@@ -73,6 +80,8 @@ if (nuevos.length && GITHUB_TOKEN) {
   }).then((r) => console.log(r.ok ? 'Aviso creado.' : `No se pudo crear el aviso (${r.status}).`));
 }
 
+estado.encontrados = nuevos.length;
+writeFileSync(ESTADO, JSON.stringify(estado, null, 1) + '\n');
 vistos.ids = [...yaVisto].slice(-2000);
 writeFileSync(VISTOS, JSON.stringify(vistos) + '\n');
 console.log(`${nuevos.length} comentario(s) con palabra clave.`);

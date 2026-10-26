@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "bahiga-publicador"
           git config user.email "info@bahiga.es"
-          git add publicador/comentarios-vistos.json
+          git add publicador/comentarios-vistos.json publicador/comentarios-estado.json
           git diff --cached --quiet && exit 0
           git commit -m "Comentarios revisados"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
