@@ -155,7 +155,7 @@
    ],
    "tipo": "reel",
    "media": "media/reel-escenas-web.mp4",
-   "texto": "8 segundos. Eso tardaba en cargar su web.\n\nMucha gente no espera tanto: cierra y compra en otro sitio. Y nadie te avisa de que se ha ido.\n\nEn su caso eran imágenes enormes y una web sin actualizar. Ahora carga en 2 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, tiene margen de mejora.\n\nSi prefieres que la revisemos nosotros, escribe WEB en comentarios.\n\n¿Cuánto tarda la tuya?\n\n#comerciolocal #Córdoba #pymes #paginasweb",
+   "texto": "8 segundos. Eso tardaba en cargar su web.\n\nMucha gente no espera tanto: cierra y compra en otro sitio. Y nadie te avisa de que se ha ido.\n\nAl revisarla salieron tres cosas, las mismas que vemos en casi todas las webs de comercio:\nFotos de 4 MB subidas tal cual desde el móvil. Optimizadas pesan diez veces menos y se ven igual.\nSin caché: cada visita obligaba al servidor a montar la web desde cero.\nPlugins sin actualizar desde 2021: más lentos y, además, una puerta abierta.\n\nArreglado eso, carga en 2 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, tiene margen de mejora.\n\nSi prefieres que la revisemos nosotros, escribe WEB en comentarios.\n\n¿Cuánto tarda la tuya?\n\n#comerciolocal #Córdoba #pymes #paginasweb",
    "portada_ms": 1200,
    "musica": {
     "buscar": "upbeat acoustic",

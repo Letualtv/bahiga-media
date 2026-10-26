@@ -20,7 +20,12 @@
    "img": "assets/p3.jpg",
    "fx": 0.47,
    "titulo": "Revisamos su web.",
-   "sub": "Imágenes enormes y sin actualizar."
+   "beats": 11,
+   "lista": [
+    "Fotos de 4 MB subidas tal cual del móvil.",
+    "Sin caché: cada visita montaba la web de cero.",
+    "Plugins sin actualizar desde 2021."
+   ]
   },
   {
    "img": "assets/p4.jpg",

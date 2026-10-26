@@ -16,7 +16,10 @@ const K = await (await fetch('escenas.json')).json();
 
 const LEN = 6.5;                          // beats por escena (~3,5 s, da tiempo a leer)
 const N = K.escenas.length;
-const V0 = N * LEN, V1 = V0 + 6.5;        // fotograma de valor
+// Cada escena puede pedir más tiempo con «beats» (p. ej. la que lleva una lista).
+const LENS = K.escenas.map((S) => S.beats || LEN);
+const START = LENS.map((_, i) => LENS.slice(0, i).reduce((a, b) => a + b, 0));
+const V0 = START[N - 1] + LENS[N - 1], V1 = V0 + 6.5;        // fotograma de valor
 const END1 = V1 + 6;                      // fin
 
 function drawArch(ctx, x, y, h, color) {
@@ -46,7 +49,7 @@ function bocadillo(ctx, k, str, cx, top) {
   ctx.restore();
 }
 function escena(ctx, u, i, IMG) {
-  const S = K.escenas[i], u0 = i * LEN, p = prog(u, u0, u0 + LEN);
+  const S = K.escenas[i], u0 = START[i], p = prog(u, u0, u0 + LENS[i]);
   const img = IMG['e' + i];
   fill(ctx, C.bone);
   if (img) {
@@ -56,9 +59,10 @@ function escena(ctx, u, i, IMG) {
     ctx.imageSmoothingQuality = 'high';
     ctx.drawImage(img, -Math.round(cx), 0, Math.round(iw), H); // píxeles enteros: no pierde nitidez
     // Velo claro arriba para que el texto se lea siempre.
-    const g = ctx.createLinearGradient(0, 0, 0, 700);
+    const vh = S.lista ? 640 + S.lista.length * 64 : 700;
+    const g = ctx.createLinearGradient(0, 0, 0, vh);
     g.addColorStop(0, 'rgba(250,248,245,.9)'); g.addColorStop(0.45, 'rgba(250,248,245,.82)'); g.addColorStop(1, 'rgba(250,248,245,0)');
-    ctx.fillStyle = g; ctx.fillRect(0, 0, W, 700);
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, vh);
   }
   marca(ctx, C.ink);
   const kt = springU(u, u0 + 0.15, SPRING.snappy);
@@ -76,10 +80,17 @@ function escena(ctx, u, i, IMG) {
       ctx.beginPath(); ctx.arc(0, 0, 22, 0, Math.PI * 1.4); ctx.stroke(); ctx.restore();
     });
   }
+  if (S.lista) {
+    // Diagnóstico: cada línea entra por separado, con tiempo para leerla.
+    S.lista.forEach((l, j) => pop(ctx, springU(u, u0 + 1 + j * 2, SPRING.gentle), 0, 0, () => {
+      rrect(ctx, 78, 486 + j * 64, 14, 14, 7); ctx.fillStyle = C.coral; ctx.fill();
+      text(ctx, l, 110, 502 + j * 64, UI(40, 600), C.ink);
+    }));
+  }
   if (S.bocadillo) bocadillo(ctx, clamp(springU(u, u0 + 1.1, SPRING.bouncy), 0, 1.15), S.bocadillo, W * (S.bx ?? 0.5), S.by ?? 780);
 }
 function pill(ctx, u) {
-  const kb = springU(u, 2 * LEN, SPRING.bouncy) * (1 - E.outCubic(prog(u, V1 - 0.3, V1)));
+  const kb = springU(u, START[2], SPRING.bouncy) * (1 - E.outCubic(prog(u, V1 - 0.3, V1)));
   if (kb <= 0) return;
   const f = UI(34, 600), s = K.cierre.pill, tw = layout(ctx, s, f).width, bw = tw + 86, bh = 80;
   ctx.save(); ctx.translate(W / 2, 1500); ctx.scale(clamp(kb, 0, 1.2), clamp(kb, 0, 1.2));
@@ -117,12 +128,13 @@ function cierre(ctx, u) {
 }
 
 const HITS = [[0, 'gancho', 'impact']];
-for (let n = 1; n <= 8; n++) HITS.push([0.9 + (n - 1) * ((LEN - 1.5) / 8), 'contador', 'tick']);
+for (let n = 1; n <= 8; n++) HITS.push([0.9 + (n - 1) * ((LENS[0] - 1.5) / 8), 'contador', 'tick']);
 K.escenas.forEach((S, i) => {
-  if (i) HITS.push([i * LEN, 'corte', 'whoosh', { len: 0.25, from: 1200, to: 3000 }]);
-  if (S.bocadillo) HITS.push([i * LEN + 1.1, 'bocadillo', 'pop', { pitch: ['E5', 'A5', 'C6', 'E6'][i] }]);
+  if (i) HITS.push([START[i], 'corte', 'whoosh', { len: 0.25, from: 1200, to: 3000 }]);
+  if (S.lista) S.lista.forEach((_, j) => HITS.push([START[i] + 1 + j * 2, 'lista', 'blip', { pitch: ['C6', 'E6', 'G6'][j % 3] }]));
+  if (S.bocadillo) HITS.push([START[i] + 1.1, 'bocadillo', 'pop', { pitch: ['E5', 'A5', 'C6', 'E6'][i] }]);
 });
-HITS.push([2 * LEN, 'botón', 'pop', { pitch: 'E6' }], [V0, 'valor', 'impact'], [V0 + 1.3, 'url', 'blip', { pitch: 'A6' }], [V1, 'cierre', 'impact'], [V1 + 0.6, 'cta', 'pop', { pitch: 'E6' }]);
+HITS.push([START[2], 'botón', 'pop', { pitch: 'E6' }], [V0, 'valor', 'impact'], [V0 + 1.3, 'url', 'blip', { pitch: 'A6' }], [V1, 'cierre', 'impact'], [V1 + 0.6, 'cta', 'pop', { pitch: 'E6' }]);
 
 M.film({
   fonts: [D(100), DI(100), UI(40), UI(40, 600), MONO(26)],
@@ -131,9 +143,9 @@ M.film({
   draw(ctx, u, t, IMG) {
     if (u >= V1) return cierre(ctx, u);
     if (u >= V0) return valor(ctx, u);
-    const i = Math.min(N - 1, Math.floor(u / LEN));
+    let i = 0; while (i < N - 1 && u >= START[i + 1]) i++;
     // Corte con barrido rápido: la escena nueva entra desde la derecha en un cuarto de beat.
-    const e = E.outCubic(prog(u, i * LEN, i * LEN + 0.28));
+    const e = E.outCubic(prog(u, START[i], START[i] + 0.28));
     if (i > 0 && e < 1) {
       ctx.save(); ctx.translate(-e * W, 0); escena(ctx, u, i - 1, IMG); ctx.restore();
       ctx.save(); ctx.translate((1 - e) * W, 0); escena(ctx, u, i, IMG); ctx.restore();
