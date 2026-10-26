@@ -44,6 +44,23 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "ensayo-musica",
+   "ensayo": true,
+   "fecha": "2026-10-26T12:00:00+01:00",
+   "redes": [
+    "instagram"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-corto-seguridad.mp4",
+   "texto": "Ensayo de música: no se publica.",
+   "portada_ms": 1600,
+   "musica": {
+    "buscar": "upbeat",
+    "volumen_video": 30
+   },
+   "estado": "pendiente"
   }
  ]
 }
