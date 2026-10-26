@@ -195,7 +195,15 @@
    "tipo": "reel",
    "media": "media/reel-escenas-web.mp4",
    "texto_linkedin": "Ensayo: no se publica.",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "linkedin": {
+     "ensayo": "token y autor comprobados, sin publicar",
+     "autor": "urn:li:person:V9Mj0e8s26",
+     "hora": "2026-10-26T16:25:27.102Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
