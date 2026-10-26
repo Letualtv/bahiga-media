@@ -1,0 +1,16 @@
+{
+ "portada": { "img": "assets/g1.jpg", "l1": "LE LLAMAMOS", "l2": "DE GOOGLE." },
+ "llamada": {
+  "quien": "Número oculto",
+  "mensajes": [
+   ["el", "Buenos días, le llamamos de Google."],
+   ["el", "Su ficha va a desaparecer."],
+   ["el", "Por 299 € al año se la mantenemos."],
+   ["ella", "Ajá."]
+  ],
+  "sello": "LLAMADA Nº 7|ESTA SEMANA"
+ },
+ "giro": { "img": "assets/g2.jpg", "l1": "Su ficha de Google", "l2": "es gratis.", "sub": "Y Google no llama para cobrártela." },
+ "valor": { "titulo": "¿Te han llamado?", "lineas": ["Cuelga.", "Tu ficha se gestiona gratis en"], "url": "business.google.com" },
+ "cierre": { "grande": "Escribe GOOGLE", "sub": ["en comentarios y te dejamos", "la ficha bien hecha."] }
+}
