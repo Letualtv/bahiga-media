@@ -1,18 +1,6 @@
 [
  {
-  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0002-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261025%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261025T165827Z&X-Amz-Expires=70198&X-Amz-Signature=4f0f836ef4e26aa8d2f747c8c5b8af10c6d4e76e55942c9612f9676ae889f3f0&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A28%3A25%20GMT",
-  "destino": "descargas/comic-web/p1.jpg"
- },
- {
-  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0003-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T013345Z&X-Amz-Expires=38942&X-Amz-Signature=80ae7617df919e9187d919dcd0def46aeacc0867b00cf760090f0c47983325cd&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A22%3A47%20GMT",
+  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0003-4576177410023972885.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261025%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261025T135206Z&X-Amz-Expires=83597&X-Amz-Signature=4c1ac95c51d4c439fcc0612292353f8342478201da510730223f0ca05b92aa0c&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2013%3A05%3A23%20GMT",
   "destino": "descargas/comic-web/p2.jpg"
- },
- {
-  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0004-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T073343Z&X-Amz-Expires=19739&X-Amz-Signature=638a174525adb67cbb69899cb10381c6d2ef9330250081d9be1d62c38551771b&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2013%3A02%3A42%20GMT",
-  "destino": "descargas/comic-web/p3.jpg"
- },
- {
-  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0005-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T022023Z&X-Amz-Expires=37176&X-Amz-Signature=0cde7a0c12c3b639ba1a6f10ab757fc2b12f769ec26feb166310bc31ff8fa08d&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A39%3A59%20GMT",
-  "destino": "descargas/comic-web/p4.jpg"
  }
 ]
