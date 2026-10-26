@@ -34,7 +34,7 @@ const medios = await get(`/${IG_ID}/media`, { fields: 'id,caption,media_type,med
 informe.instagram_publicaciones = [];
 for (const m of medios.data || []) {
   informe.instagram_publicaciones.push({
-    fecha: m.timestamp, tipo: m.media_product_type, formato: m.media_type, enlace: m.permalink,
+    id: m.id, fecha: m.timestamp, tipo: m.media_product_type, formato: m.media_type, enlace: m.permalink,
     texto: (m.caption || '').slice(0, 120), likes: m.like_count, comentarios: m.comments_count,
     metricas: await insightsMedia(m),
   });
@@ -63,9 +63,8 @@ const PALABRAS = /\b(web|google|precio|presupuesto|info|informaci[oó]n|interesa
 const reels7d = informe.instagram_publicaciones.filter((x) => Date.now() - Date.parse(x.fecha) < 7 * 86400e3);
 let conPalabra = 0;
 for (const x of reels7d) {
-  const id = x.enlace && (await get(`/${IG_ID}/media`, { fields: 'id,permalink', limit: '50' })).data?.find((m) => m.permalink === x.enlace)?.id;
-  if (!id || !x.comentarios) continue;
-  const cs = await get(`/${id}/comments`, { fields: 'text,username', limit: '100' });
+  if (!x.comentarios) continue;
+  const cs = await get(`/${x.id}/comments`, { fields: 'text,username', limit: '100' });
   x.comentarios_palabra_clave = (cs.data || []).filter((k) => PALABRAS.test(k.text || '')).map((k) => `@${k.username}: ${k.text}`);
   conPalabra += x.comentarios_palabra_clave.length;
 }
