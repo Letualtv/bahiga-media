@@ -30,6 +30,7 @@ jobs:
       - name: Publicar lo pendiente
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
           IG_ID: '17841430450985904'
           PAGE_ID: '1371169526080229'
         run: node publicador/publicar.mjs

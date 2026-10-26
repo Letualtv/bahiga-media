@@ -162,6 +162,28 @@
     "volumen_video": 40
    },
    "estado": "pendiente"
+  },
+  {
+   "id": "1030-li-google",
+   "fecha": "2026-10-30T08:30:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-le-llamamos-de-google.mp4",
+   "texto_linkedin": "Esta semana una panadería de Córdoba recibió su séptima llamada «de Google».\n\nSiempre el mismo guion: su ficha va a desaparecer, y por 299 euros al año se la mantienen.\n\nGoogle no llama a nadie para cobrarle la ficha. La ficha de empresa se crea y se gestiona gratis en business.google.com. Quien llama es alguien que ha encontrado un negocio sin web ni asesor y prueba suerte.\n\nLo que me preocupa no es la estafa, que es burda. Es que funciona porque la mayoría de los comercios no saben qué es suyo, qué es gratis y qué han pagado por nada.\n\nSi te llaman, cuelga. Y si no estás seguro de cómo está tu ficha, mírala tú mismo: horarios, fotos, categoría y reseñas respondidas. Con eso ya estás por delante de la mitad de tu calle.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#comerciolocal #Córdoba #pymes #GoogleBusinessProfile",
+   "estado": "pendiente"
+  },
+  {
+   "id": "1104-li-8-segundos",
+   "fecha": "2026-11-04T08:30:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-escenas-web.mp4",
+   "texto_linkedin": "8 segundos. Eso tardan en cargar muchas webs de comercio que reviso.\n\nNadie se queja. Nadie espera 8 segundos: cierra y compra en otro sitio. Los pedidos que no llegan no dejan rastro.\n\nCasi siempre es lo mismo: fotos de 4 MB subidas desde el móvil, una web sin caché que se monta de cero en cada visita y plugins sin actualizar desde hace años. Arreglado eso, lo normal es bajar a 2 o 3 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, ahí tienes margen.\n\nLo que más me sorprende de estos casos es que casi nunca hace falta rehacer la web. Hace falta que alguien la mire.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#comerciolocal #Córdoba #pymes #paginasweb",
+   "estado": "pendiente"
   }
  ]
 }

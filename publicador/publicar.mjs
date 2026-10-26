@@ -164,7 +164,97 @@ async function facebook(p, ensayo) {
   throw new Error(`Tipo desconocido para Facebook: ${p.tipo}`);
 }
 
-const REDES = { instagram, facebook };
+// ---------- LinkedIn (perfil personal de Antonio) ----------
+// Producto «Share on LinkedIn» (permiso w_member_social) + OpenID Connect para saber
+// quién es el autor. El token dura 60 días: secreto LINKEDIN_TOKEN.
+// Texto propio de LinkedIn en «texto_linkedin» (si no, usa «texto»).
+
+const LI = 'https://api.linkedin.com';
+const LI_VERSION = process.env.LINKEDIN_VERSION || '202606';
+
+async function li(metodo, ruta, cuerpo, extra = {}) {
+  if (!process.env.LINKEDIN_TOKEN) throw new Error('Falta el secreto LINKEDIN_TOKEN.');
+  const res = await fetch(ruta.startsWith('http') ? ruta : LI + ruta, {
+    method: metodo,
+    headers: {
+      Authorization: `Bearer ${process.env.LINKEDIN_TOKEN}`,
+      'LinkedIn-Version': LI_VERSION, 'X-Restli-Protocol-Version': '2.0.0',
+      ...(cuerpo ? { 'Content-Type': 'application/json' } : {}), ...extra,
+    },
+    body: cuerpo ? JSON.stringify(cuerpo) : undefined,
+  });
+  const txt = await res.text();
+  const datos = txt ? (() => { try { return JSON.parse(txt); } catch { return {}; } })() : {};
+  if (!res.ok) throw new Error(`LinkedIn: ${datos.message || res.statusText} (${res.status})`);
+  return { datos, cabeceras: res.headers };
+}
+
+let autorLI;
+async function autorLinkedIn() {
+  if (!autorLI) autorLI = `urn:li:person:${(await li('GET', '/v2/userinfo')).datos.sub}`;
+  return autorLI;
+}
+
+// LinkedIn usa «little text»: hay caracteres reservados y los hashtags van con plantilla.
+function textoLinkedIn(t) {
+  return (t || '')
+    .replace(/[\\|{}@[\]()<>*_~]/g, (c) => '\\' + c)
+    .replace(/#([\p{L}\p{N}]+)/gu, (_, w) => `{hashtag|\\#|${w}}`);
+}
+
+async function bytesDe(ruta) {
+  const r = await fetch(urlMedia(ruta));
+  if (!r.ok) throw new Error(`No se pudo descargar ${ruta} (${r.status}).`);
+  return Buffer.from(await r.arrayBuffer());
+}
+
+async function subirVideoLI(ruta, owner) {
+  const buf = await bytesDe(ruta);
+  const { datos } = await li('POST', '/rest/videos?action=initializeUpload', {
+    initializeUploadRequest: { owner, fileSizeBytes: buf.length, uploadCaptions: false, uploadThumbnail: false },
+  });
+  const { video, uploadToken = '', uploadInstructions } = datos.value;
+  const partes = [];
+  for (const ins of uploadInstructions) {
+    const r = await fetch(ins.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'application/octet-stream' }, body: buf.subarray(ins.firstByte, ins.lastByte + 1) });
+    if (!r.ok) throw new Error(`LinkedIn no aceptó un trozo del vídeo (${r.status}).`);
+    partes.push(r.headers.get('etag'));
+  }
+  await li('POST', '/rest/videos?action=finalizeUpload', { finalizeUploadRequest: { video, uploadToken, uploadedPartIds: partes } });
+  for (let i = 0; i < 60; i++) { // hasta 10 minutos procesando
+    const { datos: v } = await li('GET', `/rest/videos/${encodeURIComponent(video)}`);
+    if (v.status === 'AVAILABLE') return video;
+    if (v.status === 'PROCESSING_FAILED') throw new Error('LinkedIn no pudo procesar el vídeo.');
+    await espera(10_000);
+  }
+  throw new Error('LinkedIn tardó demasiado en procesar el vídeo.');
+}
+
+async function subirImagenLI(ruta, owner) {
+  const buf = await bytesDe(ruta);
+  const { datos } = await li('POST', '/rest/images?action=initializeUpload', { initializeUploadRequest: { owner } });
+  const r = await fetch(datos.value.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'application/octet-stream' }, body: buf });
+  if (!r.ok) throw new Error(`LinkedIn no aceptó la imagen (${r.status}).`);
+  return datos.value.image;
+}
+
+async function linkedin(p, ensayo) {
+  const author = await autorLinkedIn();
+  if (ensayo) return { ensayo: 'token y autor comprobados, sin publicar', autor: author };
+  const post = {
+    author, commentary: textoLinkedIn(p.texto_linkedin || p.texto), visibility: 'PUBLIC',
+    distribution: { feedDistribution: 'MAIN_FEED', targetEntities: [], thirdPartyDistributionChannels: [] },
+    lifecycleState: 'PUBLISHED', isReshareDisabledByAuthor: false,
+  };
+  if (p.tipo === 'reel' || (p.media && esVideo(p.media))) post.content = { media: { id: await subirVideoLI(p.media, author) } };
+  else if (p.tipo === 'carrusel') post.content = { multiImage: { images: await Promise.all(p.medios.map(async (f) => ({ id: await subirImagenLI(f, author) }))) } };
+  else if (p.media) post.content = { media: { id: await subirImagenLI(p.media, author) } };
+  const { cabeceras } = await li('POST', '/rest/posts', post);
+  const id = cabeceras.get('x-restli-id');
+  return { id, permalink: id ? `https://www.linkedin.com/feed/update/${id}/` : undefined };
+}
+
+const REDES = { instagram, facebook, linkedin };
 
 // ---------- Cola ----------
 
