@@ -57,5 +57,8 @@ if (ptk) {
   if (posts.error) informe.facebook_publicaciones_error = posts.error;
   informe.facebook_28d = await get(`/${PAGE_ID}/insights`, { metric: 'page_impressions_unique,page_post_engagements,page_follows', period: 'days_28' }, ptk);
 }
-writeFileSync(new URL('./informe.json', import.meta.url), JSON.stringify(informe, null, 1) + '\n');
+// Meta devuelve enlaces de paginación con el token dentro: se quitan y se comprueba que no quede rastro.
+const limpio = JSON.stringify(informe, (k, v) => (k === 'paging' ? undefined : v), 1);
+if (/access_token|EAA[A-Za-z0-9]{20,}/.test(limpio) || limpio.includes(T)) throw new Error('El informe contiene el token: no se guarda.');
+writeFileSync(new URL('./informe.json', import.meta.url), limpio + '\n');
 console.log('Informe guardado.');

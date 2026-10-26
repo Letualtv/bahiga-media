@@ -196,11 +196,7 @@
      "value": 3
     }
    }
-  ],
-  "paging": {
-   "previous": "https://graph.facebook.com/v26.0/17841430450985904/insights?metric=reach%2Cviews%2Caccounts_engaged%2Ctotal_interactions%2Cprofile_views%2Cwebsite_clicks%2Cfollows_and_unfollows&period=day&metric_type=total_value&access_token=EAAQzEHKHe2kBS3JNrE2Pk7Fw9JebRBZBCeimlg8j4RcZCxoXGWxNYzFhjywTWeLUZA01JQvH6Fj5jLUEEl5QXbVF4tZAASZBgWQSAOdzJXRLPXRBazQichFSNbNsk94ZBqrRLZCS1ac84bB2WBjT8RQQiPjqJxfqMEdlcny7432vZCBs94jemuMeuX0co261JwZDZD&since=1788173080&until=1790592280",
-   "next": "https://graph.facebook.com/v26.0/17841430450985904/insights?metric=reach%2Cviews%2Caccounts_engaged%2Ctotal_interactions%2Cprofile_views%2Cwebsite_clicks%2Cfollows_and_unfollows&period=day&metric_type=total_value&access_token=EAAQzEHKHe2kBS3JNrE2Pk7Fw9JebRBZBCeimlg8j4RcZCxoXGWxNYzFhjywTWeLUZA01JQvH6Fj5jLUEEl5QXbVF4tZAASZBgWQSAOdzJXRLPXRBazQichFSNbNsk94ZBqrRLZCS1ac84bB2WBjT8RQQiPjqJxfqMEdlcny7432vZCBs94jemuMeuX0co261JwZDZD&since=1793011482&until=1795430682"
-  }
+  ]
  },
  "facebook_pagina": {
   "name": "bahiga.es",
