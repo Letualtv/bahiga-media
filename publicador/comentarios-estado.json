@@ -1,0 +1,7 @@
+{
+ "ultima_pasada": "2026-10-26T14:21:51.575Z",
+ "errores": [
+  "Facebook: (#10) This endpoint requires the 'pages_read_user_content' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details. (10)"
+ ],
+ "encontrados": 0
+}
