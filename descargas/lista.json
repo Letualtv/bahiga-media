@@ -1,14 +1,18 @@
 [
  {
-  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:161?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw&x-canva-quality=thumbnail",
-  "destino": "descargas/prueba-thumb.png"
+  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0002-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261025%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261025T165827Z&X-Amz-Expires=70198&X-Amz-Signature=4f0f836ef4e26aa8d2f747c8c5b8af10c6d4e76e55942c9612f9676ae889f3f0&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A28%3A25%20GMT",
+  "destino": "descargas/comic-web/p1.jpg"
  },
  {
-  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:1408/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:1136?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw&x-canva-quality=thumbnail",
-  "destino": "descargas/prueba-grande.png"
+  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0003-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T013345Z&X-Amz-Expires=38942&X-Amz-Signature=80ae7617df919e9187d919dcd0def46aeacc0867b00cf760090f0c47983325cd&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A22%3A47%20GMT",
+  "destino": "descargas/comic-web/p2.jpg"
  },
  {
-  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:1408/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:1136?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw",
-  "destino": "descargas/prueba-grande2.png"
+  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0004-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T073343Z&X-Amz-Expires=19739&X-Amz-Signature=638a174525adb67cbb69899cb10381c6d2ef9330250081d9be1d62c38551771b&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2013%3A02%3A42%20GMT",
+  "destino": "descargas/comic-web/p3.jpg"
+ },
+ {
+  "url": "https://export-download.canva.com/txVH8/DAHZG-txVH8/-1/0/0005-991312105295256139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261026T022023Z&X-Amz-Expires=37176&X-Amz-Signature=0cde7a0c12c3b639ba1a6f10ab757fc2b12f769ec26feb166310bc31ff8fa08d&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2012%3A39%3A59%20GMT",
+  "destino": "descargas/comic-web/p4.jpg"
  }
 ]
