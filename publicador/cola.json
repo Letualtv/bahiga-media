@@ -85,9 +85,23 @@
    "portada_ms": 1500,
    "musica": {
     "buscar": "quirky",
-    "volumen_video": 40
+    "volumen_video": 40,
+    "elegida": "Quirky Bossa (Instrumental) · Scott Dugdale"
    },
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "instagram": {
+     "ensayo": "contenedor aceptado, sin publicar",
+     "contenedor": "18115876187015033",
+     "hora": "2026-10-26T13:44:04.112Z"
+    },
+    "facebook": {
+     "ensayo": "permiso de publicación comprobado, sin publicar",
+     "video_id": "4767165936903513",
+     "hora": "2026-10-26T13:44:06.718Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-8segundos",
@@ -102,9 +116,18 @@
    "portada_ms": 1200,
    "musica": {
     "buscar": "upbeat acoustic",
-    "volumen_video": 40
+    "volumen_video": 40,
+    "elegida": "Lumina · Flow Loris"
    },
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "instagram": {
+     "ensayo": "contenedor aceptado, sin publicar",
+     "contenedor": "18115876355015033",
+     "hora": "2026-10-26T13:44:41.902Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
