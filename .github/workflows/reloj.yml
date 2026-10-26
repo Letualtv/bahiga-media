@@ -6,7 +6,7 @@ name: Reloj
 # Antonio tiene que guardar el último cambio de las líneas «cron» desde la web.
 on:
   schedule:
-    - cron: '0-59/10 * * * *'   # cada 10 minutos: publicar y comentarios
+    - cron: '/10 * * * *'   # cada 10 minutos: publicar y comentarios
     - cron: '17 6 * * 1'        # lunes: informe de métricas
     - cron: '0 8 20 12 *'       # 20 de diciembre: aviso del token de LinkedIn
   workflow_dispatch:
