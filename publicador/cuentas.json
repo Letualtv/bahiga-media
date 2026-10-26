@@ -13,6 +13,10 @@
       "status": "granted"
     },
     {
+      "permission": "pages_messaging",
+      "status": "granted"
+    },
+    {
       "permission": "instagram_basic",
       "status": "granted"
     },
@@ -29,7 +33,15 @@
       "status": "granted"
     },
     {
+      "permission": "instagram_manage_messages",
+      "status": "granted"
+    },
+    {
       "permission": "pages_read_engagement",
+      "status": "granted"
+    },
+    {
+      "permission": "pages_read_user_content",
       "status": "granted"
     },
     {
