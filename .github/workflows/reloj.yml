@@ -1,0 +1,31 @@
+name: Reloj
+
+# Único reloj del repositorio: lanza los demás flujos a su hora.
+# GitHub solo ejecuta las tareas programadas si la línea «cron» la ha guardado
+# una persona con acceso al repositorio (no un bot). Si se cambia este fichero,
+# Antonio tiene que guardar el último cambio de las líneas «cron» desde la web.
+on:
+  schedule:
+    - cron: '0-59/10 * * * *'   # cada 10 minutos: publicar y comentarios
+    - cron: '17 6 * * 1'        # lunes: informe de métricas
+    - cron: '0 8 20 12 *'       # 20 de diciembre: aviso del token de LinkedIn
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  lanzar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lanzar los flujos que tocan
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CRON: ${{ github.event.schedule }}
+        run: |
+          lanzar() { gh api -X POST "repos/$GITHUB_REPOSITORY/actions/workflows/$1/dispatches" -f ref=main && echo "Lanzado $1"; }
+          case "$CRON" in
+            '17 6 * * 1') lanzar meta-informe.yml ;;
+            '0 8 20 12 *') lanzar avisos.yml ;;
+            *) lanzar publicar.yml; lanzar comentarios.yml ;;
+          esac
