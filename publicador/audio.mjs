@@ -15,6 +15,8 @@ const out = { generado: new Date().toISOString(), pruebas: [] };
 const pg = await get(`/${process.env.PAGE_ID}`, { fields: 'access_token' });
 const tokens = { sistema: T, pagina: pg.access_token };
 const combos = [
+  { audio_type: 'music', ig_user_id: IG_ID, search_query: 'upbeat' },
+  { audio_type: 'music', ig_user_id: IG_ID, search_query: 'corporate' },
   { audio_type: 'music' },
   { audio_type: 'music', ig_user_id: IG_ID },
   { audio_type: 'music', ig_user_id: IG_ID, search_query: 'lofi' },
@@ -32,7 +34,7 @@ for (const [nombre, tk] of Object.entries(tokens)) {
   for (const c of combos) {
     const r = await fetch(`${G}/ig_audio?${new URLSearchParams({ ...c, access_token: tk })}`);
     const d = await r.json().catch(() => ({}));
-    out.pruebas.push({ token: nombre, params: c, estado: r.status, error: d.error ? `${d.error.message} (${d.error.code})` : undefined, n: (d.data || []).length, claves: Object.keys(d), muestra: (d.data || []).slice(0, 5) });
+    out.pruebas.push({ token: nombre, params: c, estado: r.status, error: d.error ? `${d.error.message} (${d.error.code})` : undefined, n: (d.audio || d.data || []).length, claves: Object.keys(d), muestra: (d.audio || d.data || []).slice(0, 8) });
   }
 }
 const s = JSON.stringify(out, (k, v) => (k === 'paging' ? undefined : v), 1);
