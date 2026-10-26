@@ -58,9 +58,18 @@
    "portada_ms": 1600,
    "musica": {
     "buscar": "upbeat",
-    "volumen_video": 30
+    "volumen_video": 30,
+    "elegida": "Good Mornin' · Jumbo"
    },
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "instagram": {
+     "ensayo": "contenedor aceptado, sin publicar",
+     "contenedor": "18115851095015033",
+     "hora": "2026-10-26T11:06:19.122Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
