@@ -309,7 +309,16 @@
    "tipo": "documento",
    "media": "media/linkedin/geo.pdf",
    "texto_linkedin": "Ensayo",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "linkedin": {
+     "ensayo": "token, autor y subida comprobados, sin publicar",
+     "autor": "urn:li:person:V9Mj0e8s26",
+     "subido": "urn:li:document:D4E10AQEjYWb0m6rvRg",
+     "hora": "2026-10-26T17:56:19.823Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-li-foto",
@@ -321,7 +330,16 @@
    "tipo": "foto",
    "media": "media/linkedin/li-publicador.jpg",
    "texto_linkedin": "Ensayo",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "linkedin": {
+     "ensayo": "token, autor y subida comprobados, sin publicar",
+     "autor": "urn:li:person:V9Mj0e8s26",
+     "subido": "urn:li:image:D4E10AQHU3_YBICmmxw",
+     "hora": "2026-10-26T17:56:20.554Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-li-reel",
@@ -333,7 +351,16 @@
    "tipo": "reel",
    "media": "media/reel-escenas-web.mp4",
    "texto_linkedin": "Ensayo",
-   "estado": "pendiente"
+   "estado": "ensayo-ok",
+   "resultado": {
+    "linkedin": {
+     "ensayo": "token, autor y subida comprobados, sin publicar",
+     "autor": "urn:li:person:V9Mj0e8s26",
+     "subido": "urn:li:video:D4E10AQGCAseSX5t0Ew",
+     "hora": "2026-10-26T17:56:32.967Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
