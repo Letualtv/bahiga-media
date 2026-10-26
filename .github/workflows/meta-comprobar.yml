@@ -1,6 +1,6 @@
 name: Meta · comprobar token e identificadores
 
-# Comprueba que META_TOKEN funciona y muestra los identificadores de la página
+# Comprueba que META_TOKEN funciona (token renovado el 26/10/2026) y muestra los identificadores de la página
 # de Facebook y de la cuenta de Instagram. Nunca imprime el token.
 on:
   push:
