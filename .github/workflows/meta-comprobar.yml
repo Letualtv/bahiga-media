@@ -1,0 +1,28 @@
+name: Meta · comprobar token e identificadores
+
+# Comprueba que META_TOKEN funciona y muestra los identificadores de la página
+# de Facebook y de la cuenta de Instagram. Nunca imprime el token.
+on:
+  push:
+    paths: ['.github/workflows/meta-comprobar.yml']
+  workflow_dispatch:
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Permisos y cuentas
+        env:
+          TOKEN: ${{ secrets.META_TOKEN }}
+        run: |
+          set -e
+          G=https://graph.facebook.com/v24.0
+          if [ -z "$TOKEN" ]; then echo "META_TOKEN vacío o no existe"; exit 1; fi
+          echo "== Permisos del token =="
+          curl -s "$G/me/permissions?access_token=$TOKEN" | jq -r '.data[]? | "\(.permission) \(.status)"' || true
+          echo "== Usuario =="
+          curl -s "$G/me?fields=id,name&access_token=$TOKEN" | jq -c 'del(.access_token)'
+          echo "== Páginas e Instagram =="
+          curl -s "$G/me/accounts?fields=id,name,instagram_business_account%7Bid,username%7D&access_token=$TOKEN" \
+            | jq -c '.data[]? | {pagina: .name, page_id: .id, instagram: .instagram_business_account}' 
+          curl -s "$G/me/accounts?fields=id&access_token=$TOKEN" | jq -c '.error? // empty'
