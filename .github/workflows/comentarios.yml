@@ -1,0 +1,41 @@
+name: Meta · comentarios
+
+# Cada 10 minutos: responde en público a los comentarios con palabra clave y avisa con una incidencia.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  push:
+    paths: ['publicador/comentarios.mjs', '.github/workflows/comentarios.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: comentarios
+  cancel-in-progress: false
+
+jobs:
+  comentarios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Revisar comentarios
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IG_ID: '17841430450985904'
+          PAGE_ID: '1371169526080229'
+        run: node publicador/comentarios.mjs
+      - name: Guardar los vistos
+        run: |
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add publicador/comentarios-vistos.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Comentarios revisados"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done

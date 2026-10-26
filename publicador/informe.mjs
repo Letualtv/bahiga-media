@@ -57,6 +57,29 @@ if (ptk) {
   if (posts.error) informe.facebook_publicaciones_error = posts.error;
   informe.facebook_28d = await get(`/${PAGE_ID}/insights`, { metric: 'page_impressions_unique,page_post_engagements,page_follows', period: 'days_28' }, ptk);
 }
+// Las dos cifras que miramos cada semana: lo que trae gente nueva (compartidos + guardados)
+// y lo que trae clientes (comentarios con palabra clave: WEB, GOOGLE...).
+const PALABRAS = /\b(web|google|precio|presupuesto|info|informaci[oó]n|interesa)\b/i;
+const reels7d = informe.instagram_publicaciones.filter((x) => Date.now() - Date.parse(x.fecha) < 7 * 86400e3);
+let conPalabra = 0;
+for (const x of reels7d) {
+  const id = x.enlace && (await get(`/${IG_ID}/media`, { fields: 'id,permalink', limit: '50' })).data?.find((m) => m.permalink === x.enlace)?.id;
+  if (!id || !x.comentarios) continue;
+  const cs = await get(`/${id}/comments`, { fields: 'text,username', limit: '100' });
+  x.comentarios_palabra_clave = (cs.data || []).filter((k) => PALABRAS.test(k.text || '')).map((k) => `@${k.username}: ${k.text}`);
+  conPalabra += x.comentarios_palabra_clave.length;
+}
+informe.resumen_semana = {
+  publicaciones: reels7d.length,
+  nuevos_por_pieza: reels7d.map((x) => ({ enlace: x.enlace, compartidos_mas_guardados: (x.metricas?.shares || 0) + (x.metricas?.saved || 0), alcance: x.metricas?.reach })),
+  compartidos_mas_guardados_total: reels7d.reduce((n, x) => n + (x.metricas?.shares || 0) + (x.metricas?.saved || 0), 0),
+  comentarios_con_palabra_clave: conPalabra,
+};
+// Que el resumen salga el primero al leer el fichero.
+const { resumen_semana, ...resto } = informe;
+Object.keys(informe).forEach((k) => delete informe[k]);
+Object.assign(informe, { generado: resto.generado, resumen_semana }, resto);
+
 // Meta devuelve enlaces de paginación con el token dentro: se quitan y se comprueba que no quede rastro.
 const limpio = JSON.stringify(informe, (k, v) => (k === 'paging' ? undefined : v), 1);
 if (/access_token|EAA[A-Za-z0-9]{20,}/.test(limpio) || limpio.includes(T)) throw new Error('El informe contiene el token: no se guarda.');
