@@ -1,0 +1,14 @@
+[
+ {
+  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:161?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw&x-canva-quality=thumbnail",
+  "destino": "descargas/prueba-thumb.png"
+ },
+ {
+  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:1408/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:1136?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw&x-canva-quality=thumbnail",
+  "destino": "descargas/prueba-grande.png"
+ },
+ {
+  "url": "https://media.canva.com/v2/image-resize/format:PNG/height:1408/quality:100/uri:ifs%3A%2F%2FM%2F370f53b5-3688-48c0-88fa-02e51c285f7e/watermark:F/width:1136?csig=AAAAAAAAAAAAAAAAAAAAAN9-uXG88IJ5w50tGg0BY6yotnss3FOV3xtem_VPEzg2&exp=1793027890&osig=AAAAAAAAAAAAAAAAAAAAAKxYY0mP9mGh1bWyDFNhKulUQeVN-8yZuvWcz8c-tcHU&signer=media-rpc&token=AAIAAU0AJDM3MGY1M2I1LTM2ODgtNDhjMC04OGZhLTAyZTUxYzI4NWY3ZQAAAAABoXjKW1Cege61mLY_FJnFXRq6c5aijZpkKAsuOoiKwKHc076WWw",
+  "destino": "descargas/prueba-grande2.png"
+ }
+]

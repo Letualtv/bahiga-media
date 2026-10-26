@@ -1,0 +1,35 @@
+name: Descargar ficheros a medios
+
+# Descarga las URLs de descargas/lista.json (por ejemplo, exportaciones de Canva) y
+# las guarda en el repositorio. Sirve porque desde la sesión de Claude no se puede
+# descargar de esos dominios.
+on:
+  push:
+    paths: ['descargas/lista.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import json, urllib.request, os
+          for it in json.load(open('descargas/lista.json')):
+              os.makedirs(os.path.dirname(it['destino']), exist_ok=True)
+              try:
+                  req = urllib.request.Request(it['url'], headers={'User-Agent': 'Mozilla/5.0'})
+                  data = urllib.request.urlopen(req, timeout=60).read()
+                  open(it['destino'], 'wb').write(data); print('ok', it['destino'], len(data))
+              except Exception as e:
+                  print('fallo', it['destino'], e)
+          PY
+      - run: |
+          git config user.name "bahiga-publicador"; git config user.email "info@bahiga.es"
+          git add descargas; git diff --cached --quiet && exit 0
+          git commit -m "Descargas"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
