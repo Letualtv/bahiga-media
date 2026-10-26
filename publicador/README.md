@@ -28,6 +28,7 @@ Publica en Instagram (@bahiga.estudio), en la página de Facebook bahiga.es y en
 - `musica` (reels de Instagram): `{"buscar": "upbeat"}` o `{"audio_id": "..."}`, con `volumen_musica` y `volumen_video` (0-100; por defecto 100 y 30). Usa la biblioteca de música libre de Meta. En Facebook el reel sale con el audio del vídeo.
 - `media`: ruta dentro del repositorio o URL pública. En Instagram las imágenes tienen que ser JPEG.
 - `redes`: `instagram`, `facebook` y/o `linkedin`. En LinkedIn se usa `texto_linkedin` si existe (si no, `texto`); los hashtags se convierten solos.
+- LinkedIn: `tipo: documento` con un PDF (se ve como carrusel) y `titulo_documento`; `primer_comentario` publica ese texto como primer comentario (para los enlaces). Estado `borrador`: la entrada se ignora hasta pasarla a `pendiente`.
 - `ensayo: true`: sube el fichero a Meta y comprueba que lo acepta, pero no publica.
 - Estados: `pendiente`, `publicada`, `error` (se reintenta hasta 3 veces) y `ensayo-ok`.
 - Si una red ya se publicó y la otra falló, el reintento solo repite la que falló.

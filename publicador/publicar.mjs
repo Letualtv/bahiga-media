@@ -238,6 +238,14 @@ async function subirImagenLI(ruta, owner) {
   return datos.value.image;
 }
 
+async function subirDocumentoLI(ruta, owner) {
+  const buf = await bytesDe(ruta);
+  const { datos } = await li('POST', '/rest/documents?action=initializeUpload', { initializeUploadRequest: { owner } });
+  const r = await fetch(datos.value.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'application/octet-stream' }, body: buf });
+  if (!r.ok) throw new Error(`LinkedIn no aceptó el documento (${r.status}).`);
+  return datos.value.document;
+}
+
 async function linkedin(p, ensayo) {
   const author = await autorLinkedIn();
   if (ensayo) {
@@ -250,11 +258,19 @@ async function linkedin(p, ensayo) {
     distribution: { feedDistribution: 'MAIN_FEED', targetEntities: [], thirdPartyDistributionChannels: [] },
     lifecycleState: 'PUBLISHED', isReshareDisabledByAuthor: false,
   };
-  if (p.tipo === 'reel' || (p.media && esVideo(p.media))) post.content = { media: { id: await subirVideoLI(p.media, author) } };
+  // Documento PDF: en LinkedIn se ve como carrusel deslizable.
+  if (p.tipo === 'documento') post.content = { media: { title: p.titulo_documento || 'Bahiga', id: await subirDocumentoLI(p.media, author) } };
+  else if (p.tipo === 'reel' || (p.media && esVideo(p.media))) post.content = { media: { id: await subirVideoLI(p.media, author) } };
   else if (p.tipo === 'carrusel') post.content = { multiImage: { images: await Promise.all(p.medios.map(async (f) => ({ id: await subirImagenLI(f, author) }))) } };
   else if (p.media) post.content = { media: { id: await subirImagenLI(p.media, author) } };
   const { cabeceras } = await li('POST', '/rest/posts', post);
   const id = cabeceras.get('x-restli-id');
+  // Los enlaces van en el primer comentario: en el texto, LinkedIn les quita alcance.
+  if (id && p.primer_comentario) {
+    await espera(5_000);
+    await li('POST', `/rest/socialActions/${encodeURIComponent(id)}/comments`, { actor: author, object: id, message: { text: p.primer_comentario } })
+      .catch((e) => console.error(`No se pudo poner el primer comentario: ${e.message}`));
+  }
   return { id, permalink: id ? `https://www.linkedin.com/feed/update/${id}/` : undefined };
 }
 
