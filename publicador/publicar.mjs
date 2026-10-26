@@ -250,8 +250,13 @@ async function linkedin(p, ensayo) {
   const author = await autorLinkedIn();
   if (ensayo) {
     // Comprueba también la versión de la API y el permiso de subida, sin publicar nada.
-    await li('POST', '/rest/images?action=initializeUpload', { initializeUploadRequest: { owner: author } });
-    return { ensayo: 'token, autor y subida comprobados, sin publicar', autor: author };
+    // Si la entrada lleva fichero, lo sube de verdad (sin crear publicación) para probar ese formato.
+    let subido;
+    if (p.tipo === 'documento') subido = await subirDocumentoLI(p.media, author);
+    else if (p.media && esVideo(p.media)) subido = await subirVideoLI(p.media, author);
+    else if (p.media) subido = await subirImagenLI(p.media, author);
+    else await li('POST', '/rest/images?action=initializeUpload', { initializeUploadRequest: { owner: author } });
+    return { ensayo: 'token, autor y subida comprobados, sin publicar', autor: author, subido };
   }
   const post = {
     author, commentary: textoLinkedIn(p.texto_linkedin || p.texto), visibility: 'PUBLIC',

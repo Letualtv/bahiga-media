@@ -298,6 +298,42 @@
    "media": "reel-web-clientes.mp4",
    "texto_linkedin": "¿Cuántos clientes te trajo tu web este mes?\n\nSi no lo sabes, ya tienes la respuesta.\n\nUna web de negocio tiene un trabajo: que alguien que no te conoce te llame, te escriba o te compre. Para eso tiene que cargar rápido en el móvil, decir en una frase qué haces y tener el botón de contacto a la vista.\n\nSi tu web no cumple esas tres cosas, no es un problema de diseño. Es un cartel apagado.\n\nLa forma más rápida de saberlo: mira las visitas y los contactos del último mes. Si no tienes forma de verlo, ese es el primer arreglo.\n\n¿Sabes cuántos contactos te llegaron por la web el mes pasado?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#paginasweb #pymes #Córdoba",
    "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-li-documento",
+   "ensayo": true,
+   "fecha": "2026-10-26T18:00:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "documento",
+   "media": "media/linkedin/geo.pdf",
+   "texto_linkedin": "Ensayo",
+   "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-li-foto",
+   "ensayo": true,
+   "fecha": "2026-10-26T18:00:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "foto",
+   "media": "media/linkedin/li-publicador.jpg",
+   "texto_linkedin": "Ensayo",
+   "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-li-reel",
+   "ensayo": true,
+   "fecha": "2026-10-26T18:00:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-escenas-web.mp4",
+   "texto_linkedin": "Ensayo",
+   "estado": "pendiente"
   }
  ]
 }
