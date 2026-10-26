@@ -14,10 +14,10 @@ const MONO = (s) => `500 ${Math.round(s)}px Mono`;
 const ARCHP = ARCH.map((d) => new Path2D(d));
 const K = await (await fetch('escenas.json')).json();
 
-const LEN = 4.5;                          // beats por escena (~2,5 s)
+const LEN = 6.5;                          // beats por escena (~3,5 s, da tiempo a leer)
 const N = K.escenas.length;
-const V0 = N * LEN, V1 = V0 + 4.5;        // fotograma de valor
-const END1 = V1 + 5;                      // fin
+const V0 = N * LEN, V1 = V0 + 6.5;        // fotograma de valor
+const END1 = V1 + 6;                      // fin
 
 function drawArch(ctx, x, y, h, color) {
   const [vx, vy, , vh] = ARCH_VB, s = h / vh;
@@ -53,7 +53,8 @@ function escena(ctx, u, i, IMG) {
     // Cubre la pantalla y se desplaza en horizontal un poco a lo largo de la escena.
     const s = H / img.height, iw = img.width * s, maxX = iw - W;
     const cx = clamp((S.fx ?? 0.5) * iw - W / 2 + (p - 0.5) * 70, 0, maxX);
-    ctx.drawImage(img, -cx, 0, iw, H);
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(img, -Math.round(cx), 0, Math.round(iw), H); // píxeles enteros: no pierde nitidez
     // Velo claro arriba para que el texto se lea siempre.
     const g = ctx.createLinearGradient(0, 0, 0, 700);
     g.addColorStop(0, 'rgba(250,248,245,.9)'); g.addColorStop(0.45, 'rgba(250,248,245,.82)'); g.addColorStop(1, 'rgba(250,248,245,0)');

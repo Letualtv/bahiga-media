@@ -70,6 +70,41 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "ensayo-google",
+   "ensayo": true,
+   "fecha": "2026-10-26T14:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-le-llamamos-de-google.mp4",
+   "texto": "Ensayo: no se publica.",
+   "portada_ms": 1500,
+   "musica": {
+    "buscar": "quirky",
+    "volumen_video": 40
+   },
+   "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-8segundos",
+   "ensayo": true,
+   "fecha": "2026-10-26T14:00:00+01:00",
+   "redes": [
+    "instagram"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-escenas-web.mp4",
+   "texto": "Ensayo: no se publica.",
+   "portada_ms": 1200,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "pendiente"
   }
  ]
 }
