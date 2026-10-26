@@ -25,6 +25,7 @@ Publica en Instagram (@bahiga.estudio) y en la página de Facebook bahiga.es con
 - `fecha`: siempre con zona horaria (`+01:00` en invierno, `+02:00` en verano).
 - `tipo`: `reel`, `historia`, `foto` o `carrusel` (con `medios`: lista de 2 a 10 ficheros, en Instagram imágenes JPEG).
 - `portada_ms` (reels): milisegundo del vídeo que se usa de portada, mejor el del gancho. O `portada`: imagen propia. Las historias no llevan texto: va dentro del vídeo o la imagen.
+- `musica` (reels de Instagram): `{"buscar": "upbeat"}` o `{"audio_id": "..."}`, con `volumen_musica` y `volumen_video` (0-100; por defecto 100 y 30). Usa la biblioteca de música libre de Meta. En Facebook el reel sale con el audio del vídeo.
 - `media`: ruta dentro del repositorio o URL pública. En Instagram las imágenes tienen que ser JPEG.
 - `ensayo: true`: sube el fichero a Meta y comprueba que lo acepta, pero no publica.
 - Estados: `pendiente`, `publicada`, `error` (se reintenta hasta 3 veces) y `ensayo-ok`.
