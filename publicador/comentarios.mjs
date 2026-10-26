@@ -1,4 +1,4 @@
-// Vigila los comentarios de Instagram y Facebook. Cuando alguien escribe una palabra
+// Vigila los comentarios y los mensajes privados de Instagram y Facebook. Cuando alguien escribe una palabra
 // clave (WEB, GOOGLE, precio...) responde en público con un mensaje corto y abre una
 // incidencia en GitHub para que Antonio siga la conversación por privado.
 // Lo ejecuta GitHub Actions (comentarios.yml) cada 10 minutos. No imprime el token.
@@ -70,13 +70,29 @@ for (const p of posts.data || []) {
 }
 });
 
+// Mensajes privados de Instagram y Facebook: solo avisa, nunca responde solo.
+for (const [plataforma, red] of [['instagram', 'Instagram'], ['messenger', 'Facebook']]) {
+  await paso(`Privados de ${red}`, async () => {
+    const { access_token: ptk } = await graph('GET', `/${PAGE_ID}`, { fields: 'access_token' });
+    const conv = await graph('GET', `/${PAGE_ID}/conversations`, { platform: plataforma, fields: 'updated_time,messages.limit(1){id,from,message,created_time}', limit: '20' }, ptk);
+    for (const c of conv.data || []) {
+      const m = c.messages?.data?.[0];
+      if (!m || yaVisto.has(m.id) || Date.parse(m.created_time) < haceDias(2)) continue;
+      yaVisto.add(m.id);
+      const propio = m.from?.id === PAGE_ID || m.from?.id === IG_ID || PROPIOS.includes(m.from?.username);
+      if (propio) continue;
+      nuevos.push({ red: `${red} (privado)`, usuario: m.from?.username ? `@${m.from.username}` : (m.from?.name || 'alguien'), texto: m.message || '(adjunto)', enlace: red === 'Instagram' ? 'https://www.instagram.com/direct/inbox/' : 'https://business.facebook.com/latest/inbox', respondido: false, privado: true });
+    }
+  });
+}
+
 // Aviso: una incidencia en GitHub por pasada (llega al correo y al móvil al momento).
 if (nuevos.length && GITHUB_TOKEN) {
-  const cuerpo = nuevos.map((n) => `- **${n.red}** · ${n.usuario}: «${n.texto}»\n  ${n.enlace}\n  ${n.respondido ? 'Respondido en público; falta el privado.' : 'Ya estaba respondido.'}`).join('\n');
+  const cuerpo = nuevos.map((n) => `- **${n.red}** · ${n.usuario}: «${n.texto}»\n  ${n.enlace}\n  ${n.privado ? 'Mensaje privado: contesta desde la bandeja.' : n.respondido ? 'Respondido en público; falta el privado.' : 'Ya estaba respondido.'}`).join('\n');
   await fetch(`https://api.github.com/repos/${GITHUB_REPOSITORY}/issues`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${GITHUB_TOKEN}`, Accept: 'application/vnd.github+json' },
-    body: JSON.stringify({ title: `${nuevos.length} comentario${nuevos.length > 1 ? 's' : ''} con palabra clave (${nuevos.map((n) => n.usuario).join(', ')})`, body: `${cuerpo}\n\nContesta por privado cuanto antes: la respuesta pública ya está puesta.`, labels: ['comentarios'] }),
+    body: JSON.stringify({ title: `${nuevos.length} mensaje${nuevos.length > 1 ? 's' : ''} nuevo${nuevos.length > 1 ? 's' : ''} en redes (${nuevos.map((n) => n.usuario).join(', ')})`, body: `${cuerpo}\n\nContesta por privado cuanto antes: la respuesta pública ya está puesta.`, labels: ['comentarios'] }),
   }).then((r) => console.log(r.ok ? 'Aviso creado.' : `No se pudo crear el aviso (${r.status}).`));
 }
 
