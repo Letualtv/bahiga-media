@@ -184,6 +184,18 @@
    "media": "media/reel-escenas-web.mp4",
    "texto_linkedin": "8 segundos. Eso tardan en cargar muchas webs de comercio que reviso.\n\nNadie se queja. Nadie espera 8 segundos: cierra y compra en otro sitio. Los pedidos que no llegan no dejan rastro.\n\nCasi siempre es lo mismo: fotos de 4 MB subidas desde el móvil, una web sin caché que se monta de cero en cada visita y plugins sin actualizar desde hace años. Arreglado eso, lo normal es bajar a 2 o 3 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, ahí tienes margen.\n\nLo que más me sorprende de estos casos es que casi nunca hace falta rehacer la web. Hace falta que alguien la mire.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#comerciolocal #Córdoba #pymes #paginasweb",
    "estado": "pendiente"
+  },
+  {
+   "id": "ensayo-linkedin",
+   "ensayo": true,
+   "fecha": "2026-10-26T17:00:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "reel",
+   "media": "media/reel-escenas-web.mp4",
+   "texto_linkedin": "Ensayo: no se publica.",
+   "estado": "pendiente"
   }
  ]
 }
