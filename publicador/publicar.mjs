@@ -59,9 +59,24 @@ async function esperarContenedor(id) {
 }
 
 async function instagram(p, ensayo) {
-  const media = urlMedia(p.media);
+  const media = p.media ? urlMedia(p.media) : null;
   const params = {};
-  if (p.tipo === 'reel') Object.assign(params, { media_type: 'REELS', video_url: media, caption: p.texto || '', share_to_feed: 'true' });
+  if (p.tipo === 'reel') {
+    Object.assign(params, { media_type: 'REELS', video_url: media, caption: p.texto || '', share_to_feed: 'true' });
+    // Portada: un fotograma del vídeo (portada_ms) o una imagen propia (portada).
+    if (p.portada) params.cover_url = urlMedia(p.portada);
+    else if (p.portada_ms != null) params.thumb_offset = String(p.portada_ms);
+  }
+  else if (p.tipo === 'carrusel') {
+    const hijos = [];
+    for (const f of p.medios) {
+      const h = esVideo(f) ? { media_type: 'VIDEO', video_url: urlMedia(f) } : { image_url: urlMedia(f) };
+      const { id } = await graph('POST', `/${IG_ID}/media`, { ...h, is_carousel_item: 'true' });
+      await esperarContenedor(id);
+      hijos.push(id);
+    }
+    Object.assign(params, { media_type: 'CAROUSEL', children: hijos.join(','), caption: p.texto || '' });
+  }
   else if (p.tipo === 'historia') Object.assign(params, { media_type: 'STORIES', [esVideo(p.media) ? 'video_url' : 'image_url']: media });
   else if (p.tipo === 'foto') Object.assign(params, { image_url: media, caption: p.texto || '' });
   else throw new Error(`Tipo desconocido para Instagram: ${p.tipo}`);
@@ -94,7 +109,7 @@ async function subirVideo(borde, media, tk) {
 
 async function facebook(p, ensayo) {
   const tk = await tokenDePagina();
-  const media = urlMedia(p.media);
+  const media = p.media ? urlMedia(p.media) : null;
 
   if (ensayo) {
     // Solo comprueba permisos: abre una subida de reel y no la completa.
@@ -116,6 +131,17 @@ async function facebook(p, ensayo) {
     const { id: photo_id } = await graph('POST', `/${PAGE_ID}/photos`, { url: media, published: 'false' }, tk);
     const r = await graph('POST', `/${PAGE_ID}/photo_stories`, { photo_id }, tk);
     return { id: r.post_id || photo_id };
+  }
+  if (p.tipo === 'carrusel') {
+    const ids = [];
+    for (const f of p.medios) {
+      const { id } = await graph('POST', `/${PAGE_ID}/photos`, { url: urlMedia(f), published: 'false' }, tk);
+      ids.push(id);
+    }
+    const params = { message: p.texto || '' };
+    ids.forEach((id, i) => { params[`attached_media[${i}]`] = JSON.stringify({ media_fbid: id }); });
+    const r = await graph('POST', `/${PAGE_ID}/feed`, params, tk);
+    return { id: r.id, permalink: `https://www.facebook.com/${r.id}` };
   }
   if (p.tipo === 'foto') {
     const r = await graph('POST', `/${PAGE_ID}/photos`, { url: media, message: p.texto || '' }, tk);
