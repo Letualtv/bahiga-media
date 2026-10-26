@@ -6,7 +6,7 @@ Publica en Instagram (@bahiga.estudio), en la página de Facebook bahiga.es y en
 
 1. Cada pieza (vídeo o imagen) se sube a este repositorio.
 2. Se añade una entrada a `cola.json` con su fecha y hora.
-3. GitHub Actions (`.github/workflows/publicar.yml`) ejecuta `publicar.mjs` cada 10 minutos y cada vez que cambia la cola. Lo que ya ha llegado a su hora se publica y la entrada se marca como `publicada`, con el enlace.
+3. GitHub Actions (`.github/workflows/publicar.yml`) ejecuta `publicar.mjs` cada 10 minutos y cada vez que cambia la cola. El reloj fiable es el VPS de Hetzner: su cron lanza `reloj.yml` cada 10 minutos (token de GitHub en `/root/.gh-bahiga`, permiso Actions de este repositorio), y el reloj lanza el publicador y la revisión de comentarios. Los horarios propios de GitHub quedan como respaldo, porque GitHub se los salta cuando tiene carga. Lo que ya ha llegado a su hora se publica y la entrada se marca como `publicada`, con el enlace.
 
 ## Entrada de la cola
 
