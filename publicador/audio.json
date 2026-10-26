@@ -1,16 +1,313 @@
 {
- "generado": "2026-10-26T11:00:06.470Z",
- "rutas": {
-  "/ig_audio": "ok (0 resultados)",
-  "/17841430450985904/ig_audio": "Unknown path components: /ig_audio (2500)",
-  "/17841430450985904/audio": "Unknown path components: /audio (2500)"
- },
- "resultados": {
-  "(tendencias)": [],
-  "lofi": [],
-  "chill": [],
-  "house": [],
-  "corporate": [],
-  "piano": []
- }
+ "generado": "2026-10-26T11:00:52.373Z",
+ "pruebas": [
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904",
+    "search_query": "lofi"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music",
+    "search_query": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music",
+    "q": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "MUSIC",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "original_sound",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "ig_user_id": "17841430450985904",
+    "search_query": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"audio_type\". To fix: send audio_type=music for Sound Collection royalty-free music, or audio_type=original_sound for original audio. Optional when product=ADS (audio_type is ignored — ads always returns music). (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "instagram_user_id": "17841430450985904",
+    "audio_type": "music"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "user_id": "17841430450985904",
+    "audio_type": "music"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "sistema",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904",
+    "fields": "id,audio_id,title,display_artist,duration_ms"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904",
+    "search_query": "lofi"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music",
+    "search_query": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music",
+    "q": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "MUSIC",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "original_sound",
+    "ig_user_id": "17841430450985904"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "ig_user_id": "17841430450985904",
+    "search_query": "lofi"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"audio_type\". To fix: send audio_type=music for Sound Collection royalty-free music, or audio_type=original_sound for original audio. Optional when product=ADS (audio_type is ignored — ads always returns music). (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "instagram_user_id": "17841430450985904",
+    "audio_type": "music"
+   },
+   "estado": 400,
+   "error": "Missing required parameter \"ig_user_id\". To fix: send ig_user_id=<your IG user ID> (or the deprecated alias user_id=<id>). Optional for product=ADS requests — the ads_management OAuth scope grant alone authorizes ADS audio suggestion calls. (100)",
+   "n": 0,
+   "claves": [
+    "error"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "user_id": "17841430450985904",
+    "audio_type": "music"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  },
+  {
+   "token": "pagina",
+   "params": {
+    "audio_type": "music",
+    "ig_user_id": "17841430450985904",
+    "fields": "id,audio_id,title,display_artist,duration_ms"
+   },
+   "estado": 200,
+   "n": 0,
+   "claves": [
+    "audio",
+    "paging"
+   ],
+   "muestra": []
+  }
+ ]
 }
