@@ -33,8 +33,11 @@ function fondo(ctx, img, p) {
   fill(ctx, C.bone);
   if (!img) return;
   // Un 5 % más grande que la pantalla para que el barrido nunca deje ver el borde.
-  const s = Math.max(W / img.width, H / img.height) * 1.05, iw = img.width * s, ih = img.height * s;
-  ctx.drawImage(img, (W - iw) / 2 + (p - 0.5) * 36, (H - ih) / 2, iw, ih);
+  // Las imágenes vienen preparadas a 1134x2016 (un 5 % mayores que la pantalla) y enfocadas.
+  // Se dibujan a tamaño real y en píxeles enteros para que no pierdan nitidez al moverse.
+  const s = Math.max(W * 1.05 / img.width, H * 1.05 / img.height), iw = Math.round(img.width * s), ih = Math.round(img.height * s);
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(img, Math.round((W - iw) / 2 + (p - 0.5) * 36), Math.round((H - ih) / 2), iw, ih);
   const g = ctx.createLinearGradient(0, 0, 0, 720);
   g.addColorStop(0, 'rgba(250,248,245,.9)'); g.addColorStop(0.5, 'rgba(250,248,245,.8)'); g.addColorStop(1, 'rgba(250,248,245,0)');
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, 720);
