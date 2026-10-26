@@ -240,7 +240,11 @@ async function subirImagenLI(ruta, owner) {
 
 async function linkedin(p, ensayo) {
   const author = await autorLinkedIn();
-  if (ensayo) return { ensayo: 'token y autor comprobados, sin publicar', autor: author };
+  if (ensayo) {
+    // Comprueba también la versión de la API y el permiso de subida, sin publicar nada.
+    await li('POST', '/rest/images?action=initializeUpload', { initializeUploadRequest: { owner: author } });
+    return { ensayo: 'token, autor y subida comprobados, sin publicar', autor: author };
+  }
   const post = {
     author, commentary: textoLinkedIn(p.texto_linkedin || p.texto), visibility: 'PUBLIC',
     distribution: { feedDistribution: 'MAIN_FEED', targetEntities: [], thirdPartyDistributionChannels: [] },
