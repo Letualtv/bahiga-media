@@ -361,29 +361,6 @@
     }
    },
    "intentos": 1
-  },
-  {
-   "id": "ensayo-carrusel-musica",
-   "ensayo": true,
-   "fecha": "2026-10-27T09:00:00+01:00",
-   "redes": [
-    "instagram"
-   ],
-   "tipo": "carrusel",
-   "medios": [
-    "geo-1.jpg",
-    "geo-2.jpg",
-    "geo-3.jpg"
-   ],
-   "texto": "Ensayo",
-   "musica": {
-    "buscar": "upbeat",
-    "elegida": "Good Mornin' · Jumbo"
-   },
-   "estado": "error",
-   "resultado": {},
-   "intentos": 1,
-   "error": "instagram: Invalid parameter (código 100/2207065)"
   }
  ]
 }

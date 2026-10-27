@@ -58,7 +58,8 @@ async function esperarContenedor(id) {
   throw new Error('Instagram tardó demasiado en procesar el fichero.');
 }
 
-// Música de la biblioteca de Instagram: musica.audio_id o musica.buscar (reels y carruseles).
+// Música de la biblioteca de Instagram: musica.audio_id o musica.buscar. Solo reels: Meta rechaza
+// la música en carruseles por API (error 2207065, comprobado el 27/10/2026).
 async function audioDe(p, sinVideo = false) {
   let audio_id = p.musica.audio_id;
   if (!audio_id && p.musica.buscar) {
@@ -90,7 +91,6 @@ async function instagram(p, ensayo) {
       hijos.push(id);
     }
     Object.assign(params, { media_type: 'CAROUSEL', children: hijos.join(','), caption: p.texto || '' });
-    if (p.musica) params.audio_configuration = await audioDe(p, true);
   }
   else if (p.tipo === 'historia') Object.assign(params, { media_type: 'STORIES', [esVideo(p.media) ? 'video_url' : 'image_url']: media });
   else if (p.tipo === 'foto') Object.assign(params, { image_url: media, caption: p.texto || '' });
