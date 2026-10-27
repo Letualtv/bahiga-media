@@ -1,0 +1,41 @@
+---
+/* Consolidador de noticias: lo que ha preparado la rutina de noticias (entradas «n-» de la
+   cola) agrupado por noticia, con su propuesta de GitHub y el estado de cada pieza. */
+import Panel from '../layouts/Panel.astro';
+import Pieza from '../components/Pieza.astro';
+import { cola } from '../lib/datos';
+import { propuestas } from '../lib/github';
+import { miniatura } from '../lib/util';
+
+const [ps, props] = await Promise.all([cola(), propuestas('all')]);
+const grupos: Record<string, typeof ps> = {};
+for (const p of ps.filter((p) => p.id.startsWith('n-'))) (grupos[p.id.replace(/-(ig|fb|historia|li|feed)$/, '')] ||= []).push(p);
+const lista = Object.entries(grupos).sort((a, b) => b[0].localeCompare(a[0]));
+const propDe = (clave: string) => props.find((i: any) => (i.body || '').includes(clave));
+const resumen = (l: typeof ps) => l.every((p) => p.estado === 'publicada') ? 'Publicada' : l.some((p) => p.estado === 'borrador') ? 'Por aprobar' : l.every((p) => p.estado === 'descartada') ? 'Descartada' : 'Programada';
+---
+<Panel titulo="Noticias" seccion="noticias">
+  <span slot="cab" class="meta">La rutina busca cada 3 horas, de 8:50 a 22:50</span>
+  {lista.length ? lista.map(([clave, l]) => {
+    const prop = propDe(clave);
+    const portada = miniatura(l.find((p) => p.tipo === 'carrusel') || l[0]);
+    return (
+      <section class="tarjeta noticia">
+        <div class="noticia__cab">
+          {portada && !portada.video && <img src={portada.url} alt="" class="noticia__img" />}
+          <div>
+            <h2>{prop?.title?.replace(/^Propuesta:\s*/, '') || clave}</h2>
+            <p class="meta">{clave} · <span class="chip">{resumen(l)}</span> {prop && <a href={prop.html_url} target="_blank" rel="noopener">propuesta #{prop.number} ({prop.state === 'open' ? 'abierta' : 'cerrada'})</a>}</p>
+          </div>
+        </div>
+        {l.map((p) => <Pieza p={p} volver="/noticias" />)}
+      </section>
+    );
+  }) : <p class="vacio">Todavía no hay noticias preparadas.</p>}
+</Panel>
+<style>
+  .noticia { display: grid; gap: 4px; }
+  .noticia__cab { display: flex; gap: 14px; align-items: center; margin-bottom: 6px; }
+  .noticia__img { width: 96px; aspect-ratio: 4/5; object-fit: cover; border-radius: 6px; border: 1px solid var(--linea); }
+  .noticia h2 { margin: 0 0 4px; }
+</style>

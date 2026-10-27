@@ -1,0 +1,50 @@
+---
+import Panel from '../layouts/Panel.astro';
+import Pieza from '../components/Pieza.astro';
+import { cola, informe, metricas28, comentarios } from '../lib/datos';
+import { propuestas } from '../lib/github';
+import { n, corta } from '../lib/util';
+
+const [ps, inf, props, com] = await Promise.all([cola(), informe(), propuestas(), comentarios()]);
+const c28 = metricas28(inf);
+const sem = inf?.resumen_semana || {};
+const ahora = Date.now();
+const porAprobar = ps.filter((p) => p.estado === 'borrador').sort((a, b) => Date.parse(a.fecha) - Date.parse(b.fecha));
+const errores = ps.filter((p) => p.estado === 'error');
+const proximas = ps.filter((p) => p.estado === 'pendiente' && Date.parse(p.fecha) >= ahora - 36e5).sort((a, b) => Date.parse(a.fecha) - Date.parse(b.fecha)).slice(0, 6);
+const ultima = ps.filter((p) => p.estado === 'publicada').sort((a, b) => Date.parse(b.fecha) - Date.parse(a.fecha))[0];
+---
+<Panel titulo="Inicio" seccion="inicio">
+  <span slot="cab" class="meta">{inf?.generado ? `Métricas del ${corta(inf.generado)}` : 'Sin métricas todavía'}</span>
+
+  <section>
+    <h2>Cifras <small>Instagram · 28 días · semana: 7 días</small></h2>
+    <div class="kpis">
+      <div class="kpi"><b>{n(inf?.instagram_cuenta?.followers_count)}</b><span>Seguidores</span></div>
+      <div class="kpi"><b>{n(c28.reach)}</b><span>Cuentas alcanzadas</span></div>
+      <div class="kpi"><b>{n(c28.views)}</b><span>Visualizaciones</span></div>
+      <div class="kpi"><b>{n(c28.profile_views)}</b><span>Visitas al perfil</span></div>
+      <div class="kpi"><b>{n(c28.website_clicks)}</b><span>Clics a la web</span></div>
+      <div class="kpi destaca"><b>{n(sem.compartidos_mas_guardados_total)}</b><span>Compartidos + guardados</span></div>
+      <div class="kpi destaca"><b>{n(sem.comentarios_con_palabra_clave)}</b><span>Comentarios con palabra clave</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pendiente de ti <small>{porAprobar.length} por aprobar · {errores.length} con error</small></h2>
+    {porAprobar.length || errores.length
+      ? [...errores, ...porAprobar].map((p) => <Pieza p={p} volver="/" />)
+      : <p class="vacio">Nada pendiente. Todo lo programado está aprobado.</p>}
+    {props.length > 0 && <p class="meta">Propuestas abiertas en GitHub: {props.map((i: any) => <a href={i.html_url} target="_blank" rel="noopener">#{i.number}</a>)} (aprobar aquí también las cierra)</p>}
+  </section>
+
+  <section>
+    <h2>Lo próximo <small><a href="/calendario">ver calendario</a></small></h2>
+    {proximas.length ? proximas.map((p) => <Pieza p={p} volver="/" />) : <p class="vacio">No hay nada programado.</p>}
+  </section>
+
+  <section class="tarjeta">
+    <h2>Sistema</h2>
+    <p class="meta">Última publicación: {ultima ? `${ultima.id} · ${corta(ultima.fecha)}` : 'ninguna'} · Revisión de comentarios: {com?.ultima_pasada ? corta(com.ultima_pasada) : 'sin datos'}{com?.errores?.length ? ` · ${com.errores.join(' · ')}` : ''}</p>
+  </section>
+</Panel>

@@ -1,0 +1,55 @@
+---
+import Panel from '../layouts/Panel.astro';
+import { ideas } from '../lib/datos';
+
+const todas = await ideas();
+const q = Astro.url.searchParams;
+const est = q.get('estado') || 'idea', pilar = q.get('pilar') || '', red = q.get('red') || '';
+const pilares = [...new Set(todas.map((i) => i.pilar).filter(Boolean))].sort();
+const lista = todas.filter((i) => (!est || est === 'todas' || i.estado === est) && (!pilar || i.pilar === pilar) && (!red || i.redes?.includes(red)));
+const ESTADOS = [['idea', 'Ideas'], ['en-marcha', 'En marcha'], ['programada', 'Programadas'], ['hecha', 'Hechas'], ['descartada', 'Descartadas'], ['todas', 'Todas']];
+const cuenta = (e: string) => e === 'todas' ? todas.length : todas.filter((i) => i.estado === e).length;
+const url = (cambio: Record<string, string>) => { const p = new URLSearchParams({ estado: est, pilar, red, ...cambio }); [...p.keys()].forEach((k) => !p.get(k) && p.delete(k)); return `/ideas?${p}`; };
+const volver = url({});
+---
+<Panel titulo="Ideas" seccion="ideas">
+  <form method="post" action="/api/accion" class="tarjeta nueva">
+    <input type="hidden" name="accion" value="idea-nueva" /><input type="hidden" name="volver" value={volver} />
+    <label class="ancha">Nueva idea<input name="titulo" required maxlength="200" placeholder="Por ejemplo: 3 cosas que revisaría en la web de una panadería" /></label>
+    <label>Formato<select name="formato"><option>Reel</option><option>Carrusel</option><option>Historias</option><option>Texto + imagen</option><option>Carrusel PDF</option></select></label>
+    <label>Pilar<input name="pilar" list="pilares" placeholder="Educativo" /></label>
+    <datalist id="pilares">{pilares.map((p) => <option value={p} />)}</datalist>
+    <fieldset class="redes"><legend>Redes</legend>{['instagram', 'facebook', 'linkedin'].map((r) => <label class="check"><input type="checkbox" name="redes" value={r} checked={r !== 'linkedin'} />{r}</label>)}</fieldset>
+    <label class="ancha">Notas o fuente (opcional)<input name="notas" maxlength="300" /></label>
+    <button class="boton boton--coral">Guardar idea</button>
+  </form>
+
+  <nav class="pestanas" aria-label="Estado">{ESTADOS.map(([k, t]) => <a href={url({ estado: k })} aria-current={k === est ? 'page' : undefined}>{t}<span>{cuenta(k)}</span></a>)}</nav>
+  <nav class="pestanas" aria-label="Filtros">
+    <a href={url({ pilar: '' })} aria-current={!pilar ? 'page' : undefined}>Todos los pilares</a>
+    {pilares.map((p) => <a href={url({ pilar: p })} aria-current={p === pilar ? 'page' : undefined}>{p}</a>)}
+  </nav>
+
+  <section class="ideas">
+    {lista.length ? lista.map((i) => (
+      <article class="tarjeta idea">
+        <p class="idea__t">{i.titulo}</p>
+        <div class="chips"><span class="chip">{i.formato}</span>{(i.redes || []).map((r: string) => <span class={`chip ${r}`}>{r}</span>)}{i.pilar && <span class="chip">{i.pilar}</span>}</div>
+        {i.notas && <p class="meta">{i.notas}</p>}
+        {i.fuente && <p class="meta">Fuente: {i.fuente}</p>}
+        <form method="post" action="/api/accion" class="acciones">
+          <input type="hidden" name="accion" value="idea-estado" /><input type="hidden" name="id" value={i.id} /><input type="hidden" name="volver" value={volver} />
+          {[['en-marcha', 'Empezar'], ['hecha', 'Hecha'], ['descartada', 'Descartar'], ['idea', 'Volver a ideas']].filter(([k]) => k !== i.estado).map(([k, t]) => <button class="boton" name="estado" value={k}>{t}</button>)}
+        </form>
+      </article>
+    )) : <p class="vacio">No hay ideas con estos filtros.</p>}
+  </section>
+</Panel>
+<style>
+  .nueva { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; }
+  .nueva .ancha { grid-column: 1 / -1; } .nueva input, .nueva select { width: 100%; }
+  .redes { border: 0; padding: 0; margin: 0; display: flex; gap: 12px; align-items: center; } .redes legend { font-size: 13px; color: var(--gris); padding: 0; margin-bottom: 4px; }
+  .check { display: flex; gap: 6px; align-items: center; color: var(--hueso); } .check input { min-height: 0; }
+  .ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+  .idea { display: grid; gap: 8px; align-content: start; } .idea__t { margin: 0; font-weight: 600; } .idea .meta { margin: 0; }
+</style>

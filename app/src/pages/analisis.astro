@@ -1,0 +1,85 @@
+---
+import Panel from '../layouts/Panel.astro';
+import Linea from '../components/Linea.astro';
+import { informe, historial, metricas28 } from '../lib/datos';
+import { n, fecha, corta } from '../lib/util';
+
+const [inf, hist] = await Promise.all([informe(), historial()]);
+const c28 = metricas28(inf);
+const pubs = (inf?.instagram_publicaciones || []).map((x: any) => ({
+  ...x, m: x.metricas || {},
+  formato: x.tipo === 'REELS' ? 'Reel' : x.formato === 'CAROUSEL_ALBUM' ? 'Carrusel' : 'Imagen',
+}));
+const orden = Astro.url.searchParams.get('orden') || 'fecha';
+const valor = (x: any) => orden === 'alcance' ? x.m.reach || 0 : orden === 'guardados' ? (x.m.saved || 0) + (x.m.shares || 0) : orden === 'comentarios' ? x.comentarios || 0 : Date.parse(x.fecha);
+const tabla = [...pubs].sort((a, b) => valor(b) - valor(a));
+const formatos = Object.entries(pubs.reduce((acc: any, x: any) => { (acc[x.formato] ||= []).push(x); return acc; }, {})).map(([f, l]: any) => ({
+  f, n: l.length,
+  alcance: Math.round(l.reduce((s: number, x: any) => s + (x.m.reach || 0), 0) / l.length),
+  guardados: (l.reduce((s: number, x: any) => s + (x.m.saved || 0) + (x.m.shares || 0), 0) / l.length).toFixed(1),
+  interaccion: (l.reduce((s: number, x: any) => s + (x.m.total_interactions || 0), 0) / l.length).toFixed(1),
+}));
+const maxAlc = Math.max(1, ...formatos.map((f) => f.alcance));
+const mejores = [...pubs].sort((a, b) => ((b.m.reach || 0) + (b.m.saved || 0) * 20 + (b.m.shares || 0) * 20) - ((a.m.reach || 0) + (a.m.saved || 0) * 20 + (a.m.shares || 0) * 20)).slice(0, 3);
+const serie = (k: string) => hist.map((h: any) => ({ x: h.fecha, y: h[k] ?? null }));
+---
+<Panel titulo="Análisis" seccion="analisis">
+  <span slot="cab" class="meta">{inf?.generado ? `Datos de Meta del ${corta(inf.generado)}` : ''}</span>
+
+  <div class="kpis">
+    <div class="kpi"><b>{n(inf?.instagram_cuenta?.followers_count)}</b><span>Seguidores Instagram</span></div>
+    <div class="kpi"><b>{n(c28.reach)}</b><span>Alcance 28 días</span></div>
+    <div class="kpi"><b>{n(c28.accounts_engaged)}</b><span>Cuentas que interactuaron</span></div>
+    <div class="kpi"><b>{n(c28.total_interactions)}</b><span>Interacciones</span></div>
+    <div class="kpi"><b>{n(c28.profile_views)}</b><span>Visitas al perfil</span></div>
+    <div class="kpi"><b>{n(c28.website_clicks)}</b><span>Clics a la web</span></div>
+    <div class="kpi"><b>{n(inf?.facebook_pagina?.followers_count)}</b><span>Seguidores Facebook</span></div>
+  </div>
+
+  <div class="graficos">
+    <Linea titulo="Seguidores en Instagram" puntos={serie('seguidores')} />
+    <Linea titulo="Alcance (28 días)" puntos={serie('alcance_28d')} color="var(--li)" />
+    <Linea titulo="Visitas al perfil (28 días)" puntos={serie('visitas_perfil_28d')} color="var(--ig)" />
+    <Linea titulo="Clics a la web (28 días)" puntos={serie('clics_web_28d')} color="var(--ok)" />
+  </div>
+
+  <section>
+    <h2>Rendimiento por formato <small>media por publicación</small></h2>
+    <div class="formatos">
+      {formatos.map((f) => (
+        <div class="tarjeta formato">
+          <p class="formato__t">{f.f} <span class="meta">{f.n} publicaciones</span></p>
+          <div class="barra"><span style={`width:${(f.alcance / maxAlc) * 100}%`}></span></div>
+          <p class="meta">Alcance medio {n(f.alcance)} · guardados+compartidos {f.guardados} · interacciones {f.interaccion}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>Mejores publicaciones <small>alcance y lo que trae gente nueva (guardados y compartidos)</small></h2>
+    <div class="mejores">
+      {mejores.map((x: any) => <a class="tarjeta mejor" href={x.enlace} target="_blank" rel="noopener"><span class="meta">{fecha(x.fecha, { day: 'numeric', month: 'short' })} · {x.formato}</span><b>{n(x.m.reach)}</b><span>alcance · {n(x.m.saved)} guardados · {n(x.m.shares)} compartidos</span><span class="t">{x.texto || '(sin texto)'}</span></a>)}
+    </div>
+  </section>
+
+  <section>
+    <h2>Todas las publicaciones de Instagram</h2>
+    <nav class="pestanas" aria-label="Ordenar">{[['fecha', 'Más recientes'], ['alcance', 'Más alcance'], ['guardados', 'Más guardados y compartidos'], ['comentarios', 'Más comentarios']].map(([k, t]) => <a href={`/analisis?orden=${k}`} aria-current={k === orden ? 'page' : undefined}>{t}</a>)}</nav>
+    <div class="tabla"><table>
+      <thead><tr><th>Fecha</th><th>Pieza</th><th>Formato</th><th>Alcance</th><th>Vistas</th><th>Guardados</th><th>Compartidos</th><th>Me gusta</th><th>Coment.</th><th>Visionado medio</th></tr></thead>
+      <tbody>{tabla.map((x: any) => <tr><td>{fecha(x.fecha, { day: 'numeric', month: 'short' })}</td><td><a href={x.enlace} target="_blank" rel="noopener">{(x.texto || '(sin texto)').slice(0, 60)}</a></td><td>{x.formato}</td><td class="n">{n(x.m.reach)}</td><td class="n">{n(x.m.views)}</td><td class="n">{n(x.m.saved)}</td><td class="n">{n(x.m.shares)}</td><td class="n">{n(x.likes)}</td><td class="n">{n(x.comentarios)}</td><td class="n">{x.m.ig_reels_avg_watch_time ? `${(x.m.ig_reels_avg_watch_time / 1000).toLocaleString('es-ES', { maximumFractionDigits: 1 })} s` : '—'}</td></tr>)}</tbody>
+    </table></div>
+    <p class="meta">LinkedIn no da métricas por la API gratuita: se consultan en su app. Facebook: la página aún no tiene datos suficientes.</p>
+  </section>
+</Panel>
+<style>
+  .graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .formatos, .mejores { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .formato { display: grid; gap: 8px; } .formato__t { margin: 0; font-weight: 600; }
+  .formato .meta { margin: 0; }
+  .barra { height: 8px; background: var(--tinta); border-radius: 99px; overflow: hidden; } .barra span { display: block; height: 100%; background: var(--coral); }
+  .mejor { display: grid; gap: 4px; text-decoration: none; }
+  .mejor b { font-family: var(--display); font-weight: 400; font-size: 34px; color: var(--coral); }
+  .mejor .t { color: var(--gris); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+</style>

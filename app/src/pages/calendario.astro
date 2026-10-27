@@ -1,0 +1,51 @@
+---
+import Panel from '../layouts/Panel.astro';
+import { cola } from '../lib/datos';
+import { diaClave, hora, TIPO } from '../lib/util';
+
+const ps = (await cola()).filter((p) => p.estado !== 'descartada');
+const hoy = diaClave(new Date().toISOString());
+const mes = /^\d{4}-\d{2}$/.test(Astro.url.searchParams.get('mes') || '') ? Astro.url.searchParams.get('mes')! : hoy.slice(0, 7);
+const [a, m] = mes.split('-').map(Number);
+const primero = new Date(Date.UTC(a, m - 1, 1));
+const dias = new Date(Date.UTC(a, m, 0)).getUTCDate();
+const hueco = (primero.getUTCDay() + 6) % 7; // semana empieza en lunes
+const celdas = [...Array(hueco).fill(null), ...Array.from({ length: dias }, (_, i) => `${mes}-${String(i + 1).padStart(2, '0')}`)];
+const porDia: Record<string, typeof ps> = {};
+for (const p of ps) (porDia[diaClave(p.fecha)] ||= []).push(p);
+Object.values(porDia).forEach((l) => l.sort((x, y) => Date.parse(x.fecha) - Date.parse(y.fecha)));
+const mover = (d: number) => { const t = new Date(Date.UTC(a, m - 1 + d, 1)); return `${t.getUTCFullYear()}-${String(t.getUTCMonth() + 1).padStart(2, '0')}`; };
+const t0 = primero.toLocaleDateString('es-ES', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const titulo = t0.charAt(0).toUpperCase() + t0.slice(1);
+---
+<Panel titulo="Calendario" seccion="calendario">
+  <div slot="cab" class="acciones"><a class="boton" href={`/calendario?mes=${mover(-1)}`}>← Anterior</a><span class="mes">{titulo}</span><a class="boton" href={`/calendario?mes=${mover(1)}`}>Siguiente →</a></div>
+  <div class="leyenda chips"><span class="chip instagram">instagram</span><span class="chip facebook">facebook</span><span class="chip linkedin">linkedin</span><span class="chip borrador">por aprobar</span><span class="chip publicada">publicada</span></div>
+  <div class="cal" role="grid">
+    {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map((d) => <div class="cal__dia" role="columnheader">{d}</div>)}
+    {celdas.map((c) => c === null ? <div class="cal__c cal__c--vacia"></div> : (
+      <div class={`cal__c ${c === hoy ? 'cal__c--hoy' : ''}`} role="gridcell">
+        <span class="cal__n">{Number(c.slice(8))}</span>
+        {(porDia[c] || []).map((p) => (
+          <a href={`/publicaciones?ver=${p.estado === 'borrador' ? 'aprobar' : p.estado === 'publicada' ? 'publicadas' : p.estado === 'error' ? 'error' : 'programadas'}`} class={`ev ev--${p.redes[0]} ev--${p.estado}`} title={`${p.id} · ${p.redes.join(', ')}`}>
+            <b>{hora(p.fecha)}</b> {TIPO[p.tipo] || p.tipo} · {p.redes.map((r) => r.slice(0, 2).toUpperCase()).join('+')}
+          </a>
+        ))}
+      </div>
+    ))}
+  </div>
+</Panel>
+
+<style>
+  .mes { font-family: var(--display); font-size: 20px; min-width: 10ch; text-align: center; }
+  .cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; background: var(--linea); border: 1px solid var(--linea); border-radius: 8px; overflow: hidden; }
+  .cal__dia { background: var(--tinta); padding: 8px; font-family: var(--mono); font-size: 11px; color: var(--gris); text-transform: uppercase; }
+  .cal__c { background: var(--tinta); min-height: 112px; padding: 6px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+  .cal__c--vacia { background: #0C171E; }
+  .cal__c--hoy { box-shadow: inset 0 0 0 2px var(--coral); }
+  .cal__n { font-family: var(--mono); font-size: 12px; color: var(--gris); }
+  .ev { display: block; font-size: 11.5px; line-height: 1.3; padding: 3px 6px; border-radius: 4px; text-decoration: none; background: var(--capa2); border-left: 3px solid var(--gris); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ev--instagram { border-left-color: var(--ig); } .ev--facebook { border-left-color: var(--fb); } .ev--linkedin { border-left-color: var(--li); }
+  .ev--borrador { background: #3A3220; } .ev--publicada { opacity: .6; } .ev--error { background: #3A2422; }
+  @media (max-width: 860px) { .cal { grid-template-columns: minmax(0, 1fr); } .cal__dia, .cal__c--vacia { display: none; } .cal__c { min-height: 0; } }
+</style>

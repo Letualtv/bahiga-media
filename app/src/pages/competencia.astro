@@ -1,0 +1,56 @@
+---
+import Panel from '../layouts/Panel.astro';
+import Linea from '../components/Linea.astro';
+import { competencia, cuentasVigiladas } from '../lib/datos';
+import { n, corta } from '../lib/util';
+
+const [comp, lista] = await Promise.all([competencia(), cuentasVigiladas()]);
+const filas = lista.map((u) => ({ u, d: comp.cuentas?.[u] }));
+---
+<Panel titulo="Competencia" seccion="competencia">
+  <span slot="cab" class="meta">{comp.generado ? `Actualizado el ${corta(comp.generado)} · se refresca cada mañana` : 'Se rellena en la próxima pasada de la mañana'}</span>
+
+  <form method="post" action="/api/accion" class="tarjeta anadir">
+    <input type="hidden" name="accion" value="cuenta-nueva" /><input type="hidden" name="volver" value="/competencia" />
+    <label>Vigilar otra cuenta de Instagram (profesional o de creador)<input name="cuenta" placeholder="nombredeusuario" required pattern="[A-Za-z0-9._]{1,30}" /></label>
+    <button class="boton boton--coral">Añadir</button>
+  </form>
+
+  {filas.map(({ u, d }) => (
+    <section class="tarjeta cuenta">
+      <header class="cuenta__cab">
+        <div><h2><a href={`https://www.instagram.com/${u}/`} target="_blank" rel="noopener">@{u}</a> {d?.nombre && <small>{d.nombre}</small>}</h2>{d?.bio && <p class="meta bio">{d.bio}</p>}</div>
+        <form method="post" action="/api/accion"><input type="hidden" name="accion" value="cuenta-quitar" /><input type="hidden" name="cuenta" value={u} /><input type="hidden" name="volver" value="/competencia" /><button class="boton boton--peligro">Dejar de vigilar</button></form>
+      </header>
+      {!d ? <p class="vacio">Pendiente de la primera lectura.</p> : d.error ? <p class="vacio">No se puede leer: {d.error}</p> : <>
+        <div class="kpis">
+          <div class="kpi"><b>{n(d.seguidores)}</b><span>Seguidores</span></div>
+          <div class="kpi"><b>{n(d.publicaciones_7d)}</b><span>Publicaciones en 7 días</span></div>
+          <div class="kpi"><b>{n(d.publicaciones_30d)}</b><span>En 30 días</span></div>
+          <div class="kpi"><b>{n(d.likes_medios)}</b><span>Me gusta de media</span></div>
+          <div class="kpi"><b>{n(d.comentarios_medios)}</b><span>Comentarios de media</span></div>
+        </div>
+        <div class="dos">
+          <Linea titulo="Seguidores" puntos={(d.historial || []).map((h: any) => ({ x: h.fecha, y: h.seguidores }))} />
+          <div class="tarjeta tipos"><p class="meta">Qué le funciona (últimos 30 días)</p>
+            {Object.entries(d.por_tipo || {}).map(([t, v]: any) => <p><b>{t}</b> · {v.n} publicaciones · {n(v.likes)} me gusta y {n(v.comentarios)} comentarios de media</p>)}
+          </div>
+        </div>
+        <h3 class="meta">Sus mejores publicaciones del mes</h3>
+        <ol class="top">{(d.mejores || []).map((x: any) => <li><a href={x.enlace} target="_blank" rel="noopener">{x.tipo} · {x.fecha}</a> · {n(x.likes)} me gusta · {n(x.comentarios)} comentarios<span>{x.texto}</span></li>)}</ol>
+      </>}
+    </section>
+  ))}
+</Panel>
+<style>
+  .anadir { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+  .cuenta { display: grid; gap: 14px; }
+  .cuenta__cab { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .cuenta h2 { margin: 0; } .cuenta h2 a { text-decoration: none; }
+  .bio { margin: 4px 0 0; white-space: pre-line; max-width: 70ch; }
+  .dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .tipos p { margin: 6px 0; font-size: 13px; }
+  .top { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 13px; }
+  .top span { display: block; color: var(--gris); }
+  h3.meta { margin: 0; }
+</style>
