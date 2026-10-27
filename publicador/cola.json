@@ -131,7 +131,7 @@
   },
   {
    "id": "1029-le-llamamos-de-google",
-   "fecha": "2026-10-29T21:00:00+01:00",
+   "fecha": "2026-10-30T21:00:00+01:00",
    "redes": [
     "instagram",
     "facebook"
@@ -148,7 +148,7 @@
   },
   {
    "id": "1103-8-segundos",
-   "fecha": "2026-11-03T21:00:00+01:00",
+   "fecha": "2026-11-13T21:00:00+01:00",
    "redes": [
     "instagram",
     "facebook"
@@ -436,6 +436,131 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "bs-1029-cuantas-llamadas-pierdes-al",
+   "fecha": "2026-10-29T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "¿Cuántas llamadas pierdes al día mientras atiendes a otro cliente?",
+   "estado": "externa",
+   "origen": "Meta Business Suite",
+   "media": "reel-llamadas.mp4"
+  },
+  {
+   "id": "bs-1102-cuanto-tardas-en-preparar",
+   "fecha": "2026-11-02T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "¿Cuánto tardas en preparar las facturas del trimestre?",
+   "estado": "externa",
+   "origen": "Meta Business Suite",
+   "media": "reel-verifactu-2028.mp4"
+  },
+  {
+   "id": "bs-1103-tareas-que-ya-no",
+   "fecha": "2026-11-03T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "foto",
+   "texto": "Tareas que ya no hace nadie a mano en las empresas con las que trabajamos.",
+   "estado": "externa",
+   "origen": "Meta Business Suite",
+   "media": "auto-1.jpg"
+  },
+  {
+   "id": "bs-1104-te-recomienda-chatgpt",
+   "fecha": "2026-11-04T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "¿Te recomienda ChatGPT?",
+   "estado": "externa",
+   "origen": "Meta Business Suite"
+  },
+  {
+   "id": "bs-1105-lo-que-nos-preguntan",
+   "fecha": "2026-11-05T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "foto",
+   "texto": "Lo que nos preguntan antes de poner un agente con IA.",
+   "estado": "externa",
+   "origen": "Meta Business Suite"
+  },
+  {
+   "id": "bs-1106-57-000-intentos-de",
+   "fecha": "2026-11-06T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "57.000 intentos de entrar en un WordPress en 30 días.",
+   "estado": "externa",
+   "origen": "Meta Business Suite"
+  },
+  {
+   "id": "bs-1109-preguntale-a-chatgpt-por",
+   "fecha": "2026-11-09T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "foto",
+   "texto": "Pregúntale a ChatGPT por un negocio como el tuyo. ¿Sales?",
+   "estado": "externa",
+   "origen": "Meta Business Suite",
+   "media": "geo-1.jpg"
+  },
+  {
+   "id": "bs-1110-tu-web-en-cuatro",
+   "fecha": "2026-11-10T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "Tu web, en cuatro pasos.",
+   "estado": "externa",
+   "origen": "Meta Business Suite"
+  },
+  {
+   "id": "bs-1111-alguien-vigila-tu-web",
+   "fecha": "2026-11-11T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "foto",
+   "texto": "¿Alguien vigila tu web?",
+   "estado": "externa",
+   "origen": "Meta Business Suite"
+  },
+  {
+   "id": "bs-1112-habitual-la-tarjeta-de",
+   "fecha": "2026-11-12T18:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "texto": "Habitual: la tarjeta de sellos en el móvil para bares, peluquerías y tiendas.",
+   "estado": "externa",
+   "origen": "Meta Business Suite",
+   "media": "reel-habitual.mp4"
   }
  ]
 }

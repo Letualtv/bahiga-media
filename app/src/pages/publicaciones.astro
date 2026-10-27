@@ -5,7 +5,7 @@ import { cola } from '../lib/datos';
 
 const ps = await cola();
 const PEST = [
-  ['programadas', 'Programadas', (p: any) => p.estado === 'pendiente'],
+  ['programadas', 'Programadas', (p: any) => p.estado === 'pendiente' || (p.estado === 'externa' && Date.parse(p.fecha) > Date.now() - 864e5)],
   ['aprobar', 'Por aprobar', (p: any) => p.estado === 'borrador'],
   ['publicadas', 'Publicadas', (p: any) => p.estado === 'publicada'],
   ['error', 'Con error', (p: any) => p.estado === 'error'],

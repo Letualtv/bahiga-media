@@ -16,7 +16,7 @@ const oc = { accion: '', id: p.id, volver };
         : <img class="pmini" src={mini.url} alt="" loading="lazy" />)
         : <span class="pmini"></span>}
       <span class="pieza__info">
-        <span class="pieza__meta">{corta(p.fecha)} {p.redes.map((r) => <span class={`red ${r}`}>{RED[r] || r}</span>)} <span class="meta">{TIPO[p.tipo] || p.tipo}</span></span>
+        <span class="pieza__meta">{corta(p.fecha)} {p.redes.map((r) => <span class={`red ${r}`}>{RED[r] || r}</span>)} <span class="meta">{TIPO[p.tipo] || p.tipo}</span>{p.estado === 'externa' && <span class="meta">· en Business Suite</span>}</span>
         <span class="pieza__titulo">{tituloDe(p)}</span>
         {p.error && <span class="pieza__error">{p.error}</span>}
       </span>
@@ -25,12 +25,13 @@ const oc = { accion: '', id: p.id, volver };
       {texto && <pre class="pieza__texto">{texto}</pre>}
       {p.texto_linkedin && p.texto && <><p class="meta">Texto de LinkedIn</p><pre class="pieza__texto">{p.texto_linkedin}</pre></>}
       {p.primer_comentario && <><p class="meta">Primer comentario</p><pre class="pieza__texto">{p.primer_comentario}</pre></>}
+      {p.estado === 'externa' && <p class="meta">Programada en Meta Business Suite: sale sola desde allí. Para cambiarla, hazlo en Business Suite.</p>}
       <div class="acciones">
         {['pendiente', 'borrador', 'error'].includes(p.estado) && (
           <form method="post" action="/api/accion" class="hora"><input type="hidden" name="accion" value="hora" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} />
             <input type="datetime-local" name="fecha" value={aLocal(p.fecha)} aria-label="Nueva fecha" required /><button class="boton">Cambiar hora</button></form>
         )}
-        {p.estado !== 'publicada' && p.estado !== 'descartada' && <form method="post" action="/api/accion"><input type="hidden" name="accion" value="ahora" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton">Publicar ahora</button></form>}
+        {['pendiente', 'borrador', 'error'].includes(p.estado) && <form method="post" action="/api/accion"><input type="hidden" name="accion" value="ahora" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton">Publicar ahora</button></form>}
         {p.estado === 'pendiente' && <form method="post" action="/api/accion"><input type="hidden" name="accion" value="pausar" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton">Pausar</button></form>}
         {['borrador', 'pendiente', 'error'].includes(p.estado) && <form method="post" action="/api/accion"><input type="hidden" name="accion" value="descartar" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton boton--peligro">Descartar</button></form>}
       </div>

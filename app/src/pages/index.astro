@@ -8,7 +8,7 @@ const [ps, inf, com, pend] = await Promise.all([cola(), informe(), comentarios()
 const c28 = metricas28(inf);
 const sem = inf?.resumen_semana || {};
 const ahora = Date.now();
-const semana = ps.filter((p) => ['pendiente', 'borrador'].includes(p.estado) && Date.parse(p.fecha) >= ahora - 36e5 && Date.parse(p.fecha) < ahora + 7 * 864e5)
+const semana = ps.filter((p) => ['pendiente', 'borrador', 'externa'].includes(p.estado) && Date.parse(p.fecha) >= ahora - 36e5 && Date.parse(p.fecha) < ahora + 7 * 864e5)
   .sort((a, b) => Date.parse(a.fecha) - Date.parse(b.fecha));
 const redesDe = (l: Pub[]) => [...new Set(l.flatMap((p) => p.redes))];
 const portada = (l: Pub[]) => miniatura(l.find((p) => p.tipo !== 'historia') || l[0]);

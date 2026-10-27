@@ -3,12 +3,12 @@ import { RAW } from './github';
 export type Pub = {
   id: string; fecha: string; redes: string[]; tipo: string; estado: string;
   media?: string; medios?: string[]; texto?: string; texto_linkedin?: string; primer_comentario?: string;
-  musica?: { buscar?: string; elegida?: string }; ensayo?: boolean; error?: string;
+  musica?: { buscar?: string; elegida?: string }; ensayo?: boolean; error?: string; origen?: string;
   resultado?: Record<string, { id?: string; permalink?: string; hora?: string }>;
 };
 
 export const TIPO: Record<string, string> = { reel: 'Reel', historia: 'Historia', foto: 'Imagen', carrusel: 'Carrusel', documento: 'Carrusel PDF' };
-export const ESTADO: Record<string, string> = { pendiente: 'Programada', borrador: 'Por aprobar', publicada: 'Publicada', error: 'Con error', descartada: 'Descartada' };
+export const ESTADO: Record<string, string> = { pendiente: 'Programada', borrador: 'Por aprobar', publicada: 'Publicada', error: 'Con error', descartada: 'Descartada', externa: 'En Business Suite' };
 
 export const n = (v: unknown) => (v == null || v === '' || Number.isNaN(Number(v)) ? '—' : Number(v).toLocaleString('es-ES'));
 
