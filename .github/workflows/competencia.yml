@@ -1,0 +1,36 @@
+name: Meta · competencia
+
+# Una vez al día (lo lanza el reloj): cifras y mejores publicaciones de las cuentas vigiladas.
+on:
+  push:
+    paths: ['publicador/competencia.mjs', 'publicador/competencia-cuentas.json', '.github/workflows/competencia.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: competencia
+  cancel-in-progress: false
+
+jobs:
+  competencia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Leer cuentas
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_ID: '17841430450985904'
+        run: node publicador/competencia.mjs
+      - name: Guardar
+        run: |
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add publicador/competencia.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Competencia del día"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done

@@ -1,0 +1,665 @@
+{
+ "ideas": [
+  {
+   "id": "i001",
+   "titulo": "Monté mi community manager con Claude Code (publica en 3 redes y propone noticias solo)",
+   "formato": "Carrusel 8 láminas con capturas y prompts",
+   "redes": [
+    "linkedin",
+    "instagram"
+   ],
+   "pilar": "Build in public",
+   "fuente": "Carrusel de @marcosrazzetti (panel de contenido; 934 comentarios con «Comenta CLAUDE»)",
+   "estado": "en-marcha",
+   "notas": "Cierre «Comenta CLAUDE y te mando los prompts»; En preparación",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i002",
+   "titulo": "Revisa tu web en 1 minuto (bahiga.es/revisa-tu-web)",
+   "formato": "Reel + carrusel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Imán de clientes",
+   "fuente": "Herramienta propia",
+   "estado": "en-marcha",
+   "notas": "Gancho para Black Friday: revisión gratis hasta el 30 de noviembre; Pendiente de la clave de Google",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i003",
+   "titulo": "Cuaderno de campo digital obligatorio desde el 1/1/2027",
+   "formato": "Carrusel noticia",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Normativa",
+   "fuente": "Junta de Andalucía · RD 1039/2025",
+   "estado": "programada",
+   "notas": "Recordatorio en diciembre; Programado en LinkedIn el 11/11",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i004",
+   "titulo": "Lo que me hubiera gustado saber antes de abrir la web de mi negocio",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero (120 ideas)",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i005",
+   "titulo": "3 errores que comete casi todo el mundo al pedir una web",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Ojo: ya publicado como texto en LinkedIn el 18/10; cambiar ángulo",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i006",
+   "titulo": "Si tuviera que montar la web de un comercio desde cero haría esto",
+   "formato": "Reel con Antonio a cámara",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Proceso",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i007",
+   "titulo": "5 señales de que tu web te está costando clientes",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Cierre con la herramienta Revisa tu web",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i008",
+   "titulo": "Un mito de las webs que mucha gente sigue creyendo (que basta con tenerla)",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Opinión",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i009",
+   "titulo": "La pregunta que más me hacen los comercios: ¿cuánto cuesta una web?",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Enlazar con el carrusel de precios",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i010",
+   "titulo": "Un consejo de mi sector con el que no estoy de acuerdo",
+   "formato": "Texto + imagen",
+   "redes": [
+    "linkedin"
+   ],
+   "pilar": "Opinión",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i011",
+   "titulo": "Caso real: el problema y lo que hicimos para resolverlo",
+   "formato": "Carrusel caso",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Caso real",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Solo con cliente real y permiso",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i012",
+   "titulo": "Antes y después de una web (velocidad y contactos)",
+   "formato": "Reel antes/después",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Caso real",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Solo con datos reales",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i013",
+   "titulo": "El error más importante que cometí como autónomo y qué aprendí",
+   "formato": "Texto",
+   "redes": [
+    "linkedin"
+   ],
+   "pilar": "Build in public",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i014",
+   "titulo": "Un truco rápido para tu ficha de Google que puedes aplicar hoy",
+   "formato": "Reel corto",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i015",
+   "titulo": "3 herramientas gratuitas que recomiendo a cualquier comercio",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Herramientas",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Incluir PageSpeed y Google Business",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i016",
+   "titulo": "Una opinión impopular: no necesitas una app para tu negocio",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Opinión",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i017",
+   "titulo": "Respondiendo a «eso de la IA no es para mi negocio»",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Objeciones",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i018",
+   "titulo": "Lo primero que miro cuando un comercio me enseña su web",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Proceso",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i019",
+   "titulo": "La diferencia entre una web de plantilla y una web a medida",
+   "formato": "Carrusel comparativo",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i020",
+   "titulo": "3 cosas que deberías saber antes de contratar una web",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i021",
+   "titulo": "El problema no es tu web: es que nadie sabe que existe",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Opinión",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i022",
+   "titulo": "Si solo pudiera darte un consejo para tu web sería este",
+   "formato": "Reel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i023",
+   "titulo": "Encuesta: ¿qué te cuesta más: responder mensajes o publicar en redes?",
+   "formato": "Historia encuesta",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Interacción",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i024",
+   "titulo": "Caja de preguntas: ¿qué es lo que más te frena para tener web?",
+   "formato": "Historia preguntas",
+   "redes": [
+    "instagram"
+   ],
+   "pilar": "Interacción",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Las respuestas dan temas para reels",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i025",
+   "titulo": "Quiz mito o realidad sobre webs y Google",
+   "formato": "Historia quiz",
+   "redes": [
+    "instagram"
+   ],
+   "pilar": "Interacción",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i026",
+   "titulo": "Detrás de cámaras: así trabajo un proyecto desde Priego",
+   "formato": "Historias",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Build in public",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i027",
+   "titulo": "Mini caso de cliente en 3 historias",
+   "formato": "Historias",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Caso real",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Con permiso del cliente",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i028",
+   "titulo": "Hoy estoy trabajando en... y hay algo interesante que quiero enseñarte",
+   "formato": "Historias",
+   "redes": [
+    "instagram"
+   ],
+   "pilar": "Build in public",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i029",
+   "titulo": "Vota entre dos diseños para la web de un cliente",
+   "formato": "Historia encuesta",
+   "redes": [
+    "instagram"
+   ],
+   "pilar": "Interacción",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i030",
+   "titulo": "Mini clase de 3 historias: cómo mirar la velocidad de tu web",
+   "formato": "Historias",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i031",
+   "titulo": "7 cosas que me hubiera gustado saber antes de vender online",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i032",
+   "titulo": "Mito vs. realidad: 5 cosas que crees sobre aparecer en Google",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i033",
+   "titulo": "Checklist: ¿está bien tu web?",
+   "formato": "Carrusel guardable",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Imán de clientes",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Es el carrusel pendiente «Revisa tu web en 5 minutos»",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i034",
+   "titulo": "5 red flags al contratar a quien te hace la web",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i035",
+   "titulo": "Los términos de webs que todo el mundo usa explicados fácil (dominio y hosting)",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i036",
+   "titulo": "Cómo conseguir más reseñas en Google paso a paso",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i037",
+   "titulo": "Tienda online o vender por WhatsApp: cuál te conviene",
+   "formato": "Carrusel comparativo",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Educativo",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i038",
+   "titulo": "Las 7 preguntas que más me hacen sobre tiendas online",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Objeciones",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i039",
+   "titulo": "El coste invisible de no tener la web actualizada",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Seguridad",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Enlazar con casos de seguridad",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i040",
+   "titulo": "Qué pasa detrás de cámaras cuando hacemos una web",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Proceso",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i041",
+   "titulo": "Lo que muchos clientes entienden mal sobre el SEO",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Opinión",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i042",
+   "titulo": "Cuánto te está costando no contestar los mensajes a tiempo",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Automatización",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Encaja con agentes y chatbots",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i043",
+   "titulo": "Cómo saber cuándo necesitas ayuda profesional con tu web",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i044",
+   "titulo": "Qué pasa después de contratar tu web paso a paso",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Proceso",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Ya existe el de «Cómo trabajamos»; usar otro ángulo",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i045",
+   "titulo": "Por qué una web a medida cuesta lo que cuesta",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i046",
+   "titulo": "Hacerlo tú mismo o contratar: ventajas y desventajas",
+   "formato": "Carrusel comparativo",
+   "redes": [
+    "instagram",
+    "linkedin"
+   ],
+   "pilar": "Precio",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "",
+   "creada": "2026-10-27"
+  },
+  {
+   "id": "i047",
+   "titulo": "Si hoy tu web no trae clientes estos son tus próximos 3 pasos",
+   "formato": "Carrusel",
+   "redes": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pilar": "Imán de clientes",
+   "fuente": "Plantillas @julioiero",
+   "estado": "idea",
+   "notas": "Cierre con Revisa tu web",
+   "creada": "2026-10-27"
+  }
+ ]
+}

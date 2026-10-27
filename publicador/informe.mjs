@@ -1,6 +1,6 @@
 // Saca las métricas de Instagram (@bahiga.estudio) y Facebook (bahiga.es) y las
 // guarda en publicador/informe.json. No imprime ni guarda el token.
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 const G = 'https://graph.facebook.com/v24.0';
 const { META_TOKEN: T, IG_ID, PAGE_ID } = process.env;
 
@@ -83,4 +83,21 @@ Object.assign(informe, { generado: resto.generado, resumen_semana }, resto);
 const limpio = JSON.stringify(informe, (k, v) => (k === 'paging' ? undefined : v), 1);
 if (/access_token|EAA[A-Za-z0-9]{20,}/.test(limpio) || limpio.includes(T)) throw new Error('El informe contiene el token: no se guarda.');
 writeFileSync(new URL('./informe.json', import.meta.url), limpio + '\n');
+
+// Histórico: una foto por día con las cifras de cuenta, para dibujar la evolución en el panel.
+const HIST = new URL('./informe-historial.json', import.meta.url);
+let historial = [];
+try { historial = JSON.parse(readFileSync(HIST, 'utf8')); } catch {}
+const c28 = Object.fromEntries((informe.instagram_cuenta_28d?.data || []).map((m) => [m.name, m.total_value?.value]));
+const hoy = informe.generado.slice(0, 10);
+historial = historial.filter((h) => h.fecha !== hoy);
+historial.push({
+  fecha: hoy,
+  seguidores: informe.instagram_cuenta?.followers_count ?? null,
+  publicaciones: informe.instagram_cuenta?.media_count ?? null,
+  alcance_28d: c28.reach ?? null, vistas_28d: c28.views ?? null, visitas_perfil_28d: c28.profile_views ?? null,
+  clics_web_28d: c28.website_clicks ?? null, interacciones_28d: c28.total_interactions ?? null,
+  fb_seguidores: informe.facebook_pagina?.followers_count ?? null,
+});
+writeFileSync(HIST, JSON.stringify(historial.slice(-400), null, 1) + '\n');
 console.log('Informe guardado.');
