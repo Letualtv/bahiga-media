@@ -380,10 +380,9 @@
     "buscar": "upbeat",
     "elegida": "Good Mornin' · Jumbo"
    },
-   "estado": "error",
+   "estado": "pendiente",
    "resultado": {},
-   "intentos": 1,
-   "error": "instagram: Invalid parameter (código 100/2207065)"
+   "intentos": 0
   }
  ]
 }
