@@ -49,7 +49,7 @@ Publica en Instagram (@bahiga.estudio), en la página de Facebook bahiga.es y en
 
 ## Propuestas de la rutina de noticias
 
-La rutina de noticias crea las piezas con `motion/noticia/render.mjs` (carrusel de 3 láminas 1080×1350 e historia 1080×1920 en `media/noticias/`) y las añade a la cola. Instagram y Facebook: carrusel + historia. LinkedIn: solo noticias del tema de Antonio (webs, seguridad web, Google para negocios, normativa digital de pymes), como mucho una por semana y siempre con aprobación, nunca directa.
+La rutina de noticias crea las piezas con `motion/noticia/render.mjs` (carrusel de 4 láminas 1080×1350: titular, qué pasa, qué hacer y cierre «cuenta con Bahiga» e historia 1080×1920 en `media/noticias/`) y las añade a la cola. Instagram y Facebook: carrusel + historia. LinkedIn: solo noticias del tema de Antonio (webs, seguridad web, Google para negocios, normativa digital de pymes), como mucho una por semana y siempre con aprobación, nunca directa.
 
 - URGENTE: en `pendiente`, para que salgan en el siguiente pase del reloj (menos de 10 minutos), y avisa a Antonio de lo publicado.
 - PROGRAMABLE: en `borrador`, con la fecha propuesta, y abre una incidencia con la etiqueta `aprobacion` y la marca `<!-- ids: ... -->`. Antonio contesta en la incidencia con «sí» (sale a la hora propuesta), «ahora» (sale en minutos) o «no» (se descarta). `aprobar.yml` aplica la decisión, comenta el resultado y cierra la incidencia. Solo cuentan los comentarios de Letualtv.
