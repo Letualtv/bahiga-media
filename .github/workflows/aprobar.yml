@@ -1,0 +1,47 @@
+name: Aprobar propuestas
+
+# Antonio contesta «sí», «ahora» o «no» en una incidencia de propuesta y la cola se actualiza sola.
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: cola
+  cancel-in-progress: false
+
+jobs:
+  aprobar:
+    if: contains(github.event.issue.labels.*.name, 'aprobacion') && github.event.comment.user.login == 'Letualtv'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Aplicar la decisión
+        env:
+          DECISION_TEXTO: ${{ github.event.comment.body }}
+          DECISION_AUTOR: ${{ github.event.comment.user.login }}
+          CUERPO: ${{ github.event.issue.body }}
+        run: node publicador/aprobar.mjs
+      - name: Guardar y avisar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          R=$(cat publicador/aprobar-resultado.txt); rm publicador/aprobar-resultado.txt
+          [ "$R" = "IGNORAR" ] && exit 0
+          git config user.name "bahiga-publicador"; git config user.email "info@bahiga.es"
+          git add publicador/cola.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Propuesta #$NUM: decisión de Antonio"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
+            gh api -X POST "repos/$GITHUB_REPOSITORY/actions/workflows/publicar.yml/dispatches" -f ref=main || true
+          fi
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body "$R"
+          gh issue close "$NUM" --repo "$GITHUB_REPOSITORY"

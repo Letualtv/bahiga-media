@@ -46,3 +46,10 @@ Publica en Instagram (@bahiga.estudio), en la página de Facebook bahiga.es y en
 - Instagram: 100 publicaciones por API cada 24 horas. No se puede editar el texto de algo ya publicado (sí borrarlo). Las historias no admiten stickers ni enlaces.
 - Facebook: las historias de vídeo duran como máximo 60 segundos y los reels entre 3 y 90.
 - WhatsApp (estados y canal) no tiene API: sigue siendo a mano.
+
+## Propuestas de la rutina de noticias
+
+La rutina de noticias crea las tarjetas con `motion/noticia/render.mjs` (feed 1080×1350 e historia 1080×1920 en `media/noticias/`) y las añade a la cola:
+
+- URGENTE: en `pendiente`, para que salgan en el siguiente pase del reloj (menos de 10 minutos), y avisa a Antonio de lo publicado.
+- PROGRAMABLE: en `borrador`, con la fecha propuesta, y abre una incidencia con la etiqueta `aprobacion` y la marca `<!-- ids: ... -->`. Antonio contesta en la incidencia con «sí» (sale a la hora propuesta), «ahora» (sale en minutos) o «no» (se descarta). `aprobar.yml` aplica la decisión, comenta el resultado y cierra la incidencia. Solo cuentan los comentarios de Letualtv.
