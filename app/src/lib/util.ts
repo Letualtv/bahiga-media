@@ -35,5 +35,11 @@ export function miniatura(p: Pub): { url: string; video: boolean } | null {
   return { url: /^https?:/.test(m) ? m : RAW + m.replace(/^\//, ''), video: /\.(mp4|mov)$/i.test(m) };
 }
 
+/* Las piezas de una misma noticia comparten raíz: n-1027-whatsapp-baile-ig, -fb, -historia… */
+export const grupo = (id: string) => id.replace(/-(ig|fb|historia|li|feed)$/, '');
+export const RED: Record<string, string> = { instagram: 'IG', facebook: 'FB', linkedin: 'LI' };
+const deId = (id: string) => grupo(id).replace(/^(n-)?\d{4}-/, '').replace(/-/g, ' ');
+export const tituloDe = (p: Pub) => (textoDe(p).split('\n').find((l) => l.trim()) || (p.tipo === 'historia' ? `Historia: ${deId(p.id)}` : deId(p.id))).trim();
+
 export const textoDe = (p: Pub) => p.texto || p.texto_linkedin || '';
 export const enlaceDe = (p: Pub) => Object.values(p.resultado || {}).find((r) => r.permalink)?.permalink;

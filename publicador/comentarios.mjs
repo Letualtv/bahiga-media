@@ -86,14 +86,23 @@ for (const [plataforma, red] of [['instagram', 'Instagram'], ['messenger', 'Face
   });
 }
 
-// Aviso: una incidencia en GitHub por pasada (llega al correo y al móvil al momento).
-if (nuevos.length && GITHUB_TOKEN) {
-  const cuerpo = nuevos.map((n) => `- **${n.red}** · ${n.usuario}: «${n.texto}»\n  ${n.enlace}\n  ${n.privado ? 'Mensaje privado: contesta desde la bandeja.' : n.respondido ? 'Respondido en público; falta el privado.' : 'Ya estaba respondido.'}`).join('\n');
+// Aviso: al panel (guarda el mensaje en el servidor y avisa al móvil). Los textos no van a GitHub
+// porque el repositorio es público. Si el panel no responde, queda una incidencia sin datos personales.
+let avisado = false;
+if (nuevos.length && process.env.PANEL_AVISOS) {
+  await fetch('https://contenido.bahiga.es/api/avisar', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.PANEL_AVISOS}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ avisos: nuevos }),
+  }).then((r) => { avisado = r.ok; console.log(r.ok ? 'Aviso enviado al panel.' : `El panel respondió ${r.status}.`); }).catch((e) => console.error(`Panel: ${e.message}`));
+}
+if (nuevos.length && !avisado && GITHUB_TOKEN) {
+  const redes = [...new Set(nuevos.map((n) => n.red))].join(', ');
   await fetch(`https://api.github.com/repos/${GITHUB_REPOSITORY}/issues`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${GITHUB_TOKEN}`, Accept: 'application/vnd.github+json' },
-    body: JSON.stringify({ title: `${nuevos.length} mensaje${nuevos.length > 1 ? 's' : ''} nuevo${nuevos.length > 1 ? 's' : ''} en redes (${nuevos.map((n) => n.usuario).join(', ')})`, body: `${cuerpo}\n\nContesta por privado cuanto antes: la respuesta pública ya está puesta.`, labels: ['comentarios'] }),
-  }).then((r) => console.log(r.ok ? 'Aviso creado.' : `No se pudo crear el aviso (${r.status}).`));
+    body: JSON.stringify({ title: `${nuevos.length} mensaje${nuevos.length > 1 ? 's' : ''} nuevo${nuevos.length > 1 ? 's' : ''} en redes`, body: `Hay mensajes o comentarios con palabra clave en: ${redes}.\n\nMíralos en la bandeja de Instagram y Facebook. (El panel no estaba disponible para guardarlos.)`, labels: ['comentarios'] }),
+  }).then((r) => console.log(r.ok ? 'Aviso creado en GitHub.' : `No se pudo crear el aviso (${r.status}).`));
 }
 
 estado.encontrados = nuevos.length;

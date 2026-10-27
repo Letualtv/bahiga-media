@@ -14,16 +14,26 @@ const PEST = [
 const tab = Astro.url.searchParams.get('ver') || 'programadas';
 const red = Astro.url.searchParams.get('red') || '';
 const actual = PEST.find((t) => t[0] === tab) || PEST[0];
-let lista = ps.filter(actual[2]).filter((p) => !red || p.redes.includes(red));
+const filtro = (p: any) => !red || (red === 'noticias' ? p.id.startsWith('n-') : p.redes.includes(red));
+let lista = ps.filter(actual[2]).filter(filtro);
 lista = lista.sort((a, b) => (tab === 'publicadas' || tab === 'descartadas' ? Date.parse(b.fecha) - Date.parse(a.fecha) : Date.parse(a.fecha) - Date.parse(b.fecha)));
 const volver = `/publicaciones?ver=${tab}${red ? `&red=${red}` : ''}`;
 ---
 <Panel titulo="Publicaciones" seccion="publicaciones">
-  <nav class="pestanas" aria-label="Estado">
-    {PEST.map(([k, t, f]) => <a href={`/publicaciones?ver=${k}${red ? `&red=${red}` : ''}`} aria-current={k === tab ? 'page' : undefined}>{t}<span>{ps.filter(f).length}</span></a>)}
-  </nav>
-  <nav class="pestanas" aria-label="Red">
-    {[['', 'Todas'], ['instagram', 'Instagram'], ['facebook', 'Facebook'], ['linkedin', 'LinkedIn']].map(([k, t]) => <a href={`/publicaciones?ver=${tab}${k ? `&red=${k}` : ''}`} aria-current={k === red ? 'page' : undefined}>{t}</a>)}
-  </nav>
-  <section>{lista.length ? lista.map((p) => <Pieza p={p} volver={volver} />) : <p class="vacio">No hay publicaciones en este apartado.</p>}</section>
+  <div class="filtros">
+    <nav class="pestanas" aria-label="Estado">
+      {PEST.map(([k, t, f]) => { const c = ps.filter(f).filter(filtro).length; return (k === tab || c > 0) && <a href={`/publicaciones?ver=${k}${red ? `&red=${red}` : ''}`} aria-current={k === tab ? 'page' : undefined}>{t}<span>{c}</span></a>; })}
+    </nav>
+    <form method="get" class="red-sel">
+      <input type="hidden" name="ver" value={tab} />
+      <select name="red" aria-label="Red" onchange="this.form.submit()">
+        {[['', 'Todas las redes'], ['instagram', 'Instagram'], ['facebook', 'Facebook'], ['linkedin', 'LinkedIn'], ['noticias', 'Solo noticias']].map(([k, t]) => <option value={k} selected={k === red}>{t}</option>)}
+      </select>
+    </form>
+  </div>
+  <section>{lista.length ? lista.map((p) => <Pieza p={p} volver={volver} />) : <p class="vacio">No hay nada aquí.</p>}</section>
 </Panel>
+<style>
+  .filtros { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--linea); padding-bottom: 10px; }
+  .filtros .pestanas { border: 0; padding: 0; }
+</style>

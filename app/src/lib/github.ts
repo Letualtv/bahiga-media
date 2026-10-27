@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 /* Acceso a bahiga-media por la API de GitHub. El panel no guarda datos propios:
    lee y escribe los mismos ficheros que usan el publicador y las rutinas
    (cola, informe, competencia, ideas), así que todo sigue en un único sitio.
@@ -25,6 +26,11 @@ export async function gh(metodo: string, ruta: string, cuerpo?: unknown) {
 
 /* Lee un fichero JSON del repositorio. Caché corta para que el panel vaya ágil. */
 export async function leer<T = any>(ruta: string, { fresco = false, defecto }: { fresco?: boolean; defecto?: T } = {}): Promise<{ datos: T; sha: string }> {
+  // Solo para probar en local: lee de una copia del repositorio en disco.
+  if (process.env.PANEL_REPO_LOCAL) {
+    try { return { datos: JSON.parse(readFileSync(`${process.env.PANEL_REPO_LOCAL}/${ruta}`, 'utf8')), sha: 'local' }; }
+    catch (e) { if (defecto !== undefined) return { datos: defecto, sha: '' }; throw e; }
+  }
   const c = cache.get(ruta);
   if (!fresco && c && c.hasta > Date.now()) return { datos: c.datos as T, sha: c.sha };
   try {

@@ -1,0 +1,15 @@
+{
+  "name": "Bahiga · Contenido",
+  "short_name": "Bahiga",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0F1C24",
+  "theme_color": "#0F1C24",
+  "lang": "es",
+  "icons": [
+    { "src": "/iconos/192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/iconos/512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/iconos/512-mascara.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

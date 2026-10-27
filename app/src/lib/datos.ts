@@ -15,3 +15,8 @@ export const comentarios = async () => (await leer<any>('publicador/comentarios-
 export function metricas28(inf: any) {
   return Object.fromEntries((inf?.instagram_cuenta_28d?.data || []).map((m: any) => [m.name, m.total_value?.value]));
 }
+
+/* Ideas nuevas: las que ha añadido otro (la rutina, Claude) con número mayor que la última vista. */
+export const VISTO_IDEAS = 'bahiga_ideas_vistas';
+export const numIdea = (id: string) => Number(String(id).slice(1)) || 0;
+export const esNueva = (i: any, visto: number) => numIdea(i.id) > visto && !/panel/i.test(i.fuente || '');

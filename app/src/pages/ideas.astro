@@ -1,55 +1,84 @@
 ---
 import Panel from '../layouts/Panel.astro';
-import { ideas } from '../lib/datos';
+import { ideas, VISTO_IDEAS, numIdea, esNueva } from '../lib/datos';
+import { COOKIE_IDEAS } from '../lib/pendiente';
 
 const todas = await ideas();
+// Lo nuevo se marca con lo visto hasta ahora; después cuenta como visto.
+const visto = Number(Astro.cookies.get(VISTO_IDEAS)?.value || 0);
+const max = Math.max(0, ...todas.map((i) => numIdea(i.id)));
+if (max > visto) Astro.cookies.set(VISTO_IDEAS, String(max), COOKIE_IDEAS);
+
 const q = Astro.url.searchParams;
-const est = q.get('estado') || 'idea', pilar = q.get('pilar') || '', red = q.get('red') || '';
+const est = q.get('estado') || 'idea', pilar = q.get('pilar') || '';
 const pilares = [...new Set(todas.map((i) => i.pilar).filter(Boolean))].sort();
-const lista = todas.filter((i) => (!est || est === 'todas' || i.estado === est) && (!pilar || i.pilar === pilar) && (!red || i.redes?.includes(red)));
-const ESTADOS = [['idea', 'Ideas'], ['en-marcha', 'En marcha'], ['programada', 'Programadas'], ['hecha', 'Hechas'], ['descartada', 'Descartadas'], ['todas', 'Todas']];
+const lista = todas.filter((i) => (est === 'todas' || i.estado === est) && (!pilar || i.pilar === pilar))
+  .sort((a, b) => Number(esNueva(b, visto)) - Number(esNueva(a, visto)));
+const ESTADOS = [['idea', 'Ideas'], ['en-marcha', 'En marcha'], ['hecha', 'Hechas'], ['descartada', 'Descartadas'], ['todas', 'Todas']];
 const cuenta = (e: string) => e === 'todas' ? todas.length : todas.filter((i) => i.estado === e).length;
-const url = (cambio: Record<string, string>) => { const p = new URLSearchParams({ estado: est, pilar, red, ...cambio }); [...p.keys()].forEach((k) => !p.get(k) && p.delete(k)); return `/ideas?${p}`; };
+const url = (cambio: Record<string, string>) => { const p = new URLSearchParams({ estado: est, pilar, ...cambio }); [...p.keys()].forEach((k) => !p.get(k) && p.delete(k)); return `/ideas?${p}`; };
 const volver = url({});
+const SIGUIENTE: Record<string, [string, string]> = { idea: ['en-marcha', 'Empezar'], 'en-marcha': ['hecha', 'Hecha'], programada: ['hecha', 'Hecha'], hecha: ['idea', 'Reabrir'], descartada: ['idea', 'Recuperar'] };
 ---
 <Panel titulo="Ideas" seccion="ideas">
-  <form method="post" action="/api/accion" class="tarjeta nueva">
+  <form method="post" action="/api/accion" class="nueva">
     <input type="hidden" name="accion" value="idea-nueva" /><input type="hidden" name="volver" value={volver} />
-    <label class="ancha">Nueva idea<input name="titulo" required maxlength="200" placeholder="Por ejemplo: 3 cosas que revisaría en la web de una panadería" /></label>
-    <label>Formato<select name="formato"><option>Reel</option><option>Carrusel</option><option>Historias</option><option>Texto + imagen</option><option>Carrusel PDF</option></select></label>
-    <label>Pilar<input name="pilar" list="pilares" placeholder="Educativo" /></label>
-    <datalist id="pilares">{pilares.map((p) => <option value={p} />)}</datalist>
-    <fieldset class="redes"><legend>Redes</legend>{['instagram', 'facebook', 'linkedin'].map((r) => <label class="check"><input type="checkbox" name="redes" value={r} checked={r !== 'linkedin'} />{r}</label>)}</fieldset>
-    <label class="ancha">Notas o fuente (opcional)<input name="notas" maxlength="300" /></label>
-    <button class="boton boton--coral">Guardar idea</button>
+    <div class="nueva__linea">
+      <input name="titulo" required maxlength="200" placeholder="Apunta una idea" aria-label="Nueva idea" />
+      <button class="boton boton--coral">Guardar</button>
+    </div>
+    <details>
+      <summary class="meta">Formato, redes y notas</summary>
+      <div class="nueva__mas">
+        <label>Formato<select name="formato"><option>Reel</option><option>Carrusel</option><option>Historias</option><option>Texto + imagen</option><option>Carrusel PDF</option></select></label>
+        <label>Pilar<input name="pilar" list="pilares" /></label>
+        <datalist id="pilares">{pilares.map((p) => <option value={p} />)}</datalist>
+        <fieldset class="redes"><legend>Redes</legend>{['instagram', 'facebook', 'linkedin'].map((r) => <label class="check"><input type="checkbox" name="redes" value={r} checked={r !== 'linkedin'} />{r}</label>)}</fieldset>
+        <label class="ancha">Notas<input name="notas" maxlength="300" /></label>
+      </div>
+    </details>
   </form>
 
-  <nav class="pestanas" aria-label="Estado">{ESTADOS.map(([k, t]) => <a href={url({ estado: k })} aria-current={k === est ? 'page' : undefined}>{t}<span>{cuenta(k)}</span></a>)}</nav>
-  <nav class="pestanas" aria-label="Filtros">
-    <a href={url({ pilar: '' })} aria-current={!pilar ? 'page' : undefined}>Todos los pilares</a>
-    {pilares.map((p) => <a href={url({ pilar: p })} aria-current={p === pilar ? 'page' : undefined}>{p}</a>)}
-  </nav>
+  <div class="filtros">
+    <nav class="pestanas" aria-label="Estado">{ESTADOS.map(([k, t]) => <a href={url({ estado: k })} aria-current={k === est ? 'page' : undefined}>{t}<span>{cuenta(k)}</span></a>)}</nav>
+    <form method="get"><input type="hidden" name="estado" value={est} />
+      <select name="pilar" aria-label="Pilar" onchange="this.form.submit()"><option value="">Todos los temas</option>{pilares.map((p) => <option value={p} selected={p === pilar}>{p}</option>)}</select>
+    </form>
+  </div>
 
   <section class="ideas">
-    {lista.length ? lista.map((i) => (
-      <article class="tarjeta idea">
-        <p class="idea__t">{i.titulo}</p>
-        <div class="chips"><span class="chip">{i.formato}</span>{(i.redes || []).map((r: string) => <span class={`chip ${r}`}>{r}</span>)}{i.pilar && <span class="chip">{i.pilar}</span>}</div>
-        {i.notas && <p class="meta">{i.notas}</p>}
-        {i.fuente && <p class="meta">Fuente: {i.fuente}</p>}
-        <form method="post" action="/api/accion" class="acciones">
-          <input type="hidden" name="accion" value="idea-estado" /><input type="hidden" name="id" value={i.id} /><input type="hidden" name="volver" value={volver} />
-          {[['en-marcha', 'Empezar'], ['hecha', 'Hecha'], ['descartada', 'Descartar'], ['idea', 'Volver a ideas']].filter(([k]) => k !== i.estado).map(([k, t]) => <button class="boton" name="estado" value={k}>{t}</button>)}
-        </form>
-      </article>
-    )) : <p class="vacio">No hay ideas con estos filtros.</p>}
+    {lista.length ? lista.map((i) => {
+      const sig = SIGUIENTE[i.estado] || SIGUIENTE.idea;
+      return (
+        <article class="idea">
+          <div class="idea__txt">
+            <p class="idea__t">{esNueva(i, visto) && <span class="nuevo">Nuevo</span>} {i.titulo}</p>
+            <p class="meta">{[i.formato, i.pilar].filter(Boolean).join(' · ')}</p>
+            {i.notas && <details><summary class="meta">Notas</summary><p class="meta">{i.notas}{i.fuente && ` · Fuente: ${i.fuente}`}</p></details>}
+          </div>
+          <form method="post" action="/api/accion" class="acciones">
+            <input type="hidden" name="accion" value="idea-estado" /><input type="hidden" name="id" value={i.id} /><input type="hidden" name="volver" value={volver} />
+            <button class="boton" name="estado" value={sig[0]}>{sig[1]}</button>
+            {i.estado !== 'descartada' && <button class="boton boton--peligro" name="estado" value="descartada" aria-label={`Descartar: ${i.titulo}`}>✕</button>}
+          </form>
+        </article>
+      );
+    }) : <p class="vacio">No hay ideas aquí.</p>}
   </section>
 </Panel>
 <style>
-  .nueva { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; }
-  .nueva .ancha { grid-column: 1 / -1; } .nueva input, .nueva select { width: 100%; }
+  .nueva { display: grid; gap: 8px; }
+  .nueva__linea { display: flex; gap: 8px; } .nueva__linea input { flex: 1; min-width: 0; }
+  .nueva__mas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; padding-top: 10px; }
+  .nueva__mas .ancha { grid-column: 1 / -1; } .nueva__mas input, .nueva__mas select { width: 100%; }
+  .nueva summary, .idea summary { cursor: pointer; }
   .redes { border: 0; padding: 0; margin: 0; display: flex; gap: 12px; align-items: center; } .redes legend { font-size: 13px; color: var(--gris); padding: 0; margin-bottom: 4px; }
   .check { display: flex; gap: 6px; align-items: center; color: var(--hueso); } .check input { min-height: 0; }
-  .ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
-  .idea { display: grid; gap: 8px; align-content: start; } .idea__t { margin: 0; font-weight: 600; } .idea .meta { margin: 0; }
+  .filtros { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--linea); padding-bottom: 10px; }
+  .filtros .pestanas { border: 0; padding: 0; }
+  .ideas { display: grid; }
+  .idea { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--linea); }
+  .idea:first-child { border-top: 0; }
+  .idea__txt { display: grid; gap: 2px; } .idea__t { margin: 0; } .idea .meta { margin: 0; }
+  .idea .acciones { flex-wrap: nowrap; }
 </style>

@@ -3,6 +3,8 @@
 set -e
 DIR=/var/www/bahiga-contenido
 cd "$DIR"
+# Mantiene vivo el vigilante de avisos y fuerza una revisión de la cola.
+curl -s -o /dev/null -m 40 http://127.0.0.1:4337/salud || true
 ANTES=$(git rev-parse HEAD:app 2>/dev/null || echo nada)
 git pull -q
 DESPUES=$(git rev-parse HEAD:app)

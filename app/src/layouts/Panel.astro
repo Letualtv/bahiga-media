@@ -1,14 +1,14 @@
 ---
+import { pendiente } from '../lib/pendiente';
 interface Props { titulo: string; seccion: string }
 const { titulo, seccion } = Astro.props;
-const NAV = [
-  ['inicio', '/', 'Inicio'],
-  ['publicaciones', '/publicaciones', 'Publicaciones'],
-  ['calendario', '/calendario', 'Calendario'],
-  ['analisis', '/analisis', 'Análisis'],
-  ['competencia', '/competencia', 'Competencia'],
-  ['noticias', '/noticias', 'Noticias'],
-  ['ideas', '/ideas', 'Ideas'],
+const pend = await pendiente(Astro.cookies);
+const NAV: [string, string, string, number][] = [
+  ['inicio', '/', 'Inicio', pend.total],
+  ['calendario', '/calendario', 'Calendario', 0],
+  ['publicaciones', '/publicaciones', 'Publicaciones', 0],
+  ['ideas', '/ideas', 'Ideas', seccion === 'ideas' ? 0 : pend.ideasNuevas],
+  ['analisis', '/analisis', 'Análisis', 0],
 ];
 const aviso = Astro.url.searchParams.get('ok') || Astro.url.searchParams.get('error');
 const esError = Astro.url.searchParams.has('error');
@@ -19,23 +19,52 @@ const esError = Astro.url.searchParams.has('error');
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>{titulo} · Bahiga</title>
+  <meta name="theme-color" content="#0F1C24" />
+  <title>{pend.total ? `(${pend.total}) ` : ''}{titulo} · Bahiga</title>
   <link rel="icon" href="/arco.svg" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/iconos/apple.png" />
 </head>
 <body>
   <aside class="lateral">
     <a href="/" class="marca"><img src="/arco.svg" alt="" /><span>Bahiga<i>.</i></span></a>
-    <p class="marca__sub">Panel de contenido</p>
     <nav aria-label="Secciones">
-      {NAV.map(([k, h, t]) => <a href={h} aria-current={k === seccion ? 'page' : undefined}>{t}</a>)}
+      {NAV.map(([k, h, t, c]) => <a href={h} aria-current={k === seccion ? 'page' : undefined}>{t}{c > 0 && <span class="contador" aria-label={`${c} pendientes`}>{c}</span>}</a>)}
     </nav>
-    <form method="post" action="/salir" class="salir"><button type="submit">Salir</button></form>
+    <div class="pie">
+      <button type="button" class="avisos-movil" id="avisos-movil" hidden>Activar avisos en este dispositivo</button>
+      <form method="post" action="/salir" class="salir"><button type="submit">Salir</button></form>
+    </div>
   </aside>
   <main class="contenido">
     <header class="cab"><h1>{titulo}</h1><slot name="cab" /></header>
     {aviso && <p class={`aviso ${esError ? 'aviso--error' : ''}`} role="status">{aviso}</p>}
     <slot />
   </main>
+  <script is:inline>
+    if (location.hash) { const d = document.getElementById(decodeURIComponent(location.hash.slice(1)))?.querySelector('details'); if (d) { d.open = true; d.scrollIntoView({ block: 'center' }); } }
+    (async () => {
+      if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
+      const reg = await navigator.serviceWorker.register('/sw.js');
+      const b = document.getElementById('avisos-movil');
+      const pintar = (s) => { b.hidden = false; b.dataset.estado = s; b.textContent = s === 'si' ? 'Avisos activados en este dispositivo' : s === 'bloqueado' ? 'Avisos bloqueados en el navegador' : 'Activar avisos en este dispositivo'; };
+      const actual = await reg.pushManager.getSubscription();
+      pintar(Notification.permission === 'denied' ? 'bloqueado' : actual ? 'si' : 'no');
+      b.addEventListener('click', async () => {
+        if (b.dataset.estado !== 'no') return;
+        b.disabled = true;
+        try {
+          if (await Notification.requestPermission() !== 'granted') return pintar('bloqueado');
+          const { clave } = await (await fetch('/api/clave-avisos')).json();
+          const raw = atob(clave.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat((4 - clave.length % 4) % 4));
+          const s = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: Uint8Array.from(raw, (c) => c.charCodeAt(0)) });
+          const r = await fetch('/api/suscribir', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ suscripcion: s.toJSON() }) });
+          pintar(r.ok ? 'si' : 'no');
+        } catch (e) { b.textContent = 'No se pudo activar. Prueba otra vez.'; }
+        finally { b.disabled = false; }
+      });
+    })();
+  </script>
 </body>
 </html>
 
@@ -59,12 +88,17 @@ const esError = Astro.url.searchParams.has('error');
   .lateral { position: sticky; top: 0; height: 100vh; border-right: 1px solid var(--linea); padding: 22px 16px; display: flex; flex-direction: column; gap: 6px; background: var(--tinta); }
   .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--display); font-size: 26px; }
   .marca img { height: 30px; } .marca i { color: var(--coral); font-style: normal; }
-  .marca__sub { margin: 0 0 18px 2px; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--gris); }
-  nav { display: grid; gap: 2px; }
-  nav a { text-decoration: none; padding: 9px 12px; border-radius: 6px; color: var(--gris); }
-  nav a:hover { background: var(--capa); color: var(--hueso); }
-  nav a[aria-current="page"] { background: var(--capa2); color: var(--hueso); box-shadow: inset 3px 0 0 var(--coral); }
-  .salir { margin-top: auto; } .salir button { background: none; border: 1px solid var(--linea); color: var(--gris); padding: 8px 12px; border-radius: 6px; cursor: pointer; font: inherit; width: 100%; }
+  .marca { margin-bottom: 18px; }
+  .lateral nav { display: grid; gap: 2px; }
+  .lateral nav a { text-decoration: none; padding: 9px 12px; border-radius: 6px; color: var(--gris); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .contador { font-family: var(--mono); font-size: 11px; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; background: var(--coral); color: var(--tinta); display: inline-grid; place-items: center; font-weight: 600; }
+  .lateral nav a:hover { background: var(--capa); color: var(--hueso); }
+  .lateral nav a[aria-current="page"] { background: var(--capa2); color: var(--hueso); box-shadow: inset 3px 0 0 var(--coral); }
+  .pie { margin-top: auto; display: grid; gap: 8px; }
+  .avisos-movil { font: inherit; font-size: 12px; text-align: left; background: var(--coral-s); color: var(--hueso); border: 1px solid #5A3A2A; border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+  .avisos-movil[data-estado="si"] { background: none; border-color: var(--linea); color: var(--ok); cursor: default; }
+  .avisos-movil[data-estado="bloqueado"] { background: none; border-color: var(--linea); color: var(--gris); cursor: default; }
+  .salir button { background: none; border: 1px solid var(--linea); color: var(--gris); padding: 8px 12px; border-radius: 6px; cursor: pointer; font: inherit; width: 100%; }
   .contenido { padding: 26px max(16px, 3vw) 64px; display: grid; gap: 28px; align-content: start; min-width: 0; }
   .cab { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; }
   h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 34px; letter-spacing: -.01em; }
@@ -80,6 +114,9 @@ const esError = Astro.url.searchParams.has('error');
   .chip { font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--linea); color: var(--gris); white-space: nowrap; display: inline-block; }
   .chip.instagram { color: var(--ig); border-color: #5A3346; } .chip.facebook { color: var(--fb); border-color: #33415A; } .chip.linkedin { color: var(--li); border-color: #2D4656; }
   .chip.borrador { color: var(--aviso); border-color: #5A4A2A; } .chip.pendiente { color: var(--ok); border-color: #2E4A3D; } .chip.error { color: var(--error); border-color: #5A2F2B; } .chip.publicada { color: var(--hueso); }
+  .red { font-family: var(--mono); font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 4px; background: var(--capa2); }
+  .red.instagram { color: var(--ig); } .red.facebook { color: var(--fb); } .red.linkedin { color: var(--li); }
+  .nuevo { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta); background: var(--coral); padding: 1px 6px; border-radius: 4px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .boton { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 7px 14px; border-radius: 6px; border: 1px solid var(--linea); background: var(--capa2); color: var(--hueso); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; }
   .boton:hover { border-color: var(--gris); }
@@ -105,9 +142,10 @@ const esError = Astro.url.searchParams.has('error');
   @media (max-width: 860px) {
     body { grid-template-columns: minmax(0, 1fr); }
     .lateral { position: static; height: auto; flex-direction: row; flex-wrap: wrap; align-items: center; border-right: 0; border-bottom: 1px solid var(--linea); padding: 12px 16px; }
-    .marca__sub, .salir { display: none; }
-    nav { display: flex; overflow-x: auto; gap: 4px; width: 100%; }
-    nav a { white-space: nowrap; }
+    .marca { margin-bottom: 0; }
+    .pie { order: 3; width: 100%; grid-template-columns: 1fr auto; margin-top: 4px; } .salir button { width: auto; }
+    .lateral nav { display: flex; overflow-x: auto; gap: 4px; width: 100%; }
+    .lateral nav a { white-space: nowrap; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>

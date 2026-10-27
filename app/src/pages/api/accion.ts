@@ -3,6 +3,7 @@
 import type { APIRoute } from 'astro';
 import { modificar, cerrarPropuestas, lanzarPublicador } from '../../lib/github';
 import { aMadrid, type Pub } from '../../lib/util';
+import { marcarHecho } from '../../lib/avisos';
 
 const COLA = 'publicador/cola.json';
 const IDEAS = 'ideas/ideas.json';
@@ -28,20 +29,30 @@ export const POST: APIRoute = async ({ request, redirect }) => {
         nuevaFecha = aMadrid(local);
       }
       let hecho = '';
+      const ids = id.split(',').map((s) => s.trim()).filter(Boolean);
       await modificar<{ publicaciones: Pub[] }>(COLA, (c) => {
-        const p = c.publicaciones.find((x) => x.id === id);
-        if (!p) throw new Error(`No encuentro ${id} en la cola.`);
-        if (accion === 'aprobar') { if (p.estado !== 'borrador') return 'sin-cambios'; p.estado = 'pendiente'; if (Date.parse(p.fecha) < Date.now()) p.fecha = ahoraMadrid(); hecho = 'Aprobada.'; }
+        let cambios = 0;
+        for (const uno of ids) {
+        const p = c.publicaciones.find((x) => x.id === uno);
+        if (!p) throw new Error(`No encuentro ${uno} en la cola.`);
+        const antes = JSON.stringify(p);
+        if (accion === 'aprobar') { if (p.estado !== 'borrador') continue; p.estado = 'pendiente'; if (Date.parse(p.fecha) < Date.now()) p.fecha = ahoraMadrid(); hecho = ids.length > 1 ? 'Aprobadas.' : 'Aprobada.'; }
         if (accion === 'ahora') { p.estado = 'pendiente'; p.fecha = ahoraMadrid(); hecho = 'Sale en el próximo pase del reloj (menos de 10 minutos).'; }
         if (accion === 'descartar') { p.estado = 'descartada'; hecho = 'Descartada.'; }
-        if (accion === 'pausar') { if (p.estado !== 'pendiente') return 'sin-cambios'; p.estado = 'borrador'; hecho = 'Pasada a borrador: no se publica hasta que la apruebes.'; }
+        if (accion === 'pausar') { if (p.estado !== 'pendiente') continue; p.estado = 'borrador'; hecho = 'Pasada a borrador: no se publica hasta que la apruebes.'; }
         if (accion === 'reintentar') { p.estado = 'pendiente'; (p as any).intentos = 0; delete p.error; hecho = 'Se reintenta en el próximo pase.'; }
         if (accion === 'hora') { p.fecha = nuevaFecha; hecho = 'Hora cambiada.'; }
+        if (JSON.stringify(p) !== antes) cambios++;
+        }
+        if (!cambios) return 'sin-cambios';
       }, `${accion} ${id}`);
-      if (['aprobar', 'ahora', 'descartar'].includes(accion)) await cerrarPropuestas([id], `${accion === 'descartar' ? 'Descartado' : 'Aprobado'} desde el panel: ${id}.`).catch(() => {});
+      if (['aprobar', 'ahora', 'descartar'].includes(accion)) await cerrarPropuestas(ids, `${accion === 'descartar' ? 'Descartado' : 'Aprobado'} desde el panel: ${id}.`).catch(() => {});
       if (accion === 'ahora') await lanzarPublicador();
       return ir('ok', hecho || 'Sin cambios.');
     }
+
+    // ── Mensajes y comentarios (guardados en el servidor) ──
+    if (accion === 'aviso-hecho') { marcarHecho(id); return ir('ok', 'Hecho.'); }
 
     // ── Ideas ──
     if (accion === 'idea-nueva') {

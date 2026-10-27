@@ -27,6 +27,7 @@ jobs:
       - name: Revisar comentarios
         env:
           META_TOKEN: ${{ secrets.META_TOKEN }}
+          PANEL_AVISOS: ${{ secrets.PANEL_AVISOS }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IG_ID: '17841430450985904'
           PAGE_ID: '1371169526080229'
