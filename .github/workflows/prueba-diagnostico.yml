@@ -1,0 +1,19 @@
+name: Prueba del diagnóstico de webs
+on:
+  push:
+    paths: ['pruebas/probar.ts', 'pruebas/diagnostico.ts', '.github/workflows/prueba-diagnostico.yml']
+permissions:
+  contents: write
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node pruebas/probar.ts
+      - run: |
+          git config user.name "bahiga-publicador"; git config user.email "info@bahiga.es"
+          git add pruebas/resultado.json; git commit -m "Resultado de la prueba del diagnóstico"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && break; sleep 5; done
