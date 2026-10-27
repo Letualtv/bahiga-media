@@ -1,17 +1,22 @@
 {
- "generado": "2026-10-26T14:18:23.658Z",
+ "generado": "2026-10-27T12:59:01.953Z",
  "resumen_semana": {
-  "publicaciones": 7,
+  "publicaciones": 8,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 19
+   },
    {
     "enlace": "https://www.instagram.com/reel/De4kRWpDyD1/",
     "compartidos_mas_guardados": 0,
-    "alcance": 20
+    "alcance": 23
    },
    {
     "enlace": "https://www.instagram.com/reel/De1_anekWIx/",
     "compartidos_mas_guardados": 0,
-    "alcance": 29
+    "alcance": 32
    },
    {
     "enlace": "https://www.instagram.com/reel/De1LUASH6Zt/",
@@ -21,12 +26,12 @@
    {
     "enlace": "https://www.instagram.com/reel/DezrvSWj3WG/",
     "compartidos_mas_guardados": 2,
-    "alcance": 100
+    "alcance": 101
    },
    {
     "enlace": "https://www.instagram.com/p/DezRbynk1cw/",
     "compartidos_mas_guardados": 1,
-    "alcance": 60
+    "alcance": 63
    },
    {
     "enlace": "https://www.instagram.com/p/DezQ3PoksTW/",
@@ -46,11 +51,29 @@
   "id": "17841430450985904",
   "followers_count": 39,
   "follows_count": 60,
-  "media_count": 7,
+  "media_count": 8,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
   {
+   "id": "18142446937624436",
+   "fecha": "2026-10-26T17:30:09+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
+   "texto": "Qué te llevas cuando nos encargas una web.\n\nLo que se ve: diseño a medida pensado para el móvil, textos que explican lo ",
+   "likes": 3,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 19,
+    "views": 56,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 4
+   }
+  },
+  {
+   "id": "18134439946674028",
    "fecha": "2026-10-24T16:31:24+0000",
    "tipo": "REELS",
    "formato": "VIDEO",
@@ -59,17 +82,18 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 20,
-    "views": 41,
+    "reach": 23,
+    "views": 42,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 7480
+    "ig_reels_avg_watch_time": 7219
    }
   },
   {
+   "id": "18157593004514603",
    "fecha": "2026-10-23T16:31:00+0000",
    "tipo": "REELS",
    "formato": "VIDEO",
@@ -78,17 +102,18 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 29,
-    "views": 67,
+    "reach": 32,
+    "views": 70,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10413
+    "ig_reels_avg_watch_time": 10047
    }
   },
   {
+   "id": "18352420147270678",
    "fecha": "2026-10-23T08:55:36+0000",
    "tipo": "REELS",
    "formato": "VIDEO",
@@ -108,6 +133,7 @@
    }
   },
   {
+   "id": "18469106899187025",
    "fecha": "2026-10-22T19:00:29+0000",
    "tipo": "REELS",
    "formato": "VIDEO",
@@ -116,17 +142,18 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 100,
-    "views": 156,
+    "reach": 101,
+    "views": 158,
     "saved": 0,
     "shares": 2,
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6817
+    "ig_reels_avg_watch_time": 6902
    }
   },
   {
+   "id": "17974839842944252",
    "fecha": "2026-10-22T15:10:08+0000",
    "tipo": "FEED",
    "formato": "CAROUSEL_ALBUM",
@@ -135,14 +162,15 @@
    "likes": 9,
    "comentarios": 0,
    "metricas": {
-    "reach": 60,
-    "views": 147,
+    "reach": 63,
+    "views": 153,
     "saved": 1,
     "shares": 0,
     "total_interactions": 11
    }
   },
   {
+   "id": "17876460948582048",
    "fecha": "2026-10-22T15:05:08+0000",
    "tipo": "FEED",
    "formato": "CAROUSEL_ALBUM",
@@ -159,6 +187,7 @@
    }
   },
   {
+   "id": "18119125720784824",
    "fecha": "2026-10-22T15:00:19+0000",
    "tipo": "FEED",
    "formato": "CAROUSEL_ALBUM",
@@ -175,7 +204,18 @@
    }
   }
  ],
- "instagram_historias_activas": [],
+ "instagram_historias_activas": [
+  {
+   "fecha": "2026-10-26T18:30:19+0000",
+   "metricas": {
+    "reach": 27,
+    "views": 30,
+    "replies": 0,
+    "navigation": 29,
+    "shares": 0
+   }
+  }
+ ],
  "instagram_cuenta_28d": {
   "data": [
    {
@@ -185,7 +225,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 569
+     "value": 576
     }
    },
    {
@@ -195,7 +235,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 1720
+     "value": 1822
     }
    },
    {
@@ -205,7 +245,7 @@
     "title": "Cuentas con interacciones",
     "description": "Número de cuentas que han interactuado con tu contenido, incluido el de los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. Las interacciones pueden incluir acciones, como Me gusta, comentarios, respuestas o veces que se ha guardado o compartido el contenido. Estas métricas son una estimación y están en desarrollo.",
     "total_value": {
-     "value": 16
+     "value": 17
     }
    },
    {
@@ -215,7 +255,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 63
+     "value": 69
     }
    },
    {
@@ -225,7 +265,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 103
+     "value": 114
     }
    },
    {
@@ -235,7 +275,7 @@
     "title": "Toques en el enlace al sitio web",
     "description": "Número de veces que se ha tocado el enlace a tu sitio web.",
     "total_value": {
-     "value": 3
+     "value": 4
     }
    }
   ]
@@ -246,8 +286,88 @@
   "fan_count": 2,
   "id": "1371169526080229"
  },
- "facebook_publicaciones": [],
- "facebook_publicaciones_error": "(#10) This endpoint requires the 'pages_read_user_content' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details. (10)",
+ "facebook_publicaciones": [
+  {
+   "fecha": "2026-10-26T17:30:02+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122115990441501320",
+   "texto": "Qué te llevas cuando nos encargas una web.\n\nLo que se ve: diseño a medida pensado para el móvil, textos que explican lo ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-24T16:31:02+0000",
+   "enlace": "https://www.facebook.com/reel/905853799159672/",
+   "texto": "",
+   "reacciones": 2,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-23T16:30:15+0000",
+   "enlace": "https://www.facebook.com/reel/1142810231594779/",
+   "texto": "¿Cuántos clientes te trajo tu web este mes?\n\nSi no lo sabes, ya tienes la respuesta. Una web tiene que cargar rápido en ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-23T08:55:32+0000",
+   "enlace": "https://www.facebook.com/reel/2157313668246644/",
+   "texto": "¿Tu WordPress usa UpdraftPlus? Revísalo hoy.\n\nEl 17 y 18 de octubre entraron en los sistemas de TeamUpdraft, la empresa ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-22T19:00:18+0000",
+   "enlace": "https://www.facebook.com/reel/1128138476460836/",
+   "texto": "Si tu web usa PHP, esto te afecta.\n\nEl 21 de octubre PHP publicó parches para dos fallos críticos (PHP2Shell, 9,2 sobre ",
+   "reacciones": 1,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-22T15:10:02+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122114062593501320",
+   "texto": "Lo que cuesta, sin rodeos.\n\nWeb a medida desde 900 €. Tienda online desde 1.000 €. Agente de voz o chatbot desde 550 €. ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-22T15:05:02+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122114061099501320",
+   "texto": "Cómo trabajamos, para que no haya sorpresas a mitad de proyecto.\n\nUna llamada corta, presupuesto cerrado por escrito, lo",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-22T15:00:14+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122114059407501320",
+   "texto": "Webs, tiendas online y automatización con IA para comercios y pymes.\n\nWebs a medida desde 900 €, tiendas online desde 1.",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-21T12:39:43+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/1665260468448864?substory_index=1665260468448864",
+   "texto": "",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-10-21T12:35:31+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122113405971501320?substory_index=1423297029926895",
+   "texto": "",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  }
+ ],
  "facebook_28d": {
   "error": "(#100) The value must be a valid insights metric (100)"
  }
