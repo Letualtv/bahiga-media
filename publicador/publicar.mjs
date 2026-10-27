@@ -58,6 +58,19 @@ async function esperarContenedor(id) {
   throw new Error('Instagram tardó demasiado en procesar el fichero.');
 }
 
+// Música de la biblioteca de Instagram: musica.audio_id o musica.buscar (reels y carruseles).
+async function audioDe(p) {
+  let audio_id = p.musica.audio_id;
+  if (!audio_id && p.musica.buscar) {
+    const r = await graph('GET', '/ig_audio', { audio_type: 'music', ig_user_id: IG_ID, search_query: p.musica.buscar });
+    const pista = (r.audio || []).find((a) => (a.duration_in_ms || 0) >= 15000) || (r.audio || [])[0];
+    if (!pista) throw new Error(`No hay música en Instagram para «${p.musica.buscar}».`);
+    audio_id = pista.audio_id;
+    p.musica.elegida = `${pista.title} · ${pista.display_artist || ''}`.trim();
+  }
+  return JSON.stringify({ audio_id, audio_volume: p.musica.volumen_musica ?? 100, video_volume: p.musica.volumen_video ?? 30 });
+}
+
 async function instagram(p, ensayo) {
   const media = p.media ? urlMedia(p.media) : null;
   const params = {};
@@ -66,20 +79,7 @@ async function instagram(p, ensayo) {
     // Portada: un fotograma del vídeo (portada_ms) o una imagen propia (portada).
     if (p.portada) params.cover_url = urlMedia(p.portada);
     else if (p.portada_ms != null) params.thumb_offset = String(p.portada_ms);
-    // Música de la biblioteca de Instagram (solo reels): musica.audio_id o musica.buscar.
-    if (p.musica) {
-      let audio_id = p.musica.audio_id;
-      if (!audio_id && p.musica.buscar) {
-        const r = await graph('GET', '/ig_audio', { audio_type: 'music', ig_user_id: IG_ID, search_query: p.musica.buscar });
-        const pista = (r.audio || []).find((a) => (a.duration_in_ms || 0) >= 15000) || (r.audio || [])[0];
-        if (!pista) throw new Error(`No hay música en Instagram para «${p.musica.buscar}».`);
-        audio_id = pista.audio_id;
-        p.musica.elegida = `${pista.title} · ${pista.display_artist || ''}`.trim();
-      }
-      params.audio_configuration = JSON.stringify({
-        audio_id, audio_volume: p.musica.volumen_musica ?? 100, video_volume: p.musica.volumen_video ?? 30,
-      });
-    }
+    if (p.musica) params.audio_configuration = await audioDe(p);
   }
   else if (p.tipo === 'carrusel') {
     const hijos = [];
@@ -90,6 +90,7 @@ async function instagram(p, ensayo) {
       hijos.push(id);
     }
     Object.assign(params, { media_type: 'CAROUSEL', children: hijos.join(','), caption: p.texto || '' });
+    if (p.musica) params.audio_configuration = await audioDe(p);
   }
   else if (p.tipo === 'historia') Object.assign(params, { media_type: 'STORIES', [esVideo(p.media) ? 'video_url' : 'image_url']: media });
   else if (p.tipo === 'foto') Object.assign(params, { image_url: media, caption: p.texto || '' });
