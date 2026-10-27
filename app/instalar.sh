@@ -33,7 +33,9 @@ FIN
 fi
 
 echo "3/6 Compilación"
-cd "$DIR/app" && npm ci --silent && npm run build --silent
+# Astro pide Node 22.23 o superior para compilar. Para no tocar el Node del servidor (lo usan otras webs),
+# se compila con un Node 24 temporal descargado por npx; el panel corre luego con el Node del sistema.
+cd "$DIR/app" && npm ci --silent && npx -y node@24 node_modules/astro/bin/astro.mjs build --silent
 
 echo "4/6 Arranque con PM2"
 pm2 delete bahiga-contenido >/dev/null 2>&1 || true

@@ -8,5 +8,5 @@ git pull -q
 DESPUES=$(git rev-parse HEAD:app)
 [ "$ANTES" = "$DESPUES" ] && exit 0
 echo "$(date -Is) actualizando panel"
-cd app && npm ci --silent && npm run build --silent && pm2 restart bahiga-contenido --update-env >/dev/null
+cd app && npm ci --silent && npx -y node@24 node_modules/astro/bin/astro.mjs build --silent && pm2 restart bahiga-contenido --update-env >/dev/null
 echo "$(date -Is) panel actualizado"
