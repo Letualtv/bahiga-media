@@ -73,7 +73,7 @@ async function descargarPortada(inicio: URL): Promise<{ final: URL; html: string
   for (let salto = 0; salto < 5; salto++) {
     await comprobarHost(url.hostname);
     const ctl = new AbortController();
-    const reloj = setTimeout(() => ctl.abort(), 8000);
+    const reloj = setTimeout(() => ctl.abort(), 10000);
     let res: Response;
     try {
       res = await fetch(url, {
@@ -82,7 +82,7 @@ async function descargarPortada(inicio: URL): Promise<{ final: URL; html: string
       });
     } catch {
       clearTimeout(reloj);
-      throw new ErrorDiagnostico('Tu web no ha respondido en 8 segundos. Eso ya es un problema: muchos visitantes se van antes.');
+      throw new ErrorDiagnostico('Tu web no ha respondido en 10 segundos. Eso ya es un problema: muchos visitantes se van antes.');
     }
     if (res.status >= 300 && res.status < 400 && res.headers.get('location')) {
       clearTimeout(reloj);
@@ -121,7 +121,7 @@ async function pagespeed(url: string): Promise<Psi | null> {
   const reloj = setTimeout(() => ctl.abort(), 55_000);
   try {
     const r = await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${q}`, { signal: ctl.signal });
-    if (!r.ok) return null;
+    if (!r.ok) { console.error('PageSpeed', r.status, (await r.text()).slice(0, 300)); return null; }
     const d = await r.json();
     const lh = d.lighthouseResult;
     if (!lh) return null;
@@ -142,17 +142,25 @@ async function pagespeed(url: string): Promise<Psi | null> {
 /* ── Lectura de la portada ──────────────────────────────────────── */
 
 const quitarEtiquetas = (s: string) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+/* El HTML minificado puede llevar los atributos sin comillas (name=viewport). */
+const ATR = (n: string) => `${n}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`;
+function atributo(tag: string, n: string): string | null {
+  const m = tag.match(new RegExp(ATR(n), 'i'));
+  return m ? (m[1] ?? m[2] ?? m[3] ?? '').trim() : null;
+}
 function meta(html: string, nombre: string): string | null {
-  const re = new RegExp(`<meta[^>]+(?:name|property)=["']${nombre}["'][^>]*>`, 'i');
-  const tag = html.match(re)?.[0];
-  return tag?.match(/content=["']([^"']*)["']/i)?.[1]?.trim() || null;
+  for (const tag of html.match(/<meta\b[^>]*>/gi) || []) {
+    const n = (atributo(tag, 'name') || atributo(tag, 'property') || '').toLowerCase();
+    if (n === nombre) return atributo(tag, 'content');
+  }
+  return null;
 }
 
 function leerPortada(html: string) {
   const titulo = quitarEtiquetas(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
   const descripcion = meta(html, 'description');
-  const viewport = /<meta[^>]+name=["']viewport["']/i.test(html);
-  const telefono = /href=["']tel:/i.test(html);
+  const viewport = meta(html, 'viewport') !== null;
+  const telefono = /href\s*=\s*["']?tel:/i.test(html);
   const whatsapp = /(wa\.me\/|api\.whatsapp\.com|whatsapp:\/\/)/i.test(html);
   const jsonld = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map((m) => m[1]).join(' ');
   const datosNegocio = /"@type"\s*:\s*"?\[?\s*"?(LocalBusiness|Organization|Store|Restaurant|ProfessionalService|[A-Za-z]+Business|[A-Za-z]+Store)"/.test(jsonld);
