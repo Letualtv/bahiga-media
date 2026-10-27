@@ -27,5 +27,7 @@ jobs:
           case "$CRON" in
             '17 6 * * 1') lanzar meta-informe.yml ;;
             '0 8 20 12 *') lanzar avisos.yml ;;
-            *) lanzar publicar.yml; lanzar comentarios.yml ;;
+            *) lanzar publicar.yml; lanzar comentarios.yml
+               # Una vez al día (hacia las 6:00 UTC) se refrescan las métricas para el panel.
+               [ "$(date -u +%H)" = "06" ] && [ "$(date -u +%M)" -lt 10 ] && lanzar meta-informe.yml ;;
           esac

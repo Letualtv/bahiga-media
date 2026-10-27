@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel de contenido · Bahiga</title>
+<link rel="icon" href="arco.svg">
+<style>
+/* Panel de una columna ancha: cifras arriba, lo que necesita a Antonio, la agenda por días y lo publicado con sus métricas. */
+@font-face { font-family: "BD"; src: url(fuentes/display.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BD"; font-style: italic; src: url(fuentes/display-italic.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BU"; src: url(fuentes/ui.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BU"; font-weight: 600; src: url(fuentes/ui-600.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BM"; src: url(fuentes/mono.woff2) format("woff2"); font-display: swap; }
+:root {
+  --tinta: #0F1C24; --azul: #14242E; --linea: #24343E; --hueso: #FAF8F5; --gris: #A9B4BA; --coral: #E8683C; --coral-s: #3A2A22;
+  --ok: #7CC4A0; --aviso: #F0C36A; --error: #F08A7E;
+  --display: "BD", Georgia, serif; --ui: "BU", system-ui, sans-serif; --mono: "BM", ui-monospace, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--tinta); color: var(--hueso); font-family: var(--ui); font-size: 15px; line-height: 1.5; }
+.wrap > * { min-width: 0; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-left)) 64px max(16px, env(safe-area-inset-right)); display: grid; gap: 36px; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.marca { display: flex; align-items: center; gap: 12px; }
+.marca img { height: 34px; }
+.marca h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 28px; letter-spacing: -.01em; }
+.marca h1 i { color: var(--coral); }
+.meta { font-family: var(--mono); font-size: 12px; color: var(--gris); display: flex; gap: 14px; flex-wrap: wrap; }
+.meta a { color: var(--gris); }
+h2 { font-family: var(--display); font-weight: 400; font-size: 24px; margin: 0 0 14px; letter-spacing: -.01em; }
+h2 small { font-family: var(--mono); font-size: 12px; color: var(--gris); margin-left: 10px; letter-spacing: 0; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--linea); border: 1px solid var(--linea); }
+.kpi { background: var(--tinta); padding: 16px 18px; display: grid; gap: 4px; }
+.kpi b { font-family: var(--display); font-weight: 400; font-size: 38px; line-height: 1; font-variant-numeric: tabular-nums; }
+.kpi span { font-size: 12px; color: var(--gris); }
+.kpi.destaca b { color: var(--coral); }
+.tu { display: grid; gap: 10px; }
+.tarea { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; background: var(--azul); padding: 14px 16px; border-left: 3px solid var(--coral); }
+.tarea.error { border-left-color: var(--error); }
+.tarea p { margin: 0; min-width: 0; }
+.tarea .sub { color: var(--gris); font-size: 13px; overflow-wrap: anywhere; }
+.boton { color: var(--tinta); background: var(--coral); text-decoration: none; font-weight: 600; font-size: 13px; padding: 8px 14px; white-space: nowrap; }
+.vacio { color: var(--gris); margin: 0; }
+.chip { font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--linea); color: var(--gris); white-space: nowrap; }
+.chip.instagram { color: #F5A3C4; border-color: #5A3346; } .chip.facebook { color: #9DB8F5; border-color: #33415A; } .chip.linkedin { color: #8FCBF0; border-color: #2D4656; }
+.chip.borrador { color: var(--aviso); border-color: #5A4A2A; } .chip.pendiente { color: var(--ok); border-color: #2E4A3D; } .chip.error { color: var(--error); border-color: #5A2F2B; }
+.dias { display: grid; gap: 22px; }
+.dia h3 { margin: 0 0 8px; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--coral); font-weight: 400; }
+.fila { display: grid; grid-template-columns: 54px 64px minmax(0, 1fr); gap: 14px; align-items: start; padding: 12px 0; border-top: 1px solid var(--linea); }
+.hora { font-family: var(--mono); font-size: 14px; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.mini { width: 64px; aspect-ratio: 4/5; object-fit: cover; background: var(--azul); display: block; border: 1px solid var(--linea); }
+.fila .txt { min-width: 0; display: grid; gap: 6px; }
+.fila .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.fila .cap { margin: 0; color: var(--gris); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tabla { overflow-x: auto; border: 1px solid var(--linea); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 820px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--linea); vertical-align: top; }
+th { font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--gris); position: sticky; top: 0; background: var(--tinta); }
+td.n { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); }
+td.n.top { color: var(--coral); }
+td a { color: var(--hueso); }
+td .t { color: var(--gris); display: block; max-width: 34ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; }
+@media (max-width: 860px) { .dos { grid-template-columns: minmax(0, 1fr); } }
+.estado { display: grid; gap: 6px; font-size: 13px; color: var(--gris); }
+.estado b { color: var(--hueso); font-weight: 600; }
+.cargando { color: var(--gris); font-family: var(--mono); font-size: 13px; }
+a:focus-visible, .boton:focus-visible { outline: 2px solid var(--hueso); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="marca"><img src="arco.svg" alt=""><h1>Bahiga · panel de <i>contenido</i></h1></div>
+    <div class="meta"><span id="generado">Cargando datos…</span><a href="https://github.com/Letualtv/bahiga-media/blob/main/publicador/cola.json">Cola</a><a href="https://github.com/Letualtv/bahiga-media/issues?q=is%3Aissue+is%3Aopen+label%3Aaprobacion">Propuestas</a></div>
+  </header>
+
+  <section aria-labelledby="h-cifras">
+    <h2 id="h-cifras">Cifras <small>Instagram, últimos 28 días · semana: últimos 7 días</small></h2>
+    <div class="kpis" id="kpis"><p class="cargando">Cargando…</p></div>
+  </section>
+
+  <section aria-labelledby="h-tu">
+    <h2 id="h-tu">Pendiente de ti</h2>
+    <div class="tu" id="tu"><p class="cargando">Cargando…</p></div>
+  </section>
+
+  <section aria-labelledby="h-agenda">
+    <h2 id="h-agenda">Próximas publicaciones <small>21 días</small></h2>
+    <div class="dias" id="agenda"><p class="cargando">Cargando…</p></div>
+  </section>
+
+  <section aria-labelledby="h-pub">
+    <h2 id="h-pub">Publicado en Instagram <small>alcance, visualizaciones e interacción por pieza</small></h2>
+    <div class="tabla"><table><thead><tr><th>Fecha</th><th>Pieza</th><th>Tipo</th><th>Alcance</th><th>Vistas</th><th>Guardados</th><th>Compartidos</th><th>Me gusta</th><th>Coment.</th><th>Visionado medio</th></tr></thead><tbody id="pub"><tr><td colspan="10" class="cargando">Cargando…</td></tr></tbody></table></div>
+  </section>
+
+  <div class="dos">
+    <section aria-labelledby="h-otras">
+      <h2 id="h-otras">Facebook y LinkedIn</h2>
+      <div class="estado" id="otras"></div>
+    </section>
+    <section aria-labelledby="h-sis">
+      <h2 id="h-sis">Sistema</h2>
+      <div class="estado" id="sistema"></div>
+    </section>
+  </div>
+</div>
+
+<script>
+const BASE = '../';
+const fmt = (n) => (n == null || Number.isNaN(n) ? '—' : Number(n).toLocaleString('es-ES'));
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const enMadrid = (iso, op) => new Date(iso).toLocaleString('es-ES', { timeZone: 'Europe/Madrid', ...op });
+const json = async (u) => { try { const r = await fetch(u, { cache: 'no-store' }); return r.ok ? r.json() : null; } catch { return null; } };
+
+function kpi(valor, etiqueta, destaca) { return `<div class="kpi${destaca ? ' destaca' : ''}"><b>${fmt(valor)}</b><span>${esc(etiqueta)}</span></div>`; }
+function miniatura(p) {
+  let m = p.medios?.[0] || p.media;
+  if (/\.pdf$/i.test(m || '')) m = m.replace(/^media\/linkedin\/([\w-]+)\.pdf$/i, '$1-1.jpg');
+  if (!m) return '<div class="mini"></div>';
+  const url = /^https?:/.test(m) ? m : BASE + m.replace(/^\//, '');
+  return /\.(mp4|mov)$/i.test(m)
+    ? `<video class="mini" src="${esc(url)}#t=1" muted preload="metadata" playsinline></video>`
+    : `<img class="mini" src="${esc(url)}" alt="" loading="lazy">`;
+}
+const TIPO = { reel: 'Reel', historia: 'Historia', foto: 'Imagen', carrusel: 'Carrusel', documento: 'Carrusel PDF' };
+
+async function cargar() {
+  const [cola, inf, com, props] = await Promise.all([
+    json(BASE + 'publicador/cola.json'), json(BASE + 'publicador/informe.json'),
+    json(BASE + 'publicador/comentarios-estado.json'),
+    json('https://api.github.com/repos/Letualtv/bahiga-media/issues?state=open&labels=aprobacion&per_page=20'),
+  ]);
+  const ps = (cola?.publicaciones || []).filter((p) => !p.ensayo);
+  document.getElementById('generado').textContent = inf ? `Métricas del ${enMadrid(inf.generado, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}` : 'Sin informe de métricas';
+
+  // Cifras
+  const c28 = Object.fromEntries((inf?.instagram_cuenta_28d?.data || []).map((m) => [m.name, m.total_value?.value]));
+  const sem = inf?.resumen_semana || {};
+  document.getElementById('kpis').innerHTML = [
+    kpi(inf?.instagram_cuenta?.followers_count, 'Seguidores'),
+    kpi(c28.reach, 'Cuentas alcanzadas'),
+    kpi(c28.views, 'Visualizaciones'),
+    kpi(c28.profile_views, 'Visitas al perfil'),
+    kpi(c28.website_clicks, 'Clics a la web'),
+    kpi(sem.compartidos_mas_guardados_total, 'Compartidos + guardados (semana)', true),
+    kpi(sem.comentarios_con_palabra_clave, 'Comentarios con palabra clave (semana)', true),
+  ].join('');
+
+  // Pendiente de ti
+  const tareas = [];
+  for (const i of props || []) tareas.push(`<div class="tarea"><span class="chip borrador">propuesta</span><p>${esc(i.title)}<br><span class="sub">Contesta sí, ahora o no en la incidencia</span></p><a class="boton" href="${esc(i.html_url)}">Revisar</a></div>`);
+  for (const p of ps.filter((p) => p.estado === 'error')) tareas.push(`<div class="tarea error"><span class="chip error">error</span><p>${esc(p.id)} · ${enMadrid(p.fecha, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}<br><span class="sub">${esc(p.error || '')}</span></p><span></span></div>`);
+  document.getElementById('tu').innerHTML = tareas.length ? tareas.join('') : '<p class="vacio">Nada pendiente. Todo lo programado está aprobado.</p>';
+
+  // Agenda
+  const ahora = Date.now(), hasta = ahora + 21 * 864e5;
+  const prox = ps.filter((p) => ['pendiente', 'borrador'].includes(p.estado) && Date.parse(p.fecha) >= ahora - 36e5 && Date.parse(p.fecha) <= hasta).sort((a, b) => Date.parse(a.fecha) - Date.parse(b.fecha));
+  const porDia = {};
+  for (const p of prox) (porDia[enMadrid(p.fecha, { weekday: 'long', day: 'numeric', month: 'long' })] ||= []).push(p);
+  document.getElementById('agenda').innerHTML = Object.keys(porDia).length ? Object.entries(porDia).map(([d, l]) => `<div class="dia"><h3>${esc(d)}</h3>${l.map((p) => `
+    <div class="fila"><span class="hora">${enMadrid(p.fecha, { hour: '2-digit', minute: '2-digit' })}</span>${miniatura(p)}
+      <div class="txt"><div class="chips">${p.redes.map((r) => `<span class="chip ${r}">${r}</span>`).join('')}<span class="chip">${TIPO[p.tipo] || p.tipo}</span><span class="chip ${p.estado}">${p.estado === 'borrador' ? 'por aprobar' : 'programada'}</span>${p.musica ? '<span class="chip">música</span>' : ''}</div>
+      <p class="cap">${esc((p.texto || p.texto_linkedin || p.id).split('\n')[0])}</p></div></div>`).join('')}</div>`).join('') : '<p class="vacio">No hay nada programado en las próximas tres semanas.</p>';
+
+  // Publicado (Instagram)
+  const ig = (inf?.instagram_publicaciones || []);
+  const maxAlc = Math.max(0, ...ig.map((x) => x.metricas?.reach || 0));
+  document.getElementById('pub').innerHTML = ig.length ? ig.map((x) => {
+    const m = x.metricas || {};
+    return `<tr><td>${enMadrid(x.fecha, { day: 'numeric', month: 'short' })}</td><td><a href="${esc(x.enlace)}">Ver</a><span class="t">${esc(x.texto || '(sin texto)')}</span></td><td>${x.tipo === 'REELS' ? 'Reel' : x.formato === 'CAROUSEL_ALBUM' ? 'Carrusel' : 'Imagen'}</td>
+      <td class="n${m.reach === maxAlc && maxAlc ? ' top' : ''}">${fmt(m.reach)}</td><td class="n">${fmt(m.views)}</td><td class="n">${fmt(m.saved)}</td><td class="n">${fmt(m.shares)}</td><td class="n">${fmt(x.likes)}</td><td class="n">${fmt(x.comentarios)}</td><td class="n">${m.ig_reels_avg_watch_time ? (m.ig_reels_avg_watch_time / 1000).toLocaleString('es-ES', { maximumFractionDigits: 1 }) + ' s' : '—'}</td></tr>`;
+  }).join('') : '<tr><td colspan="10" class="vacio">Sin datos todavía.</td></tr>';
+
+  // Facebook y LinkedIn
+  const li = ps.filter((p) => p.redes.includes('linkedin') && p.resultado?.linkedin?.id);
+  const fbPub = ps.filter((p) => p.redes.includes('facebook') && p.resultado?.facebook?.id);
+  document.getElementById('otras').innerHTML = `
+    <p><b>Facebook:</b> ${fmt(inf?.facebook_pagina?.followers_count)} seguidores · ${fbPub.length} publicaciones hechas por el publicador.</p>
+    <p><b>LinkedIn:</b> ${li.length} publicaciones hechas por el publicador${li.length ? ': ' + li.slice(-5).map((p) => `<a href="${esc(p.resultado.linkedin.permalink)}">${esc(p.id)}</a>`).join(', ') : ''}. LinkedIn no da métricas por la API: se miran en su app.</p>`;
+
+  // Sistema
+  const ult = ps.filter((p) => p.estado === 'publicada').sort((a, b) => Date.parse(b.fecha) - Date.parse(a.fecha))[0];
+  document.getElementById('sistema').innerHTML = `
+    <p><b>Revisión de comentarios:</b> ${com ? `última pasada ${enMadrid(com.ultima_pasada, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}${com.errores?.length ? ` · <span style="color:var(--error)">${esc(com.errores.join(' · '))}</span>` : ' · sin errores'}` : 'sin datos'}.</p>
+    <p><b>Última publicación del publicador:</b> ${ult ? `${esc(ult.id)} (${enMadrid(ult.fecha, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })})` : 'ninguna todavía'}.</p>
+    <p><b>En cola:</b> ${ps.filter((p) => p.estado === 'pendiente').length} programadas · ${ps.filter((p) => p.estado === 'borrador').length} por aprobar · ${ps.filter((p) => p.estado === 'error').length} con error.</p>`;
+}
+cargar();
+setInterval(cargar, 5 * 60_000);
+</script>
+</body>
+</html>
