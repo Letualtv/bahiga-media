@@ -1,0 +1,32 @@
+{
+ "id": "1101-checklist-web",
+ "etiqueta": "Lista · Tu web",
+ "titular": "¿Está bien tu web? *Compruébalo en 5 minutos.*",
+ "sub": "Nueve cosas que puedes mirar tú mismo, desde el móvil, sin saber de webs.",
+ "bloques": [
+  { "titulo": "Lo que ve el cliente", "items": [
+   ["Carga rápido en el móvil", "Ábrela con datos, no con wifi. Si tardas en ver algo, tus clientes también."],
+   ["Se lee sin hacer zoom", "Ni textos diminutos ni botones que se pisan."],
+   ["En la primera pantalla dice qué haces y dónde", "Sin tener que bajar para entenderlo."]
+  ]},
+  { "titulo": "Que te encuentren y te llamen", "items": [
+   ["El teléfono o WhatsApp se pulsa y llama", "Prueba a tocarlo desde el móvil."],
+   ["Horario y dirección iguales que en Google", "Compáralo con tu ficha de Google Maps."],
+   ["El formulario de contacto llega", "Mándate un mensaje de prueba y mira si te llega."]
+  ]},
+  { "titulo": "Que no te dé un susto", "items": [
+   ["Sale el candado en la barra del navegador", "Si pone «No seguro», hay que arreglarlo."],
+   ["Alguien la actualiza y hace copias", "Si nadie sabe quién, es que no se hace."],
+   ["Tiene aviso legal, privacidad y cookies", "Es obligatorio si recoges datos o usas cookies."]
+  ]}
+ ],
+ "puntuacion": [
+  ["Las 9", "Bien. Repite la lista cada pocos meses."],
+  ["6 a 8", "Hay cosas que arreglar, casi todas rápidas."],
+  ["0 a 5", "Tu web te está costando clientes."]
+ ],
+ "cierre": "¿Te han salido *casillas vacías?*",
+ "cierre_sub": "Cuenta con Bahiga. Revisamos tu web contigo y te decimos qué arreglar primero, sin compromiso.",
+ "guardar": "Guárdalo y repásalo con tu web abierta.",
+ "cta": "Escríbenos WEB en comentarios"
+}
