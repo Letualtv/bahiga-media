@@ -1,0 +1,77 @@
+{
+ "pulidoinmobiliaria.es": {
+  "url": "https://pulidoinmobiliaria.es/",
+  "nota": 65,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [
+   {
+    "id": "datos",
+    "gravedad": "media",
+    "titulo": "Google y las IA no tienen tus datos de negocio",
+    "detalle": "Faltan los datos estructurados (dirección, horario, teléfono) que usan Google, ChatGPT y otros asistentes para recomendar negocios. Sin ellos es más difícil que te mencionen."
+   }
+  ],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene descripción para Google.",
+   "Tiene WhatsApp pulsable."
+  ],
+  "fecha": "2026-10-27T08:45:28.010Z",
+  "segundos": 0.552
+ },
+ "aovehaza.com": {
+  "error": "Tu web ha respondido con un error (503). Si no carga para nosotros, puede que tampoco para tus clientes.",
+  "segundos": 2.495
+ },
+ "reparonovo.com": {
+  "url": "https://www.reparonovo.com/",
+  "nota": 80,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene descripción para Google.",
+   "Tiene WhatsApp pulsable.",
+   "Tiene los datos de negocio que leen Google y las IA."
+  ],
+  "fecha": "2026-10-27T08:45:30.737Z",
+  "segundos": 0.232
+ },
+ "bahiga.es": {
+  "url": "https://bahiga.es/",
+  "nota": 80,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene descripción para Google.",
+   "Tiene WhatsApp pulsable.",
+   "Tiene los datos de negocio que leen Google y las IA."
+  ],
+  "fecha": "2026-10-27T08:45:31.608Z",
+  "segundos": 0.871
+ },
+ "_errores": [
+  "PageSpeed 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Queries' and li",
+  "PageSpeed 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Queries' and li",
+  "PageSpeed 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Queries' and li"
+ ]
+}
