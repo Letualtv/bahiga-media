@@ -1,0 +1,84 @@
+{
+ "pulidoinmobiliaria.es": {
+  "url": "https://pulidoinmobiliaria.es/",
+  "nota": 65,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [
+   {
+    "id": "datos",
+    "gravedad": "media",
+    "titulo": "Google y las IA no tienen tus datos de negocio",
+    "detalle": "Faltan los datos estructurados (dirección, horario, teléfono) que usan Google, ChatGPT y otros asistentes para recomendar negocios. Sin ellos es más difícil que te mencionen."
+   }
+  ],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene descripción para Google.",
+   "Tiene WhatsApp pulsable."
+  ],
+  "fecha": "2026-10-27T08:44:38.049Z",
+  "segundos": 0.585
+ },
+ "aovehaza.com": {
+  "error": "Tu web no ha respondido en 8 segundos. Eso ya es un problema: muchos visitantes se van antes.",
+  "segundos": 8.172
+ },
+ "reparonovo.com": {
+  "url": "https://www.reparonovo.com/",
+  "nota": 80,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene descripción para Google.",
+   "Tiene WhatsApp pulsable.",
+   "Tiene los datos de negocio que leen Google y las IA."
+  ],
+  "fecha": "2026-10-27T08:44:46.471Z",
+  "segundos": 0.249
+ },
+ "bahiga.es": {
+  "url": "https://bahiga.es/",
+  "nota": 67,
+  "resumen": "Tu web funciona, pero está dejando escapar clientes.",
+  "velocidad": {
+   "nota": null,
+   "carga": null,
+   "peso": null
+  },
+  "arreglos": [
+   {
+    "id": "movil",
+    "gravedad": "alta",
+    "titulo": "Tu web no está adaptada al móvil",
+    "detalle": "En el móvil se ve diminuta y hay que hacer zoom. Es lo primero que hace que alguien se vaya."
+   },
+   {
+    "id": "descripcion",
+    "gravedad": "media",
+    "titulo": "Falta la descripción que aparece en Google",
+    "detalle": "Es el texto bajo el título en los resultados. Sin ella, Google coge cualquier frase de la página y la gente pincha menos."
+   }
+  ],
+  "bien": [
+   "Tiene conexión segura (HTTPS).",
+   "El título que sale en Google está bien.",
+   "Tiene WhatsApp pulsable.",
+   "Tiene los datos de negocio que leen Google y las IA."
+  ],
+  "fecha": "2026-10-27T08:44:47.721Z",
+  "segundos": 1.25
+ }
+}
