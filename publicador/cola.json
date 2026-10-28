@@ -390,7 +390,19 @@
    ],
    "tipo": "historia",
    "media": "media/noticias/n-1027-whatsapp-baile-historia.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17929547412186240",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4017926826073572792",
+     "hora": "2026-10-28T13:30:40.718Z"
+    },
+    "facebook": {
+     "id": "1773211897237602",
+     "hora": "2026-10-28T13:30:47.273Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-n-1027-whatsapp-baile-ig",
