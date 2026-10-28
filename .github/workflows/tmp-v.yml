@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: node tmp/v.mjs
+      - run: MID=18134439946674028 node tmp/v.mjs
         env: { META_TOKEN: "${{ secrets.META_TOKEN }}" }
       - run: |
           git config user.name bahiga-bot; git config user.email info@bahiga.es
-          git add tmp/v.json && git commit -m "tmp: publicado" && git pull --rebase -q && git push -q
+          git add tmp/v2.json tmp/mini.jpg && git commit -m "tmp: publicado" && git pull --rebase -q && git push -q
