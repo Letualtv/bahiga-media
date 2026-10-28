@@ -1,0 +1,13 @@
+name: tmp-v
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node tmp/v.mjs
+        env: { META_TOKEN: "${{ secrets.META_TOKEN }}" }
+      - run: |
+          git config user.name bahiga-bot; git config user.email info@bahiga.es
+          git add tmp/v.json && git commit -m "tmp: publicado" && git pull --rebase -q && git push -q
