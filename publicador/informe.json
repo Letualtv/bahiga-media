@@ -1,12 +1,17 @@
 {
- "generado": "2026-10-27T12:59:01.953Z",
+ "generado": "2026-10-28T06:00:23.764Z",
  "resumen_semana": {
-  "publicaciones": 8,
+  "publicaciones": 9,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 17
+   },
    {
     "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 19
+    "alcance": 21
    },
    {
     "enlace": "https://www.instagram.com/reel/De4kRWpDyD1/",
@@ -16,12 +21,12 @@
    {
     "enlace": "https://www.instagram.com/reel/De1_anekWIx/",
     "compartidos_mas_guardados": 0,
-    "alcance": 32
+    "alcance": 33
    },
    {
     "enlace": "https://www.instagram.com/reel/De1LUASH6Zt/",
     "compartidos_mas_guardados": 0,
-    "alcance": 32
+    "alcance": 33
    },
    {
     "enlace": "https://www.instagram.com/reel/DezrvSWj3WG/",
@@ -31,7 +36,7 @@
    {
     "enlace": "https://www.instagram.com/p/DezRbynk1cw/",
     "compartidos_mas_guardados": 1,
-    "alcance": 63
+    "alcance": 64
    },
    {
     "enlace": "https://www.instagram.com/p/DezQ3PoksTW/",
@@ -41,7 +46,7 @@
    {
     "enlace": "https://www.instagram.com/p/DezQT3mCZFs/",
     "compartidos_mas_guardados": 2,
-    "alcance": 224
+    "alcance": 225
    }
   ],
   "compartidos_mas_guardados_total": 6,
@@ -49,12 +54,32 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 39,
+  "followers_count": 40,
   "follows_count": 60,
-  "media_count": 8,
+  "media_count": 9,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "17917960050263843",
+   "fecha": "2026-10-27T17:31:33+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
+   "texto": "Tu web nueva, cargando…\n\nDominio y correo, diseño a tu medida, textos que venden, pensada para el móvil y lista para Goo",
+   "likes": 2,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 17,
+    "views": 25,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 2,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 6130
+   }
+  },
   {
    "id": "18142446937624436",
    "fecha": "2026-10-26T17:30:09+0000",
@@ -62,14 +87,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
    "texto": "Qué te llevas cuando nos encargas una web.\n\nLo que se ve: diseño a medida pensado para el móvil, textos que explican lo ",
-   "likes": 3,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 19,
-    "views": 56,
+    "reach": 21,
+    "views": 61,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 4
+    "total_interactions": 5
    }
   },
   {
@@ -102,7 +127,7 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 32,
+    "reach": 33,
     "views": 70,
     "saved": 0,
     "shares": 0,
@@ -122,14 +147,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 32,
-    "views": 51,
+    "reach": 33,
+    "views": 52,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 10169
+    "ig_reels_avg_watch_time": 10453
    }
   },
   {
@@ -143,13 +168,13 @@
    "comentarios": 0,
    "metricas": {
     "reach": 101,
-    "views": 158,
+    "views": 159,
     "saved": 0,
     "shares": 2,
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6902
+    "ig_reels_avg_watch_time": 6854
    }
   },
   {
@@ -162,8 +187,8 @@
    "likes": 9,
    "comentarios": 0,
    "metricas": {
-    "reach": 63,
-    "views": 153,
+    "reach": 64,
+    "views": 154,
     "saved": 1,
     "shares": 0,
     "total_interactions": 11
@@ -196,8 +221,8 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 224,
-    "views": 381,
+    "reach": 225,
+    "views": 382,
     "saved": 1,
     "shares": 1,
     "total_interactions": 7
@@ -206,12 +231,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-10-26T18:30:19+0000",
+   "fecha": "2026-10-27T18:30:14+0000",
    "metricas": {
-    "reach": 27,
-    "views": 30,
-    "replies": 0,
-    "navigation": 29,
+    "reach": 19,
+    "views": 27,
+    "replies": 1,
+    "navigation": 18,
     "shares": 0
    }
   }
@@ -225,7 +250,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 576
+     "value": 584
     }
    },
    {
@@ -235,7 +260,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 1822
+     "value": 1887
     }
    },
    {
@@ -255,7 +280,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 69
+     "value": 76
     }
    },
    {
@@ -265,7 +290,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 114
+     "value": 119
     }
    },
    {
@@ -287,6 +312,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-10-27T17:31:22+0000",
+   "enlace": "https://www.facebook.com/reel/4559966144277485/",
+   "texto": "Tu web nueva, cargando…\n\nDominio y correo, diseño a tu medida, textos que venden, pensada para el móvil y lista para Goo",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-10-26T17:30:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122115990441501320",
