@@ -379,7 +379,20 @@
     "media/noticias/n-1027-whatsapp-baile-6.jpg"
    ],
    "texto": "Un contacto te pide que votes por una niña en un concurso de baile y acabas con tu WhatsApp en manos de otra persona.\n\nQué pasa: el enlace lleva a una web falsa que te pide el número y te da un código. Ese código no registra ningún voto: sirve para vincular otro dispositivo a tu cuenta. Desde ahí escriben a tus contactos como si fueras tú, y tú sigues usando WhatsApp sin notar nada. Lo ha avisado INCIBE.\n\nA quién afecta: a cualquiera que use WhatsApp, y más a quien lo usa para atender clientes.\n\nQué hacer:\n1. No abras el enlace ni des tu número.\n2. Llama a quien te lo envía para confirmarlo, aunque venga de su número habitual.\n3. Revisa Dispositivos vinculados en WhatsApp y cierra los que no conozcas.\n4. Activa la verificación en dos pasos con un PIN.\n\nGuárdalo y pásaselo a quien atienda el WhatsApp de tu negocio.\n\n¿Usas WhatsApp en tu negocio y quieres dejarlo bien protegido? Escríbenos WHATSAPP en comentarios.\n\n#WhatsApp #Ciberseguridad #INCIBE #Pymes #Bahiga",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17963230449431278",
+     "permalink": "https://www.instagram.com/p/DfDPjPGmCk-/",
+     "hora": "2026-10-28T20:01:48.749Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122117003079501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122117003079501320",
+     "hora": "2026-10-28T20:02:02.422Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1027-whatsapp-baile-historia",
