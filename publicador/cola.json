@@ -460,8 +460,7 @@
    "tipo": "reel",
    "texto": "¿Cuánto tardas en preparar las facturas del trimestre?",
    "estado": "externa",
-   "origen": "Meta Business Suite",
-   "media": "reel-verifactu-2028.mp4"
+   "origen": "Meta Business Suite"
   },
   {
    "id": "bs-1103-tareas-que-ya-no",
