@@ -1,67 +1,67 @@
 {
- "generado": "2026-10-28T06:00:22.793Z",
+ "generado": "2026-10-29T06:00:24.847Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1051290,
-   "publicaciones": 3376,
+   "seguidores": 1052211,
+   "publicaciones": 3385,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 130,
-   "comentarios_medios": 41,
+   "likes_medios": 95,
+   "comentarios_medios": 14,
    "por_tipo": {
     "Carrusel": {
      "n": 6,
-     "likes": 529,
-     "comentarios": 195
+     "likes": 269,
+     "comentarios": 57
     },
     "Reel": {
      "n": 24,
-     "likes": 31,
-     "comentarios": 3
+     "likes": 52,
+     "comentarios": 4
     }
    },
    "mejores": [
     {
-     "fecha": "2026-10-26",
+     "fecha": "2026-10-28",
      "tipo": "Carrusel",
-     "likes": 689,
-     "comentarios": 1027,
-     "texto": "Comenta “CLAUDE” y te mando la colección de 1640 prompts por DM.⬇️",
-     "enlace": "https://www.instagram.com/p/De785ugDKcC/"
+     "likes": 1098,
+     "comentarios": 17,
+     "texto": "Si te gustó este contenido y quieres vender más todos los días, es simple: sígueme.",
+     "enlace": "https://www.instagram.com/p/DfDdPlmDsTt/"
     },
     {
-     "fecha": "2026-10-25",
+     "fecha": "2026-10-28",
      "tipo": "Carrusel",
-     "likes": 1801,
-     "comentarios": 28,
-     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
-     "enlace": "https://www.instagram.com/p/De7FPo5DIZa/"
+     "likes": 58,
+     "comentarios": 154,
+     "texto": "Si querés alguno de estos proyectos, comentá “PROYECTO” y te los comparto todos.",
+     "enlace": "https://www.instagram.com/p/DfBJ1v5iEth/"
     },
     {
-     "fecha": "2026-10-25",
-     "tipo": "Carrusel",
-     "likes": 489,
+     "fecha": "2026-10-28",
+     "tipo": "Reel",
+     "likes": 331,
      "comentarios": 0,
-     "texto": "Sé tu mayor prioridad.❤️",
-     "enlace": "https://www.instagram.com/p/De7FM8QCDQG/"
+     "texto": "❤️",
+     "enlace": "https://www.instagram.com/reel/DfDMCYMCOrc/"
     },
     {
      "fecha": "2026-10-26",
      "tipo": "Carrusel",
-     "likes": 154,
-     "comentarios": 55,
+     "likes": 157,
+     "comentarios": 57,
      "texto": "Comenta \"INVERTIR\" y te envío todo lo que aprendí ese día para que escales tu negocio de coaching hasta 20K-100K al mes",
      "enlace": "https://www.instagram.com/p/De9POQMAvjU/"
     },
     {
      "fecha": "2026-10-28",
      "tipo": "Carrusel",
-     "likes": 30,
+     "likes": 70,
      "comentarios": 59,
-     "texto": "Si querés alguno de estos proyectos, comentá “PROYECTO” y te los comparto todos.",
-     "enlace": "https://www.instagram.com/p/DfBJ1v5iEth/"
+     "texto": "Escribime \"HORMOZI\" y te mando el video completo + el framework de anuncios que uso para escalar 20K-100K al mes.",
+     "enlace": "https://www.instagram.com/p/DfCZHlyjVyc/"
     }
    ],
    "historial": [
@@ -72,27 +72,31 @@
     {
      "fecha": "2026-10-28",
      "seguidores": 1051290
+    },
+    {
+     "fecha": "2026-10-29",
+     "seguidores": 1052211
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 463148,
-   "publicaciones": 2064,
-   "publicaciones_7d": 11,
+   "seguidores": 463907,
+   "publicaciones": 2066,
+   "publicaciones_7d": 12,
    "publicaciones_30d": 30,
-   "likes_medios": 2505,
-   "comentarios_medios": 46,
+   "likes_medios": 2158,
+   "comentarios_medios": 49,
    "por_tipo": {
     "Reel": {
      "n": 19,
-     "likes": 3139,
-     "comentarios": 50
+     "likes": 2560,
+     "comentarios": 55
     },
     "Carrusel": {
      "n": 11,
-     "likes": 1411,
+     "likes": 1464,
      "comentarios": 39
     }
    },
@@ -100,32 +104,24 @@
     {
      "fecha": "2026-10-14",
      "tipo": "Reel",
-     "likes": 40255,
-     "comentarios": 370,
+     "likes": 41264,
+     "comentarios": 378,
      "texto": "🥵 novato vs experto ¿ a cuál se parece más tu equipo de ventas? \n.\n#ventas #julioiero #marketing",
      "enlace": "https://www.instagram.com/reel/DefbM6gK909/"
     },
     {
-     "fecha": "2026-10-10",
-     "tipo": "Reel",
-     "likes": 12922,
-     "comentarios": 29,
-     "texto": "🥵 novato vs experto ¿ a cuál se parece más tu equipo de ventas? \n.\n#ventas #julioiero #marketing",
-     "enlace": "https://www.instagram.com/reel/DeSxhogKZGr/"
-    },
-    {
      "fecha": "2026-10-16",
      "tipo": "Carrusel",
-     "likes": 3945,
-     "comentarios": 24,
+     "likes": 4005,
+     "comentarios": 25,
      "texto": "También robé algo al final😊\n.\n.\n.\n.\n#contenido #ventas #marcapersonalonline",
      "enlace": "https://www.instagram.com/p/Dekwz3GGmNz/"
     },
     {
      "fecha": "2026-10-15",
      "tipo": "Carrusel",
-     "likes": 2496,
-     "comentarios": 40,
+     "likes": 2512,
+     "comentarios": 42,
      "texto": "☕️ ☕️ ¿qué le preguntarían a arturoelias ?\n.\n.\n#marketing #ventas #julioiero",
      "enlace": "https://www.instagram.com/p/Def0-jXG1sB/"
     },
@@ -136,6 +132,14 @@
      "comentarios": 28,
      "texto": "🥹..\n\n.\n.\n.\n.\n.\n.\n\n #emprendimiento #ventas #negocios",
      "enlace": "https://www.instagram.com/p/DeXkT9hjgSH/"
+    },
+    {
+     "fecha": "2026-10-23",
+     "tipo": "Carrusel",
+     "likes": 2004,
+     "comentarios": 10,
+     "texto": "Aplica esto y haz carruseles virarles 😎\n.\n.\n.\n.\n #emprendimiento #ventas #vendermas",
+     "enlace": "https://www.instagram.com/p/De2MhTNI9nH/"
     }
    ],
    "historial": [
@@ -146,6 +150,10 @@
     {
      "fecha": "2026-10-28",
      "seguidores": 463148
+    },
+    {
+     "fecha": "2026-10-29",
+     "seguidores": 463907
     }
    ]
   }
