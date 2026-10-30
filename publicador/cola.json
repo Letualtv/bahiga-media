@@ -658,7 +658,7 @@
    ],
    "texto_linkedin": "WordPress 7.1.4: 22 fallos de seguridad corregidos, uno durante la actualización.\n\nEl 28 de octubre WordPress publicó una versión de seguridad. Entre los fallos hay uno en el proceso de actualización que puede permitir ejecutar código en la web.\n\nLa recomendación oficial es actualizar ya.\n\nPara un negocio, el riesgo no es técnico: es que su web, su tienda o sus formularios queden en manos de otro.\n\nLo básico: copia de seguridad, actualizar el núcleo y revisar plugins y tema. Y comprobar que alguien se ocupa de ello.\n\n¿Quién actualiza la web de tu negocio y cada cuánto lo comprueba?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#WordPress #Ciberseguridad #Pymes",
    "primer_comentario": "Aviso oficial de WordPress 7.1.4: https://wordpress.org/news/2026/10/wordpress-7-1-4/",
-   "estado": "borrador"
+   "estado": "descartada"
   }
  ]
 }
