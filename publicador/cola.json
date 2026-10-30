@@ -172,7 +172,15 @@
    "tipo": "reel",
    "media": "media/reel-le-llamamos-de-google.mp4",
    "texto_linkedin": "Esta semana una panadería de Córdoba recibió su séptima llamada «de Google».\n\nSiempre el mismo guion: su ficha va a desaparecer, y por 299 euros al año se la mantienen.\n\nGoogle no llama a nadie para cobrarle la ficha. La ficha de empresa se crea y se gestiona gratis en business.google.com. Quien llama es alguien que ha encontrado un negocio sin web ni asesor y prueba suerte.\n\nLo que me preocupa no es la estafa, que es burda. Es que funciona porque la mayoría de los comercios no saben qué es suyo, qué es gratis y qué han pagado por nada.\n\nSi te llaman, cuelga. Y si no estás seguro de cómo está tu ficha, mírala tú mismo: horarios, fotos, categoría y reseñas respondidas. Con eso ya estás por delante de la mitad de tu calle.\n\n¿A tu negocio también le han llamado? ¿Qué os dijeron?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#comerciolocal #Córdoba #pymes #GoogleBusinessProfile",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7521835924360482817",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7521835924360482817/",
+     "hora": "2026-10-30T07:30:33.826Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1104-li-8-segundos",
