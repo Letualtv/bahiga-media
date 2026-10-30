@@ -1,0 +1,91 @@
+---
+/* Una propuesta completa: qué es, por qué se propone, fuentes, todas las láminas, los textos
+   y las acciones, para todas las piezas a la vez o una a una. */
+import Panel from '../../layouts/Panel.astro';
+import { cola } from '../../lib/datos';
+import { propuestasPorGrupo, RAW } from '../../lib/github';
+import { grupo, tituloGrupo, resumenPieza, aLocal, ESTADO } from '../../lib/util';
+
+const clave = String(Astro.params.clave || '');
+if (!/^[a-z0-9-]{1,80}$/.test(clave)) return Astro.redirect('/');
+const [ps, props] = await Promise.all([cola(), propuestasPorGrupo().catch(() => ({} as Record<string, any>)) ]);
+const piezas = ps.filter((p) => grupo(p.id) === clave).sort((a, b) => Date.parse(a.fecha) - Date.parse(b.fecha));
+if (!piezas.length) return Astro.redirect('/?error=' + encodeURIComponent('Esa propuesta ya no está en la cola.'));
+const pr = props[clave];
+const volver = `/propuesta/${clave}`;
+const url = (m: string) => (/^https?:/.test(m) ? m : RAW + m.replace(/^\//, ''));
+const principal = piezas.find((p) => p.tipo === 'carrusel' && p.texto) || piezas.find((p) => p.texto) || piezas[0];
+const laminas = principal.medios?.length ? principal.medios : principal.media ? [principal.media] : [];
+const historia = piezas.find((p) => p.tipo === 'historia');
+const li = piezas.find((p) => p.redes.includes('linkedin'));
+const borradores = piezas.filter((p) => p.estado === 'borrador').map((p) => p.id);
+---
+<Panel titulo="Propuesta" seccion="inicio">
+  <a slot="cab" class="boton" href="/">← Volver</a>
+  <section class="cabeza">
+    <h2>{tituloGrupo(piezas)}</h2>
+    {pr?.resumen && <p>{pr.resumen}</p>}
+    {pr?.porque && <p class="porque"><b>Por qué:</b> {pr.porque}</p>}
+    <div class="acciones">
+      {borradores.length > 0 && <>
+        <form method="post" action="/api/accion"><input type="hidden" name="accion" value="aprobar" /><input type="hidden" name="id" value={borradores.join(',')} /><input type="hidden" name="volver" value={volver} /><button class="boton boton--coral">Aprobar todo</button></form>
+        <form method="post" action="/api/accion"><input type="hidden" name="accion" value="descartar" /><input type="hidden" name="id" value={borradores.join(',')} /><input type="hidden" name="volver" value="/" /><button class="boton boton--peligro">Descartar todo</button></form>
+      </>}
+      {!borradores.length && <p class="meta">No queda nada por aprobar en esta propuesta.</p>}
+    </div>
+  </section>
+
+  <section>
+    <h2>Piezas</h2>
+    <div class="piezas">
+      {piezas.map((p) => (
+        <div class="pz">
+          <span class="pz__t"><b>{resumenPieza(p)}</b><span class={`chip ${p.estado}`}>{ESTADO[p.estado] || p.estado}</span></span>
+          {['borrador', 'pendiente'].includes(p.estado) && (
+            <div class="acciones">
+              {p.estado === 'borrador' && <form method="post" action="/api/accion"><input type="hidden" name="accion" value="aprobar" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton">Aprobar</button></form>}
+              <form method="post" action="/api/accion" class="hora"><input type="hidden" name="accion" value="hora" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><input type="datetime-local" name="fecha" value={aLocal(p.fecha)} aria-label="Nueva fecha" required /><button class="boton">Cambiar hora</button></form>
+              <form method="post" action="/api/accion"><input type="hidden" name="accion" value="descartar" /><input type="hidden" name="id" value={p.id} /><input type="hidden" name="volver" value={volver} /><button class="boton boton--peligro">Descartar</button></form>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {laminas.length > 0 && (
+    <section>
+      <h2>Láminas</h2>
+      <div class="laminas">
+        {laminas.map((m) => /\.(mp4|mov)$/i.test(m) ? <video src={url(m)} controls preload="metadata" playsinline></video> : <a href={url(m)} target="_blank" rel="noopener"><img src={url(m)} alt="" loading="lazy" /></a>)}
+        {historia?.media && <a class="hist" href={url(historia.media)} target="_blank" rel="noopener"><img src={url(historia.media)} alt="Historia" loading="lazy" /><span class="meta">Historia</span></a>}
+      </div>
+    </section>
+  )}
+
+  <section class="textos">
+    {principal.texto && <div><h2>Texto de Instagram y Facebook</h2><pre>{principal.texto}</pre></div>}
+    {li?.texto_linkedin && <div><h2>Texto de LinkedIn</h2><pre>{li.texto_linkedin}</pre>{li.primer_comentario && <><p class="meta">Primer comentario</p><pre>{li.primer_comentario}</pre></>}</div>}
+  </section>
+
+  {pr?.fuentes?.length > 0 && (
+    <section>
+      <h2>Fuentes</h2>
+      <ul class="fuentes">{pr.fuentes.map((f: any) => <li><a href={f.url} target="_blank" rel="noopener">{f.url.replace(/^https:\/\/(www\.)?/, '').slice(0, 70)}</a> {f.nota && <span class="meta">{f.nota}</span>}</li>)}</ul>
+      <p class="meta"><a href={pr.url} target="_blank" rel="noopener">Propuesta #{pr.numero} en GitHub</a></p>
+    </section>
+  )}
+</Panel>
+<style>
+  .cabeza { display: grid; gap: 10px; max-width: 80ch; } .cabeza h2 { font-size: 28px; margin: 0; } .cabeza p { margin: 0; line-height: 1.55; } .porque { color: var(--gris); }
+  .piezas { display: grid; gap: 8px; }
+  .pz { display: flex; flex-wrap: wrap; gap: 10px 16px; justify-content: space-between; align-items: center; padding: 10px 12px; background: var(--capa); border: 1px solid var(--linea); border-radius: 8px; }
+  .pz__t { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .hora { display: flex !important; gap: 6px; align-items: center; }
+  .laminas { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .laminas img, .laminas video { width: 100%; border-radius: 6px; border: 1px solid var(--linea); display: block; }
+  .hist { display: grid; gap: 4px; text-decoration: none; }
+  .textos { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+  pre { white-space: pre-wrap; font-family: var(--ui); font-size: 14px; line-height: 1.55; background: var(--capa); border: 1px solid var(--linea); border-radius: 8px; padding: 14px 16px; margin: 0 0 8px; overflow-wrap: anywhere; }
+  .fuentes { margin: 0 0 8px; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; }
+</style>

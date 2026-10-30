@@ -72,6 +72,25 @@ export async function propuestas(estado: 'open' | 'closed' | 'all' = 'open') {
   try { return await gh('GET', `/repos/${REPO}/issues?state=${estado}&labels=aprobacion&per_page=50`); } catch { return []; }
 }
 
+/* Propuesta (incidencia «aprobacion») de un grupo de piezas: resumen, motivo y fuentes ya separados. */
+export type Propuesta = { numero: number; url: string; abierta: boolean; resumen: string; porque: string; fuentes: { url: string; nota: string }[] };
+const idsDe = (body = '') => (body.match(/<!--\s*ids:\s*([^>]+?)\s*-->/)?.[1] || '').split(',').map((s) => s.trim()).filter(Boolean);
+const seccion = (body: string, titulo: string) => (body.match(new RegExp(`\\*\\*${titulo}[^*]*\\*\\*\\s*([\\s\\S]*?)(?=\\n\\s*\\*\\*|$)`))?.[1] || '').trim();
+export async function propuestasPorGrupo(): Promise<Record<string, Propuesta>> {
+  const lista = await propuestas('all');
+  const out: Record<string, Propuesta> = {};
+  for (const i of [...lista].reverse()) {
+    const body: string = i.body || '';
+    const p: Propuesta = {
+      numero: i.number, url: i.html_url, abierta: i.state === 'open',
+      resumen: seccion(body, 'Resumen'), porque: seccion(body, 'Por qué'),
+      fuentes: [...seccion(body, 'Fuentes').split(/\n\s*\n/)[0].matchAll(/(https:\/\/\S+?)(?:\s+(.*))?$/gm)].map((m) => ({ url: m[1].replace(/[),.]+$/, ''), nota: (m[2] || '').trim() })),
+    };
+    for (const id of idsDe(body)) out[id.replace(/-(ig|fb|historia|li|feed)$/, '')] = p;
+  }
+  return out;
+}
+
 export async function cerrarPropuestas(ids: string[], texto: string) {
   const abiertas = await propuestas('open');
   for (const i of abiertas) {

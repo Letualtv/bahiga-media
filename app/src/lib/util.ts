@@ -41,5 +41,10 @@ export const RED: Record<string, string> = { instagram: 'IG', facebook: 'FB', li
 const deId = (id: string) => grupo(id).replace(/^(n-)?\d{4}-/, '').replace(/-/g, ' ');
 export const tituloDe = (p: Pub) => (textoDe(p).split('\n').find((l) => l.trim()) || (p.tipo === 'historia' ? `Historia: ${deId(p.id)}` : deId(p.id))).trim();
 
+/* Título de un grupo (una noticia con varias piezas): el de la primera pieza que tenga texto. */
+export const tituloGrupo = (l: Pub[]) => tituloDe(l.find((p) => textoDe(p)) || l[0]);
+/* «Carrusel IG+FB sáb 21:00» */
+export const resumenPieza = (p: Pub) => `${TIPO[p.tipo] || p.tipo} ${p.redes.map((r) => RED[r] || r).join('+')} ${fecha(p.fecha, { weekday: 'short', day: 'numeric' })} ${hora(p.fecha)}`;
+
 export const textoDe = (p: Pub) => p.texto || p.texto_linkedin || '';
 export const enlaceDe = (p: Pub) => Object.values(p.resultado || {}).find((r) => r.permalink)?.permalink;

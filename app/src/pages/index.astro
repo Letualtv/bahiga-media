@@ -2,9 +2,11 @@
 import Panel from '../layouts/Panel.astro';
 import { cola, informe, metricas28, comentarios } from '../lib/datos';
 import { pendiente } from '../lib/pendiente';
-import { n, corta, RED, miniatura, tituloDe, type Pub } from '../lib/util';
+import { n, corta, RED, miniatura, tituloDe, tituloGrupo, resumenPieza, type Pub } from '../lib/util';
+import { propuestasPorGrupo } from '../lib/github';
 
-const [ps, inf, com, pend] = await Promise.all([cola(), informe(), comentarios(), pendiente(Astro.cookies)]);
+const [ps, inf, com, pend, props] = await Promise.all([cola(), informe(), comentarios(), pendiente(Astro.cookies), propuestasPorGrupo().catch(() => ({} as Record<string, any>))]);
+const primeraFrase = (t = '') => (t.match(/^.*?[.!?](?=\s|$)/)?.[0] || t).slice(0, 220);
 const c28 = metricas28(inf);
 const sem = inf?.resumen_semana || {};
 const ahora = Date.now();
@@ -39,15 +41,16 @@ const nada = !pend.total && !pend.ideasNuevas;
           </span>
         </div>
       ))}
-      {pend.aprobar.map(({ piezas }) => {
+      {pend.aprobar.map(({ clave, piezas }) => {
         const m = portada(piezas);
+        const pr = props[clave];
         return (
           <div class="fila">
             {m && !m.video ? <img class="fila__img" src={m.url} alt="" /> : <span class="fila__tipo">{piezas[0].id.startsWith('n-') ? 'Noticia' : 'Aprobar'}</span>}
-            <span class="fila__txt"><b>{tituloDe(piezas[0])}</b><span class="fila__sub">{corta(piezas[0].fecha)} {redesDe(piezas).map((r) => <span class={`red ${r}`}>{RED[r]}</span>)}{piezas.length > 1 && ` · ${piezas.length} piezas`}</span></span>
+            <span class="fila__txt"><b>{tituloGrupo(piezas)}</b>{pr?.resumen && <span class="fila__res">{primeraFrase(pr.resumen)}</span>}<span class="fila__sub">{piezas.map((p) => resumenPieza(p)).join(' · ')}</span></span>
             <span class="acciones">
               <form method="post" action="/api/accion"><input type="hidden" name="accion" value="aprobar" /><input type="hidden" name="id" value={piezas.map((p) => p.id).join(',')} /><input type="hidden" name="volver" value="/" /><button class="boton boton--coral">Aprobar</button></form>
-              <a class="boton" href={`/publicaciones?ver=aprobar#${piezas[0].id}`}>Revisar</a>
+              <a class="boton" href={`/propuesta/${clave}`}>Revisar</a>
             </span>
           </div>
         );
@@ -91,7 +94,8 @@ const nada = !pend.total && !pend.ideasNuevas;
   .fila__tipo { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: var(--aviso); }
   .fila__tipo.msg { color: var(--coral); } .fila__tipo.err { color: var(--error); }
   .fila__txt { display: grid; gap: 2px; min-width: 0; }
-  .fila__txt b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fila__txt b { font-weight: 600; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .fila__res { font-size: 14px; line-height: 1.45; }
   .fila__sub { font-size: 13px; color: var(--gris); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; overflow-wrap: anywhere; }
   .semana { list-style: none; margin: 0; padding: 0; border: 1px solid var(--linea); border-radius: 8px; }
   .semana li + li { border-top: 1px solid var(--linea); }
