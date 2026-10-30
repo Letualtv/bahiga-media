@@ -612,6 +612,53 @@
    ],
    "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde el móvil.\n\nNueve cosas que puedes mirar tú mismo:\n1. Carga rápido en el móvil, con datos.\n2. Se lee sin hacer zoom.\n3. En la primera pantalla dice qué haces y dónde.\n4. El teléfono o WhatsApp se pulsa y llama.\n5. Horario y dirección coinciden con tu ficha de Google.\n6. El formulario de contacto llega.\n7. Sale el candado en el navegador.\n8. Alguien la actualiza y hace copias.\n9. Tiene aviso legal, privacidad y cookies.\n\nGuárdalo y repásalo con tu web abierta.\n\n¿Te han salido casillas vacías? Escríbenos WEB en comentarios y la revisamos contigo, sin compromiso.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
    "estado": "pendiente"
+  },
+  {
+   "id": "n-1030-wordpress-714",
+   "fecha": "2026-10-31T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1030-wordpress-714-feed.jpg",
+    "media/noticias/n-1030-wordpress-714-2.jpg",
+    "media/noticias/n-1030-wordpress-714-3.jpg",
+    "media/noticias/n-1030-wordpress-714-4.jpg",
+    "media/noticias/n-1030-wordpress-714-5.jpg"
+   ],
+   "texto": "Tu WordPress se actualiza esta semana o te arriesgas a que lo haga otro.\n\nQué pasa: WordPress publicó el 28 de octubre la versión 7.1.4, una actualización de seguridad que corrige 22 fallos. Uno de ellos es un fallo en el proceso de actualización que puede permitir ejecutar código en la web durante esa actualización. WordPress recomienda actualizar ya.\n\nA quién afecta: a cualquier negocio con una web hecha en WordPress, incluidas muchas tiendas online.\n\nQué hacer:\n1. Haz una copia de seguridad de la web.\n2. Actualiza WordPress a la 7.1.4, o a la última de tu rama.\n3. Actualiza también plugins y tema.\n4. Si no sabes cómo, que lo haga quien lleve tu web.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\n¿No sabes si tu web está al día? Escríbenos WEB en comentarios.\n\n#WordPress #Ciberseguridad #Pymes #Bahiga",
+   "estado": "borrador"
+  },
+  {
+   "id": "n-1030-wordpress-714-historia",
+   "fecha": "2026-10-31T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/noticias/n-1030-wordpress-714-historia.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "n-1030-wordpress-714-li",
+   "fecha": "2026-11-02T08:30:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1030-wordpress-714-feed.jpg",
+    "media/noticias/n-1030-wordpress-714-2.jpg",
+    "media/noticias/n-1030-wordpress-714-3.jpg",
+    "media/noticias/n-1030-wordpress-714-4.jpg",
+    "media/noticias/n-1030-wordpress-714-5.jpg"
+   ],
+   "texto_linkedin": "WordPress 7.1.4: 22 fallos de seguridad corregidos, uno durante la actualización.\n\nEl 28 de octubre WordPress publicó una versión de seguridad. Entre los fallos hay uno en el proceso de actualización que puede permitir ejecutar código en la web.\n\nLa recomendación oficial es actualizar ya.\n\nPara un negocio, el riesgo no es técnico: es que su web, su tienda o sus formularios queden en manos de otro.\n\nLo básico: copia de seguridad, actualizar el núcleo y revisar plugins y tema. Y comprobar que alguien se ocupa de ello.\n\n¿Quién actualiza la web de tu negocio y cada cuánto lo comprueba?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#WordPress #Ciberseguridad #Pymes",
+   "primer_comentario": "Aviso oficial de WordPress 7.1.4: https://wordpress.org/news/2026/10/wordpress-7-1-4/",
+   "estado": "borrador"
   }
  ]
 }
