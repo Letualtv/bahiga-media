@@ -1,67 +1,72 @@
 {
- "generado": "2026-10-30T06:00:23.909Z",
+ "generado": "2026-10-31T06:00:27.136Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1053173,
-   "publicaciones": 3394,
+   "seguidores": 1053755,
+   "publicaciones": 3403,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 130,
-   "comentarios_medios": 21,
+   "likes_medios": 229,
+   "comentarios_medios": 27,
    "por_tipo": {
-    "Carrusel": {
-     "n": 9,
-     "likes": 289,
-     "comentarios": 61
-    },
     "Reel": {
-     "n": 21,
-     "likes": 61,
-     "comentarios": 4
+     "n": 16,
+     "likes": 57,
+     "comentarios": 3
+    },
+    "Imagen": {
+     "n": 1,
+     "likes": 789,
+     "comentarios": 12
+    },
+    "Carrusel": {
+     "n": 13,
+     "likes": 397,
+     "comentarios": 56
     }
    },
    "mejores": [
     {
      "fecha": "2026-10-28",
      "tipo": "Carrusel",
-     "likes": 1870,
-     "comentarios": 36,
+     "likes": 2133,
+     "comentarios": 42,
      "texto": "Si te gustó este contenido y quieres vender más todos los días, es simple: sígueme.",
      "enlace": "https://www.instagram.com/p/DfDdPlmDsTt/"
     },
     {
-     "fecha": "2026-10-28",
+     "fecha": "2026-10-30",
      "tipo": "Carrusel",
-     "likes": 68,
-     "comentarios": 184,
-     "texto": "Si querés alguno de estos proyectos, comentá “PROYECTO” y te los comparto todos.",
-     "enlace": "https://www.instagram.com/p/DfBJ1v5iEth/"
+     "likes": 1200,
+     "comentarios": 18,
+     "texto": "Se trata de transformar el \"cuando se pueda, lo vemos\" en un camino que todo el mundo pueda ver.",
+     "enlace": "https://www.instagram.com/p/DfHzaR7iL5V/"
+    },
+    {
+     "fecha": "2026-10-30",
+     "tipo": "Imagen",
+     "likes": 789,
+     "comentarios": 12,
+     "texto": "❤️",
+     "enlace": "https://www.instagram.com/p/DfIm3PijLLG/"
     },
     {
      "fecha": "2026-10-29",
      "tipo": "Carrusel",
-     "likes": 93,
-     "comentarios": 154,
+     "likes": 127,
+     "comentarios": 200,
      "texto": "Comentá “CLAUDE” y te las mando todas para agregar hasta 20K-100K/MES a tu negocio.",
      "enlace": "https://www.instagram.com/p/DfE9d_0Da2s/"
     },
     {
-     "fecha": "2026-10-28",
-     "tipo": "Reel",
-     "likes": 423,
-     "comentarios": 0,
-     "texto": "❤️",
-     "enlace": "https://www.instagram.com/reel/DfDMCYMCOrc/"
-    },
-    {
-     "fecha": "2026-10-28",
+     "fecha": "2026-10-30",
      "tipo": "Carrusel",
-     "likes": 108,
-     "comentarios": 76,
-     "texto": "Comenta “PROMPT” y te mando los 10 completos por DM⤵️",
-     "enlace": "https://www.instagram.com/p/DfCp1rhDirS/"
+     "likes": 559,
+     "comentarios": 35,
+     "texto": "Mi precio no es caro, simplemente tú no eres mi cliente.",
+     "enlace": "https://www.instagram.com/p/DfHiP6cCv7G/"
     }
    ],
    "historial": [
@@ -80,43 +85,55 @@
     {
      "fecha": "2026-10-30",
      "seguidores": 1053173
+    },
+    {
+     "fecha": "2026-10-31",
+     "seguidores": 1053755
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 464469,
-   "publicaciones": 2067,
+   "seguidores": 465427,
+   "publicaciones": 2070,
    "publicaciones_7d": 12,
    "publicaciones_30d": 30,
-   "likes_medios": 2273,
-   "comentarios_medios": 52,
+   "likes_medios": 2826,
+   "comentarios_medios": 66,
    "por_tipo": {
-    "Carrusel": {
-     "n": 12,
-     "likes": 1508,
-     "comentarios": 37
-    },
     "Reel": {
      "n": 18,
-     "likes": 2782,
-     "comentarios": 63
+     "likes": 3675,
+     "comentarios": 84
+    },
+    "Carrusel": {
+     "n": 12,
+     "likes": 1553,
+     "comentarios": 38
     }
    },
    "mejores": [
     {
      "fecha": "2026-10-14",
      "tipo": "Reel",
-     "likes": 42149,
-     "comentarios": 381,
+     "likes": 42796,
+     "comentarios": 388,
      "texto": "🥵 novato vs experto ¿ a cuál se parece más tu equipo de ventas? \n.\n#ventas #julioiero #marketing",
      "enlace": "https://www.instagram.com/reel/DefbM6gK909/"
     },
     {
+     "fecha": "2026-10-31",
+     "tipo": "Reel",
+     "likes": 13670,
+     "comentarios": 295,
+     "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
+     "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
+    },
+    {
      "fecha": "2026-10-16",
      "tipo": "Carrusel",
-     "likes": 4058,
+     "likes": 4080,
      "comentarios": 25,
      "texto": "También robé algo al final😊\n.\n.\n.\n.\n#contenido #ventas #marcapersonalonline",
      "enlace": "https://www.instagram.com/p/Dekwz3GGmNz/"
@@ -124,26 +141,18 @@
     {
      "fecha": "2026-10-15",
      "tipo": "Carrusel",
-     "likes": 2512,
+     "likes": 2513,
      "comentarios": 42,
      "texto": "☕️ ☕️ ¿qué le preguntarían a arturoelias ?\n.\n.\n#marketing #ventas #julioiero",
      "enlace": "https://www.instagram.com/p/Def0-jXG1sB/"
     },
     {
-     "fecha": "2026-10-23",
-     "tipo": "Carrusel",
-     "likes": 2137,
-     "comentarios": 10,
-     "texto": "Aplica esto y haz carruseles virarles 😎\n.\n.\n.\n.\n #emprendimiento #ventas #vendermas",
-     "enlace": "https://www.instagram.com/p/De2MhTNI9nH/"
-    },
-    {
-     "fecha": "2026-10-11",
-     "tipo": "Carrusel",
-     "likes": 2014,
-     "comentarios": 28,
-     "texto": "🥹..\n\n.\n.\n.\n.\n.\n.\n\n #emprendimiento #ventas #negocios",
-     "enlace": "https://www.instagram.com/p/DeXkT9hjgSH/"
+     "fecha": "2026-10-26",
+     "tipo": "Reel",
+     "likes": 968,
+     "comentarios": 429,
+     "texto": "Cómo Convertirte en un LIDER que las Personas Respeten de VERDAD...\n\nComenta \"Susi1\" 👇",
+     "enlace": "https://www.instagram.com/reel/De-XbMKEUGA/"
     }
    ],
    "historial": [
@@ -162,6 +171,10 @@
     {
      "fecha": "2026-10-30",
      "seguidores": 464469
+    },
+    {
+     "fecha": "2026-10-31",
+     "seguidores": 465427
     }
    ]
   }
