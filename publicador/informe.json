@@ -1,12 +1,17 @@
 {
- "generado": "2026-10-30T06:00:21.323Z",
+ "generado": "2026-10-31T06:00:23.913Z",
  "resumen_semana": {
-  "publicaciones": 8,
+  "publicaciones": 7,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 12
+   },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 21
    },
    {
     "enlace": "https://www.instagram.com/p/DfDPjPGmCk-/",
@@ -16,7 +21,7 @@
    {
     "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 15
    },
    {
     "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
@@ -26,22 +31,12 @@
    {
     "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 28
+    "alcance": 29
    },
    {
     "enlace": "https://www.instagram.com/reel/De4kRWpDyD1/",
     "compartidos_mas_guardados": 0,
     "alcance": 24
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/De1_anekWIx/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 34
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/De1LUASH6Zt/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 34
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -51,10 +46,30 @@
   "id": "17841430450985904",
   "followers_count": 42,
   "follows_count": 60,
-  "media_count": 12,
+  "media_count": 13,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18091034663269137",
+   "fecha": "2026-10-30T20:01:00+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
+   "texto": "«Le llamamos de Google. Su ficha va a desaparecer.»\n\nEs la séptima llamada esta semana, y siempre piden lo mismo: un pag",
+   "likes": 1,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 12,
+    "views": 15,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 6393
+   }
+  },
   {
    "id": "17906198967351917",
    "fecha": "2026-10-29T17:30:59+0000",
@@ -62,17 +77,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
    "texto": "¿Cuántas llamadas pierdes al día mientras atiendes a otro cliente?\n\nDesde el 28 de diciembre, las grandes empresas y las",
-   "likes": 2,
+   "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 19,
+    "reach": 21,
+    "views": 29,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 2,
-    "total_interactions": 2,
-    "ig_reels_avg_watch_time": 11502
+    "likes": 3,
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 12641
    }
   },
   {
@@ -86,7 +101,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 15,
-    "views": 51,
+    "views": 54,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -99,14 +114,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
    "texto": "El error que comete casi todo el mundo al pedir una web: empezar por el diseño.\n\nAntes van tres preguntas. Qué tiene que",
-   "likes": 2,
+   "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 36,
+    "reach": 15,
+    "views": 38,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 2
+    "total_interactions": 3
    }
   },
   {
@@ -139,8 +154,8 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 28,
-    "views": 76,
+    "reach": 29,
+    "views": 78,
     "saved": 0,
     "shares": 0,
     "total_interactions": 7
@@ -280,12 +295,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-10-29T18:30:18+0000",
+   "fecha": "2026-10-30T18:30:23+0000",
    "metricas": {
-    "reach": 13,
-    "views": 19,
+    "reach": 14,
+    "views": 15,
     "replies": 0,
-    "navigation": 18,
+    "navigation": 14,
     "shares": 0
    }
   }
@@ -299,7 +314,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 589
+     "value": 597
     }
    },
    {
@@ -309,7 +324,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2129
+     "value": 2206
     }
    },
    {
@@ -329,7 +344,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 95
+     "value": 98
     }
    },
    {
@@ -339,7 +354,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 128
+     "value": 129
     }
    },
    {
@@ -361,6 +376,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-10-30T20:01:32+0000",
+   "enlace": "https://www.facebook.com/reel/1147942114634222/",
+   "texto": "«Le llamamos de Google. Su ficha va a desaparecer.»\n\nEs la séptima llamada esta semana, y siempre piden lo mismo: un pag",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-10-29T17:30:32+0000",
    "enlace": "https://www.facebook.com/reel/1724859829207227/",
