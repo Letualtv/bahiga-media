@@ -625,7 +625,20 @@
     "media/1101-checklist-web-6.jpg"
    ],
    "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde el móvil.\n\nNueve cosas que puedes mirar tú mismo:\n1. Carga rápido en el móvil, con datos.\n2. Se lee sin hacer zoom.\n3. En la primera pantalla dice qué haces y dónde.\n4. El teléfono o WhatsApp se pulsa y llama.\n5. Horario y dirección coinciden con tu ficha de Google.\n6. El formulario de contacto llega.\n7. Sale el candado en el navegador.\n8. Alguien la actualiza y hace copias.\n9. Tiene aviso legal, privacidad y cookies.\n\nGuárdalo y repásalo con tu web abierta.\n\n¿Te han salido casillas vacías? Escríbenos WEB en comentarios y la revisamos contigo, sin compromiso.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18140294149623770",
+     "permalink": "https://www.instagram.com/p/DfNiwk-jS_U/",
+     "hora": "2026-11-01T20:02:04.910Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122118762591501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122118762591501320",
+     "hora": "2026-11-01T20:02:14.955Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1030-wordpress-714",
