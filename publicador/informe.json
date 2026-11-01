@@ -1,12 +1,12 @@
 {
- "generado": "2026-10-31T06:00:23.913Z",
+ "generado": "2026-11-01T06:00:22.528Z",
  "resumen_semana": {
-  "publicaciones": 7,
+  "publicaciones": 6,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
-    "alcance": 12
+    "alcance": 27
    },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
@@ -21,22 +21,17 @@
    {
     "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
+    "alcance": 17
    },
    {
     "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
     "compartidos_mas_guardados": 0,
-    "alcance": 24
+    "alcance": 25
    },
    {
     "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 29
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/De4kRWpDyD1/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 24
+    "alcance": 30
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -44,7 +39,7 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 42,
+  "followers_count": 43,
   "follows_count": 60,
   "media_count": 13,
   "username": "bahiga.estudio"
@@ -57,17 +52,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
    "texto": "«Le llamamos de Google. Su ficha va a desaparecer.»\n\nEs la séptima llamada esta semana, y siempre piden lo mismo: un pag",
-   "likes": 1,
+   "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 12,
-    "views": 15,
+    "reach": 27,
+    "views": 33,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 1,
-    "total_interactions": 1,
-    "ig_reels_avg_watch_time": 6393
+    "likes": 3,
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 5827
    }
   },
   {
@@ -101,7 +96,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 15,
-    "views": 54,
+    "views": 57,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -114,14 +109,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
    "texto": "El error que comete casi todo el mundo al pedir una web: empezar por el diseño.\n\nAntes van tres preguntas. Qué tiene que",
-   "likes": 3,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 38,
+    "reach": 17,
+    "views": 46,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 3
+    "total_interactions": 4
    }
   },
   {
@@ -134,14 +129,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 32,
+    "reach": 25,
+    "views": 33,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5471
+    "ig_reels_avg_watch_time": 5480
    }
   },
   {
@@ -154,8 +149,8 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 29,
-    "views": 78,
+    "reach": 30,
+    "views": 79,
     "saved": 0,
     "shares": 0,
     "total_interactions": 7
@@ -286,7 +281,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 226,
-    "views": 383,
+    "views": 384,
     "saved": 1,
     "shares": 1,
     "total_interactions": 8
@@ -295,12 +290,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-10-30T18:30:23+0000",
+   "fecha": "2026-10-31T18:30:19+0000",
    "metricas": {
-    "reach": 14,
+    "reach": 11,
     "views": 15,
     "replies": 0,
-    "navigation": 14,
+    "navigation": 15,
     "shares": 0
    }
   }
@@ -314,7 +309,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 597
+     "value": 608
     }
    },
    {
@@ -324,7 +319,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2206
+     "value": 2268
     }
    },
    {
@@ -344,7 +339,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 98
+     "value": 105
     }
    },
    {
@@ -354,7 +349,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 129
+     "value": 133
     }
    },
    {
