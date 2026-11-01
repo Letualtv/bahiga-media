@@ -673,6 +673,51 @@
    "texto_linkedin": "WordPress 7.1.4: 22 fallos de seguridad corregidos, uno durante la actualización.\n\nEl 28 de octubre WordPress publicó una versión de seguridad. Entre los fallos hay uno en el proceso de actualización que puede permitir ejecutar código en la web.\n\nLa recomendación oficial es actualizar ya.\n\nPara un negocio, el riesgo no es técnico: es que su web, su tienda o sus formularios queden en manos de otro.\n\nLo básico: copia de seguridad, actualizar el núcleo y revisar plugins y tema. Y comprobar que alguien se ocupa de ello.\n\n¿Quién actualiza la web de tu negocio y cada cuánto lo comprueba?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#WordPress #Ciberseguridad #Pymes",
    "primer_comentario": "Aviso oficial de WordPress 7.1.4: https://wordpress.org/news/2026/10/wordpress-7-1-4/",
    "estado": "descartada"
+  },
+  {
+   "id": "n-1101-robots-ia",
+   "fecha": "2026-11-07T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1101-robots-ia-feed.jpg",
+    "media/noticias/n-1101-robots-ia-2.jpg",
+    "media/noticias/n-1101-robots-ia-3.jpg",
+    "media/noticias/n-1101-robots-ia-4.jpg"
+   ],
+   "texto": "Tu web podrá decir «no» a que la IA se entrene con ella.\n\nQué pasa: Microsoft anunció el 30 de octubre que, desde el 1 de febrero de 2027, respetará una señal nueva en el fichero robots.txt para que una web indique que no quiere que su contenido se use para entrenar IA. Es una preferencia, no un bloqueo, y no cambia cómo sales en los resultados de Bing.\n\nA quién afecta: a cualquier negocio con web propia, con sus textos, fotos y catálogo.\n\nQué hacer:\n1. Decide si quieres que tu contenido entrene IA.\n2. Mira tu robots.txt escribiendo /robots.txt al final de tu dirección.\n3. Si no lo quieres, que quien lleve tu web añada la línea sin romper las reglas que ya haya.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\n¿No sabes qué dice el robots.txt de tu web? Escríbenos WEB en comentarios.\n\n#Webs #InteligenciaArtificial #Pymes #Bahiga",
+   "estado": "borrador"
+  },
+  {
+   "id": "n-1101-robots-ia-historia",
+   "fecha": "2026-11-07T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/noticias/n-1101-robots-ia-historia.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "n-1101-robots-ia-li",
+   "fecha": "2026-11-02T08:30:00+01:00",
+   "redes": [
+    "linkedin"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1101-robots-ia-feed.jpg",
+    "media/noticias/n-1101-robots-ia-2.jpg",
+    "media/noticias/n-1101-robots-ia-3.jpg",
+    "media/noticias/n-1101-robots-ia-4.jpg"
+   ],
+   "texto_linkedin": "Tu web podrá decir «no» a que la IA se entrene con ella, desde el 1 de febrero de 2027.\n\nMicrosoft anunció el 30 de octubre que respetará una señal nueva en el fichero robots.txt.\n\nSirve para indicar que no quieres que tu contenido se use para entrenar IA. Es una preferencia, no un bloqueo, y no cambia cómo apareces en Bing.\n\nPara un negocio, la decisión es de contenido: textos, fotos y catálogo que has trabajado tú.\n\nMi consejo: decidir primero si quieres o no, y revisar después el robots.txt que ya tiene la web antes de añadir nada. Un cambio mal puesto en ese fichero puede afectar a cómo te rastrean los buscadores.\n\n¿Sabes qué dice hoy el robots.txt de tu web?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#Webs #InteligenciaArtificial #Pymes",
+   "primer_comentario": "Aviso oficial de Microsoft Bing (30/10/2026): https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/\nBorrador del IETF en el que se basa la señal: https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+   "estado": "borrador"
   }
  ]
 }
