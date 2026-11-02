@@ -1,17 +1,22 @@
 {
- "generado": "2026-11-01T06:00:22.528Z",
+ "generado": "2026-11-02T06:00:24.432Z",
  "resumen_semana": {
-  "publicaciones": 6,
+  "publicaciones": 7,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 7
+   },
    {
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
-    "alcance": 27
+    "alcance": 29
    },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 21
+    "alcance": 22
    },
    {
     "enlace": "https://www.instagram.com/p/DfDPjPGmCk-/",
@@ -26,7 +31,7 @@
    {
     "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
     "compartidos_mas_guardados": 0,
-    "alcance": 25
+    "alcance": 26
    },
    {
     "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
@@ -41,10 +46,27 @@
   "id": "17841430450985904",
   "followers_count": 43,
   "follows_count": 60,
-  "media_count": 13,
+  "media_count": 14,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18140294149623770",
+   "fecha": "2026-11-01T20:02:00+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
+   "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde el móvil.\n\nNueve cosas que puedes mirar tú mismo:\n1. Carga rápido en ",
+   "likes": 2,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 7,
+    "views": 17,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 2
+   }
+  },
   {
    "id": "18091034663269137",
    "fecha": "2026-10-30T20:01:00+0000",
@@ -55,14 +77,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 27,
-    "views": 33,
+    "reach": 29,
+    "views": 36,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5827
+    "ig_reels_avg_watch_time": 5371
    }
   },
   {
@@ -75,14 +97,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 29,
+    "reach": 22,
+    "views": 30,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 12641
+    "ig_reels_avg_watch_time": 12236
    }
   },
   {
@@ -129,14 +151,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 25,
-    "views": 33,
+    "reach": 26,
+    "views": 35,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5480
+    "ig_reels_avg_watch_time": 5418
    }
   },
   {
@@ -150,7 +172,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 30,
-    "views": 79,
+    "views": 81,
     "saved": 0,
     "shares": 0,
     "total_interactions": 7
@@ -290,11 +312,11 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-10-31T18:30:19+0000",
+   "fecha": "2026-11-01T18:30:16+0000",
    "metricas": {
-    "reach": 11,
-    "views": 15,
-    "replies": 0,
+    "reach": 13,
+    "views": 17,
+    "replies": 1,
     "navigation": 15,
     "shares": 0
    }
@@ -309,7 +331,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 608
+     "value": 609
     }
    },
    {
@@ -319,7 +341,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2268
+     "value": 2336
     }
    },
    {
@@ -329,7 +351,7 @@
     "title": "Cuentas con interacciones",
     "description": "Número de cuentas que han interactuado con tu contenido, incluido el de los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. Las interacciones pueden incluir acciones, como Me gusta, comentarios, respuestas o veces que se ha guardado o compartido el contenido. Estas métricas son una estimación y están en desarrollo.",
     "total_value": {
-     "value": 18
+     "value": 19
     }
    },
    {
@@ -339,7 +361,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 105
+     "value": 108
     }
    },
    {
@@ -371,6 +393,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-01T20:02:11+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122118762591501320",
+   "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde el móvil.\n\nNueve cosas que puedes mirar tú mismo:\n1. Carga rápido en ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-10-30T20:01:32+0000",
    "enlace": "https://www.facebook.com/reel/1147942114634222/",
