@@ -730,7 +730,15 @@
    ],
    "texto_linkedin": "Tu web podrá decir «no» a que la IA se entrene con ella, desde el 1 de febrero de 2027.\n\nMicrosoft anunció el 30 de octubre que respetará una señal nueva en el fichero robots.txt.\n\nSirve para indicar que no quieres que tu contenido se use para entrenar IA. Es una preferencia, no un bloqueo, y no cambia cómo apareces en Bing.\n\nPara un negocio, la decisión es de contenido: textos, fotos y catálogo que has trabajado tú.\n\nMi consejo: decidir primero si quieres o no, y revisar después el robots.txt que ya tiene la web antes de añadir nada. Un cambio mal puesto en ese fichero puede afectar a cómo te rastrean los buscadores.\n\n¿Sabes qué dice hoy el robots.txt de tu web?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#Webs #InteligenciaArtificial #Pymes",
    "primer_comentario": "Aviso oficial de Microsoft Bing (30/10/2026): https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/\nBorrador del IETF en el que se basa la señal: https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7522923044814655489",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7522923044814655489/",
+     "hora": "2026-11-02T07:30:28.717Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
