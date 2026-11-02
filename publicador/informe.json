@@ -1,37 +1,37 @@
 {
- "generado": "2026-11-02T06:00:24.432Z",
+ "generado": "2026-11-02T15:45:26.632Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
     "compartidos_mas_guardados": 0,
-    "alcance": 7
+    "alcance": 13
    },
    {
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
-    "alcance": 29
+    "alcance": 31
    },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 22
+    "alcance": 24
    },
    {
     "enlace": "https://www.instagram.com/p/DfDPjPGmCk-/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
+    "alcance": 17
    },
    {
     "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 19
    },
    {
     "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
     "compartidos_mas_guardados": 0,
-    "alcance": 26
+    "alcance": 27
    },
    {
     "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
@@ -57,14 +57,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
    "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde el móvil.\n\nNueve cosas que puedes mirar tú mismo:\n1. Carga rápido en ",
-   "likes": 2,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 7,
-    "views": 17,
+    "reach": 13,
+    "views": 29,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 2
+    "total_interactions": 4
    }
   },
   {
@@ -77,14 +77,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 29,
-    "views": 36,
+    "reach": 31,
+    "views": 37,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5371
+    "ig_reels_avg_watch_time": 5291
    }
   },
   {
@@ -97,14 +97,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 22,
-    "views": 30,
+    "reach": 24,
+    "views": 32,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 12236
+    "ig_reels_avg_watch_time": 11701
    }
   },
   {
@@ -117,8 +117,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 57,
+    "reach": 17,
+    "views": 59,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -134,8 +134,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 46,
+    "reach": 19,
+    "views": 50,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -151,14 +151,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 26,
-    "views": 35,
+    "reach": 27,
+    "views": 36,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5418
+    "ig_reels_avg_watch_time": 5257
    }
   },
   {
@@ -172,7 +172,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 30,
-    "views": 81,
+    "views": 82,
     "saved": 0,
     "shares": 0,
     "total_interactions": 7
@@ -188,14 +188,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 43,
+    "reach": 25,
+    "views": 44,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 7192
+    "ig_reels_avg_watch_time": 7072
    }
   },
   {
@@ -209,13 +209,13 @@
    "comentarios": 0,
    "metricas": {
     "reach": 34,
-    "views": 72,
+    "views": 73,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10166
+    "ig_reels_avg_watch_time": 10407
    }
   },
   {
@@ -228,14 +228,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 34,
-    "views": 53,
+    "reach": 35,
+    "views": 56,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 5,
     "total_interactions": 5,
-    "ig_reels_avg_watch_time": 10677
+    "ig_reels_avg_watch_time": 10114
    }
   },
   {
@@ -248,14 +248,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 101,
-    "views": 159,
+    "reach": 102,
+    "views": 160,
     "saved": 0,
     "shares": 2,
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6854
+    "ig_reels_avg_watch_time": 6916
    }
   },
   {
@@ -268,8 +268,8 @@
    "likes": 10,
    "comentarios": 0,
    "metricas": {
-    "reach": 65,
-    "views": 158,
+    "reach": 66,
+    "views": 159,
     "saved": 1,
     "shares": 0,
     "total_interactions": 12
@@ -285,8 +285,8 @@
    "likes": 8,
    "comentarios": 0,
    "metricas": {
-    "reach": 41,
-    "views": 106,
+    "reach": 42,
+    "views": 108,
     "saved": 1,
     "shares": 0,
     "total_interactions": 9
@@ -303,7 +303,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 226,
-    "views": 384,
+    "views": 385,
     "saved": 1,
     "shares": 1,
     "total_interactions": 8
@@ -314,10 +314,10 @@
   {
    "fecha": "2026-11-01T18:30:16+0000",
    "metricas": {
-    "reach": 13,
-    "views": 17,
+    "reach": 17,
+    "views": 21,
     "replies": 1,
-    "navigation": 15,
+    "navigation": 18,
     "shares": 0
    }
   }
@@ -331,7 +331,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 609
+     "value": 611
     }
    },
    {
@@ -341,7 +341,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2336
+     "value": 2374
     }
    },
    {
@@ -361,7 +361,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 108
+     "value": 110
     }
    },
    {
@@ -371,7 +371,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 133
+     "value": 134
     }
    },
    {
