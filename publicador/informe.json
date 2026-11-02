@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-02T15:45:26.632Z",
+ "generado": "2026-11-02T16:10:14.526Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
@@ -21,7 +21,7 @@
    {
     "enlace": "https://www.instagram.com/p/DfDPjPGmCk-/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 18
    },
    {
     "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
@@ -78,7 +78,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 31,
-    "views": 37,
+    "views": 38,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -117,8 +117,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 59,
+    "reach": 18,
+    "views": 62,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -135,7 +135,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 19,
-    "views": 50,
+    "views": 51,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -189,7 +189,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 25,
-    "views": 44,
+    "views": 45,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -229,7 +229,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 35,
-    "views": 56,
+    "views": 59,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -249,7 +249,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 102,
-    "views": 160,
+    "views": 162,
     "saved": 0,
     "shares": 2,
     "comments": 0,
@@ -341,7 +341,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2374
+     "value": 2377
     }
    },
    {
