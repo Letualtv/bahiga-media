@@ -236,8 +236,16 @@
    "tipo": "documento",
    "media": "media/linkedin/geo.pdf",
    "texto_linkedin": "Haz la prueba: pregúntale a ChatGPT por un negocio como el tuyo en tu ciudad. ¿Sales?\n\nCada vez más gente no abre Google ni compara diez enlaces. Hace una pregunta y se queda con lo que le dicen. Si tu negocio no aparece en esa respuesta, para esa persona no existe.\n\nLa buena noticia es que no hace falta magia. Las IA recomiendan lo que pueden leer y comprobar en varios sitios. En el carrusel están las tres cosas que más pesan, y ninguna requiere pagar publicidad.\n\nPregunta para los que tenéis negocio: ¿habéis hecho ya la prueba? Contadme qué os ha salido.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#GEO #pymes #Córdoba",
-   "estado": "pendiente",
-   "titulo_documento": "Pregúntale a ChatGPT por un negocio como el tuyo"
+   "estado": "publicada",
+   "titulo_documento": "Pregúntale a ChatGPT por un negocio como el tuyo",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7523285422039535616",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7523285422039535616/",
+     "hora": "2026-11-03T07:30:20.785Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1105-li-publicador",
