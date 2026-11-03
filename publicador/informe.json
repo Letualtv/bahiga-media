@@ -1,17 +1,22 @@
 {
- "generado": "2026-11-02T16:10:14.526Z",
+ "generado": "2026-11-03T06:00:24.908Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 14
+   },
+   {
     "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 15
    },
    {
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
-    "alcance": 31
+    "alcance": 32
    },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
@@ -32,11 +37,6 @@
     "enlace": "https://www.instagram.com/reel/DfAZjtDDEwv/",
     "compartidos_mas_guardados": 0,
     "alcance": 27
-   },
-   {
-    "enlace": "https://www.instagram.com/p/De90o4IgWZV/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 30
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -46,10 +46,30 @@
   "id": "17841430450985904",
   "followers_count": 43,
   "follows_count": 60,
-  "media_count": 14,
+  "media_count": 15,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "17888739300492764",
+   "fecha": "2026-11-02T17:31:04+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
+   "texto": "¿Cuánto tardas en preparar las facturas del trimestre?\n\nHacienda ha anunciado que quiere retrasar Verifactu a octubre de",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 14,
+    "views": 24,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4649
+   }
+  },
   {
    "id": "18140294149623770",
    "fecha": "2026-11-01T20:02:00+0000",
@@ -60,8 +80,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 29,
+    "reach": 15,
+    "views": 31,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -77,14 +97,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 31,
+    "reach": 32,
     "views": 38,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5291
+    "ig_reels_avg_watch_time": 5373
    }
   },
   {
@@ -171,8 +191,8 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 30,
-    "views": 82,
+    "reach": 31,
+    "views": 83,
     "saved": 0,
     "shares": 0,
     "total_interactions": 7
@@ -188,14 +208,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 25,
+    "reach": 26,
     "views": 45,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 7072
+    "ig_reels_avg_watch_time": 6925
    }
   },
   {
@@ -228,14 +248,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 35,
+    "reach": 36,
     "views": 59,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 5,
     "total_interactions": 5,
-    "ig_reels_avg_watch_time": 10114
+    "ig_reels_avg_watch_time": 9909
    }
   },
   {
@@ -255,7 +275,7 @@
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6916
+    "ig_reels_avg_watch_time": 6907
    }
   },
   {
@@ -303,7 +323,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 226,
-    "views": 385,
+    "views": 386,
     "saved": 1,
     "shares": 1,
     "total_interactions": 8
@@ -312,12 +332,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-01T18:30:16+0000",
+   "fecha": "2026-11-02T18:30:17+0000",
    "metricas": {
-    "reach": 17,
-    "views": 21,
-    "replies": 1,
-    "navigation": 18,
+    "reach": 15,
+    "views": 19,
+    "replies": 0,
+    "navigation": 19,
     "shares": 0
    }
   }
@@ -331,7 +351,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 611
+     "value": 613
     }
    },
    {
@@ -341,7 +361,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2377
+     "value": 2441
     }
    },
    {
@@ -371,7 +391,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 134
+     "value": 135
     }
    },
    {
@@ -393,6 +413,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-02T17:30:37+0000",
+   "enlace": "https://www.facebook.com/reel/988138504349345/",
+   "texto": "¿Cuánto tardas en preparar las facturas del trimestre? \n\nUn agente con IA lee cada PDF del correo, saca fecha, base e IV",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-01T20:02:11+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122118762591501320",
