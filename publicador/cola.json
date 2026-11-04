@@ -205,7 +205,15 @@
    "tipo": "reel",
    "media": "media/reel-escenas-web.mp4",
    "texto_linkedin": "8 segundos. Eso tardan en cargar muchas webs de comercio que reviso.\n\nNadie se queja. Nadie espera 8 segundos: cierra y compra en otro sitio. Los pedidos que no llegan no dejan rastro.\n\nCasi siempre es lo mismo: fotos de 4 MB subidas desde el móvil, una web sin caché que se monta de cero en cada visita y plugins sin actualizar desde hace años. Arreglado eso, lo normal es bajar a 2 o 3 segundos.\n\nPuedes mirar la tuya gratis en pagespeed.web.dev. Si la nota sale en rojo o naranja, ahí tienes margen.\n\nLo que más me sorprende de estos casos es que casi nunca hace falta rehacer la web. Hace falta que alguien la mire.\n\n¿Cuánto tarda en cargar la web de tu negocio en el móvil? Si no lo sabes, pruébalo ahora y cuéntamelo.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#comerciolocal #Córdoba #pymes #paginasweb",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7523647854679109632",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7523647854679109632/",
+     "hora": "2026-11-04T07:30:31.684Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "ensayo-linkedin",
