@@ -1,56 +1,56 @@
 {
- "generado": "2026-11-03T06:00:25.539Z",
+ "generado": "2026-11-04T06:00:26.911Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1054681,
-   "publicaciones": 3430,
+   "seguidores": 1055285,
+   "publicaciones": 3439,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 224,
-   "comentarios_medios": 26,
+   "likes_medios": 346,
+   "comentarios_medios": 12,
    "por_tipo": {
     "Carrusel": {
      "n": 13,
-     "likes": 479,
-     "comentarios": 57
+     "likes": 765,
+     "comentarios": 27
     },
     "Reel": {
      "n": 17,
-     "likes": 29,
-     "comentarios": 2
+     "likes": 25,
+     "comentarios": 1
     }
    },
    "mejores": [
     {
      "fecha": "2026-11-02",
      "tipo": "Carrusel",
-     "likes": 3057,
-     "comentarios": 78,
+     "likes": 4840,
+     "comentarios": 107,
      "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
      "enlace": "https://www.instagram.com/p/DfOBngkiNmD/"
     },
     {
-     "fecha": "2026-10-31",
+     "fecha": "2026-11-03",
      "tipo": "Carrusel",
-     "likes": 201,
-     "comentarios": 548,
-     "texto": "¿Querés tu propia mesa de directorio con IA?\n\nComentá “MESA” y te mando la skill entera por DM.",
-     "enlace": "https://www.instagram.com/p/DfKHRg5CGdu/"
-    },
-    {
-     "fecha": "2026-10-31",
-     "tipo": "Carrusel",
-     "likes": 544,
-     "comentarios": 13,
-     "texto": "La elegancia también reside en el vocabulario…",
-     "enlace": "https://www.instagram.com/p/DfLLzOpEarA/"
+     "likes": 1620,
+     "comentarios": 4,
+     "texto": "El respeto comienza cuando te posicionas.",
+     "enlace": "https://www.instagram.com/p/DfSGnWWCr7P/"
     },
     {
      "fecha": "2026-11-02",
      "tipo": "Carrusel",
-     "likes": 534,
+     "likes": 883,
+     "comentarios": 7,
+     "texto": "A partir de hoy vas a dejar de decir esto a tus clientes...",
+     "enlace": "https://www.instagram.com/p/DfQEJ67CGXK/"
+    },
+    {
+     "fecha": "2026-11-02",
+     "tipo": "Carrusel",
+     "likes": 730,
      "comentarios": 8,
      "texto": "No se trata de costar menos, se trata de valer más..",
      "enlace": "https://www.instagram.com/p/DfPhsRGl7Zf/"
@@ -58,7 +58,7 @@
     {
      "fecha": "2026-11-01",
      "tipo": "Carrusel",
-     "likes": 530,
+     "likes": 663,
      "comentarios": 0,
      "texto": "Mi credibilidad vale más que cualquier venta.",
      "enlace": "https://www.instagram.com/p/DfNwcikET6G/"
@@ -96,70 +96,73 @@
     {
      "fecha": "2026-11-03",
      "seguidores": 1054681
+    },
+    {
+     "fecha": "2026-11-04",
+     "seguidores": 1055285
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 468082,
-   "publicaciones": 2075,
+   "seguidores": 468657,
+   "publicaciones": 2077,
    "publicaciones_7d": 10,
    "publicaciones_30d": 30,
-   "likes_medios": 11895,
-   "comentarios_medios": 174,
+   "likes_medios": 12504,
+   "comentarios_medios": 181,
    "por_tipo": {
     "Reel": {
-     "n": 19,
-     "likes": 17782,
-     "comentarios": 251
+     "n": 18,
+     "likes": 19769,
+     "comentarios": 276
     },
     "Carrusel": {
-     "n": 11,
-     "likes": 1726,
-     "comentarios": 40
+     "n": 12,
+     "likes": 1608,
+     "comentarios": 39
     }
    },
    "mejores": [
     {
+     "fecha": "2026-11-03",
+     "tipo": "Reel",
+     "likes": 701,
+     "comentarios": 6,
+     "texto": "Esto pasó con el señor que no le va, morena. 🧐\n\n.\n.\n.\n#negocios #F1 #México #ventas",
+     "enlace": "https://www.instagram.com/reel/DfTCPNugWdy/"
+    },
+    {
+     "fecha": "2026-11-03",
+     "tipo": "Carrusel",
+     "comentarios": 13,
+     "texto": "Fin de semana ganador en la F1 ❤️ Es el recap de cosas que no subo y que se quedan en mi galería",
+     "enlace": "https://www.instagram.com/p/DfSkuSDGsaF/"
+    },
+    {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 271216,
-     "comentarios": 3332,
+     "likes": 287640,
+     "comentarios": 3492,
      "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
      "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
     },
     {
      "fecha": "2026-10-14",
      "tipo": "Reel",
-     "likes": 44392,
-     "comentarios": 439,
+     "likes": 44921,
+     "comentarios": 440,
      "texto": "🥵 novato vs experto ¿ a cuál se parece más tu equipo de ventas? \n.\n#ventas #julioiero #marketing",
      "enlace": "https://www.instagram.com/reel/DefbM6gK909/"
     },
     {
      "fecha": "2026-10-30",
      "tipo": "Reel",
-     "likes": 8590,
-     "comentarios": 51,
+     "likes": 8974,
+     "comentarios": 53,
      "texto": "¿Creen que ahora son mejores o peores las carreras? 🤔\n.\n.\n.\n.\n.\n.\n#crecimiento #F1 #fórmula1 #México",
      "enlace": "https://www.instagram.com/reel/DfIvHIrAWje/"
-    },
-    {
-     "fecha": "2026-10-16",
-     "tipo": "Carrusel",
-     "likes": 4102,
-     "comentarios": 25,
-     "texto": "También robé algo al final😊\n.\n.\n.\n.\n#contenido #ventas #marcapersonalonline",
-     "enlace": "https://www.instagram.com/p/Dekwz3GGmNz/"
-    },
-    {
-     "fecha": "2026-10-31",
-     "tipo": "Reel",
-     "likes": 3872,
-     "comentarios": 22,
-     "texto": "¿Cuánto cuesta ir a la Fórmula 1 en 2026? \n.\n.\n.\n.\n#F1 #fórmula1 #crecimiento #México",
-     "enlace": "https://www.instagram.com/reel/DfLMTBVkpda/"
     }
    ],
    "historial": [
@@ -194,6 +197,10 @@
     {
      "fecha": "2026-11-03",
      "seguidores": 468082
+    },
+    {
+     "fecha": "2026-11-04",
+     "seguidores": 468657
     }
    ]
   }
