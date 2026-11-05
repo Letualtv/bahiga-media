@@ -1,5 +1,7 @@
 {
- "ultima_pasada": "2026-11-05T02:40:22.930Z",
- "errores": [],
+ "ultima_pasada": "2026-11-05T02:50:18.908Z",
+ "errores": [
+  "Privados de Instagram: Please reduce the amount of data you're asking for, then retry your request (1)"
+ ],
  "encontrados": 0
 }
