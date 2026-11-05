@@ -264,7 +264,15 @@
    "tipo": "foto",
    "media": "media/linkedin/li-publicador.jpg",
    "texto_linkedin": "Esta semana he dejado de abrir Instagram, Facebook y LinkedIn para publicar.\n\nLo que hacía antes: programar cada pieza en su app, revisar que la hora estaba bien y tener el ordenador encendido para lo que no se podía programar.\n\nLo que hago ahora: añado una línea a un fichero con la fecha, la hora, el vídeo y el texto de cada red. Un proceso en GitHub lo revisa cada diez minutos y publica lo que toca usando las APIs oficiales de Meta y LinkedIn. Si algo falla, lo reintenta y deja el error escrito.\n\nCoste: cero. Tiempo de montarlo: una tarde.\n\nLo cuento porque es exactamente el tipo de cosa que muchos negocios hacen a mano cada semana sin plantearse que se puede automatizar. No hace falta un sistema enorme. Hace falta mirar qué tarea se repite.\n\n¿Qué tarea repites tú todas las semanas?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#automatización #pymes #buildinpublic",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:share:7524010202082463745",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7524010202082463745/",
+     "hora": "2026-11-05T07:30:21.755Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1110-li-pasos",
