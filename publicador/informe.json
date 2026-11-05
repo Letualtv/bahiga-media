@@ -1,42 +1,37 @@
 {
- "generado": "2026-11-04T06:00:23.973Z",
+ "generado": "2026-11-05T06:00:22.929Z",
  "resumen_semana": {
-  "publicaciones": 7,
+  "publicaciones": 6,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 11
+   },
    {
     "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 17
    },
    {
     "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 16
+    "alcance": 19
    },
    {
     "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
     "compartidos_mas_guardados": 0,
-    "alcance": 16
+    "alcance": 18
    },
    {
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
-    "alcance": 32
+    "alcance": 33
    },
    {
     "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 24
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DfDPjPGmCk-/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 18
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DfC-OXADGh6/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 19
+    "alcance": 25
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -44,12 +39,32 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 43,
+  "followers_count": 44,
   "follows_count": 61,
-  "media_count": 16,
+  "media_count": 17,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18117244661119189",
+   "fecha": "2026-11-04T17:31:31+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
+   "texto": "¿Te recomienda ChatGPT?\n\nGoogle ya responde con IA en España y cada vez más gente pregunta a un asistente en lugar de co",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 11,
+    "views": 18,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 11052
+   }
+  },
   {
    "id": "18032797307684242",
    "fecha": "2026-11-03T17:30:07+0000",
@@ -57,14 +72,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
    "texto": "Tareas que ya no hace nadie a mano en las empresas con las que trabajamos.\n\nFacturas que se ordenan solas, pedidos que v",
-   "likes": 1,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 45,
+    "reach": 17,
+    "views": 60,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 1
+    "total_interactions": 4
    }
   },
   {
@@ -74,17 +89,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
    "texto": "¿Cuánto tardas en preparar las facturas del trimestre?\n\nHacienda ha anunciado que quiere retrasar Verifactu a octubre de",
-   "likes": 0,
+   "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 16,
-    "views": 28,
+    "reach": 19,
+    "views": 34,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 0,
-    "total_interactions": 0,
-    "ig_reels_avg_watch_time": 3889
+    "likes": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 5445
    }
   },
   {
@@ -97,8 +112,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 16,
-    "views": 33,
+    "reach": 18,
+    "views": 36,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -111,17 +126,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
    "texto": "«Le llamamos de Google. Su ficha va a desaparecer.»\n\nEs la séptima llamada esta semana, y siempre piden lo mismo: un pag",
-   "likes": 3,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 32,
-    "views": 39,
+    "reach": 33,
+    "views": 40,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 3,
-    "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5245
+    "likes": 4,
+    "total_interactions": 4,
+    "ig_reels_avg_watch_time": 5616
    }
   },
   {
@@ -134,14 +149,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 33,
+    "reach": 25,
+    "views": 34,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 11355
+    "ig_reels_avg_watch_time": 10994
    }
   },
   {
@@ -154,8 +169,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 63,
+    "reach": 19,
+    "views": 64,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -305,8 +320,8 @@
    "likes": 10,
    "comentarios": 0,
    "metricas": {
-    "reach": 66,
-    "views": 159,
+    "reach": 67,
+    "views": 162,
     "saved": 1,
     "shares": 0,
     "total_interactions": 12
@@ -349,12 +364,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-03T18:30:17+0000",
+   "fecha": "2026-11-04T18:30:17+0000",
    "metricas": {
-    "reach": 10,
+    "reach": 13,
     "views": 13,
     "replies": 0,
-    "navigation": 10,
+    "navigation": 13,
     "shares": 0
    }
   }
@@ -368,7 +383,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 615
+     "value": 616
     }
    },
    {
@@ -378,7 +393,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2522
+     "value": 2598
     }
    },
    {
@@ -388,7 +403,7 @@
     "title": "Cuentas con interacciones",
     "description": "Número de cuentas que han interactuado con tu contenido, incluido el de los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. Las interacciones pueden incluir acciones, como Me gusta, comentarios, respuestas o veces que se ha guardado o compartido el contenido. Estas métricas son una estimación y están en desarrollo.",
     "total_value": {
-     "value": 19
+     "value": 20
     }
    },
    {
@@ -398,7 +413,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 116
+     "value": 122
     }
    },
    {
@@ -408,7 +423,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 137
+     "value": 140
     }
    },
    {
@@ -430,6 +445,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-04T17:31:12+0000",
+   "enlace": "https://www.facebook.com/reel/1158323536531669/",
+   "texto": "¿Te recomienda ChatGPT?\n\nGoogle ya responde con IA en España y cada vez más gente pregunta a un asistente en lugar de co",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-03T17:30:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122119602663501320",
