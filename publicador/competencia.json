@@ -1,72 +1,72 @@
 {
- "generado": "2026-11-05T06:00:23.718Z",
+ "generado": "2026-11-06T06:00:24.166Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1056104,
-   "publicaciones": 3448,
+   "seguidores": 1057433,
+   "publicaciones": 3456,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 244,
-   "comentarios_medios": 12,
+   "likes_medios": 232,
+   "comentarios_medios": 16,
    "por_tipo": {
-    "Carrusel": {
-     "n": 11,
-     "likes": 604,
-     "comentarios": 32
-    },
     "Reel": {
-     "n": 18,
-     "likes": 17,
-     "comentarios": 1
+     "n": 20,
+     "likes": 43,
+     "comentarios": 2
+    },
+    "Carrusel": {
+     "n": 9,
+     "likes": 610,
+     "comentarios": 48
     },
     "Imagen": {
      "n": 1,
-     "likes": 370,
-     "comentarios": 2
+     "likes": 601,
+     "comentarios": 10
     }
    },
    "mejores": [
     {
+     "fecha": "2026-11-04",
+     "tipo": "Carrusel",
+     "likes": 2078,
+     "comentarios": 55,
+     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
+     "enlace": "https://www.instagram.com/p/DfTLSuSgm3Z/"
+    },
+    {
      "fecha": "2026-11-03",
      "tipo": "Carrusel",
-     "likes": 1902,
-     "comentarios": 4,
+     "likes": 2080,
+     "comentarios": 6,
      "texto": "El respeto comienza cuando te posicionas.",
      "enlace": "https://www.instagram.com/p/DfSGnWWCr7P/"
     },
     {
      "fecha": "2026-11-04",
-     "tipo": "Carrusel",
-     "likes": 1572,
-     "comentarios": 49,
-     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
-     "enlace": "https://www.instagram.com/p/DfTLSuSgm3Z/"
-    },
-    {
-     "fecha": "2026-11-02",
-     "tipo": "Carrusel",
-     "likes": 1009,
-     "comentarios": 7,
-     "texto": "A partir de hoy vas a dejar de decir esto a tus clientes...",
-     "enlace": "https://www.instagram.com/p/DfQEJ67CGXK/"
-    },
-    {
-     "fecha": "2026-11-02",
-     "tipo": "Carrusel",
-     "likes": 866,
-     "comentarios": 8,
-     "texto": "No se trata de costar menos, se trata de valer más..",
-     "enlace": "https://www.instagram.com/p/DfPhsRGl7Zf/"
+     "tipo": "Imagen",
+     "likes": 601,
+     "comentarios": 10,
+     "texto": "❤️",
+     "enlace": "https://www.instagram.com/p/DfVewUol-wL/"
     },
     {
      "fecha": "2026-11-04",
      "tipo": "Carrusel",
-     "likes": 466,
-     "comentarios": 13,
+     "likes": 550,
+     "comentarios": 17,
      "texto": "Si quieres entender las verdades del mundo comparativo, sin filtros ni romanticismo, sígueme.",
      "enlace": "https://www.instagram.com/p/DfUaSTsjr0g/"
+    },
+    {
+     "fecha": "2026-11-05",
+     "tipo": "Reel",
+     "likes": 500,
+     "comentarios": 4,
+     "texto": "Fortalecé ese vinculo todos los días ❤️",
+     "enlace": "https://www.instagram.com/reel/DfXybAujPRh/"
     }
    ],
    "historial": [
@@ -109,27 +109,31 @@
     {
      "fecha": "2026-11-05",
      "seguidores": 1056104
+    },
+    {
+     "fecha": "2026-11-06",
+     "seguidores": 1057433
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 469958,
-   "publicaciones": 2079,
-   "publicaciones_7d": 10,
+   "seguidores": 470639,
+   "publicaciones": 2084,
+   "publicaciones_7d": 13,
    "publicaciones_30d": 30,
-   "likes_medios": 11362,
-   "comentarios_medios": 171,
+   "likes_medios": 11424,
+   "comentarios_medios": 174,
    "por_tipo": {
     "Reel": {
-     "n": 18,
-     "likes": 17819,
-     "comentarios": 260
+     "n": 19,
+     "likes": 17202,
+     "comentarios": 253
     },
     "Carrusel": {
-     "n": 12,
-     "likes": 1676,
+     "n": 11,
+     "likes": 1445,
      "comentarios": 38
     }
    },
@@ -137,40 +141,40 @@
     {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 294540,
-     "comentarios": 3542,
+     "likes": 298951,
+     "comentarios": 3572,
      "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
      "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
     },
     {
      "fecha": "2026-10-30",
      "tipo": "Reel",
-     "likes": 9201,
-     "comentarios": 58,
+     "likes": 9391,
+     "comentarios": 57,
      "texto": "¿Creen que ahora son mejores o peores las carreras? 🤔\n.\n.\n.\n.\n.\n.\n#crecimiento #F1 #fórmula1 #México",
      "enlace": "https://www.instagram.com/reel/DfIvHIrAWje/"
     },
     {
-     "fecha": "2026-10-16",
+     "fecha": "2026-11-04",
      "tipo": "Carrusel",
-     "likes": 4125,
-     "comentarios": 25,
-     "texto": "También robé algo al final😊\n.\n.\n.\n.\n#contenido #ventas #marcapersonalonline",
-     "enlace": "https://www.instagram.com/p/Dekwz3GGmNz/"
+     "likes": 4210,
+     "comentarios": 48,
+     "texto": "Estos nadie los ve 🥹\n.\n.\n.\n.\n.\n #negocios #crecimiento #motivación #emprendimiento",
+     "enlace": "https://www.instagram.com/p/DfVRotOIB_-/"
     },
     {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 4030,
-     "comentarios": 23,
+     "likes": 4055,
+     "comentarios": 24,
      "texto": "¿Cuánto cuesta ir a la Fórmula 1 en 2026? \n.\n.\n.\n.\n#F1 #fórmula1 #crecimiento #México",
      "enlace": "https://www.instagram.com/reel/DfLMTBVkpda/"
     },
     {
      "fecha": "2026-10-29",
      "tipo": "Carrusel",
-     "likes": 3757,
-     "comentarios": 38,
+     "likes": 3835,
+     "comentarios": 39,
      "texto": "Hoy es un día menos para cumplir tus sueños...\n.\n.\n.\n.\n #fórmula1 #F1 #crecimiento #mentalidad #México",
      "enlace": "https://www.instagram.com/p/DfFMBW3j25T/"
     }
@@ -215,6 +219,10 @@
     {
      "fecha": "2026-11-05",
      "seguidores": 469958
+    },
+    {
+     "fecha": "2026-11-06",
+     "seguidores": 470639
     }
    ]
   }
