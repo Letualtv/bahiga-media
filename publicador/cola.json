@@ -763,6 +763,34 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "n-1106-wordpress-kev",
+   "fecha": "2026-11-08T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "borrador",
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1106-wordpress-kev-feed.jpg",
+    "media/noticias/n-1106-wordpress-kev-2.jpg",
+    "media/noticias/n-1106-wordpress-kev-3.jpg",
+    "media/noticias/n-1106-wordpress-kev-4.jpg"
+   ],
+   "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso en la web. Los organismos de ciberseguridad de Estados Unidos y Canadá avisan de que ya se está usando en ataques. Lo corrige la versión 7.1.4.\n\nAfecta a cualquier web con WordPress anterior a 7.1.4: tiendas online, webs de comercios, bares, clínicas.\n\nQué hacer: entra en el panel, mira la versión y, si es anterior a 7.1.4, actualiza. Haz una copia de seguridad antes.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\nEscríbenos WEB en comentarios y te ayudamos a revisarlo, sin compromiso.\n\n#WordPress #Ciberseguridad #WebsParaNegocios #Pymes"
+  },
+  {
+   "id": "n-1106-wordpress-kev-historia",
+   "fecha": "2026-11-08T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "borrador",
+   "tipo": "historia",
+   "media": "media/noticias/n-1106-wordpress-kev-historia.jpg"
   }
  ]
 }
