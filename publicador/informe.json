@@ -1,17 +1,22 @@
 {
- "generado": "2026-11-05T06:00:22.929Z",
+ "generado": "2026-11-06T06:00:21.878Z",
  "resumen_semana": {
   "publicaciones": 6,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 9
+   },
+   {
     "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
     "compartidos_mas_guardados": 0,
-    "alcance": 11
+    "alcance": 12
    },
    {
     "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 20
    },
    {
     "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
@@ -27,11 +32,6 @@
     "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
     "compartidos_mas_guardados": 0,
     "alcance": 33
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 25
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -41,10 +41,27 @@
   "id": "17841430450985904",
   "followers_count": 44,
   "follows_count": 61,
-  "media_count": 17,
+  "media_count": 18,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18138230725731914",
+   "fecha": "2026-11-05T17:30:06+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
+   "texto": "Lo que nos preguntan antes de poner un agente con IA.\n\n¿Suena a robot? ¿Y si no sabe algo? ¿Cuánto cuesta y cuánto tarda",
+   "likes": 1,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 9,
+    "views": 37,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 1
+   }
+  },
   {
    "id": "18117244661119189",
    "fecha": "2026-11-04T17:31:31+0000",
@@ -55,14 +72,14 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 11,
-    "views": 18,
+    "reach": 12,
+    "views": 20,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 11052
+    "ig_reels_avg_watch_time": 12799
    }
   },
   {
@@ -75,8 +92,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 60,
+    "reach": 20,
+    "views": 68,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -186,8 +203,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 19,
-    "views": 52,
+    "reach": 20,
+    "views": 58,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -223,7 +240,7 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 31,
+    "reach": 32,
     "views": 83,
     "saved": 0,
     "shares": 0,
@@ -260,14 +277,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 34,
-    "views": 73,
+    "reach": 35,
+    "views": 75,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10407
+    "ig_reels_avg_watch_time": 10350
    }
   },
   {
@@ -364,12 +381,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-04T18:30:17+0000",
+   "fecha": "2026-11-05T18:30:20+0000",
    "metricas": {
-    "reach": 13,
-    "views": 13,
+    "reach": 15,
+    "views": 16,
     "replies": 0,
-    "navigation": 13,
+    "navigation": 15,
     "shares": 0
    }
   }
@@ -393,7 +410,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2598
+     "value": 2680
     }
    },
    {
@@ -413,7 +430,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 122
+     "value": 125
     }
    },
    {
@@ -423,7 +440,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 140
+     "value": 142
     }
    },
    {
@@ -440,11 +457,19 @@
  },
  "facebook_pagina": {
   "name": "bahiga.es",
-  "followers_count": 2,
-  "fan_count": 2,
+  "followers_count": 3,
+  "fan_count": 3,
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-05T17:30:01+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122120443113501320",
+   "texto": "Lo que nos preguntan antes de poner un agente con IA.\n\n¿Suena a robot? ¿Y si no sabe algo? ¿Cuánto cuesta y cuánto tarda",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-04T17:31:12+0000",
    "enlace": "https://www.facebook.com/reel/1158323536531669/",
