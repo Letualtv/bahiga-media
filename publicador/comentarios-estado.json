@@ -1,5 +1,7 @@
 {
- "ultima_pasada": "2026-11-06T22:50:23.859Z",
- "errores": [],
+ "ultima_pasada": "2026-11-06T23:00:24.114Z",
+ "errores": [
+  "Facebook: Please reduce the amount of data you're asking for, then retry your request (1)"
+ ],
  "encontrados": 0
 }
