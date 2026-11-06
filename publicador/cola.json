@@ -771,7 +771,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "borrador",
+   "estado": "pendiente",
    "tipo": "carrusel",
    "medios": [
     "media/noticias/n-1106-wordpress-kev-feed.jpg",
@@ -788,7 +788,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "borrador",
+   "estado": "pendiente",
    "tipo": "historia",
    "media": "media/noticias/n-1106-wordpress-kev-historia.jpg"
   }
