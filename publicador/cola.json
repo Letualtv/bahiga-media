@@ -726,7 +726,20 @@
     "media/noticias/n-1101-robots-ia-4.jpg"
    ],
    "texto": "Tu web podrá decir «no» a que la IA se entrene con ella.\n\nQué pasa: Microsoft anunció el 30 de octubre que, desde el 1 de febrero de 2027, respetará una señal nueva en el fichero robots.txt para que una web indique que no quiere que su contenido se use para entrenar IA. Es una preferencia, no un bloqueo, y no cambia cómo sales en los resultados de Bing.\n\nA quién afecta: a cualquier negocio con web propia, con sus textos, fotos y catálogo.\n\nQué hacer:\n1. Decide si quieres que tu contenido entrene IA.\n2. Mira tu robots.txt escribiendo /robots.txt al final de tu dirección.\n3. Si no lo quieres, que quien lleve tu web añada la línea sin romper las reglas que ya haya.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\n¿No sabes qué dice el robots.txt de tu web? Escríbenos WEB en comentarios.\n\n#Webs #InteligenciaArtificial #Pymes #Bahiga",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18129650071895485",
+     "permalink": "https://www.instagram.com/p/Dfc_eMADYJg/",
+     "hora": "2026-11-07T20:01:33.941Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122121225141501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122121225141501320",
+     "hora": "2026-11-07T20:01:46.318Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1101-robots-ia-historia",
