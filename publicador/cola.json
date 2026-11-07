@@ -737,7 +737,19 @@
    ],
    "tipo": "historia",
    "media": "media/noticias/n-1101-robots-ia-historia.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17953374636340510",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4025174559746488878",
+     "hora": "2026-11-07T13:30:28.379Z"
+    },
+    "facebook": {
+     "id": "1133743322779518",
+     "hora": "2026-11-07T13:30:32.857Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1101-robots-ia-li",
