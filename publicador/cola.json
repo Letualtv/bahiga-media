@@ -796,7 +796,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "carrusel",
    "medios": [
     "media/noticias/n-1106-wordpress-kev-feed.jpg",
@@ -804,7 +804,20 @@
     "media/noticias/n-1106-wordpress-kev-3.jpg",
     "media/noticias/n-1106-wordpress-kev-4.jpg"
    ],
-   "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso en la web. Los organismos de ciberseguridad de Estados Unidos y Canadá avisan de que ya se está usando en ataques. Lo corrige la versión 7.1.4.\n\nAfecta a cualquier web con WordPress anterior a 7.1.4: tiendas online, webs de comercios, bares, clínicas.\n\nQué hacer: entra en el panel, mira la versión y, si es anterior a 7.1.4, actualiza. Haz una copia de seguridad antes.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\nEscríbenos WEB en comentarios y te ayudamos a revisarlo, sin compromiso.\n\n#WordPress #Ciberseguridad #WebsParaNegocios #Pymes"
+   "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso en la web. Los organismos de ciberseguridad de Estados Unidos y Canadá avisan de que ya se está usando en ataques. Lo corrige la versión 7.1.4.\n\nAfecta a cualquier web con WordPress anterior a 7.1.4: tiendas online, webs de comercios, bares, clínicas.\n\nQué hacer: entra en el panel, mira la versión y, si es anterior a 7.1.4, actualiza. Haz una copia de seguridad antes.\n\nGuárdalo y pásaselo a quien lleve la web de tu negocio.\n\nEscríbenos WEB en comentarios y te ayudamos a revisarlo, sin compromiso.\n\n#WordPress #Ciberseguridad #WebsParaNegocios #Pymes",
+   "resultado": {
+    "instagram": {
+     "id": "18105708239637221",
+     "permalink": "https://www.instagram.com/p/DffkQNwmi3g/",
+     "hora": "2026-11-08T20:01:16.458Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122121610881501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122121610881501320",
+     "hora": "2026-11-08T20:01:28.244Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1106-wordpress-kev-historia",
