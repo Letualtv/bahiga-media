@@ -813,9 +813,21 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "historia",
-   "media": "media/noticias/n-1106-wordpress-kev-historia.jpg"
+   "media": "media/noticias/n-1106-wordpress-kev-historia.jpg",
+   "resultado": {
+    "instagram": {
+     "id": "18185228638428101",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4025899320016859385",
+     "hora": "2026-11-08T13:30:34.269Z"
+    },
+    "facebook": {
+     "id": "1906908156965467",
+     "hora": "2026-11-08T13:30:38.914Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
