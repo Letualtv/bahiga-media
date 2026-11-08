@@ -1,53 +1,48 @@
 {
- "generado": "2026-11-07T06:00:27.072Z",
+ "generado": "2026-11-08T06:00:24.086Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1058356,
-   "publicaciones": 3465,
+   "seguidores": 1059270,
+   "publicaciones": 3474,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 125,
-   "comentarios_medios": 17,
+   "likes_medios": 139,
+   "comentarios_medios": 23,
    "por_tipo": {
     "Carrusel": {
      "n": 9,
-     "likes": 192,
-     "comentarios": 50
+     "likes": 303,
+     "comentarios": 69
     },
     "Reel": {
-     "n": 20,
+     "n": 21,
      "likes": 68,
-     "comentarios": 3
-    },
-    "Imagen": {
-     "n": 1,
-     "likes": 664,
-     "comentarios": 14
+     "comentarios": 4
     }
    },
    "mejores": [
     {
-     "fecha": "2026-11-04",
-     "tipo": "Imagen",
-     "likes": 664,
-     "comentarios": 14,
-     "texto": "❤️",
-     "enlace": "https://www.instagram.com/p/DfVewUol-wL/"
+     "fecha": "2026-11-07",
+     "tipo": "Carrusel",
+     "likes": 944,
+     "comentarios": 175,
+     "texto": "Escribime \"DELEGAR\" y te mando el podcast COMPLETO + el proceso exacto para soltar tareas sin perder calidad y escalas a 20-100K al mes.",
+     "enlace": "https://www.instagram.com/p/DfcIsYDAJ7s/"
     },
     {
-     "fecha": "2026-11-04",
+     "fecha": "2026-11-07",
      "tipo": "Carrusel",
-     "likes": 636,
-     "comentarios": 17,
-     "texto": "Si quieres entender las verdades del mundo comparativo, sin filtros ni romanticismo, sígueme.",
-     "enlace": "https://www.instagram.com/p/DfUaSTsjr0g/"
+     "likes": 695,
+     "comentarios": 12,
+     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
+     "enlace": "https://www.instagram.com/p/DfcZv5eDH7Q/"
     },
     {
      "fecha": "2026-11-05",
      "tipo": "Reel",
-     "likes": 645,
+     "likes": 702,
      "comentarios": 6,
      "texto": "Fortalecé ese vinculo todos los días ❤️",
      "enlace": "https://www.instagram.com/reel/DfXybAujPRh/"
@@ -55,16 +50,16 @@
     {
      "fecha": "2026-11-06",
      "tipo": "Carrusel",
-     "likes": 396,
-     "comentarios": 60,
+     "likes": 434,
+     "comentarios": 80,
      "texto": "Comenta \"MENÚ\" y te mando la estrategia por DM.",
      "enlace": "https://www.instagram.com/p/DfZ09Y8CPpN/"
     },
     {
      "fecha": "2026-11-05",
      "tipo": "Carrusel",
-     "likes": 104,
-     "comentarios": 138,
+     "likes": 124,
+     "comentarios": 180,
      "texto": "Comenta “CLAUDE” para obtener la colección de 1640 prompts de Claude GRATIS.",
      "enlace": "https://www.instagram.com/p/DfXQRWQijHb/"
     }
@@ -117,68 +112,74 @@
     {
      "fecha": "2026-11-07",
      "seguidores": 1058356
+    },
+    {
+     "fecha": "2026-11-08",
+     "seguidores": 1059270
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 471213,
-   "publicaciones": 2087,
-   "publicaciones_7d": 14,
+   "seguidores": 471643,
+   "publicaciones": 2089,
+   "publicaciones_7d": 17,
    "publicaciones_30d": 30,
-   "likes_medios": 11817,
-   "comentarios_medios": 169,
+   "likes_medios": 11818,
+   "comentarios_medios": 170,
    "por_tipo": {
-    "Carrusel": {
-     "n": 10,
-     "likes": 1573,
-     "comentarios": 17
-    },
     "Reel": {
-     "n": 20,
-     "likes": 16939,
-     "comentarios": 245
+     "n": 22,
+     "likes": 15536,
+     "comentarios": 225
+    },
+    "Carrusel": {
+     "n": 8,
+     "likes": 1593,
+     "comentarios": 17
     }
    },
    "mejores": [
     {
-     "fecha": "2026-11-07",
-     "tipo": "Carrusel",
-     "likes": 307,
-     "comentarios": 2,
-     "texto": "Cuándo dudes haz esto...\n.\n.\n.\n. #ReflexionesDiarias #emprender #crecimiento",
-     "enlace": "https://www.instagram.com/p/DfbATXEDyTm/"
-    },
-    {
-     "fecha": "2026-11-07",
-     "tipo": "Reel",
-     "comentarios": 4,
-     "texto": "Por esto pierde trump...\n.\n.\n.\n#negocios #Trump #estadosunidos🇺🇸 #donaldtrump",
-     "enlace": "https://www.instagram.com/reel/Dfa4G0VAqPk/"
-    },
-    {
-     "fecha": "2026-11-06",
-     "tipo": "Reel",
-     "comentarios": 0,
-     "texto": "Boing nos dio una lección de marketing 😎\n.\n.\n.\n.\n#vendermás #ventas #vendermas #emprender",
-     "enlace": "https://www.instagram.com/reel/DfaQvQMFcJd/"
-    },
-    {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 301733,
-     "comentarios": 3595,
+     "likes": 303465,
+     "comentarios": 3614,
      "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
      "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
     },
     {
      "fecha": "2026-11-05",
      "tipo": "Reel",
-     "likes": 9656,
-     "comentarios": 34,
+     "likes": 10295,
+     "comentarios": 36,
      "texto": "Como responde tu equipo a esa objeción? \n.\n.\n.\n.\n\n#emprender #negocios #vendermas #ventas",
      "enlace": "https://www.instagram.com/reel/DfYKCMmEisP/"
+    },
+    {
+     "fecha": "2026-10-30",
+     "tipo": "Reel",
+     "likes": 9564,
+     "comentarios": 57,
+     "texto": "¿Creen que ahora son mejores o peores las carreras? 🤔\n.\n.\n.\n.\n.\n.\n#crecimiento #F1 #fórmula1 #México",
+     "enlace": "https://www.instagram.com/reel/DfIvHIrAWje/"
+    },
+    {
+     "fecha": "2026-11-04",
+     "tipo": "Carrusel",
+     "likes": 4762,
+     "comentarios": 56,
+     "texto": "Estos nadie los ve 🥹\n.\n.\n.\n.\n.\n #negocios #crecimiento #motivación #emprendimiento",
+     "enlace": "https://www.instagram.com/p/DfVRotOIB_-/"
+    },
+    {
+     "fecha": "2026-10-31",
+     "tipo": "Reel",
+     "likes": 4093,
+     "comentarios": 25,
+     "texto": "¿Cuánto cuesta ir a la Fórmula 1 en 2026? \n.\n.\n.\n.\n#F1 #fórmula1 #crecimiento #México",
+     "enlace": "https://www.instagram.com/reel/DfLMTBVkpda/"
     }
    ],
    "historial": [
@@ -229,6 +230,10 @@
     {
      "fecha": "2026-11-07",
      "seguidores": 471213
+    },
+    {
+     "fecha": "2026-11-08",
+     "seguidores": 471643
     }
    ]
   }
