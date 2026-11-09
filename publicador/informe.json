@@ -1,12 +1,17 @@
 {
- "generado": "2026-11-08T06:00:21.703Z",
+ "generado": "2026-11-09T06:00:33.369Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 4
+   },
+   {
     "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
     "compartidos_mas_guardados": 0,
-    "alcance": 9
+    "alcance": 11
    },
    {
     "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
@@ -32,11 +37,6 @@
     "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
     "compartidos_mas_guardados": 0,
     "alcance": 23
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 20
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -46,10 +46,27 @@
   "id": "17841430450985904",
   "followers_count": 49,
   "follows_count": 69,
-  "media_count": 21,
+  "media_count": 22,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18105708239637221",
+   "fecha": "2026-11-08T20:01:13+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
+   "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 4,
+    "views": 17,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
   {
    "id": "18129650071895485",
    "fecha": "2026-11-07T20:01:30+0000",
@@ -57,14 +74,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
    "texto": "Tu web podrá decir «no» a que la IA se entrene con ella.\n\nQué pasa: Microsoft anunció el 30 de octubre que, desde el 1 d",
-   "likes": 1,
+   "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 9,
-    "views": 27,
+    "reach": 11,
+    "views": 31,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 1
+    "total_interactions": 2
    }
   },
   {
@@ -188,14 +205,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 36,
-    "views": 47,
+    "reach": 37,
+    "views": 49,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 5471
+    "ig_reels_avg_watch_time": 5881
    }
   },
   {
@@ -229,7 +246,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 20,
-    "views": 65,
+    "views": 67,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -423,22 +440,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-07T18:30:23+0000",
+   "fecha": "2026-11-08T13:30:32+0000",
    "metricas": {
-    "reach": 7,
-    "views": 10,
+    "reach": 11,
+    "views": 17,
     "replies": 0,
-    "navigation": 8,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-07T13:30:25+0000",
-   "metricas": {
-    "reach": 9,
-    "views": 10,
-    "replies": 0,
-    "navigation": 9,
+    "navigation": 16,
     "shares": 0
    }
   }
@@ -452,7 +459,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 617
+     "value": 619
     }
    },
    {
@@ -462,7 +469,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2967
+     "value": 3038
     }
    },
    {
@@ -482,7 +489,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 130
+     "value": 131
     }
    },
    {
@@ -492,7 +499,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 151
+     "value": 155
     }
    },
    {
@@ -514,6 +521,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-08T20:01:24+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122121610881501320",
+   "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-07T20:01:41+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122121225141501320",
