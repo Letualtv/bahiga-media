@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-09T06:00:33.369Z",
+ "generado": "2026-11-09T16:11:50.463Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 4
+    "alcance": 6
    },
    {
     "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
@@ -57,14 +57,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
    "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso",
-   "likes": 0,
+   "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 4,
-    "views": 17,
+    "reach": 6,
+    "views": 24,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 0
+    "total_interactions": 1
    }
   },
   {
@@ -78,7 +78,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 11,
-    "views": 31,
+    "views": 35,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -225,14 +225,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 27,
-    "views": 37,
+    "reach": 28,
+    "views": 38,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10415
+    "ig_reels_avg_watch_time": 10211
    }
   },
   {
@@ -397,7 +397,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 68,
-    "views": 164,
+    "views": 165,
     "saved": 1,
     "shares": 0,
     "total_interactions": 12
@@ -438,18 +438,7 @@
    }
   }
  ],
- "instagram_historias_activas": [
-  {
-   "fecha": "2026-11-08T13:30:32+0000",
-   "metricas": {
-    "reach": 11,
-    "views": 17,
-    "replies": 0,
-    "navigation": 16,
-    "shares": 0
-   }
-  }
- ],
+ "instagram_historias_activas": [],
  "instagram_cuenta_28d": {
   "data": [
    {
@@ -469,7 +458,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3038
+     "value": 3052
     }
    },
    {
@@ -489,7 +478,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 131
+     "value": 132
     }
    },
    {
@@ -499,7 +488,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 155
+     "value": 156
     }
    },
    {
