@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-09T16:11:50.463Z",
+ "generado": "2026-11-09T16:33:58.309Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 6
+    "alcance": 7
    },
    {
     "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
@@ -60,7 +60,7 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 6,
+    "reach": 7,
     "views": 24,
     "saved": 0,
     "shares": 0,
@@ -458,7 +458,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3052
+     "value": 3057
     }
    },
    {
