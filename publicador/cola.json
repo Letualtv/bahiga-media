@@ -283,9 +283,17 @@
    "tipo": "documento",
    "media": "media/linkedin/pasos.pdf",
    "texto_linkedin": "La pregunta que más me hacen antes de encargar una web no es el precio. Es «¿y cómo funciona esto?».\n\nEs lógico. Mucha gente ha tenido una mala experiencia: presupuestos que crecen a mitad de proyecto, semanas sin noticias y una web que al final nadie sabe tocar.\n\nAsí que lo he puesto por escrito. Cuatro pasos, sin letra pequeña: una llamada corta, presupuesto cerrado, construcción con avances que ves antes de que esté terminado, y entrega con formación.\n\nSi estás pensando en una web este año, guarda el carrusel. Te sirve para comparar a cualquier proveedor, no solo a mí.\n\nY si ya has encargado alguna: ¿qué es lo que más echaste en falta?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#paginasweb #pymes #Córdoba",
-   "estado": "pendiente",
+   "estado": "publicada",
    "titulo_documento": "Cómo trabajamos, en cuatro pasos",
-   "primer_comentario": "Si quieres verlo para tu negocio, escríbeme por WhatsApp: https://wa.me/34614142001"
+   "primer_comentario": "Si quieres verlo para tu negocio, escríbeme por WhatsApp: https://wa.me/34614142001",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7525822140001107968",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7525822140001107968/",
+     "hora": "2026-11-10T07:30:26.660Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1111-li-cuaderno",
