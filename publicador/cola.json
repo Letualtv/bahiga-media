@@ -849,6 +849,24 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "1116-area-clientes",
+   "fecha": "2026-11-16T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "borrador",
+   "tipo": "carrusel",
+   "medios": [
+    "media/1116-area-clientes-1.jpg",
+    "media/1116-area-clientes-2.jpg",
+    "media/1116-area-clientes-3.jpg",
+    "media/1116-area-clientes-4.jpg",
+    "media/1116-area-clientes-5.jpg"
+   ],
+   "texto": "¿Sabes cuánta gente entra en tu web y cuántos acaban llamándote?\n\nLo normal es no saberlo. La web se entrega, se paga y ya nadie mira qué hace.\n\nPor eso cada negocio que trabaja con nosotros tiene su área de clientes: un panel privado con las visitas de su web, de dónde llegan y cómo le contactan (WhatsApp, llamadas, formularios). Dentro están también el informe de cada mes en PDF, las facturas y presupuestos, y los documentos del proyecto.\n\nCada negocio ve solo lo suyo y se entra con el correo, también desde el móvil.\n\nLa pantalla del carrusel es un ejemplo con datos inventados.\n\nEscríbenos WEB en comentarios y te lo enseñamos funcionando.\n\n#WebsParaNegocios #Pymes #Córdoba #DiseñoWeb"
   }
  ]
 }

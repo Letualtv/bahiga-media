@@ -69,6 +69,12 @@ faqia:[
  S.rows({th:'light',tag:'Preguntas',label:'Pregunta 02',title:'¿Y si no sabe <em>algo?</em>',items:[['Lo dice','Sin inventarse la respuesta.'],['Toma nota','Nombre, teléfono y motivo.'],['Te avisa','Para que llames tú.']]}),
  S.rows({th:'dark',tag:'Preguntas',label:'Pregunta 03',title:'¿Cuánto cuesta y <em>tarda?</em>',items:[['Desde 550 € + IVA','Presupuesto cerrado.'],['De 2 a 4 semanas','Con uno o dos canales.'],['Voz, WhatsApp o web','Tú eliges dónde atiende.']]}),
  S.cta({title:'¿Lo vemos para tu <em>negocio?</em>',sub:'Te enseñamos uno funcionando en una llamada.'})],
+ area:[
+ S.cover({tag:'Área de clientes',label:'Para quien tiene su web con Bahiga',title:'Lo que hace tu web, a la <em>vista.</em>',fs:150,sub:'Un panel privado para cada cliente. Entras cuando quieres, sin pedirnos nada.',subT:1060}),
+ S.win({tag:'Área de clientes',label:'Pantalla de ejemplo · datos inventados',title:'Tu <em>panel.</em>',url:'panel.bahiga.es/area',img:'caps/area-panel.jpg',cap:'Cuántos entran en tu web y cuántos te contactan.',capT:1160}),
+ S.rows({th:'light',tag:'Área de clientes',label:'Qué encuentras dentro',title:'Cuatro <em>cosas.</em>',items:[['Estadísticas de tu web','Visitas, de dónde llegan y cómo te contactan.'],['El informe de cada mes','En PDF, el día 1.'],['Facturas y presupuestos','Para descargar o firmar.'],['Documentos del proyecto','Contratos, accesos y guías.']]}),
+ S.rows({th:'dark',tag:'Área de clientes',label:'Lo que no cambia',title:'Tus datos, solo <em>tuyos.</em>',fs:90,items:[['Cada negocio ve lo suyo','Nadie más entra en tu panel.'],['Entras con tu correo','Y recuperas la contraseña por email.'],['También desde el móvil','Sin instalar nada.']]}),
+ S.cta({tag:'Área de clientes',title:'¿Sabes qué hace tu <em>web?</em>',sub:'Lo tienen los negocios que trabajan con nosotros. Escribe WEB en comentarios y te lo enseñamos funcionando.',fs:124,subT:800,cta:'Comenta WEB'})],
 };
 const ST={
  php:{th:'coral',label:'Aviso de seguridad · 21 de octubre',title:'Fallo crítico en PHP. ¿Tu web está <em>al día?</em>',sub:'Afecta a casi todas las webs con WordPress, WooCommerce o PrestaShop. Hay que actualizar a PHP 8.2.35, 8.3.36, 8.4.27 u 8.5.12. Te lo revisamos gratis.',pill:'Escríbenos por WhatsApp'},
