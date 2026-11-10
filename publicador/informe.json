@@ -1,12 +1,17 @@
 {
- "generado": "2026-11-09T16:33:58.309Z",
+ "generado": "2026-11-10T06:00:22.541Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 12
+   },
+   {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 7
+    "alcance": 9
    },
    {
     "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
@@ -21,7 +26,7 @@
    {
     "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 14
    },
    {
     "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
@@ -32,11 +37,6 @@
     "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
     "compartidos_mas_guardados": 0,
     "alcance": 22
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 23
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -46,10 +46,27 @@
   "id": "17841430450985904",
   "followers_count": 49,
   "follows_count": 69,
-  "media_count": 22,
+  "media_count": 23,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "17900739765397542",
+   "fecha": "2026-11-09T17:30:08+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
+   "texto": "Pregúntale a ChatGPT por un negocio como el tuyo. ¿Sales?\n\nA esto se le llama GEO, el SEO de las respuestas de la IA. Tr",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 12,
+    "views": 32,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
   {
    "id": "18105708239637221",
    "fecha": "2026-11-08T20:01:13+0000",
@@ -57,14 +74,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
    "texto": "Si tu web usa WordPress, mira qué versión tiene hoy.\n\nUn fallo del núcleo de WordPress permite ejecutar código malicioso",
-   "likes": 1,
+   "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 7,
-    "views": 24,
+    "reach": 9,
+    "views": 31,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 1
+    "total_interactions": 2
    }
   },
   {
@@ -78,7 +95,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 11,
-    "views": 35,
+    "views": 36,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -95,7 +112,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 15,
-    "views": 22,
+    "views": 23,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -114,8 +131,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 51,
+    "reach": 14,
+    "views": 52,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -132,7 +149,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 15,
-    "views": 25,
+    "views": 26,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -152,7 +169,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 22,
-    "views": 76,
+    "views": 77,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -169,7 +186,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 23,
-    "views": 40,
+    "views": 41,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -189,7 +206,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 20,
-    "views": 43,
+    "views": 44,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -206,7 +223,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 37,
-    "views": 49,
+    "views": 50,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -226,7 +243,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 28,
-    "views": 38,
+    "views": 39,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -246,7 +263,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 20,
-    "views": 67,
+    "views": 68,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -263,7 +280,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 21,
-    "views": 70,
+    "views": 71,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -280,7 +297,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 29,
-    "views": 39,
+    "views": 40,
     "saved": 0,
     "shares": 0,
     "comments": 0,
@@ -438,7 +455,18 @@
    }
   }
  ],
- "instagram_historias_activas": [],
+ "instagram_historias_activas": [
+  {
+   "fecha": "2026-11-09T18:30:15+0000",
+   "metricas": {
+    "reach": 11,
+    "views": 11,
+    "replies": 0,
+    "navigation": 10,
+    "shares": 0
+   }
+  }
+ ],
  "instagram_cuenta_28d": {
   "data": [
    {
@@ -448,7 +476,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 619
+     "value": 620
     }
    },
    {
@@ -458,7 +486,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3057
+     "value": 3110
     }
    },
    {
@@ -478,7 +506,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 132
+     "value": 133
     }
    },
    {
@@ -510,6 +538,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-09T17:30:02+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122121874743501320",
+   "texto": "Pregúntale a ChatGPT por un negocio como el tuyo. ¿Sales?\n\nA esto se le llama GEO, el SEO de las respuestas de la IA. Tr",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-08T20:01:24+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122121610881501320",
