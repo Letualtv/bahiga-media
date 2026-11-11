@@ -1,10 +1,10 @@
-// Reel de ejemplo «8 segundos» con el estilo «pantalla anotada» (1080x1920, 30 fps, 17,5 s).
+// Reel de ejemplo «8 segundos» con el estilo «pantalla anotada» (1080x1920, 30 fps, 21 s).
 // Cada fotograma es función pura del tiempo: window.seek(t). Sin música: se añade del catálogo al publicar.
 // Uso: node motion/anotado/reel.mjs [--hoja]   →  media/ejemplo-reel-8-segundos.mp4
 import { mkdirSync, rmSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { chromium, RAIZ, arco, CSS, MAL, BIEN, movil } from './piezas.mjs';
-const FPS = 30, DUR = 17.5, ID = 'ejemplo-reel-8-segundos';
+const FPS = 30, DUR = 21.1, ID = 'ejemplo-reel-8-segundos';
 const chip = (id, txt) => `<div class="rc" id="${id}"><b><svg viewBox="0 0 24 24"><path class="q" d="M8.5 9a3.5 3.5 0 1 1 5 3.2c-1 .6-1.5 1.2-1.5 2.3M12 18.2v.3"/><path class="x" d="M7 7l10 10M17 7L7 17"/><path class="v" d="M5.5 12.5l4.2 4.2L18.5 8"/></svg></b><span>${txt}</span></div>`;
 const html = `<html><head><style>${CSS}
 body{height:1920px;background:radial-gradient(1000px 900px at 74% 62%,#1B3340 0%,#0F1C24 62%)}
@@ -47,7 +47,10 @@ function ficha(el,i,t,a,fin,clase,b){ // entra con rebote, cambia de estado en �
   el.style.transform='translateX('+(-q*q*700)+'px) rotate('+R[i]+'deg) scale('+s*golpe+')';
   el.className='rc '+(t>=b?clase:'pre');
 }
-window.seek=(t)=>{
+// Pausas: cuando una escena ya lo tiene todo en pantalla, el tiempo se para un momento para que dé tiempo a leer.
+const PAUSAS=[[1.7,.5],[9.8,.7],[11.15,.6],[14.95,1.0]];
+const reloj=(o)=>{let t=o;for(const [en,d] of PAUSAS){if(t<=en)break;t=Math.max(en,t-d)}return t};
+window.seek=(o)=>{const t=reloj(o);
   // 0–2: gancho
   const g=1-P(t,1.75,.3);
   sube($('g1'),t,-.3,.45);$('g1').style.opacity*=g;
@@ -59,7 +62,7 @@ window.seek=(t)=>{
   sube($('tb'),t,2.0,.5);$('tb').style.opacity*=1-P(t,9.9,.25);
   const enD=t>=11.3;
   sube($('td'),t,11.4,.45);$('td').style.opacity*=1-P(t,15,.2);
-  const seg=enD?Math.min(3,Math.max(0,t-11.8)):Math.min(8,Math.max(0,t-2.2)),tope=enD?3:8;
+  const seg=enD?Math.min(3,Math.max(0,t-11.8)):Math.min(8,Math.max(0,(t-2.2)*8/7.4)),tope=enD?3:8;
   $('cn').textContent=seg.toFixed(1).replace('.',',');$('bi').style.width=seg/tope*100+'%';
   const vis=(P(t,2.1,.3)*(1-P(t,9.9,.2)))+(enD?P(t,11.5,.3)*(1-P(t,15,.2)):0);
   $('cr').style.opacity=vis;$('bar').style.opacity=vis;
