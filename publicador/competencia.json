@@ -1,67 +1,67 @@
 {
- "generado": "2026-11-10T06:00:25.091Z",
+ "generado": "2026-11-11T06:00:24.147Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1061396,
-   "publicaciones": 3490,
+   "seguidores": 1062362,
+   "publicaciones": 3496,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 161,
-   "comentarios_medios": 24,
+   "likes_medios": 131,
+   "comentarios_medios": 19,
    "por_tipo": {
     "Carrusel": {
-     "n": 11,
-     "likes": 377,
-     "comentarios": 48
+     "n": 13,
+     "likes": 251,
+     "comentarios": 27
     },
     "Reel": {
-     "n": 19,
-     "likes": 36,
-     "comentarios": 10
+     "n": 17,
+     "likes": 39,
+     "comentarios": 12
     }
    },
    "mejores": [
     {
-     "fecha": "2026-11-07",
-     "tipo": "Carrusel",
-     "likes": 1774,
-     "comentarios": 260,
-     "texto": "Escribime \"DELEGAR\" y te mando el podcast COMPLETO + el proceso exacto para soltar tareas sin perder calidad y escalas a 20-100K al mes.",
-     "enlace": "https://www.instagram.com/p/DfcIsYDAJ7s/"
-    },
-    {
-     "fecha": "2026-11-07",
-     "tipo": "Carrusel",
-     "likes": 943,
-     "comentarios": 14,
-     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
-     "enlace": "https://www.instagram.com/p/DfcZv5eDH7Q/"
-    },
-    {
      "fecha": "2026-11-09",
      "tipo": "Carrusel",
-     "likes": 278,
-     "comentarios": 125,
+     "likes": 357,
+     "comentarios": 175,
      "texto": "Comenta \"OLA\" y te envío el podcast completo + el sistema para construir un negocio high ticket a prueba de las dos recesiones que se vienen �en el mercado digi",
      "enlace": "https://www.instagram.com/p/DfgDP9YCDeC/"
     },
     {
      "fecha": "2026-11-08",
      "tipo": "Reel",
-     "likes": 195,
-     "comentarios": 109,
+     "likes": 210,
+     "comentarios": 119,
      "texto": "Comenta \"CLAUDE\" y  los mando ahora.",
      "enlace": "https://www.instagram.com/reel/Dffx-SjCsZX/"
     },
     {
+     "fecha": "2026-11-10",
+     "tipo": "Carrusel",
+     "likes": 503,
+     "comentarios": 1,
+     "texto": "El cliente puede incluso no llevarse el producto..\npero se lleva la experiencia❤️",
+     "enlace": "https://www.instagram.com/p/Dfk7ivCFtEy/"
+    },
+    {
      "fecha": "2026-11-08",
      "tipo": "Carrusel",
-     "likes": 165,
-     "comentarios": 64,
+     "likes": 171,
+     "comentarios": 66,
      "texto": "Comenta “PROMPT” y recíbelo en tu DM.",
      "enlace": "https://www.instagram.com/p/DfdefTJCHYY/"
+    },
+    {
+     "fecha": "2026-11-09",
+     "tipo": "Carrusel",
+     "likes": 339,
+     "comentarios": 4,
+     "texto": "Emprender es aprender a dormir en el caos, en el ruido, en la incertidumbre.",
+     "enlace": "https://www.instagram.com/p/DfhSG1Ql9Tx/"
     }
    ],
    "historial": [
@@ -124,51 +124,55 @@
     {
      "fecha": "2026-11-10",
      "seguidores": 1061396
+    },
+    {
+     "fecha": "2026-11-11",
+     "seguidores": 1062362
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 472623,
-   "publicaciones": 2092,
-   "publicaciones_7d": 18,
+   "seguidores": 473156,
+   "publicaciones": 2095,
+   "publicaciones_7d": 19,
    "publicaciones_30d": 30,
-   "likes_medios": 12048,
-   "comentarios_medios": 175,
+   "likes_medios": 12134,
+   "comentarios_medios": 166,
    "por_tipo": {
     "Carrusel": {
      "n": 9,
-     "likes": 1667,
-     "comentarios": 46
+     "likes": 1823,
+     "comentarios": 88
     },
     "Reel": {
      "n": 21,
-     "likes": 16496,
-     "comentarios": 230
+     "likes": 16553,
+     "comentarios": 199
     }
    },
    "mejores": [
     {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 306716,
-     "comentarios": 3643,
+     "likes": 308018,
+     "comentarios": 3661,
      "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
      "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
     },
     {
      "fecha": "2026-11-05",
      "tipo": "Reel",
-     "likes": 10774,
-     "comentarios": 42,
+     "likes": 10914,
+     "comentarios": 48,
      "texto": "Como responde tu equipo a esa objeción? \n.\n.\n.\n.\n\n#emprender #negocios #vendermas #ventas",
      "enlace": "https://www.instagram.com/reel/DfYKCMmEisP/"
     },
     {
      "fecha": "2026-10-30",
      "tipo": "Reel",
-     "likes": 9749,
+     "likes": 9824,
      "comentarios": 58,
      "texto": "¿Creen que ahora son mejores o peores las carreras? 🤔\n.\n.\n.\n.\n.\n.\n#crecimiento #F1 #fórmula1 #México",
      "enlace": "https://www.instagram.com/reel/DfIvHIrAWje/"
@@ -176,16 +180,16 @@
     {
      "fecha": "2026-11-04",
      "tipo": "Carrusel",
-     "likes": 5015,
-     "comentarios": 57,
+     "likes": 5106,
+     "comentarios": 59,
      "texto": "Estos nadie los ve 🥹\n.\n.\n.\n.\n.\n #negocios #crecimiento #motivación #emprendimiento",
      "enlace": "https://www.instagram.com/p/DfVRotOIB_-/"
     },
     {
      "fecha": "2026-10-29",
      "tipo": "Carrusel",
-     "likes": 4174,
-     "comentarios": 40,
+     "likes": 4326,
+     "comentarios": 41,
      "texto": "Hoy es un día menos para cumplir tus sueños...\n.\n.\n.\n.\n #fórmula1 #F1 #crecimiento #mentalidad #México",
      "enlace": "https://www.instagram.com/p/DfFMBW3j25T/"
     }
@@ -250,6 +254,10 @@
     {
      "fecha": "2026-11-10",
      "seguidores": 472623
+    },
+    {
+     "fecha": "2026-11-11",
+     "seguidores": 473156
     }
    ]
   }
