@@ -1,0 +1,40 @@
+{
+ "salida": "26 publicaciones en el catálogo, 73 fotos.",
+ "piezas": 26,
+ "por_red": {
+  "instagram": 23,
+  "facebook": 3
+ },
+ "fotos": 73,
+ "megas": 7.9,
+ "muestra": [
+  {
+   "red": "instagram",
+   "nombre": "Tu web, en cuatro pasos.",
+   "precio": "900 €",
+   "fotos": 1,
+   "video": true
+  },
+  {
+   "red": "instagram",
+   "nombre": "Pregúntale a ChatGPT por un negocio como el tuyo. ¿Sales?",
+   "precio": null,
+   "fotos": 5,
+   "video": false
+  },
+  {
+   "red": "instagram",
+   "nombre": "Si tu web usa WordPress, mira qué versión tiene hoy.",
+   "precio": null,
+   "fotos": 4,
+   "video": false
+  },
+  {
+   "red": "instagram",
+   "nombre": "Tu web podrá decir «no» a que la IA se entrene con ella.",
+   "precio": null,
+   "fotos": 4,
+   "video": false
+  }
+ ]
+}
