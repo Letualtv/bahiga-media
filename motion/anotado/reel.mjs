@@ -1,16 +1,16 @@
-// Reel de ejemplo «8 segundos» con el estilo «pantalla anotada» (1080x1920, 30 fps, 21 s).
+// Reel «8 segundos» con el estilo «pantalla anotada» (1080x1920, 30 fps, 21 s).
 // Cada fotograma es función pura del tiempo: window.seek(t). Sin música: se añade del catálogo al publicar.
-// Uso: node motion/anotado/reel.mjs [--hoja]   →  media/ejemplo-reel-8-segundos.mp4
+// Uso: node motion/anotado/reel.mjs [--hoja]   →  media/1113-8-segundos.mp4
 import { mkdirSync, rmSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { chromium, RAIZ, arco, CSS, MAL, BIEN, movil } from './piezas.mjs';
-const FPS = 30, DUR = 21.1, ID = 'ejemplo-reel-8-segundos';
+const FPS = 30, DUR = 21.1, ID = '1113-8-segundos';
 const chip = (id, txt) => `<div class="rc" id="${id}"><b><svg viewBox="0 0 24 24"><path class="q" d="M8.5 9a3.5 3.5 0 1 1 5 3.2c-1 .6-1.5 1.2-1.5 2.3M12 18.2v.3"/><path class="x" d="M7 7l10 10M17 7L7 17"/><path class="v" d="M5.5 12.5l4.2 4.2L18.5 8"/></svg></b><span>${txt}</span></div>`;
 const html = `<html><head><style>${CSS}
 body{height:1920px;background:radial-gradient(1000px 900px at 74% 62%,#1B3340 0%,#0F1C24 62%)}
 .m{top:150px}.eti{position:absolute;right:80px;top:166px;font-family:M;font-size:20px;letter-spacing:3px;color:#F0A07E;z-index:20}
 .h{position:absolute;left:76px;right:70px;font-family:D;letter-spacing:-3px;line-height:.96;z-index:12;will-change:transform}.h i{font-family:DI;font-style:normal;color:#E8683C}
-#g1{top:560px;font-size:150px}#g2{top:860px;font-size:330px;letter-spacing:-12px}#g2 i{font-size:330px}
+#g1{top:660px;font-size:150px}#g2{top:860px;font-size:330px;letter-spacing:-12px}#g2 i{font-size:330px}
 #fan{position:absolute;right:-60px;top:380px;font-family:DI;font-size:1500px;line-height:.8;color:transparent;-webkit-text-stroke:3px rgba(232,104,60,.34);z-index:0}
 #tb,#td{top:290px;font-size:104px}
 .cr{position:absolute;left:76px;top:520px;z-index:14;display:flex;align-items:flex-end;gap:18px}.cr b{font-family:DI;font-weight:400;font-size:250px;line-height:.82;color:#E8683C;letter-spacing:-8px;font-variant-numeric:tabular-nums;min-width:330px}.cr span{font-family:M;font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#A9B4BA;padding-bottom:16px}
@@ -26,7 +26,7 @@ body{height:1920px;background:radial-gradient(1000px 900px at 74% 62%,#1B3340 0%
 #fin u{position:absolute;left:80px;top:1260px;text-decoration:none;background:#0F1C24;color:#FAF8F5;font-size:50px;padding:30px 50px;border-radius:999px;box-shadow:0 18px 40px rgba(15,28,36,.35)}
 </style></head><body>
 <div class=m>${arco(56, '#FAF8F5')}Bahiga.</div><div class=eti id=eti>WEB DE EJEMPLO</div><div id=fan>8</div>
-<div class=h id=g1>Tu cliente<br>decide en</div><div class=h id=g2><i>8 s.</i></div>
+<div class=h id=g1>Dale a tu web</div><div class=h id=g2><i>8 s.</i></div>
 <div class=h id=tb>Entra y busca<br><i>cuatro cosas.</i></div><div class=h id=td>Con la web<br><i>clara.</i></div>
 <div class=cr id=cr><b id=cn>0,0</b><span>segundos</span></div><div class=bar id=bar><i id=bi></i></div>
 <div id=A>${movil(MAL, {})}</div><div id=B>${movil(BIEN, {})}</div>

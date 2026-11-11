@@ -12,6 +12,7 @@ const yaVisto = new Set(vistos.ids);
 
 // Palabra clave → respuesta pública. La conversación de verdad sigue por privado.
 const RESPUESTAS = [
+  [/\blanding\b/i, 'Apuntado. Te escribimos por privado con un ejemplo de landing para tu negocio.'],
   [/\bweb\b/i, 'Apuntado. Te escribimos por privado y te decimos qué le falta a tu web.'],
   [/\bgoogle\b/i, 'Apuntado. Te escribimos por privado y revisamos tu ficha de Google.'],
   [/\b(precio|presupuesto|cu[aá]nto)\b/i, 'Te escribimos por privado con los precios, sin compromiso.'],
