@@ -1,0 +1,172 @@
+{
+ "instagram": {
+  "leidas": 12,
+  "hay_mas": true,
+  "descarga": {
+   "estado": 200,
+   "tipo": "image/jpeg",
+   "bytes": 104224
+  },
+  "piezas": [
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-11-10T17:31:37+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "Tu web, en cuatro pasos.\n\nUna llamada corta, presu",
+    "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-09T17:30:08+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 5,
+    "hijos_con_url": 5,
+    "texto": "Pregúntale a ChatGPT por un negocio como el tuyo. ",
+    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-08T20:01:13+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 4,
+    "hijos_con_url": 4,
+    "texto": "Si tu web usa WordPress, mira qué versión tiene ho",
+    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-07T20:01:30+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 4,
+    "hijos_con_url": 4,
+    "texto": "Tu web podrá decir «no» a que la IA se entrene con",
+    "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-11-06T17:31:34+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "57.000 intentos de entrar en un WordPress en 30 dí",
+    "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-05T17:30:06+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 5,
+    "hijos_con_url": 5,
+    "texto": "Lo que nos preguntan antes de poner un agente con ",
+    "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-11-04T17:31:31+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "¿Te recomienda ChatGPT?\n\nGoogle ya responde con IA",
+    "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-03T17:30:07+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 5,
+    "hijos_con_url": 5,
+    "texto": "Tareas que ya no hace nadie a mano en las empresas",
+    "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-11-02T17:31:04+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "¿Cuánto tardas en preparar las facturas del trimes",
+    "enlace": "https://www.instagram.com/reel/DfP2QHBAmQ6/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "CAROUSEL_ALBUM",
+    "producto": "FEED",
+    "fecha": "2026-11-01T20:02:00+0000",
+    "con_media_url": true,
+    "con_miniatura": false,
+    "hijos": 6,
+    "hijos_con_url": 6,
+    "texto": "¿Está bien tu web? Compruébalo en 5 minutos, desde",
+    "enlace": "https://www.instagram.com/p/DfNiwk-jS_U/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-10-30T20:01:00+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "«Le llamamos de Google. Su ficha va a desaparecer.",
+    "enlace": "https://www.instagram.com/reel/DfIZBcSDwuG/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   },
+   {
+    "tipo": "VIDEO",
+    "producto": "REELS",
+    "fecha": "2026-10-29T17:30:59+0000",
+    "con_media_url": true,
+    "con_miniatura": true,
+    "hijos": 0,
+    "hijos_con_url": 0,
+    "texto": "¿Cuántas llamadas pierdes al día mientras atiendes",
+    "enlace": "https://www.instagram.com/reel/DfFjD52ib9g/",
+    "host": "scontent-sjc6-1.cdninstagram.com",
+    "caduca": true
+   }
+  ]
+ },
+ "facebook": {
+  "error": "(#210) A page access token is required to request this resource."
+ }
+}
