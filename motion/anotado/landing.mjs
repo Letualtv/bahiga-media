@@ -40,9 +40,9 @@ const L = [
     cuerpo: `<div class="busca"><div class="caja"><i></i>panadería en priego</div>
         <div class="resu"><small>panaderialamiga.example</small><b>La Miga · Pan de horno de leña en Priego</b><p><u>★★★★★</u> 4,8 · Abierto · cierra 14:00</p><span>Abrimos a las 7:00. Encargos por WhatsApp. C/ Ejemplo, 12.</span></div></div>
       <div class="seo">${['Títulos y textos', 'Datos para Google', 'Carga rápida', 'Ficha de Google'].map((x) => `<div class="chip sg"><b>${ok}</b>${x}</div>`).join('')}</div>
-      <div class="nota">Búsqueda de ejemplo. No prometemos posiciones: dejamos la web lista para competir.</div>` },
+      <div class="nota">Búsqueda de ejemplo. Te dejamos tu web lista para competir.</div>` },
   { fantasma: '04', num: '04', t: 'Y no se queda *abandonada.*', n: 'Cada mes nos ocupamos nosotros.',
-    cuerpo: `<div class="lista">${['Alojamiento en nuestro servidor', 'Copias de seguridad', 'Cambios de textos, fotos y horarios', 'Tu panel con las visitas y los contactos', 'Informe cada mes'].map((x) => `<div><b>${ok}</b>${x}</div>`).join('')}</div>
+    cuerpo: `<div class="lista">${['Alojamiento en nuestro servidor', 'Copias de seguridad', 'Media hora de cambios: textos, fotos, horarios', 'Tu panel con las visitas y los contactos', 'Informe cada mes'].map((x) => `<div><b>${ok}</b>${x}</div>`).join('')}</div>
       <div class="chip suelto mes"><b>30</b>€ al mes · sin permanencia</div>` },
   { fantasma: '€', t: 'Lo que *cuesta.*',
     cuerpo: `<div class="precio p-a"><b>390 €</b><span>La landing, hecha y publicada.<br>Dominio del primer año incluido.</span><small>Desde</small></div>
