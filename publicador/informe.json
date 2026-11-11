@@ -1,42 +1,42 @@
 {
- "generado": "2026-11-10T06:00:22.541Z",
+ "generado": "2026-11-11T06:00:23.475Z",
  "resumen_semana": {
   "publicaciones": 7,
   "nuevos_por_pieza": [
    {
-    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 12
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 9
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 11
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
+    "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
     "compartidos_mas_guardados": 0,
     "alcance": 15
    },
    {
-    "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
+    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
     "compartidos_mas_guardados": 0,
     "alcance": 14
    },
    {
-    "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
+    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 10
+   },
+   {
+    "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 14
+   },
+   {
+    "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 16
+   },
+   {
+    "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
     "compartidos_mas_guardados": 0,
     "alcance": 15
    },
    {
-    "enlace": "https://www.instagram.com/p/DfSa_nrjExE/",
+    "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
     "compartidos_mas_guardados": 0,
-    "alcance": 22
+    "alcance": 16
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -45,11 +45,31 @@
  "instagram_cuenta": {
   "id": "17841430450985904",
   "followers_count": 49,
-  "follows_count": 69,
-  "media_count": 23,
+  "follows_count": 70,
+  "media_count": 24,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "17996384130102574",
+   "fecha": "2026-11-10T17:31:37+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
+   "texto": "Tu web, en cuatro pasos.\n\nUna llamada corta, presupuesto cerrado, la hacemos contigo y te enseñamos a manejarla. Así tra",
+   "likes": 2,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 15,
+    "views": 22,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 2,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3265
+   }
+  },
   {
    "id": "17900739765397542",
    "fecha": "2026-11-09T17:30:08+0000",
@@ -57,14 +77,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
    "texto": "Pregúntale a ChatGPT por un negocio como el tuyo. ¿Sales?\n\nA esto se le llama GEO, el SEO de las respuestas de la IA. Tr",
-   "likes": 0,
+   "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 12,
-    "views": 32,
+    "reach": 14,
+    "views": 41,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 0
+    "total_interactions": 1
    }
   },
   {
@@ -77,7 +97,7 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 9,
+    "reach": 10,
     "views": 31,
     "saved": 0,
     "shares": 0,
@@ -91,14 +111,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
    "texto": "Tu web podrá decir «no» a que la IA se entrene con ella.\n\nQué pasa: Microsoft anunció el 30 de octubre que, desde el 1 d",
-   "likes": 2,
+   "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 11,
-    "views": 36,
+    "reach": 14,
+    "views": 44,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 2
+    "total_interactions": 3
    }
   },
   {
@@ -111,14 +131,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
+    "reach": 16,
     "views": 23,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 9360
+    "ig_reels_avg_watch_time": 8964
    }
   },
   {
@@ -131,8 +151,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 14,
-    "views": 52,
+    "reach": 15,
+    "views": 54,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -148,14 +168,14 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
+    "reach": 16,
     "views": 26,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 10427
+    "ig_reels_avg_watch_time": 9899
    }
   },
   {
@@ -168,7 +188,7 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 22,
+    "reach": 23,
     "views": 77,
     "saved": 0,
     "shares": 0,
@@ -185,14 +205,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 23,
+    "reach": 24,
     "views": 41,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 6247
+    "ig_reels_avg_watch_time": 6072
    }
   },
   {
@@ -205,7 +225,7 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 20,
+    "reach": 21,
     "views": 44,
     "saved": 0,
     "shares": 0,
@@ -222,14 +242,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 37,
+    "reach": 38,
     "views": 50,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 5881
+    "ig_reels_avg_watch_time": 5775
    }
   },
   {
@@ -242,14 +262,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 28,
+    "reach": 29,
     "views": 39,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10211
+    "ig_reels_avg_watch_time": 9921
    }
   },
   {
@@ -262,7 +282,7 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 20,
+    "reach": 21,
     "views": 68,
     "saved": 0,
     "shares": 0,
@@ -279,8 +299,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 71,
+    "reach": 23,
+    "views": 72,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -296,14 +316,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 29,
+    "reach": 30,
     "views": 40,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 5319
+    "ig_reels_avg_watch_time": 5180
    }
   },
   {
@@ -457,12 +477,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-09T18:30:15+0000",
+   "fecha": "2026-11-10T18:30:26+0000",
    "metricas": {
-    "reach": 11,
-    "views": 11,
+    "reach": 9,
+    "views": 10,
     "replies": 0,
-    "navigation": 10,
+    "navigation": 9,
     "shares": 0
    }
   }
@@ -476,7 +496,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 620
+     "value": 621
     }
    },
    {
@@ -486,7 +506,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3110
+     "value": 3186
     }
    },
    {
@@ -506,7 +526,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 133
+     "value": 139
     }
    },
    {
@@ -538,6 +558,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-10T17:31:09+0000",
+   "enlace": "https://www.facebook.com/reel/1155605207055943/",
+   "texto": "Tu web, en cuatro pasos.\n\nUna llamada corta, presupuesto cerrado, la hacemos contigo y te enseñamos a manejarla. Así tra",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-09T17:30:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122121874743501320",
