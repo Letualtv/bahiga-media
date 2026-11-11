@@ -1052,7 +1052,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "carrusel",
    "medios": [
     "media/noticias/n-1111-chrome-zeroday-feed.jpg",
@@ -1061,7 +1061,20 @@
     "media/noticias/n-1111-chrome-zeroday-4.jpg",
     "media/noticias/n-1111-chrome-zeroday-5.jpg"
    ],
-   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador y avisa de que un fallo que corrige ya se está usando en ataques. Basta con visitar una web preparada para aprovecharlo.\n\nAfecta a quien use Chrome en Windows, Mac o Linux, también en el ordenador de tu comercio o tu oficina.\n\nQué hacer: abre Chrome, pulsa Más (arriba a la derecha), Ayuda, Información de Google Chrome, y si aparece Reiniciar, púlsalo. Las pestañas se recuperan solas.\n\nGuárdalo y pásaselo a quien use Chrome en tu negocio.\n\nEscríbenos REVISAR en comentarios y revisamos contigo los equipos y la web de tu negocio, sin compromiso.\n\n#Chrome #Ciberseguridad #Pymes #Google"
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador y avisa de que un fallo que corrige ya se está usando en ataques. Basta con visitar una web preparada para aprovecharlo.\n\nAfecta a quien use Chrome en Windows, Mac o Linux, también en el ordenador de tu comercio o tu oficina.\n\nQué hacer: abre Chrome, pulsa Más (arriba a la derecha), Ayuda, Información de Google Chrome, y si aparece Reiniciar, púlsalo. Las pestañas se recuperan solas.\n\nGuárdalo y pásaselo a quien use Chrome en tu negocio.\n\nEscríbenos REVISAR en comentarios y revisamos contigo los equipos y la web de tu negocio, sin compromiso.\n\n#Chrome #Ciberseguridad #Pymes #Google",
+   "resultado": {
+    "instagram": {
+     "id": "17950804434098499",
+     "permalink": "https://www.instagram.com/p/Dfm91zGD8Nn/",
+     "hora": "2026-11-11T16:59:44.615Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122122502499501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122122502499501320",
+     "hora": "2026-11-11T16:59:55.521Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1111-chrome-zeroday-historia",
@@ -1070,9 +1083,21 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "historia",
-   "media": "media/noticias/n-1111-chrome-zeroday-historia.jpg"
+   "media": "media/noticias/n-1111-chrome-zeroday-historia.jpg",
+   "resultado": {
+    "instagram": {
+     "id": "17942445102386550",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4028179156277598857",
+     "hora": "2026-11-11T17:00:15.618Z"
+    },
+    "facebook": {
+     "id": "29490613277199779",
+     "hora": "2026-11-11T17:00:19.917Z"
+    }
+   },
+   "intentos": 1
   }
  ]
 }
