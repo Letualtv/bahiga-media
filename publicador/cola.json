@@ -304,8 +304,16 @@
    "tipo": "foto",
    "media": "media/linkedin/li-cuaderno.jpg",
    "texto_linkedin": "Si tienes olivar o cualquier explotación agrícola, apunta esta fecha: 1 de enero de 2027.\n\nDesde ese día, los tratamientos fitosanitarios se tienen que registrar en el cuaderno de explotación digital. El de papel vale hasta el 31 de diciembre de 2026. Lo establece el Real Decreto 1039/2025.\n\nTres cosas que conviene saber:\nLa Junta de Andalucía ofrece el cuaderno digital gratis, no hace falta pagar ningún programa.\nDesde enero de 2026 la fertilización también se anota en su sección del cuaderno, en el plazo de un mes.\nQuien empiece en diciembre de 2026 lo va a hacer con prisas y en plena campaña.\n\nEn Priego y en toda la provincia hay mucha gente a la que esto le va a pillar. Si conoces a alguien con olivar, pásale esto.\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#olivar #agricultura #Córdoba",
-   "estado": "pendiente",
-   "primer_comentario": "Información oficial de la Junta de Andalucía sobre el cuaderno de explotación: https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/areas/agricultura/cuaderno-explotacion.html"
+   "estado": "publicada",
+   "primer_comentario": "Información oficial de la Junta de Andalucía sobre el cuaderno de explotación: https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/areas/agricultura/cuaderno-explotacion.html",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:share:7526184530152505344",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7526184530152505344/",
+     "hora": "2026-11-11T07:30:27.300Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1112-li-rafagas",
