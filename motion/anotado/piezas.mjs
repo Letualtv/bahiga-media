@@ -162,3 +162,29 @@ body.coral{background:radial-gradient(900px 800px at 85% 20%,#F08A5E,#E8683C 60%
 .gu{position:absolute;left:80px;right:120px;bottom:290px;font-family:M;font-size:30px;line-height:1.4;letter-spacing:1px;z-index:10}
 .cta{position:absolute;left:80px;bottom:150px;background:#0F1C24;color:#FAF8F5;font-size:36px;padding:24px 38px;border-radius:999px;z-index:10;box-shadow:0 18px 40px rgba(15,28,36,.35)}
 `;
+
+// Monta y guarda un carrusel: L = láminas { cls, fantasma, num, t, n, cuerpo }.
+// «ir-<id>» en la clase de un móvil desplaza su pantalla hasta el elemento con ese id.
+export async function render(ID, L, css = '', { ancho = 1080, alto = 1350 } = {}) {
+  const { mkdirSync } = await import('node:fs');
+  const total = L.length;
+  const html = (s, i) => `<html><head><style>${CSS}${css}</style></head><body class="${s.cls || ''}">
+  <div class=m>${arco(56, s.cls === 'coral' ? '#0F1C24' : '#FAF8F5')}Bahiga.</div><div class=pg>0${i + 1} / 0${total}</div>
+  ${s.fantasma ? `<div class=fan>${s.fantasma}</div>` : ''}${s.num ? `<div class=num>${s.num}</div>` : ''}
+  <div class=t>${co(s.t)}</div>${s.n ? `<div class=n>${s.n}</div>` : ''}${s.cuerpo || ''}
+  <div class=pie>BAHIGA.ES</div></body></html>`;
+  mkdirSync(`${RAIZ}media`, { recursive: true });
+  const b = await chromium.launch();
+  for (const [i, s] of L.entries()) {
+    const pg = await b.newPage({ viewport: { width: ancho, height: alto } });
+    await pg.setContent(html(s, i)); await pg.evaluate(() => document.fonts.ready);
+    await pg.evaluate(() => {
+      const t = document.querySelector('.t'), n = document.querySelector('.n'); if (t && n) n.style.top = Math.max(430, t.getBoundingClientRect().bottom + 36) + 'px';
+      for (const m of document.querySelectorAll('.movil')) { const c = [...m.classList].find((x) => x.startsWith('ir-')); if (!c) continue; const d = m.querySelector('#' + c.slice(3)); if (d) m.querySelector('.esc').style.top = -(d.offsetTop - 50) * 1.431 + 'px'; }
+    });
+    await pg.screenshot({ path: `${RAIZ}media/${ID}-${i + 1}.jpg`, type: 'jpeg', quality: 93 });
+  }
+  await b.close();
+}
+export const OK = `<svg viewBox="0 0 24 24"><path d="M5.5 12.5l4.2 4.2L18.5 8"/></svg>`;
+export const NO = `<svg viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></svg>`;
