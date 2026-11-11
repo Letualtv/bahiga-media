@@ -1,0 +1,35 @@
+name: Catálogo · prueba
+
+# Prueba el catálogo desde redes con la cuenta de Bahiga. Solo guarda un resumen, no las fotos.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['catalogo/sincronizar.mjs', '.github/workflows/catalogo-prueba.yml']
+permissions:
+  contents: write
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Sincronizar
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_ID: '17841430450985904'
+          PAGE_ID: '1371169526080229'
+          MAX: '30'
+        run: |
+          node catalogo/sincronizar.mjs /tmp/cat 2>&1 | tee /tmp/salida.txt || true
+          node -e "
+          const fs=require('fs');let r={salida:fs.readFileSync('/tmp/salida.txt','utf8').trim()};
+          try{const c=JSON.parse(fs.readFileSync('/tmp/cat/catalogo.json','utf8'));const fotos=fs.readdirSync('/tmp/cat/img');
+          r={...r,piezas:c.piezas.length,por_red:c.piezas.reduce((a,p)=>(a[p.red]=(a[p.red]||0)+1,a),{}),fotos:fotos.length,megas:+(fotos.reduce((s,f)=>s+fs.statSync('/tmp/cat/img/'+f).size,0)/1e6).toFixed(1),muestra:c.piezas.slice(0,4).map(p=>({red:p.red,nombre:p.nombre,precio:p.precio,fotos:p.fotos.length,video:p.video}))}}catch(e){r.error=String(e)}
+          fs.writeFileSync('catalogo/prueba.json',JSON.stringify(r,null,1))"
+      - name: Guardar el resumen
+        run: |
+          git config user.name "bahiga-publicador"
+          git config user.email "info@bahiga.es"
+          git add catalogo/prueba.json
+          git diff --cached --quiet || (git commit -m "Catálogo: resultado de la prueba" && git pull --rebase origin main && git push)

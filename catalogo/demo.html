@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo desde Instagram · demostración</title>
+<style>
+  :root{--tinta:#0F1C24;--hueso:#FAF8F5;--coral:#E8683C;--linea:#E6E0D6}
+  *{box-sizing:border-box}body{margin:0;background:var(--hueso);color:var(--tinta);font:16px/1.5 system-ui,sans-serif}
+  header{padding:28px 16px 8px;max-width:1080px;margin:auto}h1{font:400 32px/1.1 Georgia,serif;margin:0 0 6px}header p{margin:0;color:#4A5560}
+  .rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;padding:16px;max-width:1080px;margin:auto}
+  article{background:#fff;border:1px solid var(--linea);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  article img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#eee}
+  .cuerpo{padding:12px 14px 14px;display:grid;gap:6px;flex:1}h2{font-size:16px;margin:0;line-height:1.3}
+  .precio{font-weight:600;color:var(--coral)}.agotado{color:#8A8F93}.desc{font-size:13px;color:#4A5560;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  a.pedir{margin-top:auto;display:block;text-align:center;background:var(--tinta);color:#fff;text-decoration:none;padding:12px;border-radius:10px;font-weight:600}
+  a.ver{font-size:13px;color:#4A5560}footer{padding:8px 16px 40px;max-width:1080px;margin:auto;font-size:13px;color:#6B747C}
+</style></head><body>
+<header><h1>Catálogo</h1><p>Lo que se publica en Instagram aparece aquí solo.</p></header>
+<main class="rejilla" id="r"></main><footer id="pie"></footer>
+<script>
+  // Teléfono de WhatsApp del negocio (con prefijo, sin +). Se cambia por el de cada cliente.
+  const TEL = new URLSearchParams(location.search).get('tel') || '34600000000';
+  const e = (t, c, x) => { const n = document.createElement(t); if (c) n.className = c; if (x) n.textContent = x; return n; };
+  fetch('catalogo.json').then((r) => r.json()).then(({ actualizado, piezas }) => {
+    const r = document.getElementById('r');
+    for (const p of piezas) {
+      const a = e('article'); const img = e('img'); img.src = p.fotos[0]; img.alt = p.nombre; img.loading = 'lazy'; a.append(img);
+      const c = e('div', 'cuerpo'); c.append(e('h2', '', p.nombre || 'Sin título'));
+      if (p.agotado) c.append(e('span', 'agotado', 'Agotado')); else if (p.precio) c.append(e('span', 'precio', p.precio));
+      if (p.descripcion) c.append(e('p', 'desc', p.descripcion));
+      const v = e('a', 'ver', 'Ver en ' + (p.red === 'facebook' ? 'Facebook' : 'Instagram')); v.href = p.enlace; v.rel = 'noopener'; c.append(v);
+      if (!p.agotado) { const w = e('a', 'pedir', 'Pedir por WhatsApp'); w.href = 'https://wa.me/' + TEL + '?text=' + encodeURIComponent('Hola, me interesa: ' + p.nombre + ' ' + p.enlace); w.rel = 'noopener'; c.append(w); }
+      a.append(c); r.append(a);
+    }
+    document.getElementById('pie').textContent = piezas.length + ' publicaciones · actualizado el ' + new Date(actualizado).toLocaleString('es-ES');
+  });
+</script></body></html>
