@@ -955,6 +955,95 @@
    ],
    "texto": "Hasta el 30 de noviembre revisamos tu web gratis.\n\nMiramos cinco cosas, las que más clientes hacen perder:\n1. Cuánto tarda en cargar en el móvil.\n2. Si se entiende qué haces en la primera pantalla.\n3. Si el teléfono y WhatsApp funcionan.\n4. Cómo sales en Google.\n5. Si está actualizada y con copias.\n\nTe llevas una hoja con lo urgente arriba y lo que puede esperar abajo, sin tecnicismos. No hay que contratar nada: si luego quieres que lo arreglemos, te damos precio; si no, la hoja es tuya.\n\nEscribe WEB en comentarios o mándanos la dirección por privado.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
    "estado": "borrador"
+  },
+  {
+   "id": "1119-historia-landing-1",
+   "fecha": "2026-11-19T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1119-historia-landing-1.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1119-historia-landing-2",
+   "fecha": "2026-11-19T14:31:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1119-historia-landing-2.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1119-historia-landing-3",
+   "fecha": "2026-11-19T14:32:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1119-historia-landing-3.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1125-reel-landing",
+   "fecha": "2026-11-25T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/1125-reel-landing.mp4",
+   "texto": "Tu negocio, en una página.\n\nPortada, escaparate, opiniones, dónde estás y cómo llamarte. Para muchos negocios no hace falta más web que esa.\n\nDesde 390 €, con el dominio del primer año. Y si quieres que nos ocupemos cada mes, 30 € con alojamiento y mantenimiento: los dos primeros meses son gratis y no hay permanencia. Precios sin IVA.\n\nLa web del vídeo es un ejemplo con un negocio inventado.\n\nEscribe LANDING en comentarios y te mandamos un ejemplo pensado para tu tipo de negocio.\n\n#DiseñoWeb #LandingPage #ComerciosDeCórdoba #Pymes",
+   "portada_ms": 1000,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "borrador"
+  },
+  {
+   "id": "1127-reel-revision",
+   "fecha": "2026-11-27T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/1127-reel-revision.mp4",
+   "texto": "Revisamos tu web gratis hasta el 30 de noviembre.\n\nMiramos cinco cosas: cuánto tarda, si se entiende en la primera pantalla, si el teléfono y WhatsApp funcionan, cómo sales en Google y si tiene copias.\n\nTe llevas una hoja con lo urgente y lo que puede esperar. No hay que contratar nada.\n\nLa web y el informe del vídeo son ejemplos inventados.\n\nEscribe WEB en comentarios o mándanos la dirección por privado.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
+   "portada_ms": 1000,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "borrador"
+  },
+  {
+   "id": "1128-historia-revision-1",
+   "fecha": "2026-11-28T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1128-historia-revision-1.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1128-historia-revision-2",
+   "fecha": "2026-11-28T14:31:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1128-historia-revision-2.jpg",
+   "estado": "borrador"
   }
  ]
 }
