@@ -1044,6 +1044,35 @@
    "tipo": "historia",
    "media": "media/1128-historia-revision-2.jpg",
    "estado": "pendiente"
+  },
+  {
+   "id": "n-1111-chrome-zeroday",
+   "fecha": "2026-11-11T17:58:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "pendiente",
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1111-chrome-zeroday-feed.jpg",
+    "media/noticias/n-1111-chrome-zeroday-2.jpg",
+    "media/noticias/n-1111-chrome-zeroday-3.jpg",
+    "media/noticias/n-1111-chrome-zeroday-4.jpg",
+    "media/noticias/n-1111-chrome-zeroday-5.jpg"
+   ],
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador y avisa de que un fallo que corrige ya se está usando en ataques. Basta con visitar una web preparada para aprovecharlo.\n\nAfecta a quien use Chrome en Windows, Mac o Linux, también en el ordenador de tu comercio o tu oficina.\n\nQué hacer: abre Chrome, pulsa Más (arriba a la derecha), Ayuda, Información de Google Chrome, y si aparece Reiniciar, púlsalo. Las pestañas se recuperan solas.\n\nGuárdalo y pásaselo a quien use Chrome en tu negocio.\n\nEscríbenos REVISAR en comentarios y revisamos contigo los equipos y la web de tu negocio, sin compromiso.\n\n#Chrome #Ciberseguridad #Pymes #Google"
+  },
+  {
+   "id": "n-1111-chrome-zeroday-historia",
+   "fecha": "2026-11-11T17:58:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "pendiente",
+   "tipo": "historia",
+   "media": "media/noticias/n-1111-chrome-zeroday-historia.jpg"
   }
  ]
 }
