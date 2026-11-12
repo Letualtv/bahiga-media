@@ -1,17 +1,32 @@
 {
- "generado": "2026-11-11T06:00:23.475Z",
+ "generado": "2026-11-12T06:00:26.281Z",
  "resumen_semana": {
-  "publicaciones": 7,
+  "publicaciones": 9,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 11
+   },
+   {
+    "enlace": "https://www.instagram.com/p/Dfm-CGdmoQa/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 6
+   },
+   {
+    "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 7
+   },
    {
     "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
+    "alcance": 17
    },
    {
     "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
     "compartidos_mas_guardados": 0,
-    "alcance": 14
+    "alcance": 15
    },
    {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
@@ -31,12 +46,7 @@
    {
     "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfU_5p5GCki/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 16
+    "alcance": 18
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -46,10 +56,61 @@
   "id": "17841430450985904",
   "followers_count": 49,
   "follows_count": 70,
-  "media_count": 24,
+  "media_count": 27,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18135025072707200",
+   "fecha": "2026-11-11T17:30:07+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
+   "texto": "¿Alguien vigila tu web?\n\nActualizaciones, copias de seguridad y vigilancia con avisos. Cada mes. Antes de las campañas d",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 11,
+    "views": 36,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "18042551009850928",
+   "fecha": "2026-11-11T17:01:10+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Dfm-CGdmoQa/",
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 6,
+    "views": 25,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
+  {
+   "id": "17950804434098499",
+   "fecha": "2026-11-11T16:59:40+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 7,
+    "views": 14,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 0
+   }
+  },
   {
    "id": "17996384130102574",
    "fecha": "2026-11-10T17:31:37+0000",
@@ -60,14 +121,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 22,
+    "reach": 17,
+    "views": 25,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 3265
+    "ig_reels_avg_watch_time": 3367
    }
   },
   {
@@ -80,8 +141,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 14,
-    "views": 41,
+    "reach": 15,
+    "views": 47,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -98,7 +159,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 10,
-    "views": 31,
+    "views": 38,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -115,7 +176,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 14,
-    "views": 44,
+    "views": 46,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -151,8 +212,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 54,
+    "reach": 18,
+    "views": 65,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -189,7 +250,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 23,
-    "views": 77,
+    "views": 79,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -226,7 +287,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 21,
-    "views": 44,
+    "views": 47,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -283,7 +344,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 21,
-    "views": 68,
+    "views": 69,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -300,7 +361,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 23,
-    "views": 72,
+    "views": 74,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -477,10 +538,30 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-10T18:30:26+0000",
+   "fecha": "2026-11-11T18:30:24+0000",
    "metricas": {
-    "reach": 9,
-    "views": 10,
+    "reach": 8,
+    "views": 8,
+    "replies": 0,
+    "navigation": 8,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-11T17:01:28+0000",
+   "metricas": {
+    "reach": 8,
+    "views": 9,
+    "replies": 0,
+    "navigation": 8,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-11T17:00:12+0000",
+   "metricas": {
+    "reach": 10,
+    "views": 11,
     "replies": 0,
     "navigation": 9,
     "shares": 0
@@ -506,7 +587,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3186
+     "value": 3331
     }
    },
    {
@@ -558,6 +639,30 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-11T17:30:02+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122122510647501320",
+   "texto": "¿Alguien vigila tu web?\n\nActualizaciones, copias de seguridad y vigilancia con avisos. Cada mes. Antes de las campañas d",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-11-11T17:01:18+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122122503579501320",
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
+  {
+   "fecha": "2026-11-11T16:59:52+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122122502499501320",
+   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-10T17:31:09+0000",
    "enlace": "https://www.facebook.com/reel/1155605207055943/",
