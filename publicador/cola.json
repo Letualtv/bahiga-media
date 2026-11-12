@@ -343,7 +343,15 @@
    "tipo": "foto",
    "media": "media/linkedin/li-rafagas.jpg",
    "texto_linkedin": "El 18 de octubre publiqué ocho publicaciones en LinkedIn en nueve minutos.\n\nMe pareció eficiente: tenía los textos listos, ¿para qué esperar? Al revisar los datos lo entendí. LinkedIn enseña a cada persona una publicación tuya al día y la siguiente que llega en menos de 24 horas apenas sale. De las ocho, trabajó una.\n\nLo peor es que no fue la única vez. En agosto y septiembre hice lo mismo, y repetí historias que ya había contado.\n\nDesde este mes publico tres veces por semana, una al día, programado. Menos volumen y más alcance.\n\nLo comparto porque es un error muy común en negocios que empiezan en redes: confundir publicar mucho con llegar a mucha gente.\n\n¿Qué error de este tipo te ha costado más darte cuenta en tu negocio?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#LinkedIn #marketing #pymes",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:share:7526546931595083778",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7526546931595083778/",
+     "hora": "2026-11-12T07:30:25.220Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1117-li-auto",
