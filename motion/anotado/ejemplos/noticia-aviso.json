@@ -1,0 +1,6 @@
+{ "id": "ejemplo-noticia-aviso", "etiqueta": "Aviso · Navegador", "titular": "Actualiza el navegador *hoy.*", "fuente": "Google",
+  "pantalla": { "tipo": "aviso", "app": "Navegador", "titulo": "Actualización disponible", "texto": "Hay una versión nueva que corrige un fallo de seguridad.", "boton": "Reiniciar y actualizar" },
+  "senales": ["Fallo ya en uso", "Afecta al ordenador"],
+  "que_pasa": "Hay un fallo que ya se está usando en ataques. Se arregla actualizando.",
+  "que_hacer": ["Abre el menú del navegador", "Ayuda, Información", "Deja que se actualice y reinicia"],
+  "cierre": "¿Y tu web, está *al día?*", "cierre_sub": "Cuenta con Bahiga. Mantenemos tu web actualizada cada mes.", "cta": "Comenta WEB" }

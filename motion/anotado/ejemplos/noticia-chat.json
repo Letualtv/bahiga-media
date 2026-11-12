@@ -1,0 +1,7 @@
+{ "id": "ejemplo-noticia-chat", "etiqueta": "Aviso · WhatsApp", "titular": "Si te piden un voto por WhatsApp, *no entres.*", "fuente": "INCIBE",
+  "pantalla": { "tipo": "chat", "de": "Un contacto tuyo", "mensajes": [ { "texto": "Hola! Mi sobrina participa en un concurso de baile, ¿me votas? Es un segundo", "enlace": "Votar aquí" }, { "texto": "Te llegará un código, pásamelo porfa" } ] },
+  "senales": ["Te mete prisa", "Enlace que no conoces", "Te pide un código"],
+  "que_pasa": "El enlace no es un concurso. Con el código que te piden entran en tu WhatsApp y escriben a tus contactos en tu nombre.",
+  "que_hacer": ["No abras el enlace ni pases ningún código", "Avisa a ese contacto por teléfono: le han robado la cuenta", "Activa la verificación en dos pasos"],
+  "comprobar": { "ruta": ["Abre WhatsApp", "Ajustes", "Dispositivos vinculados"], "texto": "Si aparece un dispositivo que no es tuyo, ciérralo." },
+  "cierre": "¿Usas WhatsApp *en tu negocio?*", "cierre_sub": "Cuenta con Bahiga. Te ayudamos a dejarlo protegido y con copia.", "cta": "Comenta INFO" }
