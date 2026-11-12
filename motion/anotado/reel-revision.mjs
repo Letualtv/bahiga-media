@@ -5,7 +5,7 @@ import { web, CSS_NEG } from './negocios.mjs';
 import { CSS_REEL, JS, ficha, marca, fin, grabar } from './reelbase.mjs';
 const NEG = 'ropa', DUR = 17.4;
 const html = `<html><head><style>${CSS_REEL}${CSS_NEG}
-#g1{top:600px;font-size:140px}#g2{top:780px;font-size:300px}#tb{top:290px;font-size:104px}
+#g1{top:600px;font-size:140px}#g2{top:780px;font-size:200px}#tb{top:290px;font-size:104px}
 #luz{position:absolute;left:0;right:0;height:140px;top:0;background:linear-gradient(180deg,rgba(232,104,60,0),rgba(232,104,60,.38) 80%,#E8683C);z-index:5;pointer-events:none}
 #hoja{position:absolute;left:110px;top:560px;width:860px;background:#FAF8F5;color:#0F1C24;border-radius:14px;padding:54px 60px 46px;z-index:22;box-shadow:0 50px 100px rgba(0,0,0,.6)}
 #hoja small{font-family:M;font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#8A8F93}#hoja h4{margin:30px 0 8px;font:400 58px D;letter-spacing:-1.5px}
@@ -13,7 +13,7 @@ const html = `<html><head><style>${CSS_REEL}${CSS_NEG}
 #hoja em{display:block;margin-top:24px;font:normal 22px M;color:#8A8F93}
 </style></head><body>
 ${marca()}<div class=eti id=eti>WEB DE EJEMPLO</div><div class=fan id=fan>5</div>
-<div class=h id=g1>Revisamos tu web.</div><div class=h id=g2><i>Gratis.</i></div>
+<div class=h id=g1>¿Qué miramos</div><div class=h id=g2><i>en tu web?</i></div>
 <div class=h id=tb>Miramos<br><i>cinco cosas.</i></div>
 <div id=A>${movil(web(NEG), { url: 'linoysal.example', extra: '<div id=luz></div>' })}</div>
 ${[['Velocidad', 'si'], ['Primera pantalla', 'si'], ['Teléfono y WhatsApp', 'no'], ['Cómo sales en Google', 'no'], ['Copias y seguridad', 'si']].map(([x, c], i) => ficha('c' + i, x, `data-c="${c}"`)).join('')}

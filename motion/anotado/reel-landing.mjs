@@ -1,4 +1,4 @@
-// Reel «Tu negocio, en una página»: la landing se monta bloque a bloque y al final sale el precio.
+// Reel «Así se monta una landing»: la landing se monta bloque a bloque y al final sale el precio.
 // Uso: node motion/anotado/reel-landing.mjs [--hoja]  →  media/1125-reel-landing.mp4
 import { movil } from './piezas.mjs';
 import { web, CSS_NEG } from './negocios.mjs';
@@ -12,7 +12,7 @@ const html = `<html><head><style>${CSS_REEL}${CSS_NEG}
 #nota{position:absolute;left:80px;top:1560px;font-family:M;font-size:24px;color:#A9B4BA;z-index:20}
 </style></head><body>
 ${marca()}<div class=eti id=eti>WEB DE EJEMPLO</div><div class=fan id=fan>1</div>
-<div class=h id=g1>Tu negocio,</div><div class=h id=g2>en <i>una página.</i></div>
+<div class=h id=g1>Así se monta</div><div class=h id=g2><i>una landing.</i></div>
 <div class=h id=tb>Todo lo tuyo,<br><i>en orden.</i></div>
 <div id=A>${movil(web(NEG), { url: 'tallerruta12.example' })}</div>
 ${['Portada', 'Escaparate', 'Opiniones', 'Dónde y horario', 'Contacto'].map((x, i) => ficha('c' + i, x)).join('')}
