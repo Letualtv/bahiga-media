@@ -66,3 +66,38 @@ export const CSS_NEG = `
 .l-dir{font-size:12.5px;line-height:1.5;margin:10px 0 0}
 .l-cont{background:var(--oscuro);color:#fff;margin-top:24px;padding:24px 16px 26px}.l-cont h3{font-size:30px;margin:0 0 14px}.l-cont a{display:block;text-align:center;padding:13px 0;border-radius:12px;border:1.5px solid rgba(255,255,255,.6);font-family:U6;font-size:15px;margin-top:8px}.l-cont p{font-size:10px;opacity:.6;text-align:center;margin:16px 0 0}
 `;
+
+// La misma web, descuidada: lo que se encuentra muchas veces. Sirve para piezas de antes y después.
+const TIPO = { taller: 'taller mecánico', barberia: 'barbería', ropa: 'tienda de ropa', fisio: 'clínica', flores: 'floristería', panaderia: 'panadería' };
+export const webMala = (id) => { const n = NEGOCIOS[id]; return `
+<div class="w vm">${ESTADO('#111')}
+  <div class="vm-cab"><b>${n.nombre.toUpperCase()}</b><span>Bienvenidos a nuestra página web</span></div>
+  <div class="vm-menu"><a>Inicio</a><a>Quiénes somos</a><a>Misión</a><a>Servicios</a><a>Galería</a><a>Noticias</a><a>Enlaces</a><a>Contacto</a></div>
+  <div class="vm-foto"><i></i><em>Imagen 1 de 7</em></div>
+  <h4>Bienvenidos</h4>
+  <p>Somos una ${TIPO[id]} con amplia experiencia en el sector, comprometida con la calidad y la satisfacción de nuestros clientes, a los que ofrecemos soluciones integrales adaptadas a sus necesidades.</p>
+  <p>Nuestra filosofía se basa en la mejora continua y en un trato cercano y personalizado. <u>Leer más…</u></p>
+  <div class="vm-caja"><b>Horario</b>Consultar</div>
+  <div class="vm-caja"><b>Contacto</b>Rellene el formulario y nos pondremos en contacto con usted.</div>
+  <div class="vm-pie">Visitas: 004213 · Optimizado para 1024x768<br>© 2014 Todos los derechos reservados</div>
+</div>`; };
+// Perfil de una red social, dibujado por nosotros (sin logotipos).
+export const perfil = (id) => { const n = NEGOCIOS[id]; return con(id, `${ESTADO('#111')}
+  <div class="pf-cab"><i></i><div><b>128</b>publicaciones</div><div><b>940</b>seguidores</div><div><b>312</b>seguidos</div></div>
+  <div class="pf-bio"><b>${n.nombre}</b>${n.lema}<br>Pedidos por mensaje</div>
+  <div class="pf-bot"><a>Seguir</a><a>Mensaje</a></div>
+  <div class="pf-grid">${['20% 30%', '70% 30%', '45% 60%', '80% 80%', '15% 85%', '55% 20%', '30% 70%', '90% 50%', '60% 90%'].map((p) => `<i style="background-position:${p}"></i>`).join('')}</div>`, 'w pf'); };
+export const CSS_EXTRA_NEG = `
+.vm{background:#fff;color:#222;font-family:Georgia,'Times New Roman',serif;min-height:820px;font-size:11.5px;line-height:1.45}
+.vm-cab{background:linear-gradient(#3B6FB5,#1F4A86);color:#fff;padding:12px 12px 10px;text-align:center}.vm-cab b{display:block;font-size:19px;letter-spacing:1px;text-shadow:1px 1px 0 #123}.vm-cab span{font-size:10.5px;font-style:italic;opacity:.9}
+.vm-menu{display:flex;flex-wrap:wrap;background:#E4E9F0;border-bottom:1px solid #9AA9BD}.vm-menu a{padding:5px 8px;font-size:10px;color:#1F4A86;text-decoration:underline;border-right:1px solid #C3CCD8}
+.vm-foto{margin:10px 12px;border:3px double #9AA9BD;padding:3px;position:relative}.vm-foto i{display:block;height:92px;background:repeating-linear-gradient(45deg,#D8DEE6 0 10px,#C9D1DC 10px 20px)}.vm-foto em{position:absolute;right:8px;bottom:7px;font-size:9px;color:#fff;background:rgba(0,0,0,.5);padding:1px 5px;font-style:normal}
+.vm h4{margin:10px 12px 4px;font-size:15px;color:#1F4A86;border-bottom:1px dotted #9AA9BD}.vm p{margin:0 12px 8px;text-align:justify}.vm u{color:#1F4A86}
+.vm-caja{margin:8px 12px;border:1px solid #9AA9BD;background:#F3F6FA;padding:6px 8px;font-size:11px}.vm-caja b{display:block;color:#1F4A86}
+.vm-pie{margin:14px 0 0;padding:8px;background:#E4E9F0;font-size:9px;text-align:center;color:#555}
+.pf{font-family:U,system-ui,sans-serif;background:#fff;color:#111;min-height:820px}
+.pf-cab{display:grid;grid-template-columns:76px 1fr 1fr 1fr;gap:6px;align-items:center;padding:10px 14px;text-align:center;font-size:10.5px;color:#444}.pf-cab i{width:70px;height:70px;border-radius:50%;background:var(--foto) center/cover;border:3px solid var(--acento)}.pf-cab b{display:block;font-family:U6;font-weight:400;font-size:16px;color:#111}
+.pf-bio{padding:2px 14px 10px;font-size:12.5px;line-height:1.4;color:#333}.pf-bio b{display:block;font-family:U6;font-weight:400;color:#111}
+.pf-bot{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 14px 12px}.pf-bot a{padding:8px;border-radius:9px;background:#EFEFEF;text-align:center;font-family:U6;font-size:12.5px}.pf-bot a:first-child{background:#111;color:#fff}
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}.pf-grid i{display:block;aspect-ratio:1;background:var(--foto) center/300%}
+`;
