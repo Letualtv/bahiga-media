@@ -1106,6 +1106,80 @@
     }
    },
    "intentos": 1
+  },
+  {
+   "id": "1202-mito-o-verdad",
+   "fecha": "2026-12-02T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/1202-mito-o-verdad-1.jpg",
+    "media/1202-mito-o-verdad-2.jpg",
+    "media/1202-mito-o-verdad-3.jpg",
+    "media/1202-mito-o-verdad-4.jpg",
+    "media/1202-mito-o-verdad-5.jpg"
+   ],
+   "texto": "«Con Instagram no necesito web.» ¿Mito o verdad?\n\nNuestro veredicto: verdad a medias. Instagram hace muy bien una parte, que es enseñar tu trabajo y hablar con quien ya te sigue. Lo que no hace es que te encuentre quien no te conoce: esa persona busca en Google, y ahí suelen salir antes las fichas y las webs.\n\nY hay otra cosa: la cuenta no es tuya. Si un día la bloquean o cambia el alcance, te quedas sin escaparate.\n\nInstagram enseña y la web recoge.\n\n¿Tú qué dices? Escribe MITO o VERDAD en comentarios y cuéntanos cómo te va solo con redes.\n\nEl perfil y la web del carrusel son ejemplos con un negocio inventado.\n\n#ComerciosDeCórdoba #Pymes #PáginaWeb #Instagram",
+   "estado": "pendiente"
+  },
+  {
+   "id": "1204-reel-arreglo",
+   "fecha": "2026-12-04T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/1204-reel-arreglo.mp4",
+   "texto": "Tres cambios y la misma web parece otra.\n\n1. Qué haces, arriba del todo.\n2. Llamar, a un toque.\n3. Horario y dónde, sin buscar.\n\nNo hace falta rehacerla entera para que deje de espantar a quien entra. Hace falta poner delante lo que esa persona viene a buscar.\n\nLa web del vídeo es un ejemplo con un negocio inventado.\n\nEscribe WEB en comentarios y te decimos qué cambiaríamos en la tuya.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
+   "portada_ms": 1000,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "borrador"
+  },
+  {
+   "id": "1207-cual-elegirias",
+   "fecha": "2026-12-07T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/1207-cual-elegirias-1.jpg",
+    "media/1207-cual-elegirias-2.jpg",
+    "media/1207-cual-elegirias-3.jpg",
+    "media/1207-cual-elegirias-4.jpg",
+    "media/1207-cual-elegirias-5.jpg",
+    "media/1207-cual-elegirias-6.jpg"
+   ],
+   "texto": "¿Cuál elegirías?\n\nTres decisiones de la web de una barbería, cada una con dos opciones: la primera pantalla, cómo se pide cita y el menú.\n\nNosotros nos quedamos con B, B y B, y en la penúltima lámina contamos por qué. Pero no hay respuesta única.\n\nEscribe tus tres letras en comentarios y dinos por qué.\n\nLa barbería es un negocio inventado.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
+   "estado": "borrador"
+  },
+  {
+   "id": "1209-antes-despues",
+   "fecha": "2026-12-09T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/1209-antes-despues-1.jpg",
+    "media/1209-antes-despues-2.jpg",
+    "media/1209-antes-despues-3.jpg",
+    "media/1209-antes-despues-4.jpg",
+    "media/1209-antes-despues-5.jpg",
+    "media/1209-antes-despues-6.jpg",
+    "media/1209-antes-despues-7.jpg"
+   ],
+   "texto": "La misma clínica, dos webs.\n\nEn la primera entras y no sabes qué hacen: ocho opciones de menú, ningún teléfono y un «Horario: consultar». En la segunda lo sabes sin bajar.\n\nEntre una y otra hay tres cambios:\n1. Qué haces, arriba del todo.\n2. Llamar, a un toque.\n3. Horario y dónde, sin buscar.\n\nNo prometemos más llamadas. Quitamos los motivos para irse.\n\nEs un ejemplo con un negocio inventado, no un cliente.\n\n¿A cuál se parece la tuya? Escribe WEB en comentarios y te decimos qué cambiaríamos.\n\n#DiseñoWeb #PáginaWeb #ComerciosDeCórdoba #Pymes",
+   "estado": "pendiente"
   }
  ]
 }

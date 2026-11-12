@@ -1,5 +1,5 @@
 // Muestra del formato «mito o verdad»: una frase que se oye mucho, veredicto y por qué. Pensado para que se comente.
-// Uso: node motion/anotado/muestra-mito.mjs  →  media/muestra-mito-1.jpg … -5.jpg
+// Uso: node motion/anotado/muestra-mito.mjs  →  media/1202-mito-o-verdad-1.jpg … -5.jpg
 import { movil, render, OK, NO } from './piezas.mjs';
 import { NEGOCIOS, web, perfil, CSS_NEG, CSS_EXTRA_NEG } from './negocios.mjs';
 const NEG = 'ropa', N = NEGOCIOS[NEG];
@@ -33,4 +33,4 @@ const EXTRA = `
 .rot{position:absolute;z-index:20;font:normal 34px U6;padding:12px 30px;border-radius:999px;box-shadow:0 18px 40px rgba(0,0,0,.5)}.ra{left:110px;top:1150px;background:#14242E;color:#A9B4BA;border:2px solid #3A5362;transform:rotate(-5deg)}.rb{left:680px;top:1180px;background:#E8683C;color:#0F1C24;transform:rotate(4deg)}
 .coral .gs{font-size:40px}
 `;
-await render('muestra-mito', L, CSS_NEG + CSS_EXTRA_NEG + EXTRA);
+await render('1202-mito-o-verdad', L, CSS_NEG + CSS_EXTRA_NEG + EXTRA);

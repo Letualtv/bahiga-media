@@ -1,6 +1,6 @@
 // Muestra del formato «antes y después»: la misma web, descuidada y arreglada.
 // El negocio es inventado y se dice en portada y en el cierre: no es un caso de cliente ni promete resultados.
-// Uso: node motion/anotado/muestra-antes-despues.mjs [negocio]  →  media/muestra-antes-despues-1.jpg … -7.jpg
+// Uso: node motion/anotado/muestra-antes-despues.mjs [negocio]  →  media/1209-antes-despues-1.jpg … -7.jpg
 import { movil, render, OK, NO } from './piezas.mjs';
 import { NEGOCIOS, web, webMala, con, mapa, CSS_NEG, CSS_EXTRA_NEG } from './negocios.mjs';
 const NEG = process.argv[2] || 'fisio', N = NEGOCIOS[NEG];
@@ -40,4 +40,4 @@ const EXTRA = `
 .bots{display:grid;grid-template-columns:1fr 1fr;gap:18px}.bots a{font:normal 46px U6;text-align:center;padding:34px 0;border-radius:24px;border:3px solid #0F1C24}
 .hd{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:center}.hd b{display:block;font:normal 46px/1.1 D;letter-spacing:-1px}.hd span{font-size:27px;margin-top:10px}.hd .l-mapa{height:170px;margin:0;border-radius:20px}
 `;
-await render('muestra-antes-despues', L, CSS_NEG + CSS_EXTRA_NEG + EXTRA);
+await render('1209-antes-despues', L, CSS_NEG + CSS_EXTRA_NEG + EXTRA);

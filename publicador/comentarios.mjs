@@ -44,7 +44,8 @@ for (const m of medios.data || []) {
     if (yaVisto.has(c.id) || PROPIOS.includes(c.username)) continue;
     yaVisto.add(c.id);
     const r = RESPUESTAS.find(([re]) => re.test(c.text || ''));
-    if (!r) continue;
+    // Sin palabra clave no se responde solo, pero se avisa igual: cualquier comentario merece respuesta de Antonio.
+    if (!r) { nuevos.push({ red: 'Instagram', usuario: `@${c.username}`, texto: c.text, enlace: m.permalink, respondido: false }); continue; }
     const yaRespondido = (c.replies?.data || []).some((x) => PROPIOS.includes(x.username));
     if (!yaRespondido) await graph('POST', `/${c.id}/replies`, { message: r[1] }).catch((e) => console.error(`No se pudo responder en Instagram: ${e.message}`));
     nuevos.push({ red: 'Instagram', usuario: `@${c.username}`, texto: c.text, enlace: m.permalink, respondido: !yaRespondido });
@@ -63,7 +64,7 @@ for (const p of posts.data || []) {
     if (yaVisto.has(c.id) || c.from?.id === PAGE_ID) continue;
     yaVisto.add(c.id);
     const r = RESPUESTAS.find(([re]) => re.test(c.message || ''));
-    if (!r) continue;
+    if (!r) { nuevos.push({ red: 'Facebook', usuario: c.from?.name || 'alguien', texto: c.message, enlace: p.permalink_url, respondido: false }); continue; }
     const yaRespondido = (c.comments?.data || []).some((x) => x.from?.id === PAGE_ID);
     if (!yaRespondido) await graph('POST', `/${c.id}/comments`, { message: r[1] }, ptk).catch((e) => console.error(`No se pudo responder en Facebook: ${e.message}`));
     nuevos.push({ red: 'Facebook', usuario: c.from?.name || 'alguien', texto: c.message, enlace: p.permalink_url, respondido: !yaRespondido });
