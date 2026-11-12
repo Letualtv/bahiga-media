@@ -23,7 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # Siempre la última versión de la cola, no la del momento en que se lanzó la ejecución:
+      # si esta ha estado esperando a otra, la cola ya ha cambiado y publicaría lo mismo dos veces.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 20
