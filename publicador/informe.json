@@ -1,32 +1,32 @@
 {
- "generado": "2026-11-12T06:00:26.281Z",
+ "generado": "2026-11-13T06:00:26.931Z",
  "resumen_semana": {
-  "publicaciones": 9,
+  "publicaciones": 8,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 10
+   },
    {
     "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 11
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Dfm-CGdmoQa/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 6
+    "alcance": 12
    },
    {
     "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
     "compartidos_mas_guardados": 0,
-    "alcance": 7
+    "alcance": 8
    },
    {
     "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 18
    },
    {
     "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
+    "alcance": 17
    },
    {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
@@ -42,11 +42,6 @@
     "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
     "compartidos_mas_guardados": 0,
     "alcance": 16
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DfXklLAgFE6/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 18
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -61,6 +56,26 @@
  },
  "instagram_publicaciones": [
   {
+   "id": "18439534813177136",
+   "fecha": "2026-11-12T17:31:32+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
+   "texto": "Habitual es la tarjeta de sellos en el móvil que hemos hecho para bares, peluquerías y tiendas.\n\nTus clientes la llevan ",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 10,
+    "views": 23,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 7626
+   }
+  },
+  {
    "id": "18135025072707200",
    "fecha": "2026-11-11T17:30:07+0000",
    "tipo": "FEED",
@@ -70,25 +85,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 11,
-    "views": 36,
-    "saved": 0,
-    "shares": 0,
-    "total_interactions": 0
-   }
-  },
-  {
-   "id": "18042551009850928",
-   "fecha": "2026-11-11T17:01:10+0000",
-   "tipo": "FEED",
-   "formato": "CAROUSEL_ALBUM",
-   "enlace": "https://www.instagram.com/p/Dfm-CGdmoQa/",
-   "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
-   "likes": 0,
-   "comentarios": 0,
-   "metricas": {
-    "reach": 6,
-    "views": 25,
+    "reach": 12,
+    "views": 43,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -101,14 +99,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
    "texto": "Si usas Chrome en el ordenador, actualízalo hoy.\n\nGoogle ha publicado la versión 157.0.8103.50 de Chrome para ordenador ",
-   "likes": 0,
+   "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 7,
-    "views": 14,
+    "reach": 8,
+    "views": 22,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 0
+    "total_interactions": 1
    }
   },
   {
@@ -121,14 +119,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 25,
+    "reach": 18,
+    "views": 30,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 3367
+    "ig_reels_avg_watch_time": 3673
    }
   },
   {
@@ -141,8 +139,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 47,
+    "reach": 17,
+    "views": 60,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -212,8 +210,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 65,
+    "reach": 19,
+    "views": 68,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -538,32 +536,12 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-11T18:30:24+0000",
+   "fecha": "2026-11-12T18:30:15+0000",
    "metricas": {
-    "reach": 8,
-    "views": 8,
+    "reach": 12,
+    "views": 14,
     "replies": 0,
-    "navigation": 8,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-11T17:01:28+0000",
-   "metricas": {
-    "reach": 8,
-    "views": 9,
-    "replies": 0,
-    "navigation": 8,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-11T17:00:12+0000",
-   "metricas": {
-    "reach": 10,
-    "views": 11,
-    "replies": 0,
-    "navigation": 9,
+    "navigation": 12,
     "shares": 0
    }
   }
@@ -587,7 +565,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3331
+     "value": 3444
     }
    },
    {
@@ -607,7 +585,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 139
+     "value": 141
     }
    },
    {
@@ -639,6 +617,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-12T17:31:06+0000",
+   "enlace": "https://www.facebook.com/reel/1521955123103545/",
+   "texto": "Habitual es la tarjeta de sellos en el móvil que hemos hecho para bares, peluquerías y tiendas.\n\nTus clientes la llevan ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-11T17:30:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122122510647501320",
