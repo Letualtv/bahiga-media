@@ -1,67 +1,67 @@
 {
- "generado": "2026-11-12T06:00:26.780Z",
+ "generado": "2026-11-13T06:00:27.948Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1063329,
-   "publicaciones": 3502,
+   "seguidores": 1064314,
+   "publicaciones": 3510,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 186,
-   "comentarios_medios": 17,
+   "likes_medios": 296,
+   "comentarios_medios": 23,
    "por_tipo": {
     "Carrusel": {
-     "n": 16,
-     "likes": 312,
-     "comentarios": 19
+     "n": 18,
+     "likes": 471,
+     "comentarios": 36
     },
     "Reel": {
-     "n": 14,
-     "likes": 41,
-     "comentarios": 14
+     "n": 12,
+     "likes": 33,
+     "comentarios": 5
     }
    },
    "mejores": [
     {
-     "fecha": "2026-11-09",
+     "fecha": "2026-11-12",
      "tipo": "Carrusel",
-     "likes": 391,
-     "comentarios": 189,
-     "texto": "Comenta \"OLA\" y te envío el podcast completo + el sistema para construir un negocio high ticket a prueba de las dos recesiones que se vienen �en el mercado digi",
-     "enlace": "https://www.instagram.com/p/DfgDP9YCDeC/"
+     "likes": 1599,
+     "comentarios": 18,
+     "texto": "Vende con verdad, sirve con excelencia. ❤️",
+     "enlace": "https://www.instagram.com/p/Dfp0COSnAH8/"
+    },
+    {
+     "fecha": "2026-11-12",
+     "tipo": "Carrusel",
+     "likes": 401,
+     "comentarios": 384,
+     "texto": "Comenta 👉🏻 MODO",
+     "enlace": "https://www.instagram.com/p/DfpRwQsDTqZ/"
+    },
+    {
+     "fecha": "2026-11-12",
+     "tipo": "Carrusel",
+     "likes": 1243,
+     "comentarios": 17,
+     "texto": "Enfrenta tu carrera con responsabilidad.\n\nSi tú no tienes un plan para ti, nadie lo tendrá. ❤️",
+     "enlace": "https://www.instagram.com/p/Dfnxk2AClhq/"
     },
     {
      "fecha": "2026-11-10",
      "tipo": "Carrusel",
-     "likes": 830,
+     "likes": 1002,
      "comentarios": 1,
      "texto": "El cliente puede incluso no llevarse el producto..\npero se lleva la experiencia❤️",
      "enlace": "https://www.instagram.com/p/Dfk7ivCFtEy/"
     },
     {
-     "fecha": "2026-11-11",
-     "tipo": "Carrusel",
-     "likes": 645,
-     "comentarios": 6,
-     "texto": "No necesitás más seguidores...\nnecesitás más conversaciones.\nMientras esperás que llegue el cliente,\nhay gente vendiendo todos los días porque decidió actuar.\nY",
-     "enlace": "https://www.instagram.com/p/DflMvGxDPte/"
-    },
-    {
-     "fecha": "2026-11-08",
-     "tipo": "Reel",
-     "likes": 215,
-     "comentarios": 127,
-     "texto": "Comenta \"CLAUDE\" y  los mando ahora.",
-     "enlace": "https://www.instagram.com/reel/Dffx-SjCsZX/"
-    },
-    {
      "fecha": "2026-11-12",
      "tipo": "Carrusel",
-     "likes": 510,
-     "comentarios": 4,
-     "texto": "Enfrenta tu carrera con responsabilidad.\n\nSi tú no tienes un plan para ti, nadie lo tendrá. ❤️",
-     "enlace": "https://www.instagram.com/p/Dfnxk2AClhq/"
+     "likes": 462,
+     "comentarios": 173,
+     "texto": "Comenta 👉🏻 REELS",
+     "enlace": "https://www.instagram.com/p/DfpA5xrjW4Q/"
     }
    ],
    "historial": [
@@ -132,43 +132,47 @@
     {
      "fecha": "2026-11-12",
      "seguidores": 1063329
+    },
+    {
+     "fecha": "2026-11-13",
+     "seguidores": 1064314
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 473842,
-   "publicaciones": 2096,
-   "publicaciones_7d": 18,
+   "seguidores": 474879,
+   "publicaciones": 2099,
+   "publicaciones_7d": 17,
    "publicaciones_30d": 30,
-   "likes_medios": 12278,
-   "comentarios_medios": 175,
+   "likes_medios": 12144,
+   "comentarios_medios": 176,
    "por_tipo": {
-    "Carrusel": {
-     "n": 10,
-     "likes": 1863,
-     "comentarios": 102
-    },
     "Reel": {
-     "n": 20,
-     "likes": 17486,
-     "comentarios": 211
+     "n": 21,
+     "likes": 16627,
+     "comentarios": 200
+    },
+    "Carrusel": {
+     "n": 9,
+     "likes": 1682,
+     "comentarios": 121
     }
    },
    "mejores": [
     {
      "fecha": "2026-10-31",
      "tipo": "Reel",
-     "likes": 309010,
-     "comentarios": 3678,
+     "likes": 309781,
+     "comentarios": 3683,
      "texto": "para que vean que crear contenido no es tan fácil jajaja\n.\n.\n.\n.\n#fórmula1 #México #crecimiento #F1 #negocios",
      "enlace": "https://www.instagram.com/reel/DfJE2tkAJy-/"
     },
     {
      "fecha": "2026-11-05",
      "tipo": "Reel",
-     "likes": 11041,
+     "likes": 11117,
      "comentarios": 48,
      "texto": "Como responde tu equipo a esa objeción? \n.\n.\n.\n.\n\n#emprender #negocios #vendermas #ventas",
      "enlace": "https://www.instagram.com/reel/DfYKCMmEisP/"
@@ -176,15 +180,15 @@
     {
      "fecha": "2026-10-30",
      "tipo": "Reel",
-     "likes": 9924,
-     "comentarios": 58,
+     "likes": 9979,
+     "comentarios": 59,
      "texto": "¿Creen que ahora son mejores o peores las carreras? 🤔\n.\n.\n.\n.\n.\n.\n#crecimiento #F1 #fórmula1 #México",
      "enlace": "https://www.instagram.com/reel/DfIvHIrAWje/"
     },
     {
      "fecha": "2026-11-04",
      "tipo": "Carrusel",
-     "likes": 5172,
+     "likes": 5268,
      "comentarios": 59,
      "texto": "Estos nadie los ve 🥹\n.\n.\n.\n.\n.\n #negocios #crecimiento #motivación #emprendimiento",
      "enlace": "https://www.instagram.com/p/DfVRotOIB_-/"
@@ -192,8 +196,8 @@
     {
      "fecha": "2026-11-06",
      "tipo": "Reel",
-     "likes": 4150,
-     "comentarios": 198,
+     "likes": 4490,
+     "comentarios": 209,
      "texto": "ALM jaja que buena historía 🥹😛 ¿Qué prefieres? 🦦\n.\n.\n.\n#ventas #julioiero #marketing #vendermás",
      "enlace": "https://www.instagram.com/reel/DfYY9YRjepT/"
     }
@@ -266,6 +270,10 @@
     {
      "fecha": "2026-11-12",
      "seguidores": 473842
+    },
+    {
+     "fecha": "2026-11-13",
+     "seguidores": 474879
     }
    ]
   }
