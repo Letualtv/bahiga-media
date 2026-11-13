@@ -173,9 +173,23 @@
    "portada_ms": 1000,
    "musica": {
     "buscar": "upbeat acoustic",
-    "volumen_video": 40
+    "volumen_video": 40,
+    "elegida": "Wildflowers · Nick Gallant"
    },
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17917025439557658",
+     "permalink": "https://www.instagram.com/reel/DfscKLFocCW/",
+     "hora": "2026-11-13T20:01:11.460Z"
+    },
+    "facebook": {
+     "id": "1149742604306666",
+     "permalink": "https://www.facebook.com/reel/1149742604306666",
+     "hora": "2026-11-13T20:01:20.254Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1114-precios-web",
