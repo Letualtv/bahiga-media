@@ -1,12 +1,17 @@
 {
- "generado": "2026-11-13T06:00:26.931Z",
+ "generado": "2026-11-14T06:00:29.871Z",
  "resumen_semana": {
   "publicaciones": 8,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 4
+   },
+   {
     "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
     "compartidos_mas_guardados": 0,
-    "alcance": 10
+    "alcance": 11
    },
    {
     "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
@@ -16,7 +21,7 @@
    {
     "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
     "compartidos_mas_guardados": 0,
-    "alcance": 8
+    "alcance": 9
    },
    {
     "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
@@ -26,22 +31,17 @@
    {
     "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 18
    },
    {
     "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
     "compartidos_mas_guardados": 0,
-    "alcance": 10
+    "alcance": 11
    },
    {
     "enlace": "https://www.instagram.com/p/Dfc_eMADYJg/",
     "compartidos_mas_guardados": 0,
     "alcance": 14
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfaJf5xCdvU/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 16
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -51,10 +51,30 @@
   "id": "17841430450985904",
   "followers_count": 49,
   "follows_count": 70,
-  "media_count": 27,
+  "media_count": 28,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "17917025439557658",
+   "fecha": "2026-11-13T20:01:06+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
+   "texto": "Dale ocho segundos a tu web.\n\nQuien entra por primera vez busca cuatro cosas: qué vendes, dónde estás, cómo llamarte y s",
+   "likes": 0,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 4,
+    "views": 5,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 1862
+   }
+  },
   {
    "id": "18439534813177136",
    "fecha": "2026-11-12T17:31:32+0000",
@@ -65,14 +85,14 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 10,
-    "views": 23,
+    "reach": 11,
+    "views": 27,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 7626
+    "ig_reels_avg_watch_time": 6913
    }
   },
   {
@@ -86,7 +106,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 12,
-    "views": 43,
+    "views": 44,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -102,8 +122,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 8,
-    "views": 22,
+    "reach": 9,
+    "views": 25,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -139,8 +159,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 60,
+    "reach": 18,
+    "views": 61,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -156,8 +176,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 10,
-    "views": 38,
+    "reach": 11,
+    "views": 40,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -247,8 +267,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 23,
-    "views": 79,
+    "reach": 24,
+    "views": 80,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -534,18 +554,7 @@
    }
   }
  ],
- "instagram_historias_activas": [
-  {
-   "fecha": "2026-11-12T18:30:15+0000",
-   "metricas": {
-    "reach": 12,
-    "views": 14,
-    "replies": 0,
-    "navigation": 12,
-    "shares": 0
-   }
-  }
- ],
+ "instagram_historias_activas": [],
  "instagram_cuenta_28d": {
   "data": [
    {
@@ -565,7 +574,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3444
+     "value": 3488
     }
    },
    {
@@ -595,7 +604,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 156
+     "value": 157
     }
    },
    {
@@ -617,6 +626,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-13T20:01:32+0000",
+   "enlace": "https://www.facebook.com/reel/1149742604306666/",
+   "texto": "Dale ocho segundos a tu web.\n\nQuien entra por primera vez busca cuatro cosas: qué vendes, dónde estás, cómo llamarte y s",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-12T17:31:06+0000",
    "enlace": "https://www.facebook.com/reel/1521955123103545/",
