@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-16T06:00:34.735Z",
+ "generado": "2026-11-16T15:40:17.915Z",
  "resumen_semana": {
   "publicaciones": 6,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
     "compartidos_mas_guardados": 0,
-    "alcance": 17
+    "alcance": 18
    },
    {
     "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
@@ -40,7 +40,7 @@
  "instagram_cuenta": {
   "id": "17841430450985904",
   "followers_count": 49,
-  "follows_count": 70,
+  "follows_count": 78,
   "media_count": 28,
   "username": "bahiga.estudio"
  },
@@ -55,14 +55,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 24,
+    "reach": 18,
+    "views": 25,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 6317
+    "ig_reels_avg_watch_time": 8145
    }
   },
   {
@@ -564,7 +564,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3538
+     "value": 3539
     }
    },
    {
