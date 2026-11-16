@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T15:40:17.915Z",
+ "generado": "2026-11-16T15:59:31.167Z",
  "resumen_semana": {
   "publicaciones": 6,
   "nuevos_por_pieza": [
@@ -564,7 +564,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3539
+     "value": 3540
     }
    },
    {
