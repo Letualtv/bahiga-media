@@ -1,7 +1,7 @@
 {
- "generado": "2026-11-15T06:00:24.982Z",
+ "generado": "2026-11-16T06:00:34.735Z",
  "resumen_semana": {
-  "publicaciones": 7,
+  "publicaciones": 6,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
@@ -11,7 +11,7 @@
    {
     "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
     "compartidos_mas_guardados": 0,
-    "alcance": 11
+    "alcance": 12
    },
    {
     "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
@@ -31,12 +31,7 @@
    {
     "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
     "compartidos_mas_guardados": 0,
-    "alcance": 18
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DffkQNwmi3g/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 11
+    "alcance": 19
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -77,17 +72,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
    "texto": "Habitual es la tarjeta de sellos en el móvil que hemos hecho para bares, peluquerías y tiendas.\n\nTus clientes la llevan ",
-   "likes": 0,
+   "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 11,
-    "views": 27,
+    "reach": 12,
+    "views": 28,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 0,
-    "total_interactions": 0,
-    "ig_reels_avg_watch_time": 6797
+    "likes": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 7235
    }
   },
   {
@@ -154,8 +149,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 61,
+    "reach": 19,
+    "views": 62,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -569,7 +564,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3526
+     "value": 3538
     }
    },
    {
@@ -589,7 +584,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 145
+     "value": 146
     }
    },
    {
