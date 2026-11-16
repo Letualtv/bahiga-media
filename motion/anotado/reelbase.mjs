@@ -5,6 +5,8 @@ import { mkdirSync, rmSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { chromium, RAIZ, arco, CSS } from './piezas.mjs';
 export const FPS = 30;
+// Norma de Antonio (16/11/2026): al acabar, el último plano se queda quieto un segundo más para que dé tiempo a leerlo.
+export const COLA = 1;
 export const ficha = (id, txt, extra = '') => `<div class="rc" id="${id}" ${extra}><b><svg viewBox="0 0 24 24"><path class="q" d="M8.5 9a3.5 3.5 0 1 1 5 3.2c-1 .6-1.5 1.2-1.5 2.3M12 18.2v.3"/><path class="x" d="M7 7l10 10M17 7L7 17"/><path class="v" d="M5.5 12.5l4.2 4.2L18.5 8"/></svg></b><span>${txt}</span></div>`;
 export const marca = (c = '#FAF8F5') => `<div class=m>${arco(56, c)}Bahiga.</div>`;
 export const CSS_REEL = `${CSS}
@@ -41,7 +43,7 @@ export async function grabar(ID, html, DUR, tiempos = []) {
   await pg.setContent(html); await pg.evaluate(() => document.fonts.ready); await pg.evaluate(() => window.listo && window.listo());
   if (HOJA) for (const [i, t] of tiempos.entries()) { await pg.evaluate((t) => window.seek(t), t); await pg.screenshot({ path: `${tmp}/h${String(i).padStart(2, '0')}.jpg`, type: 'jpeg', quality: 80 }); }
   else {
-    for (let i = 0; i < Math.round(DUR * FPS); i++) { await pg.evaluate((t) => window.seek(t), i / FPS); await pg.screenshot({ path: `${tmp}/f${String(i).padStart(4, '0')}.jpg`, type: 'jpeg', quality: 92 }); }
+    for (let i = 0; i < Math.round((DUR + COLA) * FPS); i++) { await pg.evaluate((t) => window.seek(t), i / FPS); await pg.screenshot({ path: `${tmp}/f${String(i).padStart(4, '0')}.jpg`, type: 'jpeg', quality: 92 }); }
     execSync(`ffmpeg -y -loglevel error -framerate ${FPS} -i ${tmp}/f%04d.jpg -f lavfi -i anullsrc=r=44100:cl=stereo -shortest -c:v libx264 -pix_fmt yuv420p -crf 17 -preset slow -c:a aac -b:a 128k -movflags +faststart ${RAIZ}media/${ID}.mp4`);
     rmSync(tmp, { recursive: true, force: true });
   }
