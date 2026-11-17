@@ -389,9 +389,17 @@
    "tipo": "documento",
    "media": "media/linkedin/auto.pdf",
    "texto_linkedin": "Hay tareas que en muchas empresas siguen haciéndose a mano solo porque «siempre se han hecho así».\n\nCopiar los datos de las facturas a un Excel para la gestoría. Pasar los pedidos de la tienda al transportista uno a uno. Contestar por WhatsApp las mismas cinco preguntas todos los días.\n\nNinguna necesita un proyecto enorme. Lo que necesitan es que alguien las mire con calma y vea qué se puede encadenar.\n\nEn el carrusel hay tres ejemplos reales de lo que se puede automatizar en una pyme. La regla que uso para decidir: si se repite cada semana y siempre igual, se puede automatizar.\n\n¿Cuál es la tarea que más tiempo te quita a ti?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#automatización #IA #pymes",
-   "estado": "pendiente",
+   "estado": "publicada",
    "titulo_documento": "Tareas que ya no hace nadie a mano",
-   "primer_comentario": "Si quieres verlo para tu negocio, escríbeme por WhatsApp: https://wa.me/34614142001"
+   "primer_comentario": "Si quieres verlo para tu negocio, escríbeme por WhatsApp: https://wa.me/34614142001",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:ugcPost:7528358877621374976",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7528358877621374976/",
+     "hora": "2026-11-17T07:30:31.978Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1118-li-comentarios",
