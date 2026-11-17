@@ -1,37 +1,37 @@
 {
- "generado": "2026-11-16T15:59:31.167Z",
+ "generado": "2026-11-17T06:00:31.027Z",
  "resumen_semana": {
   "publicaciones": 6,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/Df0KutQk70c/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 11
+   },
+   {
     "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
     "compartidos_mas_guardados": 0,
-    "alcance": 18
+    "alcance": 20
    },
    {
     "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
     "compartidos_mas_guardados": 0,
-    "alcance": 12
+    "alcance": 13
    },
    {
     "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 14
    },
    {
     "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
     "compartidos_mas_guardados": 0,
-    "alcance": 9
+    "alcance": 11
    },
    {
     "enlace": "https://www.instagram.com/reel/DfkcrFVk11O/",
     "compartidos_mas_guardados": 0,
     "alcance": 18
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Dfh3w7qgecy/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 19
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -39,12 +39,29 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 49,
-  "follows_count": 78,
-  "media_count": 28,
+  "followers_count": 51,
+  "follows_count": 89,
+  "media_count": 29,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18105091559380548",
+   "fecha": "2026-11-16T20:02:26+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Df0KutQk70c/",
+   "texto": "¿Cuánto cuesta una web? Depende de lo que necesites. Estos son nuestros precios, para que no haya que preguntarlos.\n\nLan",
+   "likes": 4,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 11,
+    "views": 30,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 6
+   }
+  },
   {
    "id": "17917025439557658",
    "fecha": "2026-11-13T20:01:06+0000",
@@ -55,14 +72,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 25,
+    "reach": 20,
+    "views": 27,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 8145
+    "ig_reels_avg_watch_time": 7707
    }
   },
   {
@@ -75,14 +92,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 12,
-    "views": 28,
+    "reach": 13,
+    "views": 29,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 7235
+    "ig_reels_avg_watch_time": 6875
    }
   },
   {
@@ -95,8 +112,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 47,
+    "reach": 14,
+    "views": 48,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -112,8 +129,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 9,
-    "views": 25,
+    "reach": 11,
+    "views": 28,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -149,8 +166,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 19,
-    "views": 62,
+    "reach": 21,
+    "views": 64,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -166,8 +183,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 11,
-    "views": 40,
+    "reach": 13,
+    "views": 46,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -183,8 +200,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 14,
-    "views": 46,
+    "reach": 15,
+    "views": 47,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -220,8 +237,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 20,
-    "views": 70,
+    "reach": 21,
+    "views": 71,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -257,8 +274,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 80,
+    "reach": 26,
+    "views": 82,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -274,7 +291,7 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
+    "reach": 25,
     "views": 41,
     "saved": 0,
     "shares": 0,
@@ -294,8 +311,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 47,
+    "reach": 22,
+    "views": 49,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -311,14 +328,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 38,
-    "views": 50,
+    "reach": 39,
+    "views": 51,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 5775
+    "ig_reels_avg_watch_time": 5735
    }
   },
   {
@@ -422,7 +439,7 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 27,
+    "reach": 28,
     "views": 49,
     "saved": 0,
     "shares": 0,
@@ -442,14 +459,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 35,
-    "views": 75,
+    "reach": 36,
+    "views": 76,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10350
+    "ig_reels_avg_watch_time": 10415
    }
   },
   {
@@ -462,7 +479,7 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 36,
+    "reach": 37,
     "views": 59,
     "saved": 0,
     "shares": 0,
@@ -482,14 +499,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 102,
-    "views": 162,
+    "reach": 103,
+    "views": 163,
     "saved": 0,
     "shares": 2,
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6907
+    "ig_reels_avg_watch_time": 6865
    }
   },
   {
@@ -502,8 +519,8 @@
    "likes": 10,
    "comentarios": 0,
    "metricas": {
-    "reach": 68,
-    "views": 165,
+    "reach": 70,
+    "views": 168,
     "saved": 1,
     "shares": 0,
     "total_interactions": 12
@@ -519,8 +536,8 @@
    "likes": 8,
    "comentarios": 0,
    "metricas": {
-    "reach": 42,
-    "views": 108,
+    "reach": 43,
+    "views": 109,
     "saved": 1,
     "shares": 0,
     "total_interactions": 9
@@ -536,8 +553,8 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 226,
-    "views": 386,
+    "reach": 227,
+    "views": 389,
     "saved": 1,
     "shares": 1,
     "total_interactions": 8
@@ -554,7 +571,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 627
+     "value": 631
     }
    },
    {
@@ -564,7 +581,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3540
+     "value": 3607
     }
    },
    {
@@ -584,7 +601,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 146
+     "value": 152
     }
    },
    {
@@ -594,7 +611,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 159
+     "value": 170
     }
    },
    {
@@ -604,7 +621,7 @@
     "title": "Toques en el enlace al sitio web",
     "description": "Número de veces que se ha tocado el enlace a tu sitio web.",
     "total_value": {
-     "value": 6
+     "value": 7
     }
    }
   ]
@@ -616,6 +633,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-16T20:02:41+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122124067719501320",
+   "texto": "¿Cuánto cuesta una web? Depende de lo que necesites. Estos son nuestros precios, para que no haya que preguntarlos.\n\nLan",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-13T20:01:32+0000",
    "enlace": "https://www.facebook.com/reel/1149742604306666/",
@@ -843,14 +868,6 @@
   {
    "fecha": "2026-10-21T12:39:43+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/1665260468448864?substory_index=1665260468448864",
-   "texto": "",
-   "reacciones": 0,
-   "comentarios": 0,
-   "compartidos": 0
-  },
-  {
-   "fecha": "2026-10-21T12:35:31+0000",
-   "enlace": "https://www.facebook.com/122115932253501320/posts/122113405971501320?substory_index=1423297029926895",
    "texto": "",
    "reacciones": 0,
    "comentarios": 0,
