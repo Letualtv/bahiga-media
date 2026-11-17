@@ -1,72 +1,72 @@
 {
- "generado": "2026-11-16T06:00:34.851Z",
+ "generado": "2026-11-17T06:00:39.220Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1067555,
-   "publicaciones": 3532,
+   "seguidores": 1068592,
+   "publicaciones": 3538,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 205,
-   "comentarios_medios": 46,
+   "likes_medios": 247,
+   "comentarios_medios": 22,
    "por_tipo": {
+    "Reel": {
+     "n": 13,
+     "likes": 47,
+     "comentarios": 5
+    },
     "Carrusel": {
-     "n": 17,
-     "likes": 270,
-     "comentarios": 78
+     "n": 16,
+     "likes": 368,
+     "comentarios": 38
     },
     "Imagen": {
      "n": 1,
-     "likes": 625,
+     "likes": 911,
      "comentarios": 0
-    },
-    "Reel": {
-     "n": 12,
-     "likes": 77,
-     "comentarios": 4
     }
    },
    "mejores": [
     {
-     "fecha": "2026-11-13",
+     "fecha": "2026-11-16",
      "tipo": "Carrusel",
-     "likes": 819,
-     "comentarios": 630,
-     "texto": "Comenta 👉🏻 ALCANCE",
-     "enlace": "https://www.instagram.com/p/Dfr2i-tiobN/"
-    },
-    {
-     "fecha": "2026-11-13",
-     "tipo": "Carrusel",
-     "likes": 1183,
-     "comentarios": 47,
-     "texto": "Seguime para crecer tu facturación.",
-     "enlace": "https://www.instagram.com/p/DfrlYltDNmT/"
+     "likes": 1863,
+     "comentarios": 12,
+     "texto": "El mundo puede copiar el producto, pero jamás copiar el alma que lo crea.",
+     "enlace": "https://www.instagram.com/p/Dfzk4rKiJJt/"
     },
     {
      "fecha": "2026-11-15",
      "tipo": "Carrusel",
-     "likes": 817,
-     "comentarios": 9,
+     "likes": 1191,
+     "comentarios": 29,
      "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
      "enlace": "https://www.instagram.com/p/Dfwu-TKDjZA/"
     },
     {
-     "fecha": "2026-11-13",
-     "tipo": "Carrusel",
-     "likes": 70,
-     "comentarios": 243,
-     "texto": "Comenta 👉🏻 EQUIPO",
-     "enlace": "https://www.instagram.com/p/DfqWZC2jMSl/"
-    },
-    {
      "fecha": "2026-11-15",
      "tipo": "Imagen",
-     "likes": 625,
+     "likes": 911,
      "comentarios": 0,
      "texto": "¿estás VIVIENDO o apenas SOBREVIVIENDO? No te quedes viendo cómo pasa la vida, ¡actúa!",
      "enlace": "https://www.instagram.com/p/DfxiVQnjDoP/"
+    },
+    {
+     "fecha": "2026-11-14",
+     "tipo": "Carrusel",
+     "likes": 197,
+     "comentarios": 213,
+     "texto": "Comenta 👉🏻 AGENTE",
+     "enlace": "https://www.instagram.com/p/Dfu9lbHjqFN/"
+    },
+    {
+     "fecha": "2026-11-16",
+     "tipo": "Carrusel",
+     "likes": 508,
+     "comentarios": 11,
+     "texto": "Si quieres entender las verdades del mundo comparativo, sin filtros ni romanticismo, sígueme.",
+     "enlace": "https://www.instagram.com/p/Df0YYVaDlau/"
     }
    ],
    "historial": [
@@ -153,35 +153,39 @@
     {
      "fecha": "2026-11-16",
      "seguidores": 1067555
+    },
+    {
+     "fecha": "2026-11-17",
+     "seguidores": 1068592
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 476529,
-   "publicaciones": 2107,
-   "publicaciones_7d": 16,
+   "seguidores": 476911,
+   "publicaciones": 2110,
+   "publicaciones_7d": 17,
    "publicaciones_30d": 30,
-   "likes_medios": 1486,
-   "comentarios_medios": 60,
+   "likes_medios": 1477,
+   "comentarios_medios": 57,
    "por_tipo": {
-    "Reel": {
-     "n": 19,
-     "likes": 1300,
-     "comentarios": 27
-    },
     "Carrusel": {
-     "n": 11,
-     "likes": 1808,
-     "comentarios": 117
+     "n": 12,
+     "likes": 1585,
+     "comentarios": 106
+    },
+    "Reel": {
+     "n": 18,
+     "likes": 1405,
+     "comentarios": 25
     }
    },
    "mejores": [
     {
      "fecha": "2026-11-05",
      "tipo": "Reel",
-     "likes": 11293,
+     "likes": 11334,
      "comentarios": 48,
      "texto": "Como responde tu equipo a esa objeción? \n.\n.\n.\n.\n\n#emprender #negocios #vendermas #ventas",
      "enlace": "https://www.instagram.com/reel/DfYKCMmEisP/"
@@ -189,23 +193,15 @@
     {
      "fecha": "2026-11-06",
      "tipo": "Reel",
-     "likes": 5469,
-     "comentarios": 272,
+     "likes": 5767,
+     "comentarios": 285,
      "texto": "ALM jaja que buena historía 🥹😛 ¿Qué prefieres? 🦦\n.\n.\n.\n#ventas #julioiero #marketing #vendermás",
      "enlace": "https://www.instagram.com/reel/DfYY9YRjepT/"
     },
     {
-     "fecha": "2026-11-04",
-     "tipo": "Carrusel",
-     "likes": 5382,
-     "comentarios": 60,
-     "texto": "Estos nadie los ve 🥹\n.\n.\n.\n.\n.\n #negocios #crecimiento #motivación #emprendimiento",
-     "enlace": "https://www.instagram.com/p/DfVRotOIB_-/"
-    },
-    {
      "fecha": "2026-11-12",
      "tipo": "Carrusel",
-     "likes": 4671,
+     "likes": 4918,
      "comentarios": 25,
      "texto": "Mucha gente quiere dinero, pero no les gusta lo que toca hacer para tenerlo.👇\n.\n.\n.\n.\n #vendermas #emprendimiento #ventas #ReflexionesDiarias",
      "enlace": "https://www.instagram.com/p/DfnzCjZj8yr/"
@@ -213,10 +209,18 @@
     {
      "fecha": "2026-11-09",
      "tipo": "Carrusel",
-     "likes": 2021,
-     "comentarios": 816,
+     "likes": 2049,
+     "comentarios": 830,
      "texto": "Sígueme si quieres aprender a crear contenido que te genere más clientes de los que puedas atender 🦦\n.\n.\n.\n.\n #crecimiento #vendermás #emprender #crearcontenid",
      "enlace": "https://www.instagram.com/p/DfiiCtRjID-/"
+    },
+    {
+     "fecha": "2026-11-10",
+     "tipo": "Reel",
+     "likes": 2284,
+     "comentarios": 9,
+     "texto": "Deja de pensar como vendedor y empieza a crear sistemas 🤩🔥\n.\n.\n.\n#ventas #vendermas #IA #inteligenciaartificial #marketing #emprendimiento #sixflags #julioier",
+     "enlace": "https://www.instagram.com/reel/DflE6vrAvYI/"
     }
    ],
    "historial": [
@@ -303,6 +307,10 @@
     {
      "fecha": "2026-11-16",
      "seguidores": 476529
+    },
+    {
+     "fecha": "2026-11-17",
+     "seguidores": 476911
     }
    ]
   }
