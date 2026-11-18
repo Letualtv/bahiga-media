@@ -1,5 +1,7 @@
 {
- "ultima_pasada": "2026-11-18T17:50:27.988Z",
- "errores": [],
+ "ultima_pasada": "2026-11-18T18:00:28.775Z",
+ "errores": [
+  "Privados de Facebook: fetch failed"
+ ],
  "encontrados": 0
 }
