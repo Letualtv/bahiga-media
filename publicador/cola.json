@@ -949,6 +949,76 @@
    "texto": "¿Sabes cuánta gente entra en tu web y cuántos acaban llamándote?\n\nLo normal es no saberlo. La web se entrega, se paga y ya nadie mira qué hace.\n\nPor eso cada negocio que trabaja con nosotros tiene su área de clientes: un panel privado con las visitas de su web, de dónde llegan y cómo le contactan (WhatsApp, llamadas, formularios). Dentro están también el informe de cada mes en PDF, las facturas y presupuestos, y los documentos del proyecto.\n\nCada negocio ve solo lo suyo y se entra con el correo, también desde el móvil.\n\nLa pantalla del carrusel es un ejemplo con datos inventados.\n\nEscríbenos WEB en comentarios y te lo enseñamos funcionando.\n\n#WebsParaNegocios #Pymes #Córdoba #DiseñoWeb"
   },
   {
+   "id": "1123-webs-por-sector",
+   "fecha": "2026-11-23T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "carrusel",
+   "medios": [
+    "media/1123-webs-por-sector-1.jpg",
+    "media/1123-webs-por-sector-2.jpg",
+    "media/1123-webs-por-sector-3.jpg",
+    "media/1123-webs-por-sector-4.jpg",
+    "media/1123-webs-por-sector-5.jpg",
+    "media/1123-webs-por-sector-6.jpg",
+    "media/1123-webs-por-sector-7.jpg"
+   ],
+   "texto": "Una web para tu negocio. Desde 390 €.\n\nHemos hecho catorce webs de muestra, una por sector: barbería, estética, taller, reformas, bar, casa rural, floristería, autoescuela, entrenamiento, mercería, fisioterapia, panadería, electricista y moda. Están en bahiga.es/webs y se pueden probar desde el móvil.\n\nEliges la de tu sector y la adaptamos con tu nombre, tus textos, tus fotos y tus precios. Lleva botones de llamada y WhatsApp, reserva o pedido por WhatsApp, tus redes, versión en inglés, datos para Google y el dominio del primer año.\n\nSi quieres algo más, se añade: agenda de reservas real, más páginas, otros idiomas o pedidos con pago.\n\nEl mantenimiento es opcional: 30 € al mes con alojamiento, copias de seguridad y media hora de cambios, sin permanencia. Por Black Friday, los tres primeros meses son gratis contratando hasta el 30 de noviembre.\n\nPrecios sin IVA. Las webs del carrusel son muestras hechas por Bahiga, no webs de clientes.\n\nEscribe WEB en comentarios y te mandamos la de tu sector.\n\n#DiseñoWeb #ComerciosDeCórdoba #Pymes #BlackFriday",
+   "estado": "borrador"
+  },
+  {
+   "id": "1124-historia-webs-1",
+   "fecha": "2026-11-24T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1124-historia-webs-1.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1124-historia-webs-2",
+   "fecha": "2026-11-24T14:31:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1124-historia-webs-2.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1124-historia-webs-3",
+   "fecha": "2026-11-24T14:32:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "historia",
+   "media": "media/1124-historia-webs-3.jpg",
+   "estado": "borrador"
+  },
+  {
+   "id": "1125-reel-barberia",
+   "fecha": "2026-11-25T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "tipo": "reel",
+   "media": "media/1125-reel-barberia.mp4",
+   "texto": "Una web para tu barbería.\n\nServicios y precios claros, reserva por WhatsApp y versión en inglés. La del vídeo es una de las catorce muestras que tenemos en bahiga.es/webs: entra desde el móvil y pruébala.\n\nDesde 390 €, con tu nombre, tus fotos, tus precios y el dominio del primer año. El mantenimiento es opcional, 30 € al mes sin permanencia, y por Black Friday los tres primeros meses son gratis contratando hasta el 30 de noviembre. Precios sin IVA.\n\nLa web del vídeo es una muestra hecha por Bahiga, no la de un cliente.\n\nEscribe WEB en comentarios y te mandamos la de tu sector.\n\n#DiseñoWeb #Barbería #ComerciosDeCórdoba #BlackFriday",
+   "portada_ms": 1000,
+   "musica": {
+    "buscar": "upbeat acoustic",
+    "volumen_video": 40
+   },
+   "estado": "borrador"
+  },
+  {
    "id": "1118-landing-390",
    "fecha": "2026-11-23T21:00:00+01:00",
    "redes": [
@@ -967,7 +1037,8 @@
     "media/landing-390-8.jpg"
    ],
    "texto": "Tu negocio, en una página. Desde 390 €.\n\nUna landing es una web de una sola página: quién eres, qué haces, dónde estás y cómo llamarte. Para muchos negocios es todo lo que hace falta.\n\nQué lleva:\nTu escaparate, con fotos de lo que vendes o haces.\nBotones de llamada y WhatsApp, horario y mapa.\nEl SEO hecho desde el primer día: títulos, datos para Google, carga rápida y tu ficha de Google enlazada. Te dejamos la web lista para competir.\nEl dominio del primer año.\n\nY si quieres que nos ocupemos cada mes: 30 € con alojamiento, copias de seguridad, media hora de cambios, tu panel de visitas y un informe. Los dos primeros meses son gratis y no hay permanencia.\n\nPrecios sin IVA. La web del carrusel es un ejemplo con un negocio inventado.\n\nEscribe LANDING en comentarios y te mandamos un ejemplo pensado para tu tipo de negocio.\n\n#DiseñoWeb #LandingPage #ComerciosDeCórdoba #Pymes",
-   "estado": "pendiente"
+   "estado": "descartada",
+   "nota": "Sustituida el 18/11 por las piezas con las webs de muestra reales"
   },
   {
    "id": "1120-ficha-google",
@@ -1016,7 +1087,8 @@
    ],
    "tipo": "historia",
    "media": "media/1119-historia-landing-1.jpg",
-   "estado": "pendiente"
+   "estado": "descartada",
+   "nota": "Sustituida el 18/11 por las piezas con las webs de muestra reales"
   },
   {
    "id": "1119-historia-landing-2",
@@ -1027,7 +1099,8 @@
    ],
    "tipo": "historia",
    "media": "media/1119-historia-landing-2.jpg",
-   "estado": "pendiente"
+   "estado": "descartada",
+   "nota": "Sustituida el 18/11 por las piezas con las webs de muestra reales"
   },
   {
    "id": "1119-historia-landing-3",
@@ -1038,7 +1111,8 @@
    ],
    "tipo": "historia",
    "media": "media/1119-historia-landing-3.jpg",
-   "estado": "pendiente"
+   "estado": "descartada",
+   "nota": "Sustituida el 18/11 por las piezas con las webs de muestra reales"
   },
   {
    "id": "1125-reel-landing",
@@ -1055,7 +1129,8 @@
     "buscar": "upbeat acoustic",
     "volumen_video": 40
    },
-   "estado": "pendiente"
+   "estado": "descartada",
+   "nota": "Sustituida el 18/11 por las piezas con las webs de muestra reales"
   },
   {
    "id": "1127-reel-revision",
