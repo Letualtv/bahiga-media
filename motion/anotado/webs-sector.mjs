@@ -14,7 +14,7 @@ const L = [
   { fantasma: '390', num: '03', t: 'Qué lleva *por 390 €.*',
     cuerpo: `<div class="lista">${['Pensada para el móvil, con llamada y WhatsApp', 'Reservas o pedidos por WhatsApp', 'Tus redes dentro de la web', 'Versión en inglés, si la necesitas', 'Preparada para Google y asistentes de IA', 'Dominio un año y un correo con tu dominio', 'Tu área de clientes, con visitas y contactos'].map((x) => `<div><b>${OK}</b>${x}</div>`).join('')}</div>` },
   { fantasma: '+', num: '04', t: 'Y lo demás, *se añade.*', n: 'Con presupuesto por escrito antes de empezar.',
-    cuerpo: `<div class="extras">${[['Agenda de reservas real', 'desde 150 € + 10 €/mes'], ['Tu Instagram dentro de la web', '150 € + 15 €/mes'], ['Más páginas', 'desde 60 € cada una'], ['Ficha de Google lista', '60 €']].map(([a, b]) => `<div><b>${a}</b><span>${b}</span></div>`).join('')}</div>` },
+    cuerpo: `<div class="extras">${[['Agenda de reservas real', 'desde 150 € + 10 €/mes'], ['Pedidos con pago', 'desde 290 €'], ['Más páginas', 'desde 60 € cada una'], ['Ficha de Google lista', '60 €']].map(([a, b]) => `<div><b>${a}</b><span>${b}</span></div>`).join('')}</div>` },
   { fantasma: '30', num: '05', t: 'El mantenimiento, *opcional.*', n: '30 € al mes, sin permanencia.',
     cuerpo: `<div class="lista corta">${['Alojamiento en nuestro servidor', 'Copias de seguridad', 'Media hora de cambios al mes', 'Tu área de clientes'].map((x) => `<div><b>${OK}</b>${x}</div>`).join('')}</div>
       <div class="oferta of2">Black Friday<b>Los 3 primeros meses, gratis</b><em>Contratando hasta el 30 de noviembre. Después, 1 mes.</em></div>` },
