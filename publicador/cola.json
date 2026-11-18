@@ -410,7 +410,15 @@
    "tipo": "foto",
    "media": "media/linkedin/li-comentarios.jpg",
    "texto_linkedin": "En redes, el que contesta primero se queda con el cliente.\n\nCuando alguien comenta «me interesa» en una publicación de un negocio y nadie responde en horas, esa persona ya ha preguntado a otros dos.\n\nPara Bahiga he montado algo sencillo: cada diez minutos un proceso revisa los comentarios y mensajes de Instagram y Facebook. Si alguien escribe una palabra clave, se contesta en público al momento y me llega un aviso al correo y al móvil con el enlace. Yo solo hago la conversación por privado.\n\nNo hay ningún bot hablando con nadie. La parte humana sigue siendo humana; lo que se automatiza es no perder el aviso.\n\nFunciona con las APIs oficiales y sin coste. Si tienes un negocio con redes y te pasa lo de contestar tarde, esto se monta en una tarde.\n\n¿Cuánto tardáis de media en contestar un mensaje en redes en vuestro negocio?\n\nAntonio Pulido · Desarrollador Web & IA · bahiga.es\n\n#automatización #redessociales #pymes",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "linkedin": {
+     "id": "urn:li:share:7528721280435458048",
+     "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7528721280435458048/",
+     "hora": "2026-11-18T07:30:30.435Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1119-li-web-clientes",
