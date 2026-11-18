@@ -37,11 +37,12 @@ const TIC = '<i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width=
 const PRECIO = `<div class=pr id=pa><small>Desde</small><b>390 € <span style="display:inline;font-family:inherit;font-size:60px;letter-spacing:0">+ IVA</span></b><span>Con tu nombre, tus fotos y tus precios. Black Friday: 3 meses de mantenimiento gratis hasta el 30 de noviembre.</span></div><div class="cta">Responde WEB</div>`;
 const CUENTA = [['3', 'Quedan *tres días.*'], ['2', 'Quedan *dos días.*'], ['1', 'Hoy es *el último día.*']];
 const cual = process.argv[2];
-for (const [s, [que, lleva]] of Object.entries(SECTORES)) {
+const directo = process.argv[1].endsWith("historias-sector.mjs");
+if (directo) for (const [s, [que, lleva]] of Object.entries(SECTORES)) {
   if (cual && cual !== s) continue;
   await render(`historia-web-${s}`, [
     { cls: que.length > 16 ? 'largo' : '', fantasma: '1', t: `Una web para *${que}*`, cuerpo: `${movil(real(s), { cls: 'real h1' })}<div class="aviso">Web de muestra hecha por Bahiga. Pruébala en bahiga.es/webs</div>` },
     { fantasma: '2', t: 'Lo que *lleva.*', cuerpo: `<div class=lv>${lleva.map((x) => `<div>${TIC}${x}</div>`).join('')}</div>${PRECIO}` },
   ], BASE, { ancho: 1080, alto: 1920 });
 }
-if (!cual || cual === 'cuenta') await render('historia-bf', CUENTA.map(([n, t]) => ({ fantasma: n, t, cuerpo: `<div class=pr id=pc><small>Black Friday</small><b>3 meses gratis</b><span>de mantenimiento, contratando tu web hasta el 30 de noviembre. Después, 1 mes.</span></div><div class=pr id=pd><small>Web para tu negocio</small><b>Desde 390 €</b><span>Más IVA. Catorce sectores en bahiga.es/webs</span></div><div class="cta">Responde WEB</div>` })), BASE, { ancho: 1080, alto: 1920 });
+if (directo && (!cual || cual === "cuenta")) await render('historia-bf', CUENTA.map(([n, t]) => ({ fantasma: n, t, cuerpo: `<div class=pr id=pc><small>Black Friday</small><b>3 meses gratis</b><span>de mantenimiento, contratando tu web hasta el 30 de noviembre. Después, 1 mes.</span></div><div class=pr id=pd><small>Web para tu negocio</small><b>Desde 390 €</b><span>Más IVA. Catorce sectores en bahiga.es/webs</span></div><div class="cta">Responde WEB</div>` })), BASE, { ancho: 1080, alto: 1920 });
