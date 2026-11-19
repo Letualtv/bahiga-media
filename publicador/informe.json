@@ -1,32 +1,27 @@
 {
- "generado": "2026-11-18T06:00:32.858Z",
+ "generado": "2026-11-19T06:00:31.766Z",
  "resumen_semana": {
-  "publicaciones": 5,
+  "publicaciones": 4,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/p/Df5UNr7AZTW/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 8
+   },
    {
     "enlace": "https://www.instagram.com/p/Df0KutQk70c/",
     "compartidos_mas_guardados": 0,
-    "alcance": 24
+    "alcance": 30
    },
    {
     "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
     "compartidos_mas_guardados": 0,
-    "alcance": 21
+    "alcance": 23
    },
    {
     "enlace": "https://www.instagram.com/reel/DfpmQuWESPg/",
     "compartidos_mas_guardados": 0,
-    "alcance": 16
-   },
-   {
-    "enlace": "https://www.instagram.com/p/DfnBWooj8MV/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 16
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Dfm91zGD8Nn/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 12
+    "alcance": 20
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -34,12 +29,29 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 53,
-  "follows_count": 96,
-  "media_count": 29,
+  "followers_count": 55,
+  "follows_count": 100,
+  "media_count": 30,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18389362024238604",
+   "fecha": "2026-11-18T20:01:29+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Df5UNr7AZTW/",
+   "texto": "Hasta el 30 de noviembre revisamos tu web gratis.\n\nMiramos cinco cosas, las que más clientes hacen perder:\n1. Cuánto tar",
+   "likes": 3,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 8,
+    "views": 19,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 4
+   }
+  },
   {
    "id": "18105091559380548",
    "fecha": "2026-11-16T20:02:26+0000",
@@ -50,8 +62,8 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 52,
+    "reach": 30,
+    "views": 67,
     "saved": 0,
     "shares": 0,
     "total_interactions": 8
@@ -64,17 +76,17 @@
    "formato": "VIDEO",
    "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
    "texto": "Dale ocho segundos a tu web.\n\nQuien entra por primera vez busca cuatro cosas: qué vendes, dónde estás, cómo llamarte y s",
-   "likes": 4,
+   "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 28,
+    "reach": 23,
+    "views": 32,
     "saved": 0,
     "shares": 0,
     "comments": 0,
-    "likes": 4,
-    "total_interactions": 4,
-    "ig_reels_avg_watch_time": 7506
+    "likes": 5,
+    "total_interactions": 5,
+    "ig_reels_avg_watch_time": 8079
    }
   },
   {
@@ -87,14 +99,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 16,
-    "views": 34,
+    "reach": 20,
+    "views": 37,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 6534
+    "ig_reels_avg_watch_time": 6047
    }
   },
   {
@@ -107,8 +119,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 16,
-    "views": 51,
+    "reach": 18,
+    "views": 56,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -124,8 +136,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 12,
-    "views": 29,
+    "reach": 14,
+    "views": 35,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -141,14 +153,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 19,
-    "views": 31,
+    "reach": 21,
+    "views": 32,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 3534
+    "ig_reels_avg_watch_time": 3398
    }
   },
   {
@@ -161,8 +173,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 75,
+    "reach": 26,
+    "views": 82,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -178,8 +190,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 14,
-    "views": 47,
+    "reach": 16,
+    "views": 53,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2
@@ -195,8 +207,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 16,
-    "views": 48,
+    "reach": 18,
+    "views": 50,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -212,14 +224,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 17,
-    "views": 24,
+    "reach": 18,
+    "views": 25,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 8467
+    "ig_reels_avg_watch_time": 8049
    }
   },
   {
@@ -232,8 +244,8 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 25,
-    "views": 83,
+    "reach": 26,
+    "views": 87,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -249,14 +261,14 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 27,
+    "reach": 20,
+    "views": 30,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 9125
+    "ig_reels_avg_watch_time": 9207
    }
   },
   {
@@ -286,14 +298,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 25,
-    "views": 41,
+    "reach": 26,
+    "views": 42,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 6072
+    "ig_reels_avg_watch_time": 7198
    }
   },
   {
@@ -323,14 +335,14 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 39,
-    "views": 51,
+    "reach": 40,
+    "views": 52,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 4,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 5735
+    "ig_reels_avg_watch_time": 5729
    }
   },
   {
@@ -434,7 +446,7 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 28,
+    "reach": 29,
     "views": 49,
     "saved": 0,
     "shares": 0,
@@ -454,14 +466,14 @@
    "likes": 3,
    "comentarios": 0,
    "metricas": {
-    "reach": 36,
-    "views": 76,
+    "reach": 37,
+    "views": 77,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 3,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 10415
+    "ig_reels_avg_watch_time": 10456
    }
   },
   {
@@ -474,14 +486,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 37,
-    "views": 59,
+    "reach": 39,
+    "views": 60,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 5,
     "total_interactions": 5,
-    "ig_reels_avg_watch_time": 9909
+    "ig_reels_avg_watch_time": 9791
    }
   },
   {
@@ -494,14 +506,14 @@
    "likes": 5,
    "comentarios": 0,
    "metricas": {
-    "reach": 103,
-    "views": 163,
+    "reach": 104,
+    "views": 165,
     "saved": 0,
     "shares": 2,
     "comments": 0,
     "likes": 5,
     "total_interactions": 9,
-    "ig_reels_avg_watch_time": 6865
+    "ig_reels_avg_watch_time": 6889
    }
   },
   {
@@ -556,7 +568,18 @@
    }
   }
  ],
- "instagram_historias_activas": [],
+ "instagram_historias_activas": [
+  {
+   "fecha": "2026-11-18T09:06:41+0000",
+   "metricas": {
+    "reach": 26,
+    "views": 34,
+    "replies": 0,
+    "navigation": 31,
+    "shares": 0
+   }
+  }
+ ],
  "instagram_cuenta_28d": {
   "data": [
    {
@@ -566,7 +589,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 634
+     "value": 636
     }
    },
    {
@@ -576,7 +599,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3678
+     "value": 3805
     }
    },
    {
@@ -586,7 +609,7 @@
     "title": "Cuentas con interacciones",
     "description": "Número de cuentas que han interactuado con tu contenido, incluido el de los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. Las interacciones pueden incluir acciones, como Me gusta, comentarios, respuestas o veces que se ha guardado o compartido el contenido. Estas métricas son una estimación y están en desarrollo.",
     "total_value": {
-     "value": 23
+     "value": 24
     }
    },
    {
@@ -596,7 +619,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 155
+     "value": 160
     }
    },
    {
@@ -606,7 +629,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 176
+     "value": 187
     }
    },
    {
@@ -616,7 +639,7 @@
     "title": "Toques en el enlace al sitio web",
     "description": "Número de veces que se ha tocado el enlace a tu sitio web.",
     "total_value": {
-     "value": 7
+     "value": 12
     }
    }
   ]
@@ -628,6 +651,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-18T20:01:42+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122124715197501320",
+   "texto": "Hasta el 30 de noviembre revisamos tu web gratis.\n\nMiramos cinco cosas, las que más clientes hacen perder:\n1. Cuánto tar",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-16T20:02:41+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122124067719501320",
@@ -856,14 +887,6 @@
    "fecha": "2026-10-22T15:00:14+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122114059407501320",
    "texto": "Webs, tiendas online y automatización con IA para comercios y pymes.\n\nWebs a medida desde 900 €, tiendas online desde 1.",
-   "reacciones": 0,
-   "comentarios": 0,
-   "compartidos": 0
-  },
-  {
-   "fecha": "2026-10-21T12:39:43+0000",
-   "enlace": "https://www.facebook.com/122115932253501320/posts/1665260468448864?substory_index=1665260468448864",
-   "texto": "",
    "reacciones": 0,
    "comentarios": 0,
    "compartidos": 0
