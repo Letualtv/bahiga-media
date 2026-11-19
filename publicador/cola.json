@@ -1329,7 +1329,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-barberia-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18094165436217454",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4033751176726425101",
+     "hora": "2026-11-19T09:30:50.402Z"
+    },
+    "facebook": {
+     "id": "1663527241813569",
+     "hora": "2026-11-19T09:30:58.011Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1119-historia-web-barberia-2",
