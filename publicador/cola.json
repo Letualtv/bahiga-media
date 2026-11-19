@@ -1352,7 +1352,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-barberia-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18145361119612649",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4033977632610215525",
+     "hora": "2026-11-19T17:00:46.854Z"
+    },
+    "facebook": {
+     "id": "1499864805318995",
+     "hora": "2026-11-19T17:00:52.593Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1120-historia-web-estetica-1",
