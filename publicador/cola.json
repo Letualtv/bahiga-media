@@ -1704,7 +1704,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "borrador",
+   "estado": "pendiente",
    "tipo": "carrusel",
    "medios": [
     "media/noticias/n-1120-whatsapp-bizum-1.jpg",
@@ -1722,7 +1722,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "borrador",
+   "estado": "pendiente",
    "tipo": "historia",
    "media": "media/noticias/n-1120-whatsapp-bizum-historia-1.jpg"
   }
