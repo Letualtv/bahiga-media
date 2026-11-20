@@ -1,72 +1,72 @@
 {
- "generado": "2026-11-19T06:00:27.756Z",
+ "generado": "2026-11-20T06:00:30.861Z",
  "cuentas": {
   "marcosrazzetti": {
    "nombre": "Marcos Razzetti",
    "bio": "→ Hago 600k/mes \n→ Escalé +403 negocios a 10-300k que hicieron +370M\n👇🏼Toca para que escalemos el tuyo",
-   "seguidores": 1070615,
-   "publicaciones": 3549,
+   "seguidores": 1071404,
+   "publicaciones": 3550,
    "publicaciones_7d": 30,
    "publicaciones_30d": 30,
-   "likes_medios": 398,
-   "comentarios_medios": 12,
+   "likes_medios": 530,
+   "comentarios_medios": 18,
    "por_tipo": {
-    "Carrusel": {
-     "n": 15,
-     "likes": 702,
-     "comentarios": 20
+    "Imagen": {
+     "n": 2,
+     "likes": 1594,
+     "comentarios": 45
     },
     "Reel": {
-     "n": 14,
-     "likes": 28,
-     "comentarios": 5
+     "n": 13,
+     "likes": 32,
+     "comentarios": 7
     },
-    "Imagen": {
-     "n": 1,
-     "likes": 1005,
-     "comentarios": 0
+    "Carrusel": {
+     "n": 15,
+     "likes": 821,
+     "comentarios": 25
     }
    },
    "mejores": [
     {
      "fecha": "2026-11-16",
      "tipo": "Carrusel",
-     "likes": 4366,
-     "comentarios": 22,
+     "likes": 4803,
+     "comentarios": 26,
      "texto": "El mundo puede copiar el producto, pero jamás copiar el alma que lo crea.",
      "enlace": "https://www.instagram.com/p/Dfzk4rKiJJt/"
     },
     {
      "fecha": "2026-11-15",
      "tipo": "Carrusel",
-     "likes": 2013,
-     "comentarios": 68,
+     "likes": 2663,
+     "comentarios": 106,
      "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
      "enlace": "https://www.instagram.com/p/Dfwu-TKDjZA/"
     },
     {
+     "fecha": "2026-11-19",
+     "tipo": "Imagen",
+     "likes": 2159,
+     "comentarios": 87,
+     "texto": "Trabajamos para vivir. No vivimos para trabajar.",
+     "enlace": "https://www.instagram.com/p/Df7yBGbzf2n/"
+    },
+    {
      "fecha": "2026-11-16",
      "tipo": "Carrusel",
-     "likes": 1137,
-     "comentarios": 32,
+     "likes": 1195,
+     "comentarios": 34,
      "texto": "Si quieres entender las verdades del mundo comparativo, sin filtros ni romanticismo, sígueme.",
      "enlace": "https://www.instagram.com/p/Df0YYVaDlau/"
     },
     {
      "fecha": "2026-11-15",
      "tipo": "Imagen",
-     "likes": 1005,
-     "comentarios": 0,
+     "likes": 1028,
+     "comentarios": 2,
      "texto": "¿estás VIVIENDO o apenas SOBREVIVIENDO? No te quedes viendo cómo pasa la vida, ¡actúa!",
      "enlace": "https://www.instagram.com/p/DfxiVQnjDoP/"
-    },
-    {
-     "fecha": "2026-11-16",
-     "tipo": "Carrusel",
-     "likes": 598,
-     "comentarios": 35,
-     "texto": "Sos empresario, querés mejorar tu liderazgo y construir un equipo de alto rendimiento, sígueme.",
-     "enlace": "https://www.instagram.com/p/DfzT2F0jjOk/"
     }
    ],
    "historial": [
@@ -165,27 +165,31 @@
     {
      "fecha": "2026-11-19",
      "seguidores": 1070615
+    },
+    {
+     "fecha": "2026-11-20",
+     "seguidores": 1071404
     }
    ]
   },
   "julioiero": {
    "nombre": "Julioiero",
    "bio": "🧠 Le ayudo a tu empresa a tener más clientes de los que puedan atender\n🗽 Envíame un mensaje con \"Contacto2\" \n🎙️ @escueladenegociospodcast",
-   "seguidores": 477747,
-   "publicaciones": 2115,
+   "seguidores": 478125,
+   "publicaciones": 2118,
    "publicaciones_7d": 17,
    "publicaciones_30d": 30,
-   "likes_medios": 1044,
+   "likes_medios": 1029,
    "comentarios_medios": 49,
    "por_tipo": {
     "Carrusel": {
      "n": 14,
-     "likes": 1595,
-     "comentarios": 97
+     "likes": 1530,
+     "comentarios": 95
     },
     "Reel": {
      "n": 16,
-     "likes": 562,
+     "likes": 590,
      "comentarios": 8
     }
    },
@@ -193,7 +197,7 @@
     {
      "fecha": "2026-11-12",
      "tipo": "Carrusel",
-     "likes": 5400,
+     "likes": 5709,
      "comentarios": 26,
      "texto": "Mucha gente quiere dinero, pero no les gusta lo que toca hacer para tenerlo.👇\n.\n.\n.\n.\n #vendermas #emprendimiento #ventas #ReflexionesDiarias",
      "enlace": "https://www.instagram.com/p/DfnzCjZj8yr/"
@@ -201,23 +205,23 @@
     {
      "fecha": "2026-11-09",
      "tipo": "Carrusel",
-     "likes": 2117,
-     "comentarios": 852,
+     "likes": 2148,
+     "comentarios": 862,
      "texto": "Sígueme si quieres aprender a crear contenido que te genere más clientes de los que puedas atender 🦦\n.\n.\n.\n.\n #crecimiento #vendermás #emprender #crearcontenid",
      "enlace": "https://www.instagram.com/p/DfiiCtRjID-/"
     },
     {
      "fecha": "2026-11-17",
      "tipo": "Carrusel",
-     "likes": 3677,
-     "comentarios": 18,
+     "likes": 3811,
+     "comentarios": 20,
      "texto": "Pasó de dormir en su automóvil a construir una empresa internacional, acumular una fortuna millonaria y convertirse en autor de más de 80 libros sobre éxito y n",
      "enlace": "https://www.instagram.com/p/Df00Jj5iUBQ/"
     },
     {
      "fecha": "2026-11-16",
      "tipo": "Carrusel",
-     "likes": 2637,
+     "likes": 2698,
      "comentarios": 17,
      "texto": "Todo mundo está hablando de los conciertos de Karol G...\n\n.\n.\n.\n\n#KarolG #Tropitour #Marketing #Branding #vendermas",
      "enlace": "https://www.instagram.com/p/Df0Hp8CCVGr/"
@@ -225,7 +229,7 @@
     {
      "fecha": "2026-11-13",
      "tipo": "Reel",
-     "likes": 2433,
+     "likes": 2556,
      "comentarios": 17,
      "texto": "1mdd 🫠🫠🫠🫠🫠🫠🫠🫠🫠🫠\n.\n.\n.\n#ventas #julioiero #marketing #vendermas",
      "enlace": "https://www.instagram.com/reel/DfsoY4iDOJZ/"
@@ -327,6 +331,10 @@
     {
      "fecha": "2026-11-19",
      "seguidores": 477747
+    },
+    {
+     "fecha": "2026-11-20",
+     "seguidores": 478125
     }
    ]
   }
