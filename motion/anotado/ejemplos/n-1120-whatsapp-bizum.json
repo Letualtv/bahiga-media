@@ -1,0 +1,7 @@
+{ "id": "n-1120-whatsapp-bizum", "etiqueta": "Aviso · WhatsApp", "titular": "Si te piden un *Bizum por WhatsApp,* llama antes", "fuente": "INCIBE y Policía Nacional",
+  "pantalla": { "tipo": "chat", "de": "Un contacto tuyo", "mensajes": [ { "texto": "Hola! Se me ha pasado el límite de la tarjeta. ¿Me haces un Bizum de 90 € y mañana te lo devuelvo?" }, { "texto": "Ahora no puedo hablar, escríbeme por aquí" } ] },
+  "senales": ["Te mete prisa", "No quiere llamar", "Pide dinero"],
+  "que_pasa": "Escriben desde la cuenta real de un contacto, en su chat de siempre, y te piden un Bizum urgente.",
+  "que_hacer": ["Llámale por teléfono antes de pagar", "No contestes por el mismo chat", "Activa la verificación en dos pasos", "Si ya has pagado, llama a tu banco"],
+  "comprobar": { "ruta": ["Abre WhatsApp", "Ajustes", "Dispositivos vinculados"], "texto": "Si aparece un dispositivo que no es tuyo, ciérralo." },
+  "cierre": "¿Cobras *por Bizum* en tu negocio?", "cierre_sub": "Cuenta con Bahiga. Te ayudamos a dejar WhatsApp protegido y con copia.", "cta": "Comenta INFO" }

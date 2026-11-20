@@ -1696,6 +1696,35 @@
    "tipo": "historia",
    "media": "media/historia-bf-3.jpg",
    "estado": "pendiente"
+  },
+  {
+   "id": "n-1120-whatsapp-bizum",
+   "fecha": "2026-11-24T21:00:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "borrador",
+   "tipo": "carrusel",
+   "medios": [
+    "media/noticias/n-1120-whatsapp-bizum-1.jpg",
+    "media/noticias/n-1120-whatsapp-bizum-2.jpg",
+    "media/noticias/n-1120-whatsapp-bizum-3.jpg",
+    "media/noticias/n-1120-whatsapp-bizum-4.jpg",
+    "media/noticias/n-1120-whatsapp-bizum-5.jpg"
+   ],
+   "texto": "Si te piden un Bizum por WhatsApp, llama antes de pagar.\n\nQué pasa: la Policía Nacional y el INCIBE avisan de mensajes que llegan desde la cuenta real de un familiar o un amigo, dentro de su chat de siempre. Piden un Bizum o una transferencia con prisa, con la excusa de que la tarjeta ha llegado al límite, y dicen que no pueden hablar. El dueño de la cuenta suele seguir usando WhatsApp sin enterarse.\n\nA quién afecta: a cualquiera con WhatsApp, también a quien lo usa para su negocio y tiene clientes, proveedores y familia en la misma lista de contactos.\n\nQué hacer: llama por teléfono a esa persona antes de pagar, no verifiques en el mismo chat, activa la verificación en dos pasos y revisa Ajustes > Dispositivos vinculados. Si ya has pagado, avisa a tu banco enseguida y denuncia. INCIBE atiende en el 017.\n\nGuárdalo y pásaselo a quien lo use para trabajar.\n\nComenta INFO y te ayudamos a dejar el WhatsApp de tu negocio protegido.\n\n#WhatsApp #Bizum #Ciberseguridad #ComerciosDeCórdoba"
+  },
+  {
+   "id": "n-1120-whatsapp-bizum-historia",
+   "fecha": "2026-11-24T14:30:00+01:00",
+   "redes": [
+    "instagram",
+    "facebook"
+   ],
+   "estado": "borrador",
+   "tipo": "historia",
+   "media": "media/noticias/n-1120-whatsapp-bizum-historia-1.jpg"
   }
  ]
 }
