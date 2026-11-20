@@ -1,5 +1,7 @@
 {
- "ultima_pasada": "2026-11-20T17:20:23.303Z",
- "errores": [],
+ "ultima_pasada": "2026-11-20T17:30:25.065Z",
+ "errores": [
+  "Privados de Facebook: An error has occurred. No further information is available. (undefined)"
+ ],
  "encontrados": 0
 }
