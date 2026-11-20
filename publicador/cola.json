@@ -1375,7 +1375,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-estetica-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18111659642192109",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4034475930034239441",
+     "hora": "2026-11-20T09:30:39.597Z"
+    },
+    "facebook": {
+     "id": "1461662642843734",
+     "hora": "2026-11-20T09:30:45.087Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1120-historia-web-estetica-2",
