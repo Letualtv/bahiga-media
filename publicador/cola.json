@@ -1457,7 +1457,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-taller-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17984612349134759",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4035205675621410276",
+     "hora": "2026-11-21T09:40:30.898Z"
+    },
+    "facebook": {
+     "id": "1156012516775524",
+     "hora": "2026-11-21T09:40:37.192Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1121-historia-web-reformas-1",
