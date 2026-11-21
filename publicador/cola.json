@@ -1480,7 +1480,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-reformas-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18178053112454360",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4035427166388739171",
+     "hora": "2026-11-21T17:00:35.103Z"
+    },
+    "facebook": {
+     "id": "1139981975672716",
+     "hora": "2026-11-21T17:00:42.627Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1121-historia-web-reformas-2",
