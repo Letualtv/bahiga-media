@@ -1434,7 +1434,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-taller-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17890447563691445",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4035200743462951586",
+     "hora": "2026-11-21T09:30:44.700Z"
+    },
+    "facebook": {
+     "id": "1452700900362615",
+     "hora": "2026-11-21T09:30:52.414Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1121-historia-web-taller-2",
