@@ -1,22 +1,22 @@
 {
- "generado": "2026-11-20T06:00:37.363Z",
+ "generado": "2026-11-21T06:00:23.176Z",
  "resumen_semana": {
   "publicaciones": 3,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/Df-d6abCXFY/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 12
+   },
+   {
     "enlace": "https://www.instagram.com/p/Df5UNr7AZTW/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 15
    },
    {
     "enlace": "https://www.instagram.com/p/Df0KutQk70c/",
     "compartidos_mas_guardados": 0,
     "alcance": 30
-   },
-   {
-    "enlace": "https://www.instagram.com/reel/DfscKLFocCW/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 24
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -24,12 +24,29 @@
  },
  "instagram_cuenta": {
   "id": "17841430450985904",
-  "followers_count": 55,
-  "follows_count": 100,
-  "media_count": 30,
+  "followers_count": 56,
+  "follows_count": 101,
+  "media_count": 31,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18165801805501208",
+   "fecha": "2026-11-20T20:02:26+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/Df-d6abCXFY/",
+   "texto": "¿Qué ve quien te busca en Google?\n\nAntes que tu web, ve tu ficha. Y lo normal es que nadie la haya tocado desde que apar",
+   "likes": 2,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 12,
+    "views": 29,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 3
+   }
+  },
   {
    "id": "18389362024238604",
    "fecha": "2026-11-18T20:01:29+0000",
@@ -37,14 +54,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/Df5UNr7AZTW/",
    "texto": "Hasta el 30 de noviembre revisamos tu web gratis.\n\nMiramos cinco cosas, las que más clientes hacen perder:\n1. Cuánto tar",
-   "likes": 3,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 44,
+    "reach": 15,
+    "views": 46,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 4
+    "total_interactions": 5
    }
   },
   {
@@ -58,7 +75,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 30,
-    "views": 69,
+    "views": 70,
     "saved": 0,
     "shares": 0,
     "total_interactions": 8
@@ -74,14 +91,14 @@
    "likes": 6,
    "comentarios": 0,
    "metricas": {
-    "reach": 24,
-    "views": 34,
+    "reach": 27,
+    "views": 43,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 6,
     "total_interactions": 6,
-    "ig_reels_avg_watch_time": 8197
+    "ig_reels_avg_watch_time": 7098
    }
   },
   {
@@ -94,14 +111,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 38,
+    "reach": 23,
+    "views": 43,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 5831
+    "ig_reels_avg_watch_time": 6029
    }
   },
   {
@@ -114,8 +131,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 19,
-    "views": 62,
+    "reach": 20,
+    "views": 64,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -131,8 +148,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 36,
+    "reach": 16,
+    "views": 37,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -148,14 +165,14 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 32,
+    "reach": 23,
+    "views": 36,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 2,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 3398
+    "ig_reels_avg_watch_time": 3485
    }
   },
   {
@@ -565,22 +582,32 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-19T17:00:43+0000",
+   "fecha": "2026-11-20T22:58:05+0000",
    "metricas": {
-    "reach": 12,
-    "views": 15,
+    "reach": 5,
+    "views": 7,
     "replies": 0,
-    "navigation": 12,
+    "navigation": 7,
     "shares": 0
    }
   },
   {
-   "fecha": "2026-11-19T09:30:47+0000",
+   "fecha": "2026-11-20T17:00:30+0000",
    "metricas": {
-    "reach": 21,
+    "reach": 16,
     "views": 23,
     "replies": 0,
-    "navigation": 19,
+    "navigation": 21,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-20T09:30:35+0000",
+   "metricas": {
+    "reach": 18,
+    "views": 29,
+    "replies": 0,
+    "navigation": 26,
     "shares": 0
    }
   }
@@ -594,7 +621,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 408
+     "value": 175
     }
    },
    {
@@ -604,7 +631,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 3209
+     "value": 2572
     }
    },
    {
@@ -614,7 +641,7 @@
     "title": "Cuentas con interacciones",
     "description": "Número de cuentas que han interactuado con tu contenido, incluido el de los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. Las interacciones pueden incluir acciones, como Me gusta, comentarios, respuestas o veces que se ha guardado o compartido el contenido. Estas métricas son una estimación y están en desarrollo.",
     "total_value": {
-     "value": 22
+     "value": 18
     }
    },
    {
@@ -624,7 +651,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 133
+     "value": 106
     }
    },
    {
@@ -634,7 +661,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 129
+     "value": 109
     }
    },
    {
@@ -644,7 +671,7 @@
     "title": "Toques en el enlace al sitio web",
     "description": "Número de veces que se ha tocado el enlace a tu sitio web.",
     "total_value": {
-     "value": 12
+     "value": 11
     }
    }
   ]
@@ -656,6 +683,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-20T20:02:39+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122125301859501320",
+   "texto": "¿Qué ve quien te busca en Google?\n\nAntes que tu web, ve tu ficha. Y lo normal es que nadie la haya tocado desde que apar",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-18T20:01:42+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122124715197501320",
@@ -884,14 +919,6 @@
    "fecha": "2026-10-22T15:05:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122114061099501320",
    "texto": "Cómo trabajamos, para que no haya sorpresas a mitad de proyecto.\n\nUna llamada corta, presupuesto cerrado por escrito, lo",
-   "reacciones": 0,
-   "comentarios": 0,
-   "compartidos": 0
-  },
-  {
-   "fecha": "2026-10-22T15:00:14+0000",
-   "enlace": "https://www.facebook.com/122115932253501320/posts/122114059407501320",
-   "texto": "Webs, tiendas online y automatización con IA para comercios y pymes.\n\nWebs a medida desde 900 €, tiendas online desde 1.",
    "reacciones": 0,
    "comentarios": 0,
    "compartidos": 0
