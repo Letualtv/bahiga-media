@@ -1526,7 +1526,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-bar-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18184180519433593",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4035925427457866741",
+     "hora": "2026-11-22T09:30:42.877Z"
+    },
+    "facebook": {
+     "id": "29364466439828915",
+     "hora": "2026-11-22T09:30:47.568Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1122-historia-web-bar-2",
