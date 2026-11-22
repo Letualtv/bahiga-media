@@ -1595,7 +1595,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-rural-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18105168443414542",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4036156944490471648",
+     "hora": "2026-11-22T17:10:39.622Z"
+    },
+    "facebook": {
+     "id": "1475016391241307",
+     "hora": "2026-11-22T17:10:43.885Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1123-historia-web-floristeria-1",
