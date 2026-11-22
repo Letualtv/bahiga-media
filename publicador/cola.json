@@ -1549,7 +1549,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-bar-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17969923983208134",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4035930445153389834",
+     "hora": "2026-11-22T09:40:39.137Z"
+    },
+    "facebook": {
+     "id": "29448890941415065",
+     "hora": "2026-11-22T09:40:43.841Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1122-historia-web-rural-1",
