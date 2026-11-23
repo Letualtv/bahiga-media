@@ -1618,7 +1618,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-floristeria-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18649299079012388",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4036650209464649702",
+     "hora": "2026-11-23T09:30:33.581Z"
+    },
+    "facebook": {
+     "id": "2309279343250838",
+     "hora": "2026-11-23T09:30:38.988Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1123-historia-web-floristeria-2",
