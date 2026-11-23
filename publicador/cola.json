@@ -1687,7 +1687,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-autoescuela-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17919947970537058",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4036881722034001535",
+     "hora": "2026-11-23T17:10:40.512Z"
+    },
+    "facebook": {
+     "id": "1690489966195957",
+     "hora": "2026-11-23T17:10:46.180Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1124-historia-web-entreno-1",
