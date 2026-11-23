@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T06:00:27.339Z",
+ "generado": "2026-11-23T18:00:36.220Z",
  "resumen_semana": {
   "publicaciones": 3,
   "nuevos_por_pieza": [
@@ -75,7 +75,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 30,
-    "views": 70,
+    "views": 71,
     "saved": 0,
     "shares": 0,
     "total_interactions": 8
@@ -185,8 +185,8 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 27,
-    "views": 85,
+    "reach": 28,
+    "views": 87,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1
@@ -331,7 +331,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 22,
-    "views": 49,
+    "views": 50,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4
@@ -573,7 +573,7 @@
    "comentarios": 0,
    "metricas": {
     "reach": 227,
-    "views": 389,
+    "views": 390,
     "saved": 1,
     "shares": 1,
     "total_interactions": 8
@@ -582,42 +582,34 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-22T17:10:37+0000",
+   "fecha": "2026-11-23T17:10:37+0000",
+   "metricas": {
+    "error": "(#10) Not enough viewers for the media to show insights (10)"
+   }
+  },
+  {
+   "fecha": "2026-11-23T17:00:50+0000",
+   "metricas": {
+    "error": "(#10) Not enough viewers for the media to show insights (10)"
+   }
+  },
+  {
+   "fecha": "2026-11-23T09:40:34+0000",
    "metricas": {
     "reach": 8,
-    "views": 9,
+    "views": 11,
     "replies": 0,
-    "navigation": 9,
+    "navigation": 11,
     "shares": 0
    }
   },
   {
-   "fecha": "2026-11-22T17:00:38+0000",
+   "fecha": "2026-11-23T09:30:30+0000",
    "metricas": {
-    "reach": 8,
-    "views": 9,
+    "reach": 10,
+    "views": 12,
     "replies": 0,
-    "navigation": 9,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-22T09:40:36+0000",
-   "metricas": {
-    "reach": 11,
-    "views": 14,
-    "replies": 0,
-    "navigation": 14,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-22T09:30:39+0000",
-   "metricas": {
-    "reach": 15,
-    "views": 18,
-    "replies": 0,
-    "navigation": 16,
+    "navigation": 12,
     "shares": 0
    }
   }
@@ -631,7 +623,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 135
+     "value": 129
     }
    },
    {
@@ -641,7 +633,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2503
+     "value": 2452
     }
    },
    {
@@ -661,7 +653,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 103
+     "value": 99
     }
    },
    {
@@ -671,7 +663,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 98
+     "value": 85
     }
    },
    {
@@ -681,7 +673,7 @@
     "title": "Toques en el enlace al sitio web",
     "description": "Número de veces que se ha tocado el enlace a tu sitio web.",
     "total_value": {
-     "value": 10
+     "value": 9
     }
    }
   ]
