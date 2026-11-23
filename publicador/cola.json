@@ -1641,7 +1641,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-floristeria-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18135922312690505",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4036655271476625656",
+     "hora": "2026-11-23T09:40:37.366Z"
+    },
+    "facebook": {
+     "id": "1114771761191518",
+     "hora": "2026-11-23T09:40:44.321Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1123-historia-web-autoescuela-1",
