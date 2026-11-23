@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T18:00:36.220Z",
+ "generado": "2026-11-23T18:24:10.434Z",
  "resumen_semana": {
   "publicaciones": 3,
   "nuevos_por_pieza": [
@@ -597,7 +597,7 @@
    "fecha": "2026-11-23T09:40:34+0000",
    "metricas": {
     "reach": 8,
-    "views": 11,
+    "views": 12,
     "replies": 0,
     "navigation": 11,
     "shares": 0
@@ -607,7 +607,7 @@
    "fecha": "2026-11-23T09:30:30+0000",
    "metricas": {
     "reach": 10,
-    "views": 12,
+    "views": 13,
     "replies": 0,
     "navigation": 12,
     "shares": 0
@@ -633,7 +633,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2452
+     "value": 2454
     }
    },
    {
