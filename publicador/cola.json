@@ -1759,7 +1759,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-entreno-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18439075114181157",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037601496737016918",
+     "hora": "2026-11-24T17:00:35.349Z"
+    },
+    "facebook": {
+     "id": "2422189865187305",
+     "hora": "2026-11-24T17:00:39.686Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1124-historia-web-entreno-2",
