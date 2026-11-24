@@ -1,7 +1,7 @@
 // Captura las muestras reales de bahiga.es/webs desde una copia local del sitio (repo Letualtv/Bahiga servido en 127.0.0.1:4399).
 const { chromium } = require('playwright');
 const D = '/home/claude/bahiga-media/motion/anotado/capturas/';
-const S = ['barberia','estetica','taller','reformas','bar','rural','floristeria','autoescuela','entreno','merceria','fisio','panaderia','electricista','moda'];
+const S = ['barberia','estetica','taller','reformas','bar','rural','floristeria','autoescuela','entreno','merceria','fisio','panaderia','electricista','moda','peluqueria'];
 (async () => {
   const b = await chromium.launch();
   for (const s of S) {

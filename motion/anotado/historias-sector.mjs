@@ -18,6 +18,7 @@ export const SECTORES = {
   panaderia: ['tu panadería.', ['El horno, ahora', 'Encargo para mañana', 'Dulces de temporada']],
   electricista: ['tu negocio de electricidad.', ['Qué hacer si se va la luz', 'Qué bombilla te hace falta', 'Trabajos con precio']],
   moda: ['tu tienda de moda.', ['El escaparate que se toca', 'Apartar en tu talla', 'Recién llegado']],
+  peluqueria: ['tu peluquería.', ['Carta de color en abanico', 'Huecos libres de la semana', 'Precios con duración']],
 };
 const BASE = `${CSS_REAL}
 body{height:1920px;background:radial-gradient(1000px 900px at 76% 66%,#1B3340 0%,#0F1C24 62%)}

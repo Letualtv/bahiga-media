@@ -1,14 +1,17 @@
 // Carrusel «Una web para tu negocio, desde 390 €» con las muestras reales de bahiga.es/webs.
 // Condiciones copiadas de la web (18/11/2026) más la oferta de Black Friday que fijó Antonio.
-// Uso: node motion/anotado/webs-sector.mjs  →  media/1123-webs-por-sector-1.jpg … -7.jpg
+// Uso: node motion/anotado/webs-sector.mjs [id]  →  media/<id>-1.jpg … -7.jpg (por defecto 1123-webs-por-sector)
+const N = ['', 'una', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve', 'veinte'];
 import { movil, render, OK } from './piezas.mjs';
 import { real, img, SECTORES, CSS_REAL } from './real.mjs';
+const LI = (process.argv[2] || '').startsWith('li-');
+const CUANTOS = N[SECTORES.length], Cuantos = CUANTOS[0].toUpperCase() + CUANTOS.slice(1);
 const tel = (s, cls, o = {}) => movil(real(s), { cls: `real ${cls}`, ...o });
 const L = [
-  { cls: 'portada', fantasma: '14', t: 'Una web para tu negocio. *Desde 390&nbsp;€.*',
+  { cls: 'portada', fantasma: String(SECTORES.length), t: 'Una web para tu negocio. *Desde 390&nbsp;€.*',
     cuerpo: `${tel('estetica', 'f1')}${tel('taller', 'f3')}${tel('barberia', 'f2')}<div class="oferta">Black Friday<b>3 meses de mantenimiento gratis</b></div><div class="aviso">Webs de muestra<br>hechas por Bahiga.</div><div class="dz">Desliza →</div>` },
-  { fantasma: '14', num: '01', t: 'Catorce sectores. *Elige el tuyo.*',
-    cuerpo: `<div class="rejilla">${SECTORES.map(([s, n]) => `<div><i style="background-image:url(${img(s)})"></i><span>${n}</span></div>`).join('')}<div class="otro"><i>¿El tuyo<br>no está?</i><span>Pregúntanos</span></div></div>` },
+  { fantasma: String(SECTORES.length), num: '01', t: `${Cuantos} sectores. *Elige el tuyo.*`,
+    cuerpo: `<div class="rejilla">${SECTORES.map(([s, n]) => `<div><i style="background-image:url(${img(s)})"></i><span>${n}</span></div>`).join('')}${SECTORES.length % 5 ? '<div class="otro"><i>¿El tuyo<br>no está?</i><span>Pregúntanos</span></div>' : ''}</div>` },
   { fantasma: '02', num: '02', t: 'La adaptamos *con lo tuyo.*', n: 'Partimos de la muestra de tu sector y cambiamos lo que hace falta.',
     cuerpo: `${tel('barberia', 'm-der')}${['Tu nombre', 'Tus textos', 'Tus fotos', 'Tus precios', 'Tus colores'].map((x, i) => `<div class="chip pt p${i}"><b>${OK}</b>${x}</div>`).join('')}` },
   { fantasma: '390', num: '03', t: 'Qué lleva *por 390 €.*',
@@ -19,7 +22,7 @@ const L = [
     cuerpo: `<div class="lista corta">${['Alojamiento en nuestro servidor', 'Copias de seguridad', 'Media hora de cambios al mes', 'Tu área de clientes'].map((x) => `<div><b>${OK}</b>${x}</div>`).join('')}</div>
       <div class="oferta of2">Black Friday<b>Los 3 primeros meses, gratis</b><em>Contratando hasta el 30 de noviembre. Después, 1 mes.</em></div>` },
   { cls: 'coral', fantasma: '?', t: 'Mira la de *tu sector.*',
-    cuerpo: `<div class="gs">Las catorce muestras están en bahiga.es/webs. Entra desde el móvil, pruébala y escríbenos WEB si quieres la tuya.</div><div class="gu">Precios sin IVA.</div><div class="cta">Comenta WEB</div>` },
+    cuerpo: `<div class="gs">Las ${CUANTOS} muestras están en bahiga.es/webs. Entra desde el móvil, pruébala y ${LI ? 'escríbeme si quieres la tuya' : 'escríbenos WEB si quieres la tuya'}.</div><div class="gu">Precios sin IVA.</div><div class="cta">${LI ? 'bahiga.es/webs' : 'Comenta WEB'}</div>` },
 ];
 const EXTRA = `${CSS_REAL}
 .chip svg,.lista svg{width:26px;height:26px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
@@ -36,4 +39,4 @@ const EXTRA = `${CSS_REAL}
 .extras b{font:normal 34px/1.1 D;letter-spacing:-.5px}.extras span{font:normal 25px U6;color:#B4532E;white-space:nowrap}
 .oferta.of2{left:auto;right:60px;top:960px;width:480px;transform:rotate(3deg)}
 `;
-await render('1123-webs-por-sector', L, EXTRA);
+await render(process.argv[2] || '1123-webs-por-sector', L, EXTRA);

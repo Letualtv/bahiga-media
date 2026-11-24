@@ -3,7 +3,7 @@
 import { readFileSync } from 'node:fs';
 import { ESTADO } from './piezas.mjs';
 const DIR = new URL('./capturas/', import.meta.url);
-export const SECTORES = [['barberia', 'Barbería'], ['estetica', 'Estética y uñas'], ['taller', 'Taller'], ['reformas', 'Reformas'], ['bar', 'Bar y restaurante'], ['rural', 'Casa rural'], ['floristeria', 'Floristería'], ['autoescuela', 'Autoescuela'], ['entreno', 'Entrenamiento'], ['merceria', 'Mercería'], ['fisio', 'Fisioterapia'], ['panaderia', 'Panadería'], ['electricista', 'Electricista'], ['moda', 'Moda']];
+export const SECTORES = [['barberia', 'Barbería'], ['estetica', 'Estética y uñas'], ['taller', 'Taller'], ['reformas', 'Reformas'], ['bar', 'Bar y restaurante'], ['rural', 'Casa rural'], ['floristeria', 'Floristería'], ['autoescuela', 'Autoescuela'], ['entreno', 'Entrenamiento'], ['merceria', 'Mercería'], ['fisio', 'Fisioterapia'], ['panaderia', 'Panadería'], ['electricista', 'Electricista'], ['moda', 'Moda'], ['peluqueria', 'Peluquería']];
 export const img = (nombre) => `data:image/jpeg;base64,${readFileSync(new URL(`${nombre}.jpg`, DIR)).toString('base64')}`;
 // Pantalla para movil(): la primera vista de la muestra, o la página entera (larga) para desplazarla.
 export const real = (s, { larga = false } = {}) => `<div class="w rl"><div class="rl-st">${ESTADO('#fff')}</div><img src="${img(larga ? `${s}-larga` : s)}"></div>`;
