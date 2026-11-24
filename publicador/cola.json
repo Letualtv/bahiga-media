@@ -998,7 +998,19 @@
    ],
    "tipo": "historia",
    "media": "media/1124-historia-webs-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18359965600172487",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037374993206029332",
+     "hora": "2026-11-24T09:30:42.199Z"
+    },
+    "facebook": {
+     "id": "1460667432712674",
+     "hora": "2026-11-24T09:30:46.923Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1124-historia-webs-2",
