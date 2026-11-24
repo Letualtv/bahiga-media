@@ -58,7 +58,7 @@ const EXTRA = `${CSS_REAL}
 .ruta{position:absolute;left:80px;top:1120px;font-family:M;font-size:22px;color:#F0A07E;background:#14242E;border:1px solid #2F4553;padding:10px 18px;border-radius:999px;z-index:12}
 .chica .ruta+.ej{bottom:56px}
 /* rejilla de muestras */
-.rejilla{position:absolute;left:70px;right:70px;top:500px;display:grid;grid-template-columns:repeat(5,1fr);gap:22px 16px;z-index:10}
+.rejilla{position:absolute;left:70px;right:70px;top:440px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px 16px;z-index:10}
 .rejilla i{display:block;height:214px;border-radius:20px;border:5px solid #05070A;background:#fff top/cover no-repeat;box-shadow:0 16px 34px rgba(0,0,0,.45)}.rejilla span{display:block;font:normal 18px/1.2 U6;text-align:center;margin-top:9px;color:#D9DEE2}
 /* WhatsApp */
 .chica .n{width:360px}
