@@ -1940,9 +1940,21 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "historia",
-   "media": "media/noticias/n-1120-whatsapp-bizum-historia-1.jpg"
+   "media": "media/noticias/n-1120-whatsapp-bizum-historia-1.jpg",
+   "resultado": {
+    "instagram": {
+     "id": "18143097094628093",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037495799756063489",
+     "hora": "2026-11-24T13:30:42.691Z"
+    },
+    "facebook": {
+     "id": "1797120408247834",
+     "hora": "2026-11-24T13:30:47.819Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-li-webs",
