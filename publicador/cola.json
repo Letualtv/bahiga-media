@@ -1946,7 +1946,7 @@
     "instagram",
     "facebook"
    ],
-   "estado": "pendiente",
+   "estado": "publicada",
    "tipo": "carrusel",
    "medios": [
     "media/noticias/n-1120-whatsapp-bizum-1.jpg",
@@ -1955,7 +1955,20 @@
     "media/noticias/n-1120-whatsapp-bizum-4.jpg",
     "media/noticias/n-1120-whatsapp-bizum-5.jpg"
    ],
-   "texto": "Si te piden un Bizum por WhatsApp, llama antes de pagar.\n\nQué pasa: la Policía Nacional y el INCIBE avisan de mensajes que llegan desde la cuenta real de un familiar o un amigo, dentro de su chat de siempre. Piden un Bizum o una transferencia con prisa, con la excusa de que la tarjeta ha llegado al límite, y dicen que no pueden hablar. El dueño de la cuenta suele seguir usando WhatsApp sin enterarse.\n\nA quién afecta: a cualquiera con WhatsApp, también a quien lo usa para su negocio y tiene clientes, proveedores y familia en la misma lista de contactos.\n\nQué hacer: llama por teléfono a esa persona antes de pagar, no verifiques en el mismo chat, activa la verificación en dos pasos y revisa Ajustes > Dispositivos vinculados. Si ya has pagado, avisa a tu banco enseguida y denuncia. INCIBE atiende en el 017.\n\nGuárdalo y pásaselo a quien lo use para trabajar.\n\nComenta INFO y te ayudamos a dejar el WhatsApp de tu negocio protegido.\n\n#WhatsApp #Bizum #Ciberseguridad #ComerciosDeCórdoba"
+   "texto": "Si te piden un Bizum por WhatsApp, llama antes de pagar.\n\nQué pasa: la Policía Nacional y el INCIBE avisan de mensajes que llegan desde la cuenta real de un familiar o un amigo, dentro de su chat de siempre. Piden un Bizum o una transferencia con prisa, con la excusa de que la tarjeta ha llegado al límite, y dicen que no pueden hablar. El dueño de la cuenta suele seguir usando WhatsApp sin enterarse.\n\nA quién afecta: a cualquiera con WhatsApp, también a quien lo usa para su negocio y tiene clientes, proveedores y familia en la misma lista de contactos.\n\nQué hacer: llama por teléfono a esa persona antes de pagar, no verifiques en el mismo chat, activa la verificación en dos pasos y revisa Ajustes > Dispositivos vinculados. Si ya has pagado, avisa a tu banco enseguida y denuncia. INCIBE atiende en el 017.\n\nGuárdalo y pásaselo a quien lo use para trabajar.\n\nComenta INFO y te ayudamos a dejar el WhatsApp de tu negocio protegido.\n\n#WhatsApp #Bizum #Ciberseguridad #ComerciosDeCórdoba",
+   "resultado": {
+    "instagram": {
+     "id": "18102301532557395",
+     "permalink": "https://www.instagram.com/p/DgIxBval4KI/",
+     "hora": "2026-11-24T20:01:54.981Z"
+    },
+    "facebook": {
+     "id": "1371169526080229_122126533437501320",
+     "permalink": "https://www.facebook.com/1371169526080229_122126533437501320",
+     "hora": "2026-11-24T20:02:02.626Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "n-1120-whatsapp-bizum-historia",
