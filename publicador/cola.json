@@ -1782,7 +1782,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-entreno-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17943894696384282",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037606502235546928",
+     "hora": "2026-11-24T17:10:30.463Z"
+    },
+    "facebook": {
+     "id": "986539330880079",
+     "hora": "2026-11-24T17:10:34.441Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-historia-web-merceria-1",
