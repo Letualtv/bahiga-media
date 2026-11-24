@@ -20,9 +20,9 @@ const PIEZAS = {
   'ultimo-dia': { cls: 'portada', fantasma: '30', t: 'Hoy acaba *el Black Friday.*',
     cuerpo: `${movil(real('peluqueria'), { cls: 'real m-ult' })}<div class="chip nuevo"><b>${OK}</b>Nueva muestra: peluquería</div>
       <div class="oferta">Solo hoy, 30 de noviembre<b>3 meses de mantenimiento gratis</b><em>Webs por sector desde 390 € + IVA.</em></div>` },
-  festivos: { cls: 'chica', t: '¿Abres el 8 de diciembre? *Díselo a Google.*',
+  festivos: { cls: 'chica', t: '¿Abres en el puente? *Díselo a Google.*',
     cuerpo: `<div class="gcard"><div class="g-cab"><i></i><div><b>Mercería Hilo y Aguja</b><span>Mercería en Lucena</span></div></div>
-      <h5>Horario especial</h5><div class="g-filas">${filas([['Martes, 8 de diciembre', 'Cerrado'], ['Jueves, 24 de diciembre', '10:00–14:00'], ['Viernes, 25 de diciembre', 'Cerrado'], ['Jueves, 31 de diciembre', '10:00–14:00'], ['Viernes, 1 de enero', 'Cerrado'], ['Miércoles, 6 de enero', 'Cerrado']])}</div></div>
+      <h5>Horario especial</h5><div class="g-filas">${filas([['Lunes, 7 de diciembre', 'Cerrado'], ['Martes, 8 de diciembre', 'Cerrado'], ['Jueves, 24 de diciembre', '10:00–14:00'], ['Viernes, 25 de diciembre', 'Cerrado'], ['Jueves, 31 de diciembre', '10:00–14:00'], ['Viernes, 1 de enero', 'Cerrado'], ['Miércoles, 6 de enero', 'Cerrado']])}</div></div>
       <div class="ruta">Editar perfil › Horario › Horario especial</div><div class="ej">Ejemplo, negocio inventado</div>` },
   quince: { cls: 'chica', t: 'Quince webs. *Cada una se vende una vez.*',
     cuerpo: `<div class="rejilla">${SECTORES.map(([s, n]) => `<div><i style="background-image:url(${img(s)})"></i><span>${n}</span></div>`).join('')}</div>` },
@@ -54,7 +54,7 @@ const EXTRA = `${CSS_REAL}
 .gcard{position:absolute;left:90px;right:90px;top:480px;background:#fff;color:#202124;border-radius:30px;padding:36px 44px 26px;z-index:10;transform:rotate(-1.5deg);box-shadow:0 40px 80px rgba(0,0,0,.55);font-family:Arial,sans-serif}
 .g-cab{display:flex;gap:20px;align-items:center}.g-cab i{width:64px;height:64px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#EA4335;flex:none;margin:0 6px}.g-cab b{display:block;font-size:36px;font-weight:400}.g-cab span{font-size:25px;color:#70757A}
 .gcard h5{margin:28px 0 6px;font-size:28px;font-weight:700;color:#202124}
-.g-filas div{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #E8EAED;font-size:29px}.g-filas div:last-child{border:0}.g-filas b{font-weight:400}.g-filas b.cer{color:#C5221F}
+.g-filas div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #E8EAED;font-size:29px}.g-filas div:last-child{border:0}.g-filas b{font-weight:400}.g-filas b.cer{color:#C5221F}
 .ruta{position:absolute;left:80px;top:1120px;font-family:M;font-size:22px;color:#F0A07E;background:#14242E;border:1px solid #2F4553;padding:10px 18px;border-radius:999px;z-index:12}
 .chica .ruta+.ej{bottom:56px}
 /* rejilla de muestras */
