@@ -1,22 +1,22 @@
 {
- "generado": "2026-11-23T18:24:10.434Z",
+ "generado": "2026-11-24T06:00:28.589Z",
  "resumen_semana": {
   "publicaciones": 3,
   "nuevos_por_pieza": [
    {
+    "enlace": "https://www.instagram.com/p/DgGMSpYnbOI/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 7
+   },
+   {
     "enlace": "https://www.instagram.com/p/Df-d6abCXFY/",
     "compartidos_mas_guardados": 0,
-    "alcance": 21
+    "alcance": 22
    },
    {
     "enlace": "https://www.instagram.com/p/Df5UNr7AZTW/",
     "compartidos_mas_guardados": 0,
-    "alcance": 15
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Df0KutQk70c/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 30
+    "alcance": 16
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -26,10 +26,27 @@
   "id": "17841430450985904",
   "followers_count": 56,
   "follows_count": 101,
-  "media_count": 31,
+  "media_count": 32,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18399223840165005",
+   "fecha": "2026-11-23T20:02:13+0000",
+   "tipo": "FEED",
+   "formato": "CAROUSEL_ALBUM",
+   "enlace": "https://www.instagram.com/p/DgGMSpYnbOI/",
+   "texto": "Una web para tu negocio. Desde 390 €.\n\nHemos hecho catorce webs de muestra, una por sector: barbería, estética, taller, ",
+   "likes": 2,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 7,
+    "views": 20,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 2
+   }
+  },
   {
    "id": "18165801805501208",
    "fecha": "2026-11-20T20:02:26+0000",
@@ -40,8 +57,8 @@
    "likes": 2,
    "comentarios": 0,
    "metricas": {
-    "reach": 21,
-    "views": 50,
+    "reach": 22,
+    "views": 52,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3
@@ -57,8 +74,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 15,
-    "views": 46,
+    "reach": 16,
+    "views": 47,
     "saved": 0,
     "shares": 0,
     "total_interactions": 5
@@ -584,32 +601,40 @@
   {
    "fecha": "2026-11-23T17:10:37+0000",
    "metricas": {
-    "error": "(#10) Not enough viewers for the media to show insights (10)"
+    "reach": 8,
+    "views": 9,
+    "replies": 0,
+    "navigation": 9,
+    "shares": 0
    }
   },
   {
    "fecha": "2026-11-23T17:00:50+0000",
    "metricas": {
-    "error": "(#10) Not enough viewers for the media to show insights (10)"
+    "reach": 8,
+    "views": 9,
+    "replies": 0,
+    "navigation": 9,
+    "shares": 0
    }
   },
   {
    "fecha": "2026-11-23T09:40:34+0000",
    "metricas": {
-    "reach": 8,
-    "views": 12,
+    "reach": 10,
+    "views": 13,
     "replies": 0,
-    "navigation": 11,
+    "navigation": 13,
     "shares": 0
    }
   },
   {
    "fecha": "2026-11-23T09:30:30+0000",
    "metricas": {
-    "reach": 10,
-    "views": 13,
+    "reach": 12,
+    "views": 14,
     "replies": 0,
-    "navigation": 12,
+    "navigation": 14,
     "shares": 0
    }
   }
@@ -633,7 +658,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2454
+     "value": 2496
     }
    },
    {
@@ -653,7 +678,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 99
+     "value": 103
     }
    },
    {
@@ -685,6 +710,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-23T20:02:29+0000",
+   "enlace": "https://www.facebook.com/122115932253501320/posts/122126226945501320",
+   "texto": "Una web para tu negocio. Desde 390 €.\n\nHemos hecho catorce webs de muestra, una por sector: barbería, estética, taller, ",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-20T20:02:39+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122125301859501320",
@@ -913,14 +946,6 @@
    "fecha": "2026-10-22T15:10:02+0000",
    "enlace": "https://www.facebook.com/122115932253501320/posts/122114062593501320",
    "texto": "Lo que cuesta, sin rodeos.\n\nWeb a medida desde 900 €. Tienda online desde 1.000 €. Agente de voz o chatbot desde 550 €. ",
-   "reacciones": 0,
-   "comentarios": 0,
-   "compartidos": 0
-  },
-  {
-   "fecha": "2026-10-22T15:05:02+0000",
-   "enlace": "https://www.facebook.com/122115932253501320/posts/122114061099501320",
-   "texto": "Cómo trabajamos, para que no haya sorpresas a mitad de proyecto.\n\nUna llamada corta, presupuesto cerrado por escrito, lo",
    "reacciones": 0,
    "comentarios": 0,
    "compartidos": 0
