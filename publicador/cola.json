@@ -1021,7 +1021,19 @@
    ],
    "tipo": "historia",
    "media": "media/1124-historia-webs-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18403017631204018",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037380076493046661",
+     "hora": "2026-11-24T09:40:39.450Z"
+    },
+    "facebook": {
+     "id": "1125328860418645",
+     "hora": "2026-11-24T09:40:44.464Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1124-historia-webs-3",
@@ -1032,7 +1044,19 @@
    ],
    "tipo": "historia",
    "media": "media/1124-historia-webs-3.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18125246737939085",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4037380188782588745",
+     "hora": "2026-11-24T09:40:56.329Z"
+    },
+    "facebook": {
+     "id": "1610161241132427",
+     "hora": "2026-11-24T09:41:00.713Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-reel-barberia",
