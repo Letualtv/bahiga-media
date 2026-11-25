@@ -1874,7 +1874,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-fisio-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18136970701708005",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038331301136841278",
+     "hora": "2026-11-25T17:10:45.646Z"
+    },
+    "facebook": {
+     "id": "1460253988841951",
+     "hora": "2026-11-25T17:10:51.709Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1126-historia-web-panaderia-1",
