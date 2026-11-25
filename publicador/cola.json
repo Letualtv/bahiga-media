@@ -1805,7 +1805,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-merceria-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18132873919868906",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038099791167060685",
+     "hora": "2026-11-25T09:30:32.980Z"
+    },
+    "facebook": {
+     "id": "1128690803107154",
+     "hora": "2026-11-25T09:30:38.160Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-historia-web-merceria-2",
