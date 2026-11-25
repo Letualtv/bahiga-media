@@ -1071,9 +1071,23 @@
    "portada_ms": 1000,
    "musica": {
     "buscar": "upbeat acoustic",
-    "volumen_video": 40
+    "volumen_video": 40,
+    "elegida": "Riverbank · Goldenrod"
    },
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17914391580306894",
+     "permalink": "https://www.instagram.com/reel/DgLVsflgSiV/",
+     "hora": "2026-11-25T20:01:07.773Z"
+    },
+    "facebook": {
+     "id": "1182603430774977",
+     "permalink": "https://www.facebook.com/reel/1182603430774977",
+     "hora": "2026-11-25T20:01:15.662Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1118-landing-390",
