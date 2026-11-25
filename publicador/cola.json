@@ -1828,7 +1828,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-merceria-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18120934787324509",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038104821781741971",
+     "hora": "2026-11-25T09:40:45.131Z"
+    },
+    "facebook": {
+     "id": "1184863247302173",
+     "hora": "2026-11-25T09:40:50.489Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-historia-web-fisio-1",
