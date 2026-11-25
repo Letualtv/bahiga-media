@@ -1851,7 +1851,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-fisio-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17986803984003614",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038326258617923166",
+     "hora": "2026-11-25T17:00:42.167Z"
+    },
+    "facebook": {
+     "id": "2240402813488347",
+     "hora": "2026-11-25T17:00:48.990Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1125-historia-web-fisio-2",
