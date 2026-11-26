@@ -1980,7 +1980,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-electricista-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17962605684256529",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4039056049353982820",
+     "hora": "2026-11-26T17:10:33.907Z"
+    },
+    "facebook": {
+     "id": "971176385805752",
+     "hora": "2026-11-26T17:10:44.637Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1127-historia-web-moda-1",
