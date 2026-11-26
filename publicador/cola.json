@@ -1957,7 +1957,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-electricista-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18134777339314007",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4039051013520165692",
+     "hora": "2026-11-26T17:00:40.310Z"
+    },
+    "facebook": {
+     "id": "1706387437778473",
+     "hora": "2026-11-26T17:00:45.642Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1126-historia-web-electricista-2",
