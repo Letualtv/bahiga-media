@@ -1911,7 +1911,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-panaderia-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18095073212238877",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038824520828029113",
+     "hora": "2026-11-26T09:30:40.230Z"
+    },
+    "facebook": {
+     "id": "1450134300634941",
+     "hora": "2026-11-26T09:30:45.667Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1126-historia-web-panaderia-2",
