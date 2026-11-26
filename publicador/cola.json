@@ -1934,7 +1934,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-panaderia-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "17872132572661446",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4038829545755819034",
+     "hora": "2026-11-26T09:40:29.347Z"
+    },
+    "facebook": {
+     "id": "2642911112824507",
+     "hora": "2026-11-26T09:40:36.190Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1126-historia-web-electricista-1",
