@@ -2026,7 +2026,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-moda-2.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18259404454308368",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4039775791541504975",
+     "hora": "2026-11-27T17:00:40.552Z"
+    },
+    "facebook": {
+     "id": "29271238635865919",
+     "hora": "2026-11-27T17:00:45.485Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1128-historia-bf-1",
