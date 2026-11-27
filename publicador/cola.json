@@ -2003,7 +2003,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-web-moda-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18136022002762311",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4039549286391551766",
+     "hora": "2026-11-27T09:30:39.257Z"
+    },
+    "facebook": {
+     "id": "1409722750972052",
+     "hora": "2026-11-27T09:30:43.800Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1127-historia-web-moda-2",
