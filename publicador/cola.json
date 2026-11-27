@@ -1242,9 +1242,23 @@
    "portada_ms": 1000,
    "musica": {
     "buscar": "upbeat acoustic",
-    "volumen_video": 40
+    "volumen_video": 40,
+    "elegida": "Lazy River · Phury"
    },
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18127423526068190",
+     "permalink": "https://www.instagram.com/reel/DgQfRhrlTrl/",
+     "hora": "2026-11-27T20:01:01.598Z"
+    },
+    "facebook": {
+     "id": "1487732573422105",
+     "permalink": "https://www.facebook.com/reel/1487732573422105",
+     "hora": "2026-11-27T20:01:11.991Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1128-historia-revision-1",
