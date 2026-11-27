@@ -1,27 +1,27 @@
 {
- "generado": "2026-11-26T06:00:29.275Z",
+ "generado": "2026-11-27T06:00:27.870Z",
  "resumen_semana": {
   "publicaciones": 4,
   "nuevos_por_pieza": [
    {
     "enlace": "https://www.instagram.com/reel/DgLVsflgSiV/",
     "compartidos_mas_guardados": 0,
-    "alcance": 13
+    "alcance": 25
    },
    {
     "enlace": "https://www.instagram.com/p/DgIxBval4KI/",
     "compartidos_mas_guardados": 0,
-    "alcance": 7
+    "alcance": 9
    },
    {
     "enlace": "https://www.instagram.com/p/DgGMSpYnbOI/",
     "compartidos_mas_guardados": 0,
-    "alcance": 14
+    "alcance": 16
    },
    {
     "enlace": "https://www.instagram.com/p/Df-d6abCXFY/",
     "compartidos_mas_guardados": 0,
-    "alcance": 30
+    "alcance": 31
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -45,14 +45,14 @@
    "likes": 1,
    "comentarios": 0,
    "metricas": {
-    "reach": 13,
-    "views": 16,
+    "reach": 25,
+    "views": 37,
     "saved": 0,
     "shares": 0,
     "comments": 0,
     "likes": 1,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 4754
+    "ig_reels_avg_watch_time": 4840
    }
   },
   {
@@ -65,8 +65,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 7,
-    "views": 18,
+    "reach": 9,
+    "views": 35,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -79,14 +79,14 @@
    "formato": "CAROUSEL_ALBUM",
    "enlace": "https://www.instagram.com/p/DgGMSpYnbOI/",
    "texto": "Una web para tu negocio. Desde 390 €.\n\nHemos hecho catorce webs de muestra, una por sector: barbería, estética, taller, ",
-   "likes": 3,
+   "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 14,
-    "views": 46,
+    "reach": 16,
+    "views": 49,
     "saved": 0,
     "shares": 0,
-    "total_interactions": 3
+    "total_interactions": 4
    }
   },
   {
@@ -99,8 +99,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 30,
-    "views": 70,
+    "reach": 31,
+    "views": 71,
     "saved": 0,
     "shares": 0,
     "total_interactions": 5
@@ -133,8 +133,8 @@
    "likes": 7,
    "comentarios": 0,
    "metricas": {
-    "reach": 33,
-    "views": 75,
+    "reach": 34,
+    "views": 80,
     "saved": 0,
     "shares": 0,
     "total_interactions": 10
@@ -641,42 +641,42 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-25T17:10:42+0000",
+   "fecha": "2026-11-26T17:10:29+0000",
    "metricas": {
-    "reach": 12,
-    "views": 12,
+    "reach": 8,
+    "views": 8,
+    "replies": 0,
+    "navigation": 8,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-26T17:00:36+0000",
+   "metricas": {
+    "reach": 10,
+    "views": 11,
+    "replies": 0,
+    "navigation": 11,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-26T09:40:26+0000",
+   "metricas": {
+    "reach": 11,
+    "views": 13,
+    "replies": 0,
+    "navigation": 13,
+    "shares": 0
+   }
+  },
+  {
+   "fecha": "2026-11-26T09:30:37+0000",
+   "metricas": {
+    "reach": 11,
+    "views": 13,
     "replies": 0,
     "navigation": 12,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-25T17:00:39+0000",
-   "metricas": {
-    "reach": 12,
-    "views": 12,
-    "replies": 0,
-    "navigation": 12,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-25T09:40:42+0000",
-   "metricas": {
-    "reach": 13,
-    "views": 20,
-    "replies": 1,
-    "navigation": 17,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-25T09:30:31+0000",
-   "metricas": {
-    "reach": 14,
-    "views": 19,
-    "replies": 0,
-    "navigation": 15,
     "shares": 0
    }
   }
@@ -690,7 +690,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 120
+     "value": 122
     }
    },
    {
@@ -700,7 +700,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2529
+     "value": 2535
     }
    },
    {
@@ -720,7 +720,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 96
+     "value": 89
     }
    },
    {
@@ -730,7 +730,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 79
+     "value": 77
     }
    },
    {
