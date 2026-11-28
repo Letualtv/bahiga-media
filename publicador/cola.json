@@ -1269,7 +1269,19 @@
    ],
    "tipo": "historia",
    "media": "media/1128-historia-revision-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18134428954831842",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4040274046201287873",
+     "hora": "2026-11-28T09:30:39.326Z"
+    },
+    "facebook": {
+     "id": "1866327137898658",
+     "hora": "2026-11-28T09:30:44.918Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1128-historia-revision-2",
