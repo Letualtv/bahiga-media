@@ -2087,7 +2087,19 @@
    ],
    "tipo": "historia",
    "media": "media/historia-bf-1.jpg",
-   "estado": "pendiente"
+   "estado": "publicada",
+   "resultado": {
+    "instagram": {
+     "id": "18139721149727398",
+     "permalink": "https://www.instagram.com/stories/bahiga.estudio/4040500600518053186",
+     "hora": "2026-11-28T17:00:35.097Z"
+    },
+    "facebook": {
+     "id": "1884375909402908",
+     "hora": "2026-11-28T17:00:40.856Z"
+    }
+   },
+   "intentos": 1
   },
   {
    "id": "1129-historia-bf-2",
