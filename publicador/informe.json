@@ -1,8 +1,13 @@
 {
- "generado": "2026-11-27T06:00:27.870Z",
+ "generado": "2026-11-28T06:00:21.733Z",
  "resumen_semana": {
   "publicaciones": 4,
   "nuevos_por_pieza": [
+   {
+    "enlace": "https://www.instagram.com/reel/DgQfRhrlTrl/",
+    "compartidos_mas_guardados": 0,
+    "alcance": 10
+   },
    {
     "enlace": "https://www.instagram.com/reel/DgLVsflgSiV/",
     "compartidos_mas_guardados": 0,
@@ -11,17 +16,12 @@
    {
     "enlace": "https://www.instagram.com/p/DgIxBval4KI/",
     "compartidos_mas_guardados": 0,
-    "alcance": 9
+    "alcance": 10
    },
    {
     "enlace": "https://www.instagram.com/p/DgGMSpYnbOI/",
     "compartidos_mas_guardados": 0,
     "alcance": 16
-   },
-   {
-    "enlace": "https://www.instagram.com/p/Df-d6abCXFY/",
-    "compartidos_mas_guardados": 0,
-    "alcance": 31
    }
   ],
   "compartidos_mas_guardados_total": 0,
@@ -30,11 +30,31 @@
  "instagram_cuenta": {
   "id": "17841430450985904",
   "followers_count": 58,
-  "follows_count": 115,
-  "media_count": 34,
+  "follows_count": 116,
+  "media_count": 35,
   "username": "bahiga.estudio"
  },
  "instagram_publicaciones": [
+  {
+   "id": "18127423526068190",
+   "fecha": "2026-11-27T20:00:56+0000",
+   "tipo": "REELS",
+   "formato": "VIDEO",
+   "enlace": "https://www.instagram.com/reel/DgQfRhrlTrl/",
+   "texto": "¿Qué miramos en tu web? Cinco cosas, y hasta el 30 de noviembre es gratis:\n\ncuánto tarda, si se entiende en la primera p",
+   "likes": 1,
+   "comentarios": 0,
+   "metricas": {
+    "reach": 10,
+    "views": 23,
+    "saved": 0,
+    "shares": 0,
+    "comments": 0,
+    "likes": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 5897
+   }
+  },
   {
    "id": "17914391580306894",
    "fecha": "2026-11-25T20:01:02+0000",
@@ -65,8 +85,8 @@
    "likes": 0,
    "comentarios": 0,
    "metricas": {
-    "reach": 9,
-    "views": 35,
+    "reach": 10,
+    "views": 39,
     "saved": 0,
     "shares": 0,
     "total_interactions": 0
@@ -99,8 +119,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 31,
-    "views": 71,
+    "reach": 32,
+    "views": 73,
     "saved": 0,
     "shares": 0,
     "total_interactions": 5
@@ -116,8 +136,8 @@
    "likes": 4,
    "comentarios": 0,
    "metricas": {
-    "reach": 18,
-    "views": 52,
+    "reach": 19,
+    "views": 57,
     "saved": 0,
     "shares": 0,
     "total_interactions": 5
@@ -641,42 +661,18 @@
  ],
  "instagram_historias_activas": [
   {
-   "fecha": "2026-11-26T17:10:29+0000",
+   "fecha": "2026-11-27T17:00:37+0000",
    "metricas": {
-    "reach": 8,
-    "views": 8,
-    "replies": 0,
-    "navigation": 8,
-    "shares": 0
+    "error": "(#10) Not enough viewers for the media to show insights (10)"
    }
   },
   {
-   "fecha": "2026-11-26T17:00:36+0000",
+   "fecha": "2026-11-27T09:30:36+0000",
    "metricas": {
-    "reach": 10,
+    "reach": 9,
     "views": 11,
     "replies": 0,
-    "navigation": 11,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-26T09:40:26+0000",
-   "metricas": {
-    "reach": 11,
-    "views": 13,
-    "replies": 0,
-    "navigation": 13,
-    "shares": 0
-   }
-  },
-  {
-   "fecha": "2026-11-26T09:30:37+0000",
-   "metricas": {
-    "reach": 11,
-    "views": 13,
-    "replies": 0,
-    "navigation": 12,
+    "navigation": 10,
     "shares": 0
    }
   }
@@ -690,7 +686,7 @@
     "title": "Cuentas alcanzadas",
     "description": "Número de cuentas únicas que han visto tu contenido al menos una vez, incluidos los anuncios. El contenido incluye publicaciones, historias, reels, vídeos y vídeos en directo. El alcance es diferente de las impresiones, ya que estas pueden incluir varias visualizaciones del contenido por parte de las mismas cuentas. Esta métrica es una estimación y está en desarrollo.",
     "total_value": {
-     "value": 122
+     "value": 114
     }
    },
    {
@@ -700,7 +696,7 @@
     "title": "Visualizaciones",
     "description": "Número de veces que se ha reproducido o mostrado tu contenido, que incluye reels, publicaciones e historias.",
     "total_value": {
-     "value": 2535
+     "value": 2526
     }
    },
    {
@@ -720,7 +716,7 @@
     "title": "Interacciones con el contenido",
     "description": "Número total de interacciones con tus publicaciones, historias, reels, vídeos y vídeos en directo, incluidas las interacciones con el contenido promocionado.",
     "total_value": {
-     "value": 89
+     "value": 91
     }
    },
    {
@@ -730,7 +726,7 @@
     "title": "Visitas al perfil",
     "description": "Número de veces que se ha visitado tu perfil.",
     "total_value": {
-     "value": 77
+     "value": 76
     }
    },
    {
@@ -752,6 +748,14 @@
   "id": "1371169526080229"
  },
  "facebook_publicaciones": [
+  {
+   "fecha": "2026-11-27T20:01:30+0000",
+   "enlace": "https://www.facebook.com/reel/1487732573422105/",
+   "texto": "¿Qué miramos en tu web? Cinco cosas, y hasta el 30 de noviembre es gratis:\n\ncuánto tarda, si se entiende en la primera p",
+   "reacciones": 0,
+   "comentarios": 0,
+   "compartidos": 0
+  },
   {
    "fecha": "2026-11-25T20:01:28+0000",
    "enlace": "https://www.facebook.com/reel/1182603430774977/",
@@ -980,14 +984,6 @@
    "fecha": "2026-10-23T16:30:15+0000",
    "enlace": "https://www.facebook.com/reel/1142810231594779/",
    "texto": "¿Cuántos clientes te trajo tu web este mes?\n\nSi no lo sabes, ya tienes la respuesta. Una web tiene que cargar rápido en ",
-   "reacciones": 0,
-   "comentarios": 0,
-   "compartidos": 0
-  },
-  {
-   "fecha": "2026-10-23T08:55:32+0000",
-   "enlace": "https://www.facebook.com/reel/2157313668246644/",
-   "texto": "¿Tu WordPress usa UpdraftPlus? Revísalo hoy.\n\nEl 17 y 18 de octubre entraron en los sistemas de TeamUpdraft, la empresa ",
    "reacciones": 0,
    "comentarios": 0,
    "compartidos": 0
